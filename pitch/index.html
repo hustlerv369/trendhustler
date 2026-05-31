@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>TrendHustler — Submission Brief</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700;800&family=Permanent+Marker&display=swap" rel="stylesheet"/>
+<style>
+@font-face{font-family:'Pricedown';src:url('../assets/fonts/pricedown.ttf') format('truetype');font-display:swap}
+:root{
+  --bg:#07080A;--panel:#0E1012;--panel2:#15181A;
+  --green:#00E676;--green-dim:rgba(0,230,118,.10);--green-glow:rgba(0,230,118,.35);
+  --gold:#D4AF37;--gold-hi:#FFF0B0;--red:#FF3B3B;--magenta:#FF2E97;
+  --ink-0:#F4F6F4;--ink-1:rgba(244,246,244,.80);--ink-2:rgba(244,246,244,.55);
+  --border:rgba(212,175,55,.22);--border-g:rgba(0,230,118,.25);
+  --display:'Pricedown','Anton',sans-serif;
+  --num:'Anton','Arial Narrow',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --marker:'Permanent Marker',cursive;
+  --sans:'Helvetica Neue','Helvetica','Arial',sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --foil:url('../assets/gold.jpg') center/cover;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--ink-0);font-family:var(--sans)}
+
+/* noise grain */
+.noise{position:fixed;inset:0;z-index:999;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E")}
+
+/* grid bg */
+body{background-image:repeating-linear-gradient(0deg,transparent 0 71px,rgba(0,230,118,.03) 71px 72px),
+  repeating-linear-gradient(90deg,transparent 0 71px,rgba(0,230,118,.02) 71px 72px)}
+
+/* slides container */
+.deck{width:100%;height:100%;position:relative;overflow:hidden}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  padding:48px 60px;opacity:0;transform:translateX(60px);transition:opacity .55s var(--ease),transform .55s var(--ease);
+  pointer-events:none;text-align:center}
+.slide.active{opacity:1;transform:none;pointer-events:all}
+.slide.prev{opacity:0;transform:translateX(-60px)}
+
+/* progress dots */
+.dots{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:100}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--border);border:1px solid var(--border);transition:all .3s var(--ease);cursor:pointer}
+.dot.on{background:var(--green);border-color:var(--green);box-shadow:0 0 8px var(--green)}
+
+/* nav arrows */
+.nav{position:fixed;top:50%;transform:translateY(-50%);z-index:100;background:transparent;border:1px solid var(--border);
+  color:var(--ink-2);width:48px;height:48px;font-size:20px;cursor:pointer;display:grid;place-items:center;
+  transition:all .2s var(--ease)}
+.nav:hover{border-color:var(--green);color:var(--green)}
+.nav.prev-btn{left:16px}.nav.next-btn{right:16px}
+
+/* slide number */
+.slidenum{position:fixed;top:20px;right:24px;font-family:var(--mono);font-size:12px;color:var(--ink-2);z-index:100}
+
+/* keyboard hint */
+.hint{position:fixed;bottom:56px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:10px;
+  color:var(--ink-2);letter-spacing:.16em;text-transform:uppercase;z-index:100}
+
+/* ===== SLIDE-SPECIFIC ===== */
+
+/* S1 — title */
+.s1 .logo{font-family:var(--display);font-size:clamp(64px,14vw,160px);text-transform:uppercase;line-height:.85;
+  background:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 3px 2px rgba(0,0,0,.6))}
+.s1 .logo .hl{-webkit-text-fill-color:var(--green);background:none;
+  filter:drop-shadow(0 2px 0 #064a28) drop-shadow(0 0 20px var(--green-glow))}
+.s1 .sub{font-family:var(--marker);font-size:clamp(16px,2.5vw,26px);color:var(--gold-hi);margin-top:12px;transform:rotate(-1deg)}
+.s1 .mascot{position:absolute;right:4%;bottom:0;width:min(320px,35vw);
+  -webkit-mask-image:linear-gradient(180deg,#000 60%,transparent 100%);mask-image:linear-gradient(180deg,#000 60%,transparent 100%);
+  filter:drop-shadow(0 0 30px var(--green-glow));pointer-events:none}
+.s1 .links{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+.s1 .lnk{font-family:var(--mono);font-size:13px;border:1px solid var(--border-g);padding:10px 20px;
+  color:var(--green);text-decoration:none;transition:all .2s var(--ease)}
+.s1 .lnk:hover{background:var(--green-dim)}
+.s1 .lnk.gold{border-color:var(--border);color:var(--gold)}
+.s1 .lnk.gold:hover{background:rgba(212,175,55,.08)}
+
+/* S2 — problem */
+.s2 .big{font-family:var(--num);font-size:clamp(48px,9vw,110px);color:var(--red);line-height:.9;text-transform:uppercase}
+.s2 .mid{font-size:clamp(16px,2.2vw,22px);color:var(--ink-1);max-width:640px;margin-top:18px;line-height:1.55}
+.s2 .stat{font-family:var(--marker);font-size:clamp(22px,3.5vw,38px);color:var(--gold-hi);margin-top:18px;transform:rotate(-1deg)}
+
+/* S3 — what it does */
+.s3 .title{font-family:var(--display);font-size:clamp(36px,7vw,80px);text-transform:uppercase;color:var(--green);line-height:.9}
+.s3 .body{font-size:clamp(15px,2vw,20px);color:var(--ink-1);max-width:660px;margin-top:20px;line-height:1.6}
+.s3 .arrow{font-size:clamp(28px,4vw,52px);color:var(--gold);margin:16px 0;display:block}
+.s3 .result{font-family:var(--num);font-size:clamp(28px,4.5vw,52px);color:var(--ink-0);text-transform:uppercase}
+
+/* S4 — signals */
+.s4 .title{font-family:var(--display);font-size:clamp(32px,6vw,70px);text-transform:uppercase;color:var(--gold);margin-bottom:28px;line-height:.9}
+.signals{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;width:100%;max-width:860px}
+.sig-card{background:var(--panel);border:1px solid var(--border);padding:20px 16px;text-align:left}
+.sig-card .em{font-size:28px;line-height:1;margin-bottom:8px}
+.sig-card .name{font-family:var(--num);font-size:18px;text-transform:uppercase;margin-bottom:6px}
+.sig-card .desc{font-size:12px;color:var(--ink-2);line-height:1.45}
+.sig-card.sb{border-color:rgba(212,175,55,.5)}.sig-card.sb .name{color:var(--gold)}
+.sig-card.b{border-color:var(--border-g)}.sig-card.b .name{color:var(--green)}
+.sig-card.h .name{color:var(--gold-hi)}
+.sig-card.s .name,.sig-card.r .name{color:var(--red)}
+
+/* S5 — sources */
+.s5 .title{font-family:var(--display);font-size:clamp(32px,6vw,70px);text-transform:uppercase;color:var(--green);margin-bottom:24px;line-height:.9}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;width:100%;max-width:860px;text-align:left}
+.col-box{background:var(--panel);border:1px solid;padding:24px}
+.col-box.under{border-color:var(--border-g)}
+.col-box.main{border-color:var(--border)}
+.col-box h3{font-family:var(--num);font-size:14px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}
+.col-box.under h3{color:var(--green)}
+.col-box.main h3{color:var(--gold)}
+.col-box ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.col-box li{font-size:13px;color:var(--ink-1);display:flex;gap:8px;align-items:baseline}
+.col-box li::before{content:'▸';color:var(--green);flex-shrink:0}
+.col-box.main li::before{color:var(--gold)}
+.s5 .note{font-family:var(--marker);font-size:18px;color:var(--gold-hi);margin-top:18px;transform:rotate(-.5deg)}
+
+/* S6 — demo */
+.s6 .title{font-family:var(--display);font-size:clamp(32px,6vw,68px);text-transform:uppercase;color:var(--gold);margin-bottom:20px;line-height:.9}
+.demo-frame{border:1px solid var(--border-g);padding:3px;max-width:860px;width:100%;position:relative}
+.demo-frame img{width:100%;display:block;opacity:.92}
+.demo-frame::before,.demo-frame::after{content:'';position:absolute;width:14px;height:14px;border:2px solid var(--gold)}
+.demo-frame::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.demo-frame::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+.s6 .live-link{display:inline-flex;gap:8px;align-items:center;font-family:var(--mono);font-size:14px;
+  border:1px solid var(--green);padding:12px 22px;color:var(--green);text-decoration:none;margin-top:16px;
+  transition:all .2s var(--ease)}
+.s6 .live-link:hover{background:var(--green-dim)}
+
+/* S7 — MCP */
+.s7 .title{font-family:var(--display);font-size:clamp(32px,6vw,70px);text-transform:uppercase;color:var(--magenta);margin-bottom:8px;line-height:.9}
+.s7 .sub{font-size:clamp(14px,1.8vw,18px);color:var(--ink-1);max-width:600px;margin-bottom:24px}
+.code-block{background:#030404;border:1px solid var(--border-g);padding:20px 24px;font-family:var(--mono);
+  font-size:clamp(11px,1.4vw,14px);color:var(--ink-0);text-align:left;max-width:700px;width:100%;line-height:1.8}
+.code-block .cmd{color:var(--green)}.code-block .arg{color:var(--gold-hi)}.code-block .cmt{color:var(--ink-2)}
+.s7 .tools{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+.s7 .tool-pill{font-family:var(--mono);font-size:12px;border:1px solid var(--magenta);
+  color:var(--magenta);padding:8px 14px;border-radius:999px}
+
+/* S8 — get it */
+.s8 .title{font-family:var(--display);font-size:clamp(48px,10vw,130px);text-transform:uppercase;line-height:.85;
+  background:var(--foil);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 3px 2px rgba(0,0,0,.6));margin-bottom:16px}
+.s8 .steps{font-family:var(--mono);font-size:clamp(13px,1.6vw,16px);text-align:left;
+  background:#030404;border:1px solid var(--border-g);padding:24px 28px;max-width:620px;width:100%;line-height:2.1}
+.s8 .steps .cmd{color:var(--green)}.s8 .steps .cmt{color:var(--ink-2)}
+.s8 .cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+.s8 .btn{font-family:var(--num);font-size:clamp(14px,1.8vw,18px);text-transform:uppercase;letter-spacing:.06em;
+  padding:14px 28px;text-decoration:none;border:1px solid;transition:all .2s var(--ease)}
+.s8 .btn.green{border-color:var(--green);color:#07080A;background:var(--green)}
+.s8 .btn.green:hover{background:transparent;color:var(--green)}
+.s8 .btn.gold{border-color:var(--gold);color:var(--gold)}
+.s8 .btn.gold:hover{background:rgba(212,175,55,.08)}
+.s8 .sign{font-family:var(--marker);font-size:clamp(16px,2.2vw,24px);color:var(--gold-hi);margin-top:20px;transform:rotate(-1deg)}
+
+@media(max-width:720px){
+  .slide{padding:32px 20px}
+  .two-col{grid-template-columns:1fr}
+  .signals{grid-template-columns:1fr 1fr}
+  .s1 .mascot{width:min(180px,40vw)}
+}
+</style>
+</head>
+<body>
+<div class="noise"></div>
+
+<div class="deck" id="deck">
+
+  <!-- S1 — Title -->
+  <div class="slide s1 active" data-slide="0">
+    <div>
+      <div class="logo">TREND<span class="hl">HUSTLER</span></div>
+      <div class="sub">"Cop the gems before they go mainstream."</div>
+      <div class="links">
+        <a class="lnk" href="../" target="_blank">🌐 Live Dashboard</a>
+        <a class="lnk" href="https://github.com/hustlerv369/trendhustler" target="_blank">📦 GitHub Repo</a>
+        <a class="lnk" href="../mcp/" target="_blank">🔌 MCP Server</a>
+        <a class="lnk gold" href="https://hustlerv369.github.io/trendhustler" target="_blank">Open App →</a>
+      </div>
+    </div>
+    <img class="mascot" src="../assets/hustler.png" alt="The Hustler"/>
+  </div>
+
+  <!-- S2 — Problem -->
+  <div class="slide s2" data-slide="1">
+    <div class="big">You're Always Late.</div>
+    <div class="mid">
+      You scroll Twitter, see a hot AI topic, spend two days making a video — and find 300 people already did it last week.
+      <br/><br/>
+      That is not a luck problem. That is a timing problem.
+    </div>
+    <div class="stat">"Post first or post for nothing." 🕶️</div>
+  </div>
+
+  <!-- S3 — Solution -->
+  <div class="slide s3" data-slide="2">
+    <div class="title">The Fix.</div>
+    <div class="body">
+      TrendHustler watches <strong style="color:var(--green)">8 underground sources</strong> where developers and researchers talk about AI — before it reaches mainstream media and YouTube.<br/><br/>
+      It measures how much buzz a topic has in the underground vs. how much the mainstream already covers it.
+    </div>
+    <span class="arrow">↓</span>
+    <div class="result">That gap is your window.</div>
+  </div>
+
+  <!-- S4 — Signals -->
+  <div class="slide s4" data-slide="3">
+    <div class="title">The Signals</div>
+    <div class="signals">
+      <div class="sig-card sb">
+        <div class="em">💎</div>
+        <div class="name">Strong Buy</div>
+        <div class="desc">Underground is buzzing. Media has no idea. Post today — you own this topic.</div>
+      </div>
+      <div class="sig-card b">
+        <div class="em">🟢</div>
+        <div class="name">Buy</div>
+        <div class="desc">Growing fast. Mainstream is waking up. You still have time. Move this week.</div>
+      </div>
+      <div class="sig-card h">
+        <div class="em">🟡</div>
+        <div class="name">Hold</div>
+        <div class="desc">Peaking right now. Today or never. Last call.</div>
+      </div>
+      <div class="sig-card s">
+        <div class="em">🔴</div>
+        <div class="name">Sell</div>
+        <div class="desc">Saturated. Every newsletter and podcast is covering this. You are too late.</div>
+      </div>
+      <div class="sig-card r">
+        <div class="em">☠️</div>
+        <div class="name">Rug</div>
+        <div class="desc">Dead. It was hot. Now it is a corpse. Do not get caught posting this.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- S5 — Sources -->
+  <div class="slide s5" data-slide="4">
+    <div class="title">8 Sources. Zero Dollars.</div>
+    <div class="two-col">
+      <div class="col-box under">
+        <h3>🔬 Underground (early signal)</h3>
+        <ul>
+          <li>Hacker News</li>
+          <li>GitHub (star velocity)</li>
+          <li>arXiv (research papers)</li>
+          <li>Hugging Face</li>
+          <li>Dev.to</li>
+          <li>Reddit (r/LocalLLaMA etc.)</li>
+          <li>Product Hunt</li>
+        </ul>
+      </div>
+      <div class="col-box main">
+        <h3>📢 Mainstream (saturation check)</h3>
+        <ul>
+          <li>Google News</li>
+          <li>YouTube (via yt-dlp)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note">No API keys. No Apify. No subscriptions. All hustle. 🕶️</div>
+  </div>
+
+  <!-- S6 — Demo -->
+  <div class="slide s6" data-slide="5">
+    <div class="title">See It Live</div>
+    <div class="demo-frame">
+      <img src="../assets/hustler.png" alt="dashboard preview" style="width:100%;object-fit:cover;height:340px;object-position:top"/>
+    </div>
+    <a class="live-link" href="https://hustlerv369.github.io/trendhustler" target="_blank">
+      🌐 Open Live Dashboard →
+    </a>
+  </div>
+
+  <!-- S7 — MCP -->
+  <div class="slide s7" data-slide="6">
+    <div class="title">🔌 MCP Server</div>
+    <div class="sub">Plug TrendHustler directly into Claude Code or Antigravity. Ask your AI what to post about today.</div>
+    <div class="code-block">
+<span class="cmt"># One-time setup</span>
+<span class="cmd">claude mcp add</span> <span class="arg">trendhustler</span> node /path/to/trendhustler/mcp/server.mjs
+
+<span class="cmt"># Then ask Claude:</span>
+<span class="arg">"What AI topics should I post about today?"</span>
+<span class="arg">"Should I make a video about GraphRAG?"</span>
+<span class="arg">"What is the market mood right now?"</span>
+    </div>
+    <div class="tools">
+      <span class="tool-pill">whats_pumping</span>
+      <span class="tool-pill">should_i_post_about</span>
+      <span class="tool-pill">market_mood</span>
+    </div>
+  </div>
+
+  <!-- S8 — Get it -->
+  <div class="slide s8" data-slide="7">
+    <div class="title">Get It.</div>
+    <div class="steps">
+<span class="cmt"># Install yt-dlp once</span>
+<span class="cmd">winget install yt-dlp</span>  <span class="cmt">(Windows)</span>
+<span class="cmd">pip install yt-dlp</span>     <span class="cmt">(Mac/Linux)</span>
+
+<span class="cmt"># Clone + build (~12 seconds)</span>
+<span class="cmd">git clone</span> https://github.com/hustlerv369/trendhustler
+<span class="cmd">cd</span> trendhustler &amp;&amp; <span class="cmd">npm run build</span>
+
+<span class="cmt"># Open — no server needed</span>
+<span class="cmd">open index.html</span>
+    </div>
+    <div class="cta">
+      <a class="btn green" href="https://hustlerv369.github.io/trendhustler" target="_blank">Open Dashboard</a>
+      <a class="btn gold" href="https://github.com/hustlerv369/trendhustler" target="_blank">GitHub Repo</a>
+    </div>
+    <div class="sign">"The streets never sleep. Neither does the data pipeline." 🕶️</div>
+  </div>
+
+</div>
+
+<!-- UI -->
+<div class="dots" id="dots"></div>
+<button class="nav prev-btn" id="prev" aria-label="Previous">←</button>
+<button class="nav next-btn" id="next" aria-label="Next">→</button>
+<div class="slidenum" id="slidenum"></div>
+<div class="hint">← → arrow keys to navigate</div>
+
+<script>
+const slides = Array.from(document.querySelectorAll('.slide'));
+const dots = document.getElementById('dots');
+const slidenum = document.getElementById('slidenum');
+let cur = 0;
+
+// build dots
+slides.forEach((_,i) => {
+  const d = document.createElement('div');
+  d.className = 'dot' + (i===0?' on':'');
+  d.addEventListener('click', () => go(i));
+  dots.appendChild(d);
+});
+
+function go(n) {
+  if (n < 0 || n >= slides.length) return;
+  slides[cur].classList.remove('active');
+  slides[cur].classList.add('prev');
+  setTimeout(() => slides[cur].classList.remove('prev'), 600);
+  cur = n;
+  slides[cur].classList.add('active');
+  dots.querySelectorAll('.dot').forEach((d,i) => d.classList.toggle('on', i===cur));
+  slidenum.textContent = (cur+1) + ' / ' + slides.length;
+}
+
+document.getElementById('prev').addEventListener('click', () => go(cur-1));
+document.getElementById('next').addEventListener('click', () => go(cur+1));
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === ' ') go(cur+1);
+  if (e.key === 'ArrowLeft') go(cur-1);
+});
+
+// touch/swipe
+let tx = 0;
+document.addEventListener('touchstart', e => tx = e.touches[0].clientX, {passive:true});
+document.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - tx;
+  if (Math.abs(dx) > 50) go(dx < 0 ? cur+1 : cur-1);
+}, {passive:true});
+
+go(0);
+</script>
+</body>
+</html>
