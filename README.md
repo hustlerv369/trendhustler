@@ -136,6 +136,8 @@ A GitHub Action runs every day at 6am UTC. It pulls fresh data from all 8 source
 
 You can also trigger it manually anytime: **Actions tab → Daily Data Refresh → Run workflow.**
 
+**On the dashboard itself**, the `🔄 Cop Fresh Data` button (top right) shows how old the current data is and checks GitHub for a newer snapshot in one click. If there's fresh data, it reloads automatically. No server, no setup.
+
 ---
 
 ## What it watches (8 sources, zero dollars)
