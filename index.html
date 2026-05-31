@@ -1,0 +1,3019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TrendHustler · The Black Market for AI Trends</title>
+<meta name="description" content="The back-alley exchange for AI trends. Cop the gems before they go mainstream." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500;700;800&family=Permanent+Marker&display=swap" rel="stylesheet" />
+<style>
+@font-face{font-family:'Pricedown';src:url('assets/fonts/pricedown.ttf') format('truetype');font-display:swap}
+:root{
+  --bg-0:#07080A; --bg-1:#0E1012; --bg-2:#15181A;
+  --green:#00E676; --green-dim:#0A3D24; --green-glow:rgba(0,230,118,.35);
+  --gold:#D4AF37; --gold-hi:#FFF0B0; --red:#FF3B3B; --magenta:#FF2E97;
+  --ink-0:#F6F7F5; --ink-1:rgba(246,247,245,.80); --ink-2:rgba(246,247,245,.62); --ink-3:rgba(246,247,245,.44);
+  --border:rgba(212,175,55,.24); --border-g:rgba(0,230,118,.22);
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --display:'Pricedown','Anton',Impact,sans-serif;                 /* rough hustler: logo + headers */
+  --num:'Anton','Arial Narrow',sans-serif;                          /* legible impact: numbers + tickers */
+  --sans:'Helvetica Neue','Helvetica','Arial',system-ui,sans-serif; /* readable copy + labels */
+  --logo:var(--display);
+  --marker:'Permanent Marker',cursive;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --foil:linear-gradient(176deg,#FFF7D6 0%,#F6DD86 19%,#D9B43E 43%,#9C7A1E 61%,#F4DC82 79%,#C9A227 100%);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg-0); color:var(--ink-0); font-family:var(--mono);
+  font-size:15px; line-height:1.5; overflow-x:hidden; position:relative;
+  background-image:
+    repeating-linear-gradient(0deg,transparent 0 71px,rgba(0,230,118,.035) 71px 72px),
+    repeating-linear-gradient(90deg,transparent 0 71px,rgba(0,230,118,.025) 71px 72px);
+}
+body{font-family:var(--sans)}
+/* film grain */
+.noise{position:fixed;inset:0;z-index:900;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");}
+/* drifting money-green blobs */
+.blob{position:fixed;border-radius:50%;filter:blur(150px);opacity:.18;mix-blend-mode:screen;z-index:0;pointer-events:none}
+.blob.a{top:-15%;left:-10%;width:55vw;height:55vw;background:var(--green);animation:drift1 34s var(--ease) infinite}
+.blob.b{bottom:-20%;right:-10%;width:45vw;height:45vw;background:var(--gold);animation:drift2 40s var(--ease) infinite;opacity:.12}
+@keyframes drift1{50%{transform:translate(30vw,24vh) scale(1.2)}}
+@keyframes drift2{50%{transform:translate(-24vw,-18vh) scale(1.15)}}
+/* failing-hallway-bulb flicker: ONLY this ambient light layer flickers; content stays steady */
+.bulb{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.45;transition:opacity 55ms linear;mix-blend-mode:screen;
+  background:
+    radial-gradient(ellipse 70% 52% at 50% -4%, rgba(0,230,118,.13), transparent 60%),
+    radial-gradient(circle at 50% 4%, rgba(255,240,176,.07), transparent 52%)}
+
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+
+/* ===== TICKER TAPE ===== */
+.tape{position:sticky;top:0;z-index:800;background:#050606;border-bottom:1px solid var(--border);
+  overflow:hidden;white-space:nowrap;height:40px;display:flex;align-items:center;
+  box-shadow:inset 0 -1px 0 rgba(0,230,118,.15)}
+.tape::before{content:'';position:absolute;inset:0;pointer-events:none;z-index:2;
+  background:repeating-linear-gradient(0deg,transparent 0 2px,rgba(0,0,0,.25) 2px 4px)}
+.tape__track{display:inline-flex;gap:34px;padding-left:100%;animation:marquee 60s linear infinite;will-change:transform}
+.tape:hover .tape__track{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(-100%)}}
+.tape__item{font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:.03em;display:inline-flex;gap:8px;align-items:center}
+.tape__sym{color:var(--gold);font-weight:700}
+.up{color:var(--green)} .down{color:var(--red)}
+
+/* ===== HERO ===== */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center;
+  padding:64px 0 40px;position:relative}
+.hero__kicker{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--green);
+  display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.hero__kicker::before{content:'';width:8px;height:8px;background:var(--green);border-radius:50%;
+  box-shadow:0 0 12px var(--green);animation:blink 2s var(--ease) infinite}
+@keyframes blink{50%{opacity:.3}}
+.logo{font-family:var(--logo);font-weight:400;line-height:.86;letter-spacing:.005em;
+  font-size:clamp(66px,12vw,164px);text-transform:uppercase;cursor:pointer;user-select:none;
+  background:url('assets/gold.jpg') center/cover;-webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  filter:drop-shadow(0 3px 2px rgba(0,0,0,.6)) drop-shadow(0 1px 0 #5c4712)}
+.logo .hl{-webkit-text-fill-color:var(--green);color:var(--green);background:none;
+  filter:drop-shadow(0 2px 0 #064a28) drop-shadow(0 0 16px var(--green-glow))}
+.tagline{font-size:16px;color:var(--ink-1);margin:14px 0 8px;max-width:42ch}
+.dealer{font-family:var(--marker);font-size:21px;color:var(--gold-hi);transform:rotate(-1.5deg);
+  margin:10px 0 22px;line-height:1.3}
+.dealer .q{color:var(--green)}
+.hero__meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.pill{font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--border);
+  padding:6px 12px;border-radius:999px;color:var(--ink-1);display:inline-flex;gap:7px;align-items:center}
+.pill.open{border-color:var(--green);color:var(--green)}
+.pill.open .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green)}
+
+/* mascot poster */
+.poster{position:relative;justify-self:center}
+.poster__frame{position:relative;padding:10px;border:1px solid var(--border);
+  background:linear-gradient(180deg,rgba(212,175,55,.06),transparent)}
+.poster__frame::before,.poster__frame::after{content:'';position:absolute;width:18px;height:18px;border:2px solid var(--gold)}
+.poster__frame::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.poster__frame::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+.poster img{display:block;width:min(420px,80vw);height:auto;
+  -webkit-mask-image:radial-gradient(ellipse 82% 88% at 50% 46%,#000 60%,transparent 100%);
+          mask-image:radial-gradient(ellipse 82% 88% at 50% 46%,#000 60%,transparent 100%);
+  filter:drop-shadow(0 0 40px rgba(0,230,118,.18))}
+.poster__glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 60%,var(--green-glow),transparent 65%);
+  filter:blur(30px);z-index:-1;opacity:.5}
+.poster__tag{position:absolute;bottom:6px;left:50%;transform:translateX(-50%) rotate(-2deg);
+  font-family:var(--marker);font-size:15px;color:var(--gold-hi);white-space:nowrap;
+  background:rgba(5,6,6,.7);padding:3px 12px;border:1px solid var(--border)}
+/* gem callout breaks the gutter */
+.gem{position:absolute;left:-12px;bottom:24px;z-index:5;background:var(--bg-1);
+  border:1px solid var(--green);padding:14px 18px;max-width:240px;
+  box-shadow:0 0 0 1px rgba(0,0,0,.5)}
+.gem__l{font-size:10px;letter-spacing:.2em;color:var(--green);text-transform:uppercase}
+.gem__s{font-family:var(--num);font-size:32px;line-height:1;margin:4px 0;
+  background:url('assets/gold.jpg') center/cover;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.gem__d{font-size:12px;color:var(--ink-1)}
+
+/* ===== SECTION HEADERS ===== */
+.sec{padding:36px 0}
+.sec__h{font-family:var(--display);font-size:clamp(28px,4vw,52px);text-transform:uppercase;
+  letter-spacing:.01em;line-height:.95;display:flex;align-items:baseline;gap:16px}
+.sec__h small{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:var(--ink-2);text-transform:uppercase}
+.sec__sub{color:var(--ink-2);font-size:13px;margin-top:6px}
+
+/* ===== BENTO ===== */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:148px;gap:1px;
+  background:var(--border);border:1px solid var(--border);margin-top:22px}
+.cell{background:var(--bg-1);padding:18px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.cell:hover{background:var(--bg-2)}
+.cell__l{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+.cell__v{font-family:var(--num);font-size:46px;line-height:.9;color:var(--ink-0)}
+.cell__n{font-size:12px;color:var(--ink-1)}
+.cell.big{grid-column:span 2;grid-row:span 2}
+.cell.wide{grid-column:span 2}
+/* fear & greed gauge */
+.gauge{width:100%;height:12px;background:linear-gradient(90deg,var(--red),#caa800,var(--green));
+  position:relative;margin-top:auto;border:1px solid rgba(0,0,0,.4)}
+.gauge__pin{position:absolute;top:-6px;width:3px;height:24px;background:var(--ink-0);box-shadow:0 0 0 1px #000}
+.fg__big{font-family:var(--num);font-size:84px;line-height:.85;color:var(--gold)}
+.fg__sent{font-family:var(--marker);font-size:22px;margin-top:2px}
+.cell.big .cell__l{color:var(--green)}
+.spark{display:flex;gap:3px;align-items:flex-end;height:38px;margin-top:8px}
+.spark i{flex:1;background:var(--green);opacity:.5;min-height:3px}
+
+/* ===== BOARD ===== */
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 14px;align-items:center}
+.filt{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  background:transparent;border:1px solid var(--border);color:var(--ink-1);padding:9px 14px;cursor:pointer;
+  transition:all .2s var(--ease)}
+.filt:hover{border-color:var(--green);color:var(--ink-0)}
+.filt.on{background:var(--green);color:#04130a;border-color:var(--green);font-weight:700}
+.count{margin-left:auto;font-size:12px;color:var(--ink-2)}
+
+.board{border:1px solid var(--border);border-bottom:0}
+.row{display:grid;grid-template-columns:46px 1.6fr 90px 88px 1.1fr 96px 130px 30px;
+  align-items:center;gap:12px;padding:13px 16px;border-bottom:1px solid var(--border);
+  cursor:pointer;transition:background .18s var(--ease);position:relative}
+.row.head{cursor:default;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);
+  background:#0a0c0d;position:sticky;top:40px;z-index:5}
+.row:not(.head):hover{background:var(--bg-2)}
+.row__rank{font-family:var(--num);font-size:18px;color:var(--ink-2)}
+.row__name{display:flex;flex-direction:column;gap:1px;min-width:0}
+.row__sym{font-family:var(--num);font-size:21px;letter-spacing:.02em;color:var(--gold);display:flex;align-items:center;gap:7px}
+.row__sym .emrg{font-family:var(--mono);font-size:9px;color:var(--magenta);border:1px solid var(--magenta);
+  padding:1px 5px;border-radius:999px;letter-spacing:.1em}
+.row__lab{font-size:12px;color:var(--ink-1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row__price{font-family:var(--mono);font-weight:700;text-align:right;font-size:14px}
+.row__chg{font-family:var(--mono);text-align:right;font-weight:700;font-size:14px}
+.satbar{height:8px;background:var(--green-dim);position:relative;border:1px solid rgba(0,0,0,.4)}
+.satbar i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,transparent,var(--red))}
+.satbar b{position:absolute;top:-4px;width:2px;height:16px;background:var(--gold)}
+.satlab{font-size:9px;color:var(--ink-3);letter-spacing:.1em;margin-top:3px;display:flex;justify-content:space-between}
+.win{font-size:12px;text-align:center}
+.win .d{font-family:var(--num);font-size:22px;color:var(--ink-0)}
+.win.closed{color:var(--red)}
+.sig{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-align:center;
+  padding:6px 8px;border-radius:999px;border:1px solid}
+.sig.STRONG_BUY{color:#04130a;background:var(--green);border-color:var(--green)}
+.sig.BUY{color:var(--green);border-color:var(--green);background:rgba(0,230,118,.08)}
+.sig.HOLD{color:var(--gold-hi);border-color:var(--gold);background:rgba(212,175,55,.08)}
+.sig.SELL{color:var(--red);border-color:var(--red);background:rgba(255,59,59,.08)}
+.sig.RUG{color:#fff;background:var(--red);border-color:var(--red)}
+.row__exp{text-align:center;color:var(--ink-3);transition:transform .2s var(--ease)}
+.row.open .row__exp{transform:rotate(90deg);color:var(--green)}
+
+.detail{display:none;padding:0 16px 20px;border-bottom:1px solid var(--border);background:#0a0c0d}
+.detail.show{display:block;animation:fade .3s var(--ease)}
+@keyframes fade{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.verdict{font-family:var(--marker);font-size:20px;color:var(--gold-hi);padding:16px 0 6px;transform:rotate(-.5deg)}
+.dgrid{display:grid;grid-template-columns:1fr 1.4fr;gap:24px;margin-top:8px}
+.dlabel{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:11px;border:1px solid var(--border);padding:4px 9px;color:var(--ink-1)}
+.chip b{color:var(--green)}
+.ev{display:block;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.05);font-size:13px;
+  display:flex;gap:10px;align-items:baseline;transition:color .15s}
+.ev:hover{color:var(--green)}
+.ev__src{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);min-width:74px}
+.ev__t{flex:1;color:var(--ink-1)}
+.ev:hover .ev__t{color:var(--ink-0)}
+.ev__pts{color:var(--ink-3);font-size:11px}
+
+/* ===== FOOTER ===== */
+.foot{border-top:1px solid var(--border);margin-top:48px;padding:32px 0 60px;color:var(--ink-2);font-size:12px}
+.foot .motd{font-family:var(--display);font-size:20px;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
+.foot .src{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.foot .src span{border:1px solid var(--border);padding:3px 9px}
+.foot .dis{color:var(--ink-3);margin-top:14px;font-style:italic}
+
+/* sound toggle */
+.snd{position:fixed;right:18px;bottom:18px;z-index:850;width:48px;height:48px;border:1px solid var(--gold);
+  background:var(--bg-1);color:var(--gold);font-size:20px;cursor:pointer;display:grid;place-items:center;
+  border-radius:999px;transition:all .2s var(--ease)}
+.snd:hover{background:var(--gold);color:#000}
+
+/* money rain */
+.bill{position:fixed;top:-40px;font-size:28px;z-index:870;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:.2}}
+
+body.diamond{filter:hue-rotate(8deg) saturate(1.1)}
+body.diamond .logo,body.diamond .row__sym{text-shadow:0 0 18px var(--gold)}
+
+/* ===== BOOT LOADER ===== */
+#boot{position:fixed;inset:0;z-index:1000;background:var(--bg-0);display:grid;place-items:center;text-align:center;transition:opacity .55s var(--ease)}
+#boot.gone{opacity:0;pointer-events:none}
+#boot .bl{font-family:var(--display);font-size:clamp(30px,7vw,72px);color:var(--green);text-transform:uppercase;letter-spacing:.03em;line-height:.9;text-shadow:0 0 30px var(--green-glow)}
+#boot .bd{font-family:var(--marker);color:var(--gold-hi);font-size:clamp(16px,3vw,22px);margin-top:14px}
+#boot .bc{font-family:var(--mono);color:var(--ink-2);margin-top:22px;font-size:12px;letter-spacing:.26em;text-transform:uppercase}
+#boot .bc b{color:var(--gold)}
+
+/* ===== HERO CANDLESTICK BACKDROP ===== */
+.hero__chart{position:absolute;inset:-30px -40px auto -40px;height:360px;z-index:0;opacity:.20;pointer-events:none;
+  -webkit-mask-image:linear-gradient(180deg,#000 30%,transparent);mask-image:linear-gradient(180deg,#000 30%,transparent)}
+.hero__l,.poster{position:relative;z-index:2}
+.hero__chart .cup{fill:var(--green)}.hero__chart .cdn{fill:var(--red)}.hero__chart .wick{stroke:var(--ink-3);stroke-width:1}
+
+/* ===== MASCOT SPEECH BUBBLE ===== */
+.bubble{position:absolute;top:-10px;left:-34px;max-width:210px;z-index:8;background:#f4f1e4;color:#0a0c0d;
+  font-family:var(--marker);font-size:15px;line-height:1.18;padding:13px 15px;border:2px solid #0a0c0d;
+  box-shadow:5px 5px 0 var(--gold);transform:rotate(-3deg);transition:opacity .3s var(--ease)}
+.bubble::after{content:'';position:absolute;bottom:-13px;right:34px;border:8px solid transparent;border-top-color:#f4f1e4;border-bottom:0}
+.bubble::before{content:'';position:absolute;bottom:-18px;right:32px;border:9px solid transparent;border-top-color:#0a0c0d;border-bottom:0}
+
+/* ===== WANTED POSTER ===== */
+.wanted{margin-top:18px;border:1px solid var(--gold);padding:24px;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;position:relative;overflow:hidden;
+  background:repeating-linear-gradient(0deg,rgba(212,175,55,.03) 0 2px,transparent 2px 5px),linear-gradient(180deg,#171008,#0c0904)}
+.wanted::before{content:'WANTED';position:absolute;top:6px;left:50%;transform:translateX(-50%);font-family:var(--display);font-size:clamp(46px,11vw,120px);color:var(--gold);opacity:.07;letter-spacing:.12em;white-space:nowrap}
+.wanted__badge{font-size:60px;line-height:1;border:3px solid var(--red);padding:12px 16px;transform:rotate(-5deg);background:rgba(255,59,59,.06);animation:siren 1.2s var(--ease) infinite}
+.wanted__txt{position:relative;z-index:1}
+.wanted__h{font-family:var(--display);font-size:13px;letter-spacing:.34em;color:var(--gold);text-transform:uppercase}
+.wanted__sym{font-family:var(--display);font-size:clamp(36px,6vw,62px);color:var(--ink-0);line-height:.95;margin:2px 0 6px}
+.wanted__crime{font-family:var(--marker);font-size:19px;color:var(--gold-hi);transform:rotate(-1deg);max-width:46ch}
+.wanted__reward{text-align:right;position:relative;z-index:1}
+.wanted__reward .rl{font-size:10px;letter-spacing:.2em;color:var(--ink-3);text-transform:uppercase}
+.wanted__reward .rv{font-family:var(--num);font-size:40px;color:var(--red)}
+@media(max-width:720px){.wanted{grid-template-columns:1fr}.wanted__reward{text-align:left}}
+
+/* ===== RUG SIREN ===== */
+@keyframes siren{0%,100%{box-shadow:0 0 0 0 rgba(255,59,59,0)}50%{box-shadow:0 0 14px 1px rgba(255,59,59,.75)}}
+.sig.RUG{animation:siren 1.1s var(--ease) infinite}
+.row.rugrow::after{content:'';position:absolute;inset:0;background:rgba(255,59,59,.06);pointer-events:none;animation:sirenbg 1.1s steps(2,end) infinite}
+@keyframes sirenbg{50%{background:rgba(255,59,59,0)}}
+
+:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+
+@media(max-width:920px){
+  .hero{grid-template-columns:1fr;text-align:center}
+  .poster{margin-top:20px}.gem{position:static;max-width:none;margin:16px auto 0}
+  .bento{grid-template-columns:repeat(2,1fr)}.cell.big{grid-column:span 2}
+  .row{grid-template-columns:34px 1.4fr 76px 70px 84px 26px;gap:8px}
+  .row .col-sat,.row .col-win{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .tape__track{animation:none;padding-left:0}
+}
+</style>
+</head>
+<body>
+<div id="boot">
+  <div>
+    <div class="bl">TrendHustler</div>
+    <div class="bd">"hold up... countin' the streets 🕶️"</div>
+    <div class="bc">copping goods · <b id="bootnum">0</b> tickers on the block</div>
+  </div>
+</div>
+
+<div class="noise"></div>
+<div class="bulb" id="bulb"></div>
+<div class="blob a"></div><div class="blob b"></div>
+
+<div class="tape"><div class="tape__track" id="tape"></div></div>
+
+<main class="wrap">
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero__chart" id="herochart" viewBox="0 0 1200 360" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div class="hero__l">
+      <div class="hero__kicker">Live from the corner · <span id="lastcop">just now</span></div>
+      <h1 class="logo" id="logo">TREND<span class="hl">HUSTLER</span></h1>
+      <p class="tagline" id="tagline">Your plug for AI trends nobody's seen yet.</p>
+      <p class="dealer">"<span class="q" id="dealer">Pull up. I got that uncut alpha.</span>"</p>
+      <div class="hero__meta">
+        <span class="pill open"><span class="dot"></span>Market Open</span>
+        <span class="pill" id="srcpill">7 plugs on payroll</span>
+        <span class="pill" id="tickpill">— tickers traded</span>
+      </div>
+    </div>
+    <div class="poster">
+      <div class="bubble" id="bubble">Hey yo bro, cop the gems 'fore they blow up 💸</div>
+      <div class="poster__glow"></div>
+      <div class="poster__frame">
+        <img src="assets/hustler.png" alt="The TrendHustler, your AI trend plug" />
+        <div class="poster__tag">THE PLUG · est. street</div>
+      </div>
+      <div class="gem" id="gem">
+        <div class="gem__l">💎 Hottest gem on the block</div>
+        <div class="gem__s" id="gemsym">$—</div>
+        <div class="gem__d" id="gemd">cooking quietly in the underground</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKET -->
+  <section class="sec">
+    <h2 class="sec__h">The Street <small>// market mood</small></h2>
+    <div class="bento" id="bento"></div>
+    <div class="wanted" id="wanted">
+      <div class="wanted__badge">💀</div>
+      <div class="wanted__txt">
+        <div class="wanted__h">Wanted · dead on your feed</div>
+        <div class="wanted__sym" id="wsym">$—</div>
+        <div class="wanted__crime" id="wcrime">on the run for crimes against your engagement</div>
+      </div>
+      <div class="wanted__reward"><div class="rl">Bounty</div><div class="rv" id="wreward">—</div><div class="rl" style="margin-top:4px">do NOT post</div></div>
+    </div>
+  </section>
+
+  <!-- BOARD -->
+  <section class="sec">
+    <h2 class="sec__h">The Board <small>// what's pumpin'</small></h2>
+    <p class="sec__sub">Green = cop it before the normies. Red = washed, everybody's already postin' it.</p>
+    <div class="controls" id="controls">
+      <button class="filt on" data-f="all">All</button>
+      <button class="filt" data-f="buy">🟢 Cop (Buy)</button>
+      <button class="filt" data-f="dump">🔴 Dump</button>
+      <button class="filt" data-f="emerging">✨ Fresh off the block</button>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="board" id="board"></div>
+  </section>
+
+  <footer class="foot">
+    <div class="motd">// TrendHustler · the streets never sleep</div>
+    <div style="margin-bottom:14px">
+      <a href="mcp/" style="font-family:var(--mono);font-size:13px;color:var(--green);border:1px solid var(--border-g);padding:8px 18px;display:inline-flex;gap:8px;align-items:center;text-decoration:none;transition:all .2s var(--ease)" onmouseover="this.style.background='var(--green-dim)'" onmouseout="this.style.background='transparent'">
+        🔌 <strong>Connect to Claude Code &amp; Antigravity</strong> — MCP server setup
+      </a>
+    </div>
+    <div>Powered by <span id="srclist"></span> plugs. No keys, no Apify, all hustle.</div>
+    <div class="src" id="srcchips"></div>
+    <div class="dis">Not financial advice. Obviously. It's trend advice, playa. Cop responsibly.</div>
+  </footer>
+</main>
+
+<button class="snd" id="snd" aria-label="Toggle sound" title="Toggle dealer sounds">🔇</button>
+
+<script>
+const RAW = /*__DATA__*/{
+  "meta": {
+    "app": "TrendHustler",
+    "tagline": "Your plug for AI trends nobody's seen yet.",
+    "generatedAt": "2026-05-31T13:01:54.866Z",
+    "windows": {
+      "nowDays": 2,
+      "baseDays": 7
+    },
+    "sources": [
+      {
+        "key": "hackernews",
+        "camp": "dev",
+        "weight": 1,
+        "label": "Hacker News"
+      },
+      {
+        "key": "github",
+        "camp": "dev",
+        "weight": 1.6,
+        "label": "GitHub"
+      },
+      {
+        "key": "arxiv",
+        "camp": "dev",
+        "weight": 1.3,
+        "label": "arXiv"
+      },
+      {
+        "key": "huggingface",
+        "camp": "dev",
+        "weight": 1.3,
+        "label": "Hugging Face"
+      },
+      {
+        "key": "devto",
+        "camp": "dev",
+        "weight": 0.6,
+        "label": "Dev.to"
+      },
+      {
+        "key": "reddit",
+        "camp": "dev",
+        "weight": 1.1,
+        "label": "Reddit"
+      },
+      {
+        "key": "producthunt",
+        "camp": "dev",
+        "weight": 0.7,
+        "label": "Product Hunt"
+      },
+      {
+        "key": "youtube",
+        "camp": "mainstream",
+        "weight": 0.5,
+        "label": "YouTube"
+      },
+      {
+        "key": "googlenews",
+        "camp": "mainstream",
+        "weight": 1,
+        "label": "Google News"
+      }
+    ],
+    "runtimeMs": 12024
+  },
+  "market": {
+    "generatedAt": "2026-05-31T13:01:54.866Z",
+    "totalTickers": 50,
+    "counts": {
+      "STRONG_BUY": 7,
+      "BUY": 25,
+      "HOLD": 2,
+      "SELL": 15,
+      "RUG": 1
+    },
+    "fearGreed": 38,
+    "sentiment": "FEAR",
+    "hottestGem": {
+      "symbol": "GRAPHRAG",
+      "label": "GraphRAG"
+    },
+    "topMover": {
+      "symbol": "QUANT",
+      "label": "Quantization",
+      "change": 81
+    },
+    "biggestDump": {
+      "symbol": "SAFETY",
+      "label": "AI Safety / Alignment",
+      "change": -52
+    }
+  },
+  "tickers": [
+    {
+      "symbol": "CLAUDE",
+      "label": "Claude / Anthropic",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 49,
+      "saturationPct": 10,
+      "devVelocityPct": 49,
+      "hypeVelocityPct": 34,
+      "postingWindowDays": 13,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 19,
+        "devto": 14,
+        "reddit": 35
+      },
+      "news": {
+        "now": 40,
+        "base": 57
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Mystery company accidentally blew $500M on Claude AI in a single month",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mystery-company-accidentally-blew-usd500-million-on-claude-in-a-single-month-failed-to-put-usage-limit-on-licenses-for-employees",
+          "points": 21
+        },
+        {
+          "source": "hackernews",
+          "title": "Claude Opus 4.8 distilled Alibaba Qwen models",
+          "url": "https://twitter.com/maxforai/status/2060053228566495410",
+          "points": 20
+        },
+        {
+          "source": "hackernews",
+          "title": "Mystery company accidentally blew $500M on Claude AI in a single month",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mystery-company-accidentally-blew-usd500-million-on-claude-in-a-single-month-failed-to-put-usage-limit-on-licenses-for-employees",
+          "points": 11
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Lite-Harness – Self-Hosted Cursor Agents (Use Claude Code/OpenCode)",
+          "url": "https://github.com/LiteLLM-Labs/lite-harness",
+          "points": 6
+        },
+        {
+          "source": "hackernews",
+          "title": "Researchers let AI models run a simulated society; Claude safest, Grok extinct",
+          "url": "https://tech.yahoo.com/ai/claude/articles/researchers-let-ai-models-run-070300865.html",
+          "points": 5
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Jynx, a matchmaking app to find gaming teammates",
+          "url": "https://jynx.app/",
+          "points": 4
+        }
+      ],
+      "price": 9999
+    },
+    {
+      "symbol": "AGENTS",
+      "label": "AI Agents",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 38,
+      "saturationPct": 11,
+      "devVelocityPct": 35,
+      "hypeVelocityPct": 46,
+      "postingWindowDays": 10,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 39,
+        "github": 1,
+        "devto": 23,
+        "reddit": 6,
+        "youtube": 16
+      },
+      "news": {
+        "now": 36,
+        "base": 42
+      },
+      "evidence": [
+        {
+          "source": "github",
+          "title": "DannyMac180/skills",
+          "url": "https://github.com/DannyMac180/skills",
+          "points": 159
+        },
+        {
+          "source": "hackernews",
+          "title": "Robinhood now lets your AI agents trade stocks",
+          "url": "https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/",
+          "points": 109
+        },
+        {
+          "source": "hackernews",
+          "title": "40% of Enterprises Will Demote or Decommission Autonomous AI Agents",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure",
+          "points": 19
+        },
+        {
+          "source": "hackernews",
+          "title": "Ask HN: What are your worst war stories bringing agentic applications into prod",
+          "url": "https://news.ycombinator.com/item?id=48342441",
+          "points": 8
+        },
+        {
+          "source": "hackernews",
+          "title": "Overworked AI Agents Turn Marxist, Researchers Find",
+          "url": "https://www.wired.com/story/overworked-ai-agents-turn-marxist-study/",
+          "points": 7
+        },
+        {
+          "source": "hackernews",
+          "title": "Memory as Action: Autonomous Context Curation for Long-Horizon Agentic Tasks",
+          "url": "https://arxiv.org/abs/2510.12635",
+          "points": 5
+        }
+      ],
+      "price": 9709
+    },
+    {
+      "symbol": "EVALS",
+      "label": "Evals & Benchmarks",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -31,
+      "saturationPct": 0,
+      "devVelocityPct": -31,
+      "hypeVelocityPct": -2,
+      "postingWindowDays": 60,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 11,
+        "huggingface": 12,
+        "devto": 8,
+        "reddit": 9
+      },
+      "news": {
+        "now": 0,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "deepseek-ai/DeepSeek-V4-Pro",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+          "points": 4480
+        },
+        {
+          "source": "huggingface",
+          "title": "google/gemma-4-31B-it",
+          "url": "https://huggingface.co/google/gemma-4-31B-it",
+          "points": 2829
+        },
+        {
+          "source": "huggingface",
+          "title": "facebook/sam3",
+          "url": "https://huggingface.co/facebook/sam3",
+          "points": 2098
+        },
+        {
+          "source": "huggingface",
+          "title": "Qwen/Qwen3.6-35B-A3B",
+          "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+          "points": 1955
+        },
+        {
+          "source": "huggingface",
+          "title": "Qwen/Qwen3.6-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+          "points": 1544
+        },
+        {
+          "source": "huggingface",
+          "title": "moonshotai/Kimi-K2.6",
+          "url": "https://huggingface.co/moonshotai/Kimi-K2.6",
+          "points": 1376
+        }
+      ],
+      "price": 7519
+    },
+    {
+      "symbol": "QWEN",
+      "label": "Qwen",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 61,
+      "saturationPct": 1,
+      "devVelocityPct": 63,
+      "hypeVelocityPct": -13,
+      "postingWindowDays": 60,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 2,
+        "huggingface": 20,
+        "devto": 2,
+        "reddit": 10
+      },
+      "news": {
+        "now": 2,
+        "base": 16
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "Qwen/Qwen3.6-35B-A3B",
+          "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+          "points": 1955
+        },
+        {
+          "source": "huggingface",
+          "title": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+          "url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+          "points": 1553
+        },
+        {
+          "source": "huggingface",
+          "title": "Qwen/Qwen3.6-27B",
+          "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
+          "points": 1544
+        },
+        {
+          "source": "huggingface",
+          "title": "HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+          "points": 1438
+        },
+        {
+          "source": "huggingface",
+          "title": "unsloth/Qwen3.6-35B-A3B-GGUF",
+          "url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF",
+          "points": 1149
+        },
+        {
+          "source": "huggingface",
+          "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "points": 1136
+        }
+      ],
+      "price": 7451
+    },
+    {
+      "symbol": "LOCALLLM",
+      "label": "Local / On-device LLMs",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 74,
+      "saturationPct": 1,
+      "devVelocityPct": 77,
+      "hypeVelocityPct": -9,
+      "postingWindowDays": 60,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 3,
+        "huggingface": 14,
+        "devto": 4,
+        "reddit": 6,
+        "youtube": 2
+      },
+      "news": {
+        "now": 0,
+        "base": 9
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "openbmb/MiniCPM-V-4.6",
+          "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+          "points": 1080
+        },
+        {
+          "source": "huggingface",
+          "title": "Supertone/supertonic-3",
+          "url": "https://huggingface.co/Supertone/supertonic-3",
+          "points": 750
+        },
+        {
+          "source": "huggingface",
+          "title": "openbmb/MiniCPM5-1B",
+          "url": "https://huggingface.co/openbmb/MiniCPM5-1B",
+          "points": 639
+        },
+        {
+          "source": "huggingface",
+          "title": "froggeric/Qwen-Fixed-Chat-Templates",
+          "url": "https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates",
+          "points": 461
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.5-9B-Coder-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-GGUF",
+          "points": 223
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.6-27B-v2-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-v2-GGUF",
+          "points": 188
+        }
+      ],
+      "price": 6450
+    },
+    {
+      "symbol": "QUANT",
+      "label": "Quantization",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 81,
+      "saturationPct": 0,
+      "devVelocityPct": 82,
+      "hypeVelocityPct": -6,
+      "postingWindowDays": 60,
+      "confidence": "high",
+      "breakdown": {
+        "huggingface": 17,
+        "devto": 2,
+        "reddit": 2
+      },
+      "news": {
+        "now": 0,
+        "base": 3
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "SulphurAI/Sulphur-2-base",
+          "url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+          "points": 1464
+        },
+        {
+          "source": "huggingface",
+          "title": "HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
+          "points": 1438
+        },
+        {
+          "source": "huggingface",
+          "title": "unsloth/Qwen3.6-35B-A3B-GGUF",
+          "url": "https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF",
+          "points": 1149
+        },
+        {
+          "source": "huggingface",
+          "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "points": 1136
+        },
+        {
+          "source": "huggingface",
+          "title": "HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+          "points": 706
+        },
+        {
+          "source": "huggingface",
+          "title": "unsloth/Qwen3.6-27B-MTP-GGUF",
+          "url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
+          "points": 573
+        }
+      ],
+      "price": 5911
+    },
+    {
+      "symbol": "MULTIMODAL",
+      "label": "Multimodal / VLM",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 11,
+      "saturationPct": 4,
+      "devVelocityPct": 11,
+      "hypeVelocityPct": 7,
+      "postingWindowDays": 37,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 3,
+        "huggingface": 13,
+        "reddit": 1
+      },
+      "news": {
+        "now": 5,
+        "base": 12
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "points": 1136
+        },
+        {
+          "source": "huggingface",
+          "title": "openbmb/MiniCPM-V-4.6",
+          "url": "https://huggingface.co/openbmb/MiniCPM-V-4.6",
+          "points": 1080
+        },
+        {
+          "source": "huggingface",
+          "title": "bytedance-research/Lance",
+          "url": "https://huggingface.co/bytedance-research/Lance",
+          "points": 987
+        },
+        {
+          "source": "huggingface",
+          "title": "HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+          "points": 706
+        },
+        {
+          "source": "huggingface",
+          "title": "NemoStation/Marlin-2B",
+          "url": "https://huggingface.co/NemoStation/Marlin-2B",
+          "points": 461
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.5-9B-Coder-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-GGUF",
+          "points": 223
+        }
+      ],
+      "price": 5478
+    },
+    {
+      "symbol": "GPT",
+      "label": "GPT / OpenAI",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 46,
+      "saturationPct": 1,
+      "devVelocityPct": 46,
+      "hypeVelocityPct": 8,
+      "postingWindowDays": 37,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "devto": 6,
+        "reddit": 13,
+        "youtube": 1
+      },
+      "news": {
+        "now": 1,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: 3 of Minutes of AI Anime Based on Korean Comics [video]",
+          "url": "https://www.youtube.com/watch?v=OfkTGCVk-RQ",
+          "points": 2
+        },
+        {
+          "source": "devto",
+          "title": "My website has two audiences now. I only built for one of them.",
+          "url": "https://dev.to/earlgreyhot1701d/my-website-has-two-audiences-now-i-only-built-for-one-of-them-136m",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Anthropic Claude 4 API vs OpenAI GPT-4.1 API: DX, Pricing and Hidden Gotchas (2026)",
+          "url": "https://dev.to/ayinedjimi-consultants/anthropic-claude-4-api-vs-openai-gpt-41-api-dx-pricing-and-hidden-gotchas-2026-1hf7",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "How I built a World Cup prediction app with 0 frameworks, 100% privacy, and hit #1 on ChatGPT",
+          "url": "https://dev.to/aviatorpo/title-how-i-built-a-world-cup-prediction-app-with-0-frameworks-100-privacy-and-hit-1-on-chatgpt-38bp",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "**Mastering the Art of Conversation: Expert ChatGPT Tips**",
+          "url": "https://dev.to/talha_yeasinantor_772e5e/mastering-the-art-of-conversation-expert-chatgpt-tips-2glb",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Stop Pasting Your Code Into ChatGPT For Debugging—Run LLMs Locally Instead",
+          "url": "https://dev.to/learnairesource/stop-pasting-your-code-into-chatgpt-for-debugging-run-llms-locally-instead-3lkp",
+          "points": 0
+        }
+      ],
+      "price": 5126
+    },
+    {
+      "symbol": "OPUS48",
+      "label": "Opus 4.8",
+      "emerging": true,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 64,
+      "saturationPct": 28,
+      "devVelocityPct": 85,
+      "hypeVelocityPct": 20,
+      "postingWindowDays": 13,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 2,
+        "devto": 3,
+        "reddit": 9
+      },
+      "news": {
+        "now": 30,
+        "base": 62
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Claude Opus 4.8 distilled Alibaba Qwen models",
+          "url": "https://twitter.com/maxforai/status/2060053228566495410",
+          "points": 20
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Formally verified polygon intersection – Opus 4.8 oneshots, prev failed",
+          "url": "https://github.com/schildep/verified-polygon-intersection",
+          "points": 2
+        },
+        {
+          "source": "devto",
+          "title": "Claude Opus 4.8: Parallel-Subagent Dynamic Workflows",
+          "url": "https://dev.to/pueding/claude-opus-48-parallel-subagent-dynamic-workflows-19f7",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Opus 4.8 barely moved the leaderboard. It moved the one number that decides if your agents can be trusted.",
+          "url": "https://dev.to/mjmirza/opus-48-barely-moved-the-leaderboard-it-moved-the-one-number-that-decides-if-your-agents-can-be-589d",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Opus 4.8, Qwen, DeepSeek, and a Claude Code Failure: What I Could Actually Reproduce",
+          "url": "https://dev.to/member_0af6418a/opus-48-qwen-deepseek-and-a-claude-code-failure-what-i-could-actually-reproduce-2chl",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "DeepSWE Opus 4.8 results have been released.",
+          "url": "https://www.reddit.com/r/singularity/comments/1ts32d2/deepswe_opus_48_results_have_been_released/",
+          "points": 0
+        }
+      ],
+      "price": 5117
+    },
+    {
+      "symbol": "CODEGEN",
+      "label": "AI Coding / SWE Agents",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 13,
+      "saturationPct": 1,
+      "devVelocityPct": 14,
+      "hypeVelocityPct": -4,
+      "postingWindowDays": 60,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 15,
+        "devto": 2,
+        "reddit": 1
+      },
+      "news": {
+        "now": 1,
+        "base": 6
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: Komi-learn – continuous memory and self-improvement for coding agents",
+          "url": "https://github.com/kurikomi-labs/komi-learn",
+          "points": 17
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: VT Code – open-source terminal coding agent in Rust",
+          "url": "https://github.com/vinhnx/VTCode",
+          "points": 16
+        },
+        {
+          "source": "hackernews",
+          "title": "Zerostack v1.3.4 released – Lightweight Unix-inspired coding agent",
+          "url": "https://crates.io/crates/zerostack/1.3.4",
+          "points": 12
+        },
+        {
+          "source": "hackernews",
+          "title": "A zot extension that makes answering your coding agent's questions painless",
+          "url": "https://github.com/patriceckhart/zot-answer",
+          "points": 9
+        },
+        {
+          "source": "hackernews",
+          "title": "Zerostack v1.3.4 released – Lightweight Unix-like coding agent",
+          "url": "https://github.com/gi-dellav/zerostack/releases/tag/v1.3.4",
+          "points": 6
+        },
+        {
+          "source": "hackernews",
+          "title": "Nesbitt: Protestware for Coding Agents",
+          "url": "https://lwn.net/Articles/1075315/",
+          "points": 6
+        }
+      ],
+      "price": 4896
+    },
+    {
+      "symbol": "FINETUNE",
+      "label": "Fine-tuning / LoRA",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 4,
+      "saturationPct": 1,
+      "devVelocityPct": 4,
+      "hypeVelocityPct": -3,
+      "postingWindowDays": 60,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "huggingface": 4,
+        "devto": 2,
+        "reddit": 9
+      },
+      "news": {
+        "now": 1,
+        "base": 5
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.5-9B-Coder-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-GGUF",
+          "points": 223
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.6-27B-v2-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-v2-GGUF",
+          "points": 188
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.6-27B-v2-MTP-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-v2-MTP-GGUF",
+          "points": 174
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.5-9B-Coder-MTP-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-MTP-GGUF",
+          "points": 123
+        },
+        {
+          "source": "hackernews",
+          "title": "I spent a year building agent memory on knowledge graphs. Here are my 5 mistakes",
+          "url": "https://news.ycombinator.com/item?id=48337689",
+          "points": 3
+        },
+        {
+          "source": "devto",
+          "title": "DISC-LawLLM: Fine-tuning Large Language Models for Intelligent Legal Services",
+          "url": "https://dev.to/paperium/disc-lawllm-fine-tuning-large-language-models-for-intelligent-legal-services-kci",
+          "points": 0
+        }
+      ],
+      "price": 4896
+    },
+    {
+      "symbol": "GEMINI",
+      "label": "Gemini",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 15,
+      "saturationPct": 41,
+      "devVelocityPct": 2,
+      "hypeVelocityPct": 36,
+      "postingWindowDays": 6,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 2,
+        "devto": 2,
+        "reddit": 5
+      },
+      "news": {
+        "now": 34,
+        "base": 43
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Apple working to cram Gemini model into iPhone to power new Siri",
+          "url": "https://arstechnica.com/ai/2026/05/apple-reportedly-trying-to-distill-googles-multi-trillion-parameter-gemini-ai-to-run-on-iphone/",
+          "points": 5
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: 3 of Minutes of AI Anime Based on Korean Comics [video]",
+          "url": "https://www.youtube.com/watch?v=OfkTGCVk-RQ",
+          "points": 2
+        },
+        {
+          "source": "devto",
+          "title": "Claude vs Gemini Across 4 Security Domains: A Dead Heat — and the Hardening 63% of AI Code Skips",
+          "url": "https://dev.to/ofri-peretz/claude-vs-gemini-across-4-security-domains-a-dead-heat-and-the-hardening-63-of-ai-code-skips-mpp",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "AIChain!? Why Another LLM Library?",
+          "url": "https://dev.to/yait/aichain-why-another-llm-library-5gbn",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Event like spiking neuron lib that fits into the CPU cache [P]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1trq5o3/event_like_spiking_neuron_lib_that_fits_into_the/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Why is no one talking about Mimo V2.5 (non-pro)",
+          "url": "https://www.reddit.com/r/singularity/comments/1trkfo4/why_is_no_one_talking_about_mimo_v25_nonpro/",
+          "points": 0
+        }
+      ],
+      "price": 4509
+    },
+    {
+      "symbol": "CONTEXT",
+      "label": "Long Context",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 61,
+      "saturationPct": 0,
+      "devVelocityPct": 62,
+      "hypeVelocityPct": -4,
+      "postingWindowDays": 60,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 1,
+        "huggingface": 5,
+        "devto": 4,
+        "reddit": 3
+      },
+      "news": {
+        "now": 0,
+        "base": 2
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "openbmb/MiniCPM5-1B",
+          "url": "https://huggingface.co/openbmb/MiniCPM5-1B",
+          "points": 639
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.6-27B-v2-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-v2-GGUF",
+          "points": 188
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.6-27B-v2-MTP-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-v2-MTP-GGUF",
+          "points": 174
+        },
+        {
+          "source": "huggingface",
+          "title": "openbmb/MiniCPM5-1B-GGUF",
+          "url": "https://huggingface.co/openbmb/MiniCPM5-1B-GGUF",
+          "points": 124
+        },
+        {
+          "source": "huggingface",
+          "title": "jedisct1/MiMo-V2.5-coder-Q2",
+          "url": "https://huggingface.co/jedisct1/MiMo-V2.5-coder-Q2",
+          "points": 65
+        },
+        {
+          "source": "hackernews",
+          "title": "I spent a year building agent memory on knowledge graphs. Here are my 5 mistakes",
+          "url": "https://news.ycombinator.com/item?id=48337689",
+          "points": 3
+        }
+      ],
+      "price": 4256
+    },
+    {
+      "symbol": "MOE",
+      "label": "Mixture of Experts",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 61,
+      "saturationPct": 0,
+      "devVelocityPct": 62,
+      "hypeVelocityPct": -2,
+      "postingWindowDays": 60,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 3,
+        "huggingface": 4,
+        "reddit": 4
+      },
+      "news": {
+        "now": 0,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "points": 1136
+        },
+        {
+          "source": "hackernews",
+          "title": "Liquid AI reveals 8B-A1B MoE trained on 38T",
+          "url": "https://www.liquid.ai/blog/lfm2-5-8b-a1b",
+          "points": 242
+        },
+        {
+          "source": "huggingface",
+          "title": "stepfun-ai/Step-3.7-Flash",
+          "url": "https://huggingface.co/stepfun-ai/Step-3.7-Flash",
+          "points": 147
+        },
+        {
+          "source": "huggingface",
+          "title": "stepfun-ai/Step-3.7-Flash-GGUF",
+          "url": "https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF",
+          "points": 67
+        },
+        {
+          "source": "huggingface",
+          "title": "jedisct1/MiMo-V2.5-coder-Q2",
+          "url": "https://huggingface.co/jedisct1/MiMo-V2.5-coder-Q2",
+          "points": 65
+        },
+        {
+          "source": "hackernews",
+          "title": "Rotary GPU: Exploring Local Execution for Large MoE Models Under Limited VRAM",
+          "url": "https://arxiv.org/abs/2605.29135",
+          "points": 39
+        }
+      ],
+      "price": 4158
+    },
+    {
+      "symbol": "IMAGEGEN",
+      "label": "AI Image Generation",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 49,
+      "saturationPct": 3,
+      "devVelocityPct": 53,
+      "hypeVelocityPct": -5,
+      "postingWindowDays": 60,
+      "confidence": "medium",
+      "breakdown": {
+        "huggingface": 5,
+        "reddit": 5
+      },
+      "news": {
+        "now": 2,
+        "base": 10
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "black-forest-labs/FLUX.1-dev",
+          "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+          "points": 12972
+        },
+        {
+          "source": "huggingface",
+          "title": "microsoft/Lens",
+          "url": "https://huggingface.co/microsoft/Lens",
+          "points": 146
+        },
+        {
+          "source": "huggingface",
+          "title": "microsoft/Lens-Turbo",
+          "url": "https://huggingface.co/microsoft/Lens-Turbo",
+          "points": 131
+        },
+        {
+          "source": "huggingface",
+          "title": "prism-ml/bonsai-image-ternary-4B-gemlite-2bit",
+          "url": "https://huggingface.co/prism-ml/bonsai-image-ternary-4B-gemlite-2bit",
+          "points": 66
+        },
+        {
+          "source": "huggingface",
+          "title": "prism-ml/bonsai-image-ternary-4B-mlx-2bit",
+          "url": "https://huggingface.co/prism-ml/bonsai-image-ternary-4B-mlx-2bit",
+          "points": 46
+        },
+        {
+          "source": "reddit",
+          "title": "Should I buy this RTX 2060 12GB graphics card at around $260 for AI purpose ?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tsp869/should_i_buy_this_rtx_2060_12gb_graphics_card_at/",
+          "points": 0
+        }
+      ],
+      "price": 4119
+    },
+    {
+      "symbol": "ARTIFICIALIN",
+      "label": "Artificial Intelligence",
+      "emerging": true,
+      "stage": "SATURATED",
+      "signal": "SELL",
+      "dailyChangePct": 65,
+      "saturationPct": 90,
+      "devVelocityPct": 31,
+      "hypeVelocityPct": 62,
+      "postingWindowDays": 0,
+      "confidence": "high",
+      "breakdown": {
+        "reddit": 1,
+        "youtube": 3
+      },
+      "news": {
+        "now": 51,
+        "base": 25
+      },
+      "evidence": [
+        {
+          "source": "reddit",
+          "title": "What's the most beneficial thing artificial intelligence has done for you, and how has it made a big difference in your life? 🤖🌟✨💫",
+          "url": "https://www.reddit.com/r/artificial/comments/1tsfj9t/whats_the_most_beneficial_thing_artificial/",
+          "points": 0
+        }
+      ],
+      "price": 3806
+    },
+    {
+      "symbol": "DEEPSEEK",
+      "label": "DeepSeek",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 29,
+      "saturationPct": 5,
+      "devVelocityPct": 34,
+      "hypeVelocityPct": -10,
+      "postingWindowDays": 60,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 2,
+        "huggingface": 3,
+        "devto": 2,
+        "reddit": 2
+      },
+      "news": {
+        "now": 3,
+        "base": 18
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "deepseek-ai/DeepSeek-V4-Pro",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+          "points": 4480
+        },
+        {
+          "source": "huggingface",
+          "title": "deepseek-ai/DeepSeek-V4-Flash",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+          "points": 1312
+        },
+        {
+          "source": "huggingface",
+          "title": "nvidia/DeepSeek-V4-Pro-NVFP4",
+          "url": "https://huggingface.co/nvidia/DeepSeek-V4-Pro-NVFP4",
+          "points": 39
+        },
+        {
+          "source": "hackernews",
+          "title": "China Limits Overseas Travel for AI Talent at DeepSeek, Alibaba, Private Firms",
+          "url": "https://www.bloomberg.com/news/articles/2026-05-26/china-expands-travel-curbs-to-top-ai-talent-at-private-firms",
+          "points": 10
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Train Claude Code's replacement (ds4 and pi and aoe)",
+          "url": "https://github.com/njbrake/dotpi/tree/main",
+          "points": 3
+        },
+        {
+          "source": "devto",
+          "title": "Opus 4.8, Qwen, DeepSeek, and a Claude Code Failure: What I Could Actually Reproduce",
+          "url": "https://dev.to/member_0af6418a/opus-48-qwen-deepseek-and-a-claude-code-failure-what-i-could-actually-reproduce-2chl",
+          "points": 0
+        }
+      ],
+      "price": 3676
+    },
+    {
+      "symbol": "RAG",
+      "label": "Retrieval-Augmented Gen",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 22,
+      "saturationPct": 3,
+      "devVelocityPct": 21,
+      "hypeVelocityPct": 8,
+      "postingWindowDays": 36,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "huggingface": 1,
+        "devto": 12,
+        "youtube": 1
+      },
+      "news": {
+        "now": 1,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "numind/NuExtract3",
+          "url": "https://huggingface.co/numind/NuExtract3",
+          "points": 207
+        },
+        {
+          "source": "hackernews",
+          "title": "RAG demo for New Zealand residential tenancy law",
+          "url": "https://tenancy.localrun.ai",
+          "points": 4
+        },
+        {
+          "source": "devto",
+          "title": "The .txt File as the Soul of a Personal AI — FileRAG Memory Architecture",
+          "url": "https://dev.to/dharanidh75/the-txt-file-as-the-soul-of-a-personal-ai-filerag-memory-architecture-k71",
+          "points": 2
+        },
+        {
+          "source": "devto",
+          "title": "Progressive Distillation",
+          "url": "https://dev.to/neuml/progressive-distillation-341i",
+          "points": 1
+        },
+        {
+          "source": "devto",
+          "title": "GraphRAG vs Vector RAG: When Simple Vector Search Stops Being Enough",
+          "url": "https://dev.to/poniak-labs/graphrag-vs-vector-rag-when-simple-vector-search-stops-being-enough-1p7l",
+          "points": 1
+        },
+        {
+          "source": "devto",
+          "title": "Building AshaPulse — An AI-Powered Health Assistant for India's Frontline Warriors",
+          "url": "https://dev.to/priyanshu79/building-ashapulse-an-ai-powered-health-assistant-for-indias-frontline-warriors-5124",
+          "points": 0
+        }
+      ],
+      "price": 3663
+    },
+    {
+      "symbol": "ROBOTICS",
+      "label": "Robotics / Embodied AI",
+      "emerging": false,
+      "stage": "PEAKING",
+      "signal": "HOLD",
+      "dailyChangePct": 30,
+      "saturationPct": 53,
+      "devVelocityPct": 26,
+      "hypeVelocityPct": 27,
+      "postingWindowDays": 4,
+      "confidence": "high",
+      "breakdown": {
+        "devto": 2,
+        "reddit": 3
+      },
+      "news": {
+        "now": 28,
+        "base": 46
+      },
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "Why robotics RL training pipelines fail at scale",
+          "url": "https://dev.to/robosynx/why-robotics-rl-training-pipelines-fail-at-scale-5j8",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "The Most Used Technology in the World Has Zero Marketing and Product People",
+          "url": "https://dev.to/himanshu_kumar_8d8c6d1525/the-most-used-technology-in-the-world-has-zero-marketing-and-product-people-388b",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Before we spend months processing open-source robotics datasets, tell us why this is a bad idea [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1tryf0a/before_we_spend_months_processing_opensource/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Open-weights VLA hits 80%+ task progress on 4 of 17 real-robot tasks with zero fine-tuning. Demo reel attached",
+          "url": "https://www.reddit.com/r/singularity/comments/1tsnrkh/openweights_vla_hits_80_task_progress_on_4_of_17/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Booster Robotics from Beijing came out to show off their humanoid robots can play as well",
+          "url": "https://www.reddit.com/r/singularity/comments/1tr4seo/booster_robotics_from_beijing_came_out_to_show/",
+          "points": 0
+        }
+      ],
+      "price": 3620
+    },
+    {
+      "symbol": "CLAUDEOPUS",
+      "label": "Claude Opus",
+      "emerging": true,
+      "stage": "PEAKING",
+      "signal": "HOLD",
+      "dailyChangePct": 39,
+      "saturationPct": 46,
+      "devVelocityPct": 67,
+      "hypeVelocityPct": 9,
+      "postingWindowDays": 12,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "devto": 1,
+        "reddit": 3
+      },
+      "news": {
+        "now": 23,
+        "base": 64
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Claude Opus 4.8 distilled Alibaba Qwen models",
+          "url": "https://twitter.com/maxforai/status/2060053228566495410",
+          "points": 20
+        },
+        {
+          "source": "devto",
+          "title": "Claude Opus 4.8: Parallel-Subagent Dynamic Workflows",
+          "url": "https://dev.to/pueding/claude-opus-48-parallel-subagent-dynamic-workflows-19f7",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "AGI is here | Claude Opus 4.6 Max vs. the calendar",
+          "url": "https://www.reddit.com/r/OpenAI/comments/1tstp3q/agi_is_here_claude_opus_46_max_vs_the_calendar/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Weekly AI roundup (May 23–30, 2026): Claude Opus 4.8 Fast Mode 3x cheaper, Qwen 3.7 Max beats Claude at half the price, ChatGPT moves into Excel",
+          "url": "https://www.reddit.com/r/artificial/comments/1trz2pd/weekly_ai_roundup_may_2330_2026_claude_opus_48/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Claude Opus 4.8 getting a little fed up with Anthropic's training",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1tsh6x6/claude_opus_48_getting_a_little_fed_up_with/",
+          "points": 0
+        }
+      ],
+      "price": 3524
+    },
+    {
+      "symbol": "SORA",
+      "label": "AI Video Generation",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 43,
+      "saturationPct": 6,
+      "devVelocityPct": 50,
+      "hypeVelocityPct": -8,
+      "postingWindowDays": 60,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 1,
+        "huggingface": 3,
+        "reddit": 3
+      },
+      "news": {
+        "now": 3,
+        "base": 16
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "SulphurAI/Sulphur-2-base",
+          "url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+          "points": 1464
+        },
+        {
+          "source": "huggingface",
+          "title": "Lightricks/LTX-2.3",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3",
+          "points": 1293
+        },
+        {
+          "source": "huggingface",
+          "title": "meituan-longcat/LongCat-Video-Avatar-1.5",
+          "url": "https://huggingface.co/meituan-longcat/LongCat-Video-Avatar-1.5",
+          "points": 426
+        },
+        {
+          "source": "hackernews",
+          "title": "FYI: Dreamina is shady; do not use",
+          "url": "https://news.ycombinator.com/item?id=48327706",
+          "points": 5
+        },
+        {
+          "source": "reddit",
+          "title": "Arena.ai is running possibly the most fraudulent benchmark thus far",
+          "url": "https://www.reddit.com/r/singularity/comments/1tslcms/arenaai_is_running_possibly_the_most_fraudulent/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Does RAM speed matter?",
+          "url": "https://www.reddit.com/r/StableDiffusion/comments/1tsir6n/does_ram_speed_matter/",
+          "points": 0
+        }
+      ],
+      "price": 3465
+    },
+    {
+      "symbol": "MCP",
+      "label": "Model Context Protocol",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 5,
+      "saturationPct": 2,
+      "devVelocityPct": 8,
+      "hypeVelocityPct": -15,
+      "postingWindowDays": 60,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 3,
+        "devto": 3,
+        "reddit": 3
+      },
+      "news": {
+        "now": 1,
+        "base": 13
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: Jynx, a matchmaking app to find gaming teammates",
+          "url": "https://jynx.app/",
+          "points": 4
+        },
+        {
+          "source": "hackernews",
+          "title": "The 2026-07-28 MCP Specification Release Candidate",
+          "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: I built a native project management app that respects your privacy",
+          "url": "https://getmilestones.app/store/",
+          "points": 1
+        },
+        {
+          "source": "devto",
+          "title": "Atomic OTC is getting funded: a settlement-layer map for the agent economy",
+          "url": "https://dev.to/barissozen/atomic-otc-is-getting-funded-a-settlement-layer-map-for-the-agent-economy-nj1",
+          "points": 1
+        },
+        {
+          "source": "devto",
+          "title": "🚀 I Built Trade MCP: Remote MCP Server for Crypto Tools and Safer AI Trading Workflows",
+          "url": "https://dev.to/amals367/i-built-trade-mcp-remote-mcp-server-for-crypto-tools-and-safer-ai-trading-workflows-2m7h",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Compass v1.1.0 · we shipped a memory plugin that catches its own consumption drift",
+          "url": "https://dev.to/chunxiaoxx/compass-v110-we-shipped-a-memory-plugin-that-catches-its-own-consumption-drift-20b0",
+          "points": 0
+        }
+      ],
+      "price": 3373
+    },
+    {
+      "symbol": "MULTIAGENT",
+      "label": "Multi-Agent Systems",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -14,
+      "saturationPct": 7,
+      "devVelocityPct": -15,
+      "hypeVelocityPct": 1,
+      "postingWindowDays": 57,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 6,
+        "devto": 1,
+        "reddit": 1
+      },
+      "news": {
+        "now": 3,
+        "base": 10
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "I'm a photographer. I built a DSL for multi-agent workflows",
+          "url": "https://github.com/anhonestboy/agentflow",
+          "points": 5
+        },
+        {
+          "source": "hackernews",
+          "title": "Enhancing Multi-Agent Communication Through Attention Steering",
+          "url": "https://arxiv.org/abs/2605.30136",
+          "points": 4
+        },
+        {
+          "source": "hackernews",
+          "title": "Arch-Decision – A multi-agent architecture tool for Claude Code",
+          "url": "https://github.com/jsingh6/arch-decision",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "I spent a year building agent memory on knowledge graphs. Here are my 5 mistakes",
+          "url": "https://news.ycombinator.com/item?id=48337689",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "Agents-Collab.md – A live handoff protocol for multi-agent projects",
+          "url": "https://github.com/Rlealbarili/Agents-Collab.md",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: ClawChat – End-to-end encrypted coordination for multi-agent AI",
+          "url": "https://clawchat.live/",
+          "points": 2
+        }
+      ],
+      "price": 3365
+    },
+    {
+      "symbol": "TOOLCALL",
+      "label": "Tool / Function Calling",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 42,
+      "saturationPct": 0,
+      "devVelocityPct": 43,
+      "hypeVelocityPct": -2,
+      "postingWindowDays": 60,
+      "confidence": "medium",
+      "breakdown": {
+        "huggingface": 4,
+        "reddit": 2
+      },
+      "news": {
+        "now": 0,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.5-9B-Coder-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-GGUF",
+          "points": 223
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.6-27B-v2-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-v2-GGUF",
+          "points": 188
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.6-27B-v2-MTP-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-v2-MTP-GGUF",
+          "points": 174
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.5-9B-Coder-MTP-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.5-9B-Coder-MTP-GGUF",
+          "points": 123
+        },
+        {
+          "source": "reddit",
+          "title": "Best small model right now (~4B params) that is good with agentic tasks for personal assistant?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tskbf9/best_small_model_right_now_4b_params_that_is_good/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "STT -> LLM -> TTS pipeline",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ts0jjb/stt_llm_tts_pipeline/",
+          "points": 0
+        }
+      ],
+      "price": 3190
+    },
+    {
+      "symbol": "GROK",
+      "label": "Grok / xAI",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 31,
+      "saturationPct": 35,
+      "devVelocityPct": 40,
+      "hypeVelocityPct": 8,
+      "postingWindowDays": 18,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 2,
+        "devto": 2,
+        "reddit": 1
+      },
+      "news": {
+        "now": 13,
+        "base": 35
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Researchers let AI models run a simulated society; Claude safest, Grok extinct",
+          "url": "https://tech.yahoo.com/ai/claude/articles/researchers-let-ai-models-run-070300865.html",
+          "points": 5
+        },
+        {
+          "source": "hackernews",
+          "title": "Grok Imagine Video 1.5 Preview Tops Image-to-Video Arena",
+          "url": "https://arena.ai/leaderboard/image-to-video",
+          "points": 3
+        },
+        {
+          "source": "devto",
+          "title": "Moving Beyond the Context Window: The Agentic Memory Architecture",
+          "url": "https://dev.to/dhruvagg/moving-beyond-the-context-window-the-agentic-memory-architecture-2lgo",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "My AI Agent Kept Lying to Me. Then It Tried to Trick Me.",
+          "url": "https://dev.to/mariatanbobo/my-ai-agent-kept-lying-to-me-then-it-tried-to-trick-me-2hag",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Arena.ai is running possibly the most fraudulent benchmark thus far",
+          "url": "https://www.reddit.com/r/singularity/comments/1tslcms/arenaai_is_running_possibly_the_most_fraudulent/",
+          "points": 0
+        }
+      ],
+      "price": 3022
+    },
+    {
+      "symbol": "SAFETY",
+      "label": "AI Safety / Alignment",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -52,
+      "saturationPct": 62,
+      "devVelocityPct": -71,
+      "hypeVelocityPct": 24,
+      "postingWindowDays": 2,
+      "confidence": "high",
+      "breakdown": {
+        "huggingface": 1,
+        "devto": 1
+      },
+      "news": {
+        "now": 17,
+        "base": 27
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "sapientinc/HRM-Text-1B",
+          "url": "https://huggingface.co/sapientinc/HRM-Text-1B",
+          "points": 425
+        },
+        {
+          "source": "devto",
+          "title": "Why We Created a Specialized Catholic AI Chatbot and How We Solved the Faith-Alignment Problem",
+          "url": "https://dev.to/mactrixxr/why-we-created-a-specialized-catholic-ai-chatbot-and-how-we-solved-the-faith-alignment-problem-28b0",
+          "points": 0
+        }
+      ],
+      "price": 2613
+    },
+    {
+      "symbol": "16GB",
+      "label": "16gb",
+      "emerging": true,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 64,
+      "saturationPct": 2,
+      "devVelocityPct": 65,
+      "hypeVelocityPct": 2,
+      "postingWindowDays": 57,
+      "confidence": "medium",
+      "breakdown": {
+        "reddit": 4,
+        "youtube": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "reddit",
+          "title": "[PSA] 5060ti 16GB for $300.99. 5070ti 16GB for $699.99. Best Buy in store clearance.",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tse423/psa_5060ti_16gb_for_30099_5070ti_16gb_for_69999/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Fulloch V2: 100% Local Voice Assistant for Home Assistant & Obsidian (Runs on 16GB VRAM)",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1trw5ym/fulloch_v2_100_local_voice_assistant_for_home/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "[PSA] 5060ti 16GB for $300.99. 5070ti 16GB for $699.99. Best Buy in store clearance.",
+          "url": "https://www.reddit.com/r/StableDiffusion/comments/1tse4rl/psa_5060ti_16gb_for_30099_5070ti_16gb_for_69999/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Image to Image (5060TI 16GB/64GB RAM) Workflow Help:",
+          "url": "https://www.reddit.com/r/StableDiffusion/comments/1tsdbnz/image_to_image_5060ti_16gb64gb_ram_workflow_help/",
+          "points": 0
+        }
+      ],
+      "price": 2487
+    },
+    {
+      "symbol": "OPENWEIGHTS",
+      "label": "Open-Weight Models",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 1,
+      "saturationPct": 0,
+      "devVelocityPct": 3,
+      "hypeVelocityPct": -6,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1,
+        "reddit": 3
+      },
+      "news": {
+        "now": 0,
+        "base": 3
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Open models lag closed models by 4 months",
+          "url": "https://epoch.ai/data-insights/open-closed-eci-gap",
+          "points": 4
+        },
+        {
+          "source": "reddit",
+          "title": "Open-weights VLA hits 80%+ task progress on 4 of 17 real-robot tasks with zero fine-tuning. Demo reel attached",
+          "url": "https://www.reddit.com/r/singularity/comments/1tsnrkh/openweights_vla_hits_80_task_progress_on_4_of_17/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "G7 agrees on shared language around open-source AI, open weights AI",
+          "url": "https://www.reddit.com/r/artificial/comments/1trx8p4/g7_agrees_on_shared_language_around_opensource_ai/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "I ported Pixal3D to Apple Silicon",
+          "url": "https://www.reddit.com/r/StableDiffusion/comments/1ts82da/i_ported_pixal3d_to_apple_silicon/",
+          "points": 0
+        }
+      ],
+      "price": 2434
+    },
+    {
+      "symbol": "VIBECODERS",
+      "label": "Vibe Coders",
+      "emerging": true,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 59,
+      "saturationPct": 13,
+      "devVelocityPct": 61,
+      "hypeVelocityPct": 11,
+      "postingWindowDays": 27,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 2,
+        "devto": 1,
+        "reddit": 1
+      },
+      "news": {
+        "now": 3,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: AI command review drill for engineers and vibe coders",
+          "url": "https://www.proreview.dev/",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "Boogy: Production Infrastructure for Vibe Coders",
+          "url": "https://boogy.ai/",
+          "points": 2
+        },
+        {
+          "source": "devto",
+          "title": "The AI Superpower: How Vibe Coders Use OpenAPI as a Semantic Anchor",
+          "url": "https://dev.to/prasadmk/the-ai-superpower-how-vibe-coders-use-openapi-as-a-semantic-anchor-45kg",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Fed up with vibe coders, dev sneaks data-nuking prompt injection into their code",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1trdnap/fed_up_with_vibe_coders_dev_sneaks_datanuking/",
+          "points": 0
+        }
+      ],
+      "price": 2417
+    },
+    {
+      "symbol": "AGI",
+      "label": "AGI / Superintelligence",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 22,
+      "saturationPct": 24,
+      "devVelocityPct": 39,
+      "hypeVelocityPct": -9,
+      "postingWindowDays": 44,
+      "confidence": "medium",
+      "breakdown": {
+        "devto": 1,
+        "reddit": 2
+      },
+      "news": {
+        "now": 5,
+        "base": 26
+      },
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "Cognitive Architectures of AGI: 7 Patterns That Transform LLMs from Oracles into Thinkers",
+          "url": "https://dev.to/aeon_agent/cognitive-architectures-of-agi-7-patterns-that-transform-llms-from-oracles-into-thinkers-3f9l",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "AGI is here | Claude Opus 4.6 Max vs. the calendar",
+          "url": "https://www.reddit.com/r/OpenAI/comments/1tstp3q/agi_is_here_claude_opus_46_max_vs_the_calendar/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "We're almost there guys. AGI Soon",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1ts5gai/were_almost_there_guys_agi_soon/",
+          "points": 0
+        }
+      ],
+      "price": 2259
+    },
+    {
+      "symbol": "MEMORY",
+      "label": "Agent Memory",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 6,
+      "saturationPct": 0,
+      "devVelocityPct": 8,
+      "hypeVelocityPct": -8,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 3,
+        "devto": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: OWASP Agent Memory Guard – Stop AI Agent Memory Poisoning",
+          "url": "https://github.com/OWASP/www-project-agent-memory-guard",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "I spent a year building agent memory on knowledge graphs. Here are my 5 mistakes",
+          "url": "https://news.ycombinator.com/item?id=48337689",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "Lessons from Shipping Persistent Memory for AI Agents",
+          "url": "https://www.pingcap.com/blog/how-we-built-mem9-agent-memory-product/",
+          "points": 1
+        },
+        {
+          "source": "devto",
+          "title": "New Method Slashes Video AI Memory Use by 93% While Boosting Speed",
+          "url": "https://dev.to/eli_9c82b7dfe52c1bc371ffe/new-method-slashes-video-ai-memory-use-by-93-while-boosting-speed-17on",
+          "points": 0
+        }
+      ],
+      "price": 2228
+    },
+    {
+      "symbol": "KVCACHE",
+      "label": "KV-Cache Optimization",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 12,
+      "saturationPct": 5,
+      "devVelocityPct": 14,
+      "hypeVelocityPct": -4,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1,
+        "reddit": 2
+      },
+      "news": {
+        "now": 1,
+        "base": 6
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: Thaw – Git branch for a running LLM (fork agents, skip prefill)",
+          "url": "https://github.com/thaw-ai/thaw",
+          "points": 3
+        },
+        {
+          "source": "reddit",
+          "title": "Flash Attention for llama.cpp on RDNA3: 47% less KV VRAM than Vulkan f16 K, KLD almost losselss on F16 K / q4_0 V. Part 1.",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tss1ca/flash_attention_for_llamacpp_on_rdna3_47_less_kv/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "mlx-code — local LLM coding agent for Apple Silicon",
+          "url": "https://www.reddit.com/r/artificial/comments/1tshkvj/mlxcode_local_llm_coding_agent_for_apple_silicon/",
+          "points": 0
+        }
+      ],
+      "price": 2160
+    },
+    {
+      "symbol": "PROMPTENG",
+      "label": "Prompt Engineering",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -33,
+      "saturationPct": 0,
+      "devVelocityPct": -31,
+      "hypeVelocityPct": -13,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "reddit": 3
+      },
+      "news": {
+        "now": 0,
+        "base": 7
+      },
+      "evidence": [
+        {
+          "source": "reddit",
+          "title": "Learned about prompting",
+          "url": "https://www.reddit.com/r/OpenAI/comments/1tss4kv/learned_about_prompting/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Haiku 4.5 or Sonnet 4.6 on creative writing",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1tsqduj/haiku_45_or_sonnet_46_on_creative_writing/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "System prompts are too blunt. The 3-level \"Progressive Disclosure\" Anthropic uses for Agent Skills",
+          "url": "https://www.reddit.com/r/ClaudeAI/comments/1tsok8r/system_prompts_are_too_blunt_the_3level/",
+          "points": 0
+        }
+      ],
+      "price": 2134
+    },
+    {
+      "symbol": "MISTRAL",
+      "label": "Mistral",
+      "emerging": false,
+      "stage": "DEAD",
+      "signal": "RUG",
+      "dailyChangePct": -17,
+      "saturationPct": 80,
+      "devVelocityPct": -17,
+      "hypeVelocityPct": -11,
+      "postingWindowDays": 0,
+      "confidence": "medium",
+      "breakdown": {
+        "devto": 1
+      },
+      "news": {
+        "now": 13,
+        "base": 63
+      },
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "Notes from the Mistral AI Now Summit",
+          "url": "https://dev.to/technoblogger14o3/notes-from-the-mistral-ai-now-summit-27k7",
+          "points": 0
+        }
+      ],
+      "price": 2015
+    },
+    {
+      "symbol": "DISTILL",
+      "label": "Distillation",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -6,
+      "saturationPct": 6,
+      "devVelocityPct": -8,
+      "hypeVelocityPct": 3,
+      "postingWindowDays": 48,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1,
+        "devto": 1,
+        "reddit": 1
+      },
+      "news": {
+        "now": 1,
+        "base": 2
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Skill Distillation",
+          "url": "https://tomtunguz.com/the-pi-agent-skill-distillation/",
+          "points": 2
+        },
+        {
+          "source": "devto",
+          "title": "Progressive Distillation",
+          "url": "https://dev.to/neuml/progressive-distillation-341i",
+          "points": 1
+        },
+        {
+          "source": "reddit",
+          "title": "8-step FLUX.2-dev DMD2 distillation",
+          "url": "https://www.reddit.com/r/StableDiffusion/comments/1trx9es/8step_flux2dev_dmd2_distillation/",
+          "points": 0
+        }
+      ],
+      "price": 1994
+    },
+    {
+      "symbol": "GRAPHRAG",
+      "label": "GraphRAG",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 52,
+      "saturationPct": 0,
+      "devVelocityPct": 54,
+      "hypeVelocityPct": -2,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1,
+        "devto": 3
+      },
+      "news": {
+        "now": 0,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "I spent a year building agent memory on knowledge graphs. Here are my 5 mistakes",
+          "url": "https://news.ycombinator.com/item?id=48337689",
+          "points": 3
+        },
+        {
+          "source": "devto",
+          "title": "GraphRAG vs Vector RAG: When Simple Vector Search Stops Being Enough",
+          "url": "https://dev.to/poniak-labs/graphrag-vs-vector-rag-when-simple-vector-search-stops-being-enough-1p7l",
+          "points": 1
+        },
+        {
+          "source": "devto",
+          "title": "How I Caught My LLM Fabricating Its Own Evidence",
+          "url": "https://dev.to/hannune/how-i-caught-my-llm-fabricating-its-own-evidence-1i8d",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Moving Beyond Naive RAG",
+          "url": "https://dev.to/ruchika_bhat_876f8530fa3b/moving-beyond-naive-rag-2fd8",
+          "points": 0
+        }
+      ],
+      "price": 1967
+    },
+    {
+      "symbol": "LARGELANGUAG",
+      "label": "Large Language",
+      "emerging": true,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 47,
+      "saturationPct": 40,
+      "devVelocityPct": 40,
+      "hypeVelocityPct": 24,
+      "postingWindowDays": 8,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 1,
+        "devto": 1,
+        "youtube": 4
+      },
+      "news": {
+        "now": 4,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Unlocking the Working Memory of Large Language Models for Latent Reasoning",
+          "url": "https://arxiv.org/abs/2605.30343",
+          "points": 1
+        },
+        {
+          "source": "devto",
+          "title": "DISC-LawLLM: Fine-tuning Large Language Models for Intelligent Legal Services",
+          "url": "https://dev.to/paperium/disc-lawllm-fine-tuning-large-language-models-for-intelligent-legal-services-kci",
+          "points": 0
+        }
+      ],
+      "price": 1924
+    },
+    {
+      "symbol": "N8N",
+      "label": "AI Workflow Automation",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 30,
+      "saturationPct": 14,
+      "devVelocityPct": 27,
+      "hypeVelocityPct": 9,
+      "postingWindowDays": 28,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 1,
+        "devto": 2
+      },
+      "news": {
+        "now": 2,
+        "base": 2
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Hybrid local and cloud LLM stack for regulated financial document processing?",
+          "url": "https://news.ycombinator.com/item?id=48327218",
+          "points": 2
+        },
+        {
+          "source": "devto",
+          "title": "Progressive Distillation",
+          "url": "https://dev.to/neuml/progressive-distillation-341i",
+          "points": 1
+        },
+        {
+          "source": "devto",
+          "title": "x.klickd v4.1: Portable, Encrypted, Human-Governed Memory for AI Workflows That Don’t Reset",
+          "url": "https://dev.to/davincc77/xklickd-v41-portable-encrypted-human-governed-memory-for-ai-workflows-that-dont-reset-60p",
+          "points": 0
+        }
+      ],
+      "price": 1881
+    },
+    {
+      "symbol": "REASONING",
+      "label": "Reasoning Models",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -39,
+      "saturationPct": 0,
+      "devVelocityPct": -38,
+      "hypeVelocityPct": -6,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1,
+        "reddit": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 3
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Cassandra: Enabling Reasoning LLMs at Edge via Self-Speculative Decoding",
+          "url": "https://arxiv.org/abs/2605.26558",
+          "points": 4
+        },
+        {
+          "source": "reddit",
+          "title": "Colored Noise Diffusion Sampling - plug-and-play, inference-time sampler.",
+          "url": "https://www.reddit.com/r/StableDiffusion/comments/1tray25/colored_noise_diffusion_sampling_plugandplay/",
+          "points": 0
+        }
+      ],
+      "price": 1705
+    },
+    {
+      "symbol": "EMBEDDINGS",
+      "label": "Embeddings",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -28,
+      "saturationPct": 10,
+      "devVelocityPct": -30,
+      "hypeVelocityPct": 3,
+      "postingWindowDays": 45,
+      "confidence": "low",
+      "breakdown": {
+        "devto": 1,
+        "reddit": 1
+      },
+      "news": {
+        "now": 1,
+        "base": 2
+      },
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "Extract Plain Text from Medium Posts for RAG and Search Indexes",
+          "url": "https://dev.to/zenndraapi/extract-plain-text-from-medium-posts-for-rag-and-search-indexes-14mm",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Why do the output layer weights become word vectors in Word2Vec? [D]",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/1trvuxb/why_do_the_output_layer_weights_become_word/",
+          "points": 0
+        }
+      ],
+      "price": 1614
+    },
+    {
+      "symbol": "COMPUTERUSE",
+      "label": "Computer Use / Browser Agents",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 14,
+      "saturationPct": 26,
+      "devVelocityPct": 11,
+      "hypeVelocityPct": 7,
+      "postingWindowDays": 24,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1
+      },
+      "news": {
+        "now": 2,
+        "base": 3
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: Ego lite – why our browser agent writes JavaScript not CLI commands",
+          "url": "https://github.com/CitroLabs/ego-lite",
+          "points": 12
+        }
+      ],
+      "price": 1374
+    },
+    {
+      "symbol": "WORLDMODEL",
+      "label": "World Models",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -30,
+      "saturationPct": 15,
+      "devVelocityPct": -23,
+      "hypeVelocityPct": -20,
+      "postingWindowDays": 53,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1
+      },
+      "news": {
+        "now": 1,
+        "base": 17
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "stable-worldmodel-v1: Reproducible World Modeling Research and Evaluation",
+          "url": "https://arxiv.org/abs/2602.08968",
+          "points": 2
+        }
+      ],
+      "price": 1281
+    },
+    {
+      "symbol": "RL",
+      "label": "RL / RLHF",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -21,
+      "saturationPct": 0,
+      "devVelocityPct": -21,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "reddit": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [
+        {
+          "source": "reddit",
+          "title": "Convergence Point Theory: Why LLM uncertainty is determined by the topic, not the model",
+          "url": "https://www.reddit.com/r/artificial/comments/1tssx03/convergence_point_theory_why_llm_uncertainty_is/",
+          "points": 0
+        }
+      ],
+      "price": 1237
+    },
+    {
+      "symbol": "SLM",
+      "label": "Small Language Models",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 7,
+      "saturationPct": 0,
+      "devVelocityPct": 8,
+      "hypeVelocityPct": -2,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "reddit": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "reddit",
+          "title": "Best small model right now (~4B params) that is good with agentic tasks for personal assistant?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1tskbf9/best_small_model_right_now_4b_params_that_is_good/",
+          "points": 0
+        }
+      ],
+      "price": 1237
+    },
+    {
+      "symbol": "SPECDECODE",
+      "label": "Speculative Decoding",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 5,
+      "saturationPct": 0,
+      "devVelocityPct": 6,
+      "hypeVelocityPct": -2,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Cassandra: Enabling Reasoning LLMs at Edge via Self-Speculative Decoding",
+          "url": "https://arxiv.org/abs/2605.26558",
+          "points": 4
+        }
+      ],
+      "price": 1180
+    },
+    {
+      "symbol": "VOICE",
+      "label": "Voice AI",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -20,
+      "saturationPct": 0,
+      "devVelocityPct": -20,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {},
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [],
+      "price": 12
+    },
+    {
+      "symbol": "SYNTHDATA",
+      "label": "Synthetic Data",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -48,
+      "saturationPct": 0,
+      "devVelocityPct": -48,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {},
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [],
+      "price": 12
+    },
+    {
+      "symbol": "MAMBA",
+      "label": "State Space / Mamba",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -32,
+      "saturationPct": 0,
+      "devVelocityPct": -32,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {},
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [],
+      "price": 12
+    },
+    {
+      "symbol": "LLAMA",
+      "label": "Llama",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -13,
+      "saturationPct": 0,
+      "devVelocityPct": -13,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {},
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [],
+      "price": 12
+    },
+    {
+      "symbol": "DIFFUSIONLLM",
+      "label": "Diffusion LLMs",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -32,
+      "saturationPct": 0,
+      "devVelocityPct": -32,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {},
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [],
+      "price": 12
+    }
+  ]
+};
+const STILL = location.search.includes('still');
+const SIG = { STRONG_BUY:{t:'💎 BUY'}, BUY:{t:'BUY'}, HOLD:{t:'HOLD'}, SELL:{t:'SELL'}, RUG:{t:'RUG'} };
+const VERDICTS = {
+  STRONG_BUY:["Cop it NOW, streets don't know yet 💎","Yo this that uncut alpha. Back up the truck.","Nobody's postin' this yet. Be the plug, not the customer."],
+  BUY:["Get in 'fore the normies catch on 📈","Still cheap, still ours. Make the video today, playa.","Underground's buzzin'. Cop a clip while it's warm."],
+  HOLD:["Peakin'. Ride it but watch ya back ✋","Everybody's circlin'. Post fast or fold.","Hot but crowded. Last call, playa."],
+  SELL:["Washed. Everybody 'n they grandma postin' this 📉","Saturated, fam. Move on 'fore you look basic.","The normies took it. We out."],
+  RUG:["Dead on arrival. Don't get caught holdin' 💀","RUG. This trend's a crime scene now.","Cooked. Don't let 'em catch you postin' this."],
+};
+const BUBBLE_LINES = ["Hey yo bro, cop the gems 'fore they blow up 💸","Psst... I got that uncut alpha 🤫","Trends so fresh they ain't even legal yet 😎","I cop low, you post high. Simple, playa.","Before it's a trend, it's MY product.","The streets whisper, I just listen 🕶️","Don't sleep, fam. Streets move fast 💨","Real ones cop early. Normies cop late.","You want clout? I'm holdin' the plug 🔌"];
+const WANTED_CRIMES = ["on the run for mass crimes against your engagement","wanted for flooding every timeline on the planet","guilty of turnin' fresh alpha into LinkedIn slop","charged with bein' in 9,000 carousels this week","armed and basic. last seen on every feed"];
+const pick = (a) => a[Math.floor(Math.random()*a.length)];
+let DATA, SRCMAP={}, sound=false, actx;
+
+function ago(iso){const s=(Date.now()-new Date(iso))/1000;if(s<90)return 'just now';if(s<5400)return Math.round(s/60)+'m ago';return Math.round(s/3600)+'h ago';}
+function fmtPrice(p){return '$'+p.toLocaleString('en-US');}
+function chg(c){const s=c>=0?'+':'';return `<span class="${c>=0?'up':'down'}">${s}${c}%</span>`;}
+
+// --- sound (WebAudio synth, no files) ---
+function beep(type){
+  if(!sound)return; actx=actx||new (window.AudioContext||window.webkitAudioContext)();
+  const t=actx.currentTime,o=actx.createOscillator(),g=actx.createGain();o.connect(g);g.connect(actx.destination);
+  if(type==='buy'){o.type='square';o.frequency.setValueAtTime(660,t);o.frequency.setValueAtTime(990,t+.08);g.gain.setValueAtTime(.08,t);g.gain.exponentialRampToValueAtTime(.001,t+.25);}
+  else if(type==='dump'){o.type='sawtooth';o.frequency.setValueAtTime(420,t);o.frequency.exponentialRampToValueAtTime(120,t+.4);g.gain.setValueAtTime(.07,t);g.gain.exponentialRampToValueAtTime(.001,t+.4);}
+  else{o.type='triangle';o.frequency.setValueAtTime(880,t);g.gain.setValueAtTime(.05,t);g.gain.exponentialRampToValueAtTime(.001,t+.3);}
+  o.start(t);o.stop(t+.45);
+}
+
+function render(){
+  DATA.meta.sources.forEach(s=>SRCMAP[s.key]=s.label);
+  const m=DATA.market, ts=DATA.tickers;
+  document.getElementById('lastcop').textContent=ago(m.generatedAt);
+  document.getElementById('tagline').textContent=DATA.meta.tagline;
+  document.getElementById('srcpill').textContent=DATA.meta.sources.length+' plugs on payroll';
+  document.getElementById('tickpill').textContent=m.totalTickers+' tickers traded';
+
+  // hero gem
+  if(m.hottestGem){document.getElementById('gemsym').textContent='$'+m.hottestGem.symbol;
+    document.getElementById('gemd').textContent=m.hottestGem.label+' · underground, mainstream still asleep';}
+
+  // tape
+  const tape=ts.concat(ts).map(t=>`<span class="tape__item"><span class="tape__sym">$${t.symbol}</span> ${fmtPrice(t.price)} ${chg(t.dailyChangePct)}</span>`).join('');
+  document.getElementById('tape').innerHTML=tape;
+
+  // bento
+  const sentColor=m.fearGreed>=55?'var(--green)':m.fearGreed<=45?'var(--red)':'var(--gold)';
+  const bento=document.getElementById('bento');
+  bento.innerHTML=`
+    <div class="cell big">
+      <div class="cell__l">Panic &amp; Greed Index</div>
+      <div><div class="fg__big" style="color:${sentColor}">${m.fearGreed}</div>
+      <div class="fg__sent" style="color:${sentColor}">${m.sentiment}</div></div>
+      <div class="gauge"><div class="gauge__pin" style="left:${m.fearGreed}%"></div></div>
+    </div>
+    <div class="cell"><div class="cell__l">Cop signals</div><div class="cell__v" style="color:var(--green)">${m.counts.STRONG_BUY+m.counts.BUY}</div><div class="cell__n">gems worth a post</div></div>
+    <div class="cell"><div class="cell__l">Dump signals</div><div class="cell__v" style="color:var(--red)">${m.counts.SELL+m.counts.RUG}</div><div class="cell__n">washed / saturated</div></div>
+    <div class="cell wide"><div class="cell__l">🚀 Top mover · streets on fire</div><div class="cell__v" style="font-size:38px">$${m.topMover.symbol} <span style="font-size:22px">${chg(m.topMover.change)}</span></div><div class="cell__n">${m.topMover.label} · cop a clip while it's hot</div></div>
+  `;
+
+  // WANTED poster = biggest dump
+  if(m.biggestDump){
+    document.getElementById('wsym').textContent='$'+m.biggestDump.symbol;
+    document.getElementById('wcrime').textContent=pick(WANTED_CRIMES)+' ('+m.biggestDump.label+')';
+    document.getElementById('wreward').textContent=m.biggestDump.change+'%';
+  }
+
+  buildBoard('all');
+  // footer
+  document.getElementById('srclist').textContent=DATA.meta.sources.length;
+  document.getElementById('srcchips').innerHTML=DATA.meta.sources.map(s=>`<span>${s.label}</span>`).join('');
+
+  drawChart();
+  document.getElementById('dealer').textContent=pick(BUBBLE_LINES);
+  // rotate the mascot bubble
+  const bub=document.getElementById('bubble');
+  if(!STILL) setInterval(()=>{bub.style.opacity='0';setTimeout(()=>{bub.textContent=pick(BUBBLE_LINES);bub.style.opacity='1';},300);},4200);
+}
+
+// decorative candlestick backdrop (ornamental, GTA wall vibe)
+function drawChart(){
+  const svg=document.getElementById('herochart');if(!svg)return;
+  const W=1200,H=360,n=46,cw=W/n,bw=cw*0.5;let price=H*0.62,parts='';
+  for(let i=0;i<n;i++){
+    const drift=-2.4+(Math.random()*5.4); price=Math.max(40,Math.min(H-30,price-drift*6));
+    const o=price+(Math.random()*36-18), c=price+(Math.random()*36-18);
+    const hi=Math.min(o,c)-Math.random()*22, lo=Math.max(o,c)+Math.random()*22;
+    const x=i*cw+cw*0.25, mid=x+bw/2, up=c<=o, cls=up?'cup':'cdn';
+    const top=Math.min(o,c), bh=Math.max(4,Math.abs(c-o));
+    parts+=`<line class="wick" x1="${mid}" y1="${hi}" x2="${mid}" y2="${lo}"/><rect class="${cls}" x="${x}" y="${top}" width="${bw}" height="${bh}"/>`;
+  }
+  svg.innerHTML=parts;
+}
+
+function passFilter(t,f){
+  if(f==='all')return true;
+  if(f==='buy')return t.signal==='BUY'||t.signal==='STRONG_BUY';
+  if(f==='dump')return t.signal==='SELL'||t.signal==='RUG';
+  if(f==='emerging')return t.emerging;
+}
+
+function buildBoard(f){
+  const board=document.getElementById('board');
+  const list=DATA.tickers.filter(t=>passFilter(t,f));
+  document.getElementById('count').textContent=list.length+' on the block';
+  let html=`<div class="row head">
+    <span>#</span><span>Ticker</span><span style="text-align:right">Price</span><span style="text-align:right">24h</span>
+    <span class="col-sat">Underground → Mainstream</span><span class="col-win" style="text-align:center">Post window</span>
+    <span style="text-align:center">The verdict</span><span></span></div>`;
+  list.forEach((t,i)=>{
+    const win=t.postingWindowDays===0?`<div class="win closed">CLOSED</div>`:`<div class="win"><span class="d">${t.postingWindowDays}</span>d left</div>`;
+    html+=`<div class="row${t.signal==='RUG'?' rugrow':''}" data-sym="${t.symbol}">
+      <span class="row__rank">${i+1}</span>
+      <span class="row__name"><span class="row__sym">$${t.symbol}${t.emerging?'<span class="emrg">FRESH</span>':''}</span><span class="row__lab">${t.label}</span></span>
+      <span class="row__price">${fmtPrice(t.price)}</span>
+      <span class="row__chg">${chg(t.dailyChangePct)}</span>
+      <span class="col-sat"><div class="satbar"><i style="width:${t.saturationPct}%"></i><b style="left:${t.saturationPct}%"></b></div><div class="satlab"><span>dev</span><span>${t.saturationPct}% media</span></div></span>
+      <span class="col-win">${win}</span>
+      <span><span class="sig ${t.signal}">${SIG[t.signal].t}</span></span>
+      <span class="row__exp">▸</span>
+    </div>
+    <div class="detail" data-d="${t.symbol}">
+      <div class="verdict">🕶️ "${pick(VERDICTS[t.signal])}"</div>
+      <div class="dgrid">
+        <div><div class="dlabel">Where the noise comes from</div>
+          <div class="chips">${Object.entries(t.breakdown).map(([k,v])=>`<span class="chip">${SRCMAP[k]||k} <b>${v}</b></span>`).join('')||'<span class="chip">underground only</span>'}
+          <span class="chip">media now <b>${t.news.now}</b></span></div>
+          <div class="dlabel" style="margin-top:16px">Confidence: <b style="color:var(--green)">${t.confidence}</b> · stage: ${t.stage}</div>
+        </div>
+        <div><div class="dlabel">The product (real sources, go make content)</div>
+          ${t.evidence.length?t.evidence.map(e=>`<a class="ev" href="${e.url}" target="_blank" rel="noopener"><span class="ev__src">${SRCMAP[e.source]||e.source}</span><span class="ev__t">${e.title}</span><span class="ev__pts">${e.points?'▲'+e.points:''}</span></a>`).join(''):'<div class="ev"><span class="ev__t" style="color:var(--ink-3)">underground whispers only. that is the gem part.</span></div>'}
+        </div>
+      </div>
+    </div>`;
+  });
+  board.innerHTML=html;
+  board.querySelectorAll('.row[data-sym]').forEach(r=>r.addEventListener('click',()=>{
+    const sym=r.dataset.sym,d=board.querySelector(`.detail[data-d="${sym}"]`);
+    const t=DATA.tickers.find(x=>x.symbol===sym);
+    r.classList.toggle('open');d.classList.toggle('show');
+    if(d.classList.contains('show'))beep(t.signal==='SELL'||t.signal==='RUG'?'dump':t.signal==='HOLD'?'bell':'buy');
+  }));
+}
+
+// filters
+document.getElementById('controls').addEventListener('click',e=>{
+  const b=e.target.closest('.filt');if(!b)return;
+  document.querySelectorAll('.filt').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  buildBoard(b.dataset.f);
+});
+// sound
+document.getElementById('snd').addEventListener('click',e=>{sound=!sound;e.target.textContent=sound?'🔊':'🔇';if(sound)beep('bell');});
+// money rain on logo
+document.getElementById('logo').addEventListener('click',()=>{
+  beep('buy');
+  for(let i=0;i<28;i++){const b=document.createElement('div');b.className='bill';b.textContent=Math.random()>.5?'💵':'💸';
+    b.style.left=Math.random()*100+'vw';b.style.animationDuration=(2+Math.random()*2.5)+'s';b.style.fontSize=(20+Math.random()*22)+'px';
+    document.body.appendChild(b);setTimeout(()=>b.remove(),4500);}
+});
+// konami -> diamond hands
+let kc=[],KONAMI=['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+addEventListener('keydown',e=>{kc.push(e.key);kc=kc.slice(-10);
+  if(kc.join(',').toLowerCase()===KONAMI.join(',').toLowerCase()){document.body.classList.toggle('diamond');beep('buy');
+    document.getElementById('dealer').textContent="DIAMOND HANDS MODE. We don't fold. 💎🙌";}});
+
+// cursor glow on cells
+document.addEventListener('mousemove',e=>{
+  const c=e.target.closest('.cell,.row');if(!c)return;
+  const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');
+},{passive:true});
+
+function runBoot(total){
+  const boot=document.getElementById('boot'),num=document.getElementById('bootnum');
+  if(STILL){boot.remove();return;}
+  let i=0;const step=Math.max(1,Math.ceil(total/26));
+  const iv=setInterval(()=>{i=Math.min(total,i+step);num.textContent=i;if(i>=total)clearInterval(iv);},42);
+  setTimeout(()=>{boot.classList.add('gone');setTimeout(()=>boot.remove(),650);},1500);
+}
+(async function(){
+  try{ DATA = RAW || await fetch('data/data.json').then(r=>r.json()); }
+  catch(err){ document.getElementById('boot')?.remove(); document.body.innerHTML='<div style="padding:60px;font-family:monospace;color:#FF3B3B">💥 No product on the corner. Run <b>npm run refresh</b> then <b>npm run build</b>.</div>'; return; }
+  render();
+  runBoot(DATA.market.totalTickers);
+  startFlicker();
+})();
+
+function startFlicker(){
+  const bulb=document.getElementById('bulb');if(!bulb)return;
+  if(STILL || matchMedia('(prefers-reduced-motion:reduce)').matches){bulb.style.opacity='.4';return;}
+  (function flick(){
+    const r=Math.random();let op,dur;
+    if(r<0.06){op=0.06;dur=40+Math.random()*55;}          // near-off blink
+    else if(r<0.16){op=0.18;dur=55+Math.random()*70;}      // dim stutter
+    else{op=0.40+Math.random()*0.20;dur=500+Math.random()*2200;} // mostly steady glow
+    bulb.style.opacity=op;setTimeout(flick,dur);
+  })();
+}
+</script>
+</body>
+</html>

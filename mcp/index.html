@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>TrendHustler MCP — Connect Your AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<style>
+@font-face{font-family:'Pricedown';src:url('../assets/fonts/pricedown.ttf') format('truetype');font-display:swap}
+:root{
+  --bg:#07080A;--panel:#0E1012;--panel2:#15181A;
+  --green:#00E676;--green-dim:rgba(0,230,118,.12);
+  --gold:#D4AF37;--gold-hi:#FFF0B0;--red:#FF3B3B;
+  --ink-0:#F4F6F4;--ink-1:rgba(244,246,244,.75);--ink-2:rgba(244,246,244,.50);
+  --border:rgba(212,175,55,.22);--border-g:rgba(0,230,118,.22);
+  --mono:'JetBrains Mono',monospace;--display:'Pricedown','Anton',sans-serif;--sans:'Helvetica Neue','Helvetica','Arial',sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink-0);font-family:var(--sans);font-size:15px;line-height:1.6;
+  background-image:repeating-linear-gradient(0deg,transparent 0 71px,rgba(0,230,118,.03) 71px 72px),
+    repeating-linear-gradient(90deg,transparent 0 71px,rgba(0,230,118,.02) 71px 72px)}
+.noise{position:fixed;inset:0;z-index:900;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E")}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+
+.hero{padding:60px 0 40px;text-align:center}
+.kicker{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--green);margin-bottom:16px;display:flex;justify-content:center;align-items:center;gap:8px}
+.kicker::before,.kicker::after{content:'';flex:1;height:1px;background:var(--border-g);max-width:80px}
+.logo{font-family:var(--display);font-size:clamp(36px,8vw,80px);text-transform:uppercase;color:var(--gold);
+  text-shadow:0 2px 0 #6b5417,0 4px 12px rgba(0,0,0,.5);line-height:.9}
+.logo .hl{color:var(--green);text-shadow:0 2px 0 #064a28,0 0 20px rgba(0,230,118,.3)}
+.sub{color:var(--ink-1);font-size:17px;margin:14px auto 0;max-width:48ch}
+.tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  border:1px solid var(--border);padding:6px 14px;border-radius:999px;color:var(--gold);margin-top:16px}
+
+/* tool cards */
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);margin:40px 0}
+.tool{background:var(--panel);padding:22px}
+.tool__name{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--green);margin-bottom:6px}
+.tool__desc{font-size:13px;color:var(--ink-1)}
+.tool__ex{font-family:var(--mono);font-size:11px;color:var(--ink-2);margin-top:8px;padding:8px;background:var(--panel2);border-left:2px solid var(--border-g)}
+
+/* install sections */
+.sec{margin:48px 0}
+.sec h2{font-family:var(--display);font-size:clamp(22px,4vw,38px);text-transform:uppercase;color:var(--gold);margin-bottom:8px;letter-spacing:.01em}
+.sec h2 .num{font-family:var(--mono);font-size:13px;color:var(--green);margin-right:10px}
+.desc{color:var(--ink-1);margin-bottom:18px;max-width:60ch}
+
+.platform{background:var(--panel);border:1px solid var(--border);margin-bottom:12px}
+.platform__h{display:flex;align-items:center;gap:12px;padding:16px 20px;cursor:pointer;user-select:none;border-bottom:1px solid var(--border)}
+.platform__h:hover{background:var(--panel2)}
+.platform__icon{font-size:22px}
+.platform__name{font-family:var(--mono);font-weight:700;font-size:15px;flex:1}
+.platform__badge{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);border:1px solid var(--border-g);padding:3px 8px;border-radius:999px}
+.platform__body{padding:20px;display:none}
+.platform.open .platform__body{display:block}
+.step{margin-bottom:18px}
+.step__l{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);margin-bottom:6px}
+.code{background:#030404;border:1px solid var(--border);padding:16px 18px;font-family:var(--mono);font-size:13px;color:var(--ink-0);overflow-x:auto;position:relative}
+.code .copy{position:absolute;top:8px;right:10px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);cursor:pointer;background:var(--panel);border:1px solid var(--border);padding:4px 9px;transition:all .2s var(--ease)}
+.code .copy:hover{color:var(--green);border-color:var(--green)}
+.code .copy.ok{color:var(--green)}
+.hlg{color:var(--green)} .hly{color:var(--gold-hi)} .hlr{color:var(--red)} .hlw{color:var(--ink-1)}
+
+/* demo output */
+.demo{margin-top:18px;border-top:1px solid var(--border);padding-top:18px}
+.demo__l{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);margin-bottom:10px}
+.demo__out{background:#030404;border:1px solid var(--border-g);padding:16px;font-family:var(--mono);font-size:12px;color:var(--ink-1);line-height:1.7;white-space:pre-wrap}
+.demo__out .gem{color:var(--gold)}
+.demo__out .buy{color:var(--green)}
+.demo__out .sell{color:var(--red)}
+
+/* footer */
+footer{border-top:1px solid var(--border);padding:32px 0 48px;text-align:center;color:var(--ink-2);font-size:13px;margin-top:48px}
+footer a{color:var(--green)}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="noise"></div>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="kicker">MCP Server · Plug it in</div>
+    <div class="logo">TREND<span class="hl">HUSTLER</span></div>
+    <div class="sub">Connect TrendHustler directly to your AI assistant. Ask what to post about. Get the dealer's verdict.</div>
+    <div class="tag">3 tools · stdio MCP · works with Claude Code &amp; Antigravity</div>
+  </div>
+
+  <!-- tools -->
+  <div class="tools">
+    <div class="tool">
+      <div class="tool__name">whats_pumping</div>
+      <div class="tool__desc">Top hidden gems on the block right now — AI topics that are still underground. BUY signals only.</div>
+      <div class="tool__ex">"What should I post about today?"</div>
+    </div>
+    <div class="tool">
+      <div class="tool__name">should_i_post_about</div>
+      <div class="tool__desc">Check any AI topic: signal, saturation %, days left before mainstream, real source links to go make content from.</div>
+      <div class="tool__ex">"Should I post about GraphRAG?"</div>
+    </div>
+    <div class="tool">
+      <div class="tool__name">market_mood</div>
+      <div class="tool__desc">Overall market vibe: Fear &amp; Greed index, top mover, biggest dump, buy/hold/sell breakdown.</div>
+      <div class="tool__ex">"What's the AI trend market like today?"</div>
+    </div>
+  </div>
+
+  <!-- demo output -->
+  <div class="demo">
+    <div class="demo__l">Sample output — should_i_post_about("GraphRAG")</div>
+    <div class="demo__out"><span class="gem">💎 VERDICT: STRONG_BUY</span>
+<span class="buy">"Cop it NOW. Streets don't know yet."</span>
+
+Topic: GraphRAG
+Saturation: <span class="buy">0% mainstream</span> — barely on the radar
+Post window: ⏳ ~60 days left before normies take over
+Stage: EMBRYO ✨
+
+Real sources (go make content from these):
+  [hackernews] I spent a year building agent memory on knowledge graphs
+  [devto] GraphRAG vs Vector RAG: When Simple Vector Search Stops Being Enough</div>
+  </div>
+
+  <!-- INSTALL -->
+  <div class="sec">
+    <h2><span class="num">01</span>Prerequisites</h2>
+    <div class="desc">You need Node.js 18+ and the TrendHustler project on your machine.</div>
+    <div class="platform open">
+      <div class="platform__h">
+        <span class="platform__icon">📦</span>
+        <span class="platform__name">Get the project</span>
+      </div>
+      <div class="platform__body">
+        <div class="step">
+          <div class="step__l">Clone &amp; setup</div>
+          <div class="code"><button class="copy">copy</button><span class="hlg">git clone</span> <span class="hlw">https://github.com/YOUR_USERNAME/trendhustler</span>
+<span class="hlg">cd</span> trendhustler
+<span class="hlg">npm run build</span>   <span class="hlr"># fetches live data + bakes index.html</span></div>
+        </div>
+        <div class="step">
+          <div class="step__l">Or if you already have it</div>
+          <div class="code"><button class="copy">copy</button><span class="hlg">npm run refresh</span>   <span class="hlr"># re-fetch fresh data anytime</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">02</span>Claude Code</h2>
+    <div class="desc">Add TrendHustler as a local MCP server. Run this once in your terminal.</div>
+
+    <div class="platform open">
+      <div class="platform__h">
+        <span class="platform__icon">💻</span>
+        <span class="platform__name">Claude Code CLI</span>
+        <span class="platform__badge">Recommended</span>
+      </div>
+      <div class="platform__body">
+        <div class="step">
+          <div class="step__l">Add server (run once)</div>
+          <div class="code"><button class="copy">copy</button>claude mcp add trendhustler <span class="hly">node</span> <span class="hlw">/ABSOLUTE/PATH/TO/trendhustler/mcp/server.mjs</span></div>
+        </div>
+        <div class="step">
+          <div class="step__l">Or add to your project .claude/settings.json manually</div>
+          <div class="code"><button class="copy">copy</button>{
+  <span class="hlg">"mcpServers"</span>: {
+    <span class="hly">"trendhustler"</span>: {
+      <span class="hlg">"command"</span>: <span class="hlw">"node"</span>,
+      <span class="hlg">"args"</span>: [<span class="hlw">"/ABSOLUTE/PATH/TO/trendhustler/mcp/server.mjs"</span>]
+    }
+  }
+}</div>
+        </div>
+        <div class="step">
+          <div class="step__l">Then use it in Claude Code</div>
+          <div class="code"><button class="copy">copy</button><span class="hlr"># In your Claude Code session:</span>
+<span class="hlw">What AI topics should I post about today?</span>
+<span class="hlw">Should I post about voice agents?</span>
+<span class="hlw">What's the AI market mood right now?</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">03</span>Antigravity</h2>
+    <div class="desc">Add TrendHustler to your Antigravity workspace as a local MCP server.</div>
+
+    <div class="platform open">
+      <div class="platform__h">
+        <span class="platform__icon">🚀</span>
+        <span class="platform__name">Antigravity (ClaudeGravity)</span>
+        <span class="platform__badge">Works great</span>
+      </div>
+      <div class="platform__body">
+        <div class="step">
+          <div class="step__l">Add to your Antigravity MCP config</div>
+          <div class="code"><button class="copy">copy</button>{
+  <span class="hlg">"mcpServers"</span>: {
+    <span class="hly">"trendhustler"</span>: {
+      <span class="hlg">"command"</span>: <span class="hlw">"node"</span>,
+      <span class="hlg">"args"</span>: [<span class="hlw">"/ABSOLUTE/PATH/TO/trendhustler/mcp/server.mjs"</span>],
+      <span class="hlg">"description"</span>: <span class="hlw">"TrendHustler — AI trend signals from the underground"</span>
+    }
+  }
+}</div>
+        </div>
+        <div class="step">
+          <div class="step__l">What to replace</div>
+          <div class="code"><button class="copy">copy</button><span class="hlr"># Replace this with your actual path:</span>
+<span class="hlw">/ABSOLUTE/PATH/TO/trendhustler/</span>
+
+<span class="hlr"># Windows example:</span>
+<span class="hlw">C:/Users/YourName/trendhustler/</span>
+
+<span class="hlr"># Mac/Linux example:</span>
+<span class="hlw">/Users/yourname/trendhustler/</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span class="num">04</span>Keep it fresh</h2>
+    <div class="desc">Run this whenever you want to refresh the trend data (takes ~12 seconds).</div>
+    <div class="code"><button class="copy">copy</button>cd trendhustler
+<span class="hlg">npm run refresh</span>   <span class="hlr"># re-cops fresh data from 8 sources (HN, GitHub, arXiv, HuggingFace, Dev.to, Reddit, ProductHunt, YouTube)</span></div>
+  </div>
+
+  <footer>
+    <div><a href="/">← Back to the dashboard</a></div>
+    <div style="margin-top:10px">TrendHustler · <span style="color:var(--gold)">"The streets never sleep."</span></div>
+    <div style="margin-top:6px">No API keys. No Apify. All hustle. 8 free sources. ~12s refresh.</div>
+  </footer>
+
+</div>
+
+<script>
+// accordion
+document.querySelectorAll('.platform__h').forEach(h=>{
+  h.addEventListener('click',()=>h.closest('.platform').classList.toggle('open'));
+});
+
+// copy buttons
+document.querySelectorAll('.code .copy').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const code=btn.closest('.code').textContent.replace(/copy$/,'').trim();
+    navigator.clipboard.writeText(code).then(()=>{btn.textContent='✓ copied';btn.classList.add('ok');setTimeout(()=>{btn.textContent='copy';btn.classList.remove('ok');},1800);});
+  });
+});
+</script>
+</body>
+</html>
