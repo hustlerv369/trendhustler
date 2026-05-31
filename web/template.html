@@ -222,6 +222,16 @@ a{color:inherit;text-decoration:none}
 .foot .src span{border:1px solid var(--border);padding:3px 9px}
 .foot .dis{color:var(--ink-3);margin-top:14px;font-style:italic}
 
+/* refresh button */
+.refbtn{position:fixed;top:46px;right:16px;z-index:850;background:var(--bg-1);border:1px solid var(--border-g);
+  color:var(--green);font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  padding:7px 13px;cursor:pointer;display:flex;align-items:center;gap:7px;transition:all .2s var(--ease);white-space:nowrap}
+.refbtn:hover{background:var(--green-dim);border-color:var(--green)}
+.refbtn.spinning .ico{display:inline-block;animation:spin .7s linear infinite}
+.refbtn.fresh{border-color:var(--green);color:var(--green)}
+.refbtn.latest{border-color:var(--gold);color:var(--gold)}
+@keyframes spin{to{transform:rotate(360deg)}}
+
 /* sound toggle */
 .snd{position:fixed;right:18px;bottom:18px;z-index:850;width:48px;height:48px;border:1px solid var(--gold);
   background:var(--bg-1);color:var(--gold);font-size:20px;cursor:pointer;display:grid;place-items:center;
@@ -394,6 +404,9 @@ body.diamond .logo,body.diamond .row__sym{text-shadow:0 0 18px var(--gold)}
   </footer>
 </main>
 
+<button class="refbtn" id="refbtn" title="Check for fresh data from the streets">
+  <span class="ico">🔄</span><span class="lbl" id="reflbl">Cop Fresh Data</span>
+</button>
 <button class="snd" id="snd" aria-label="Toggle sound" title="Toggle dealer sounds">🔇</button>
 
 <script>
@@ -588,12 +601,49 @@ function startFlicker(){
   if(STILL || matchMedia('(prefers-reduced-motion:reduce)').matches){bulb.style.opacity='.4';return;}
   (function flick(){
     const r=Math.random();let op,dur;
-    if(r<0.06){op=0.06;dur=40+Math.random()*55;}          // near-off blink
-    else if(r<0.16){op=0.18;dur=55+Math.random()*70;}      // dim stutter
-    else{op=0.40+Math.random()*0.20;dur=500+Math.random()*2200;} // mostly steady glow
+    if(r<0.06){op=0.06;dur=40+Math.random()*55;}
+    else if(r<0.16){op=0.18;dur=55+Math.random()*70;}
+    else{op=0.40+Math.random()*0.20;dur=500+Math.random()*2200;}
     bulb.style.opacity=op;setTimeout(flick,dur);
   })();
 }
+
+// ===== REFRESH BUTTON =====
+(function(){
+  const btn=document.getElementById('refbtn');
+  const lbl=document.getElementById('reflbl');
+  if(!btn||!DATA)return;
+  const REMOTE='https://raw.githubusercontent.com/hustlerv369/trendhustler/master/data/data.json';
+  const localTs=new Date(DATA.market?.generatedAt||0).getTime();
+  // Show data age on load
+  lbl.textContent='Cop Fresh Data · '+ago(DATA.market.generatedAt);
+  btn.addEventListener('click',async()=>{
+    btn.classList.remove('latest');
+    btn.classList.add('spinning');
+    lbl.textContent='Checking the streets...';
+    try{
+      const res=await fetch(REMOTE+'?t='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(12000)});
+      if(!res.ok)throw new Error('no response');
+      const remote=await res.json();
+      const remoteTs=new Date(remote.market?.generatedAt||0).getTime();
+      btn.classList.remove('spinning');
+      if(remoteTs>localTs+60000){
+        btn.classList.add('fresh');
+        lbl.textContent='Fresh drop incoming! 🚀';
+        beep('buy');
+        setTimeout(()=>location.reload(true),900);
+      } else {
+        btn.classList.add('latest');
+        lbl.textContent='Already the freshest on the block. ✓';
+        setTimeout(()=>{btn.classList.remove('latest');lbl.textContent='Cop Fresh Data · '+ago(DATA.market.generatedAt);},3200);
+      }
+    }catch(e){
+      btn.classList.remove('spinning');
+      lbl.textContent='Streets quiet. Try later.';
+      setTimeout(()=>{lbl.textContent='Cop Fresh Data · '+ago(DATA.market.generatedAt);},3000);
+    }
+  });
+})();
 </script>
 </body>
 </html>
