@@ -109,6 +109,7 @@ Here is what TrendHustler found when it ran today:
 # Mac/Linux: pip install yt-dlp
 
 # Step 2 — pull fresh data and build the dashboard (~12 seconds)
+# No npm install needed — zero external dependencies
 npm run build
 
 # Step 3 — open index.html in your browser
