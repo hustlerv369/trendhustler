@@ -1,210 +1,223 @@
 # 🕶️ TrendHustler
 ## *The Back-Alley Exchange for AI Trends*
 
-> **"Cop the gems before they go mainstream, playa."**
-
-[![Open index.html — no install needed](https://img.shields.io/badge/dashboard-open%20index.html-00E676?style=flat-square)](index.html)
-[![8 free sources](https://img.shields.io/badge/sources-8%20free%2C%20no%20API%20keys-D4AF37?style=flat-square)](#sources)
-[![MCP Server](https://img.shields.io/badge/MCP-Claude%20Code%20%26%20Antigravity-FF2E97?style=flat-square)](mcp/)
+> **"Everybody wants to be a content creator. Nobody wants to do the homework."**
+> 
+> *TrendHustler does the homework.*
 
 ---
 
-You know that feeling when you post about something **two weeks after everyone else**?
+## Yo, what is this thing?
 
-That's a skill issue. TrendHustler fixes it.
+You know that feeling when you post a YouTube video about some AI topic... and realize 400 people already did it last week?
 
-This dashboard monitors **8 underground sources in real-time**, runs a signal-vs-noise engine, and tells you exactly which AI topics to post about **before the normies find them** — with a signal, a posting window, and real source links so you can go make the video TODAY.
+That's called **getting caught holdin'**. And it happens because you're picking your topics from what's already viral — which means you're always late.
 
-No subscriptions. No API keys. No Apify. **All hustle.**
+**TrendHustler fixes this.**
 
----
+It watches 8 underground sources where AI builders, researchers, and developers talk about stuff **before it goes mainstream**. It measures how much buzz a topic has in the developer underground vs. how much coverage it already has in the media and on YouTube.
 
-## 🎯 The Problem It Solves
+The gap between those two numbers? **That's your window.**
 
-80% of content creation is timing. Post too early — nobody cares. Post too late — you're the 400th person covering it. 
-
-The gap between **"dev community buzzing"** and **"LinkedIn carousel hell"** is your window. TrendHustler finds that window for every AI topic, every time you run it.
+Post in that window = you look like a genius. Miss it = you're the 400th video on the topic.
 
 ---
 
-## 💎 The Signals
+## The one thing you need to understand
 
-| Signal | What it means | What to do |
-|--------|--------------|------------|
-| 💎 **STRONG BUY** | Underground buzz, mainstream asleep | Post **NOW** — you'll be first |
-| 🟢 **BUY** | Rising in dev community, normies haven't found it | Get in **this week** |
-| 🟡 **HOLD** | Peaking — last call | Post **today or never** |
-| 🔴 **SELL** | Saturated — everybody's grandma posting it | Skip it |
-| ☠️ **RUG** | Dead on arrival | Don't get caught holdin' |
-
-Each signal comes with:
-- **Saturation %** — how mainstream it already is (0% = pure underground 💎)
-- **Posting window** — days left before normies take over
-- **Real source links** — actual HN threads, GitHub repos, papers to base your content on
-- **Confidence level** — how much data backs the signal
-
----
-
-## 🔬 How It Actually Works
-
-TrendHustler splits the world into two camps:
+AI topics go through a lifecycle. Every single one:
 
 ```
-🔬 UNDERGROUND               📢 MAINSTREAM
-HN · GitHub · arXiv          Google News
-HuggingFace · Dev.to         YouTube (via yt-dlp)
-Reddit · Product Hunt
+🥚 EMBRYO  →  📈 RISING  →  🔥 PEAKING  →  💀 SATURATED  →  👴 DEAD
+(devs only)   (growing)    (last chance)   (everyone)     (nobody cares)
 ```
 
-Every ~12 seconds it:
-1. Pulls fresh data from all 8 sources (zero API keys — pure RSS, official APIs, yt-dlp)
-2. Extracts AI topic tickers (`$MCP`, `$AGENTS`, `$GRAPHRAG`…) from ~45 curated topics + an **emerging n-gram detector** that catches brand-new topics before they're even named
-3. Calculates **underground velocity** (how fast it's growing in dev circles) vs **mainstream saturation** (how much media/YouTube coverage it has)
-4. Maps each topic to a lifecycle stage: `EMBRYO → RISING → PEAKING → SATURATED → DEAD`
-5. Bakes everything into a self-contained `index.html` — open it anywhere, no server needed
+**TrendHustler tells you exactly where every topic is right now.**
 
-The **Fear & Greed index** tells you the overall market mood. The **WANTED poster** names the biggest dump (don't touch it). The ticker tape runs 24/7.
+Post in EMBRYO or RISING = early mover advantage. Views, subs, algorithmic love.
+
+Post in SATURATED or DEAD = you're the 400th person. Algorithm ignores you. Audience thinks you're behind.
 
 ---
 
-## 🚀 Quick Start
+## The signals — what each one means for YOU
+
+| Signal | What's happening | What you should do |
+|--------|-----------------|-------------------|
+| 💎 **STRONG BUY** | Devs are buzzing. Media hasn't found it yet. | Drop everything. Make the video TODAY. |
+| 🟢 **BUY** | Growing fast underground. Mainstream waking up. | This week. Don't overthink it. |
+| 🟡 **HOLD** | Peak. Everyone's about to post about it. | Today or never. Last call. |
+| 🔴 **SELL** | It's everywhere. Every newsletter, every carousel. | Skip it. You're too late. |
+| ☠️ **RUG** | Dead. Used to be hot. Now it's a corpse. | Don't get caught posting this. |
+
+---
+
+## What the numbers actually mean
+
+**The saturation bar** (the green/red bar on each topic):
+
+```
+[████░░░░░░] 20% mainstream
+```
+
+This means: only 20% of the buzz around this topic is coming from mainstream media and YouTube. 80% is still in the developer underground. **That's a gem.**
+
+```
+[██████████] 91% mainstream
+```
+
+This means: media is EVERYWHERE on this topic. Every podcast, newsletter, and LinkedIn thought leader is covering it. **That's a corpse. Move on.**
+
+**The posting window** (the number of days):
+
+```
+⏳ 11 days left
+```
+
+In 11 days this topic will be fully mainstream. You have 11 days to get your video out before you're one of many.
+
+```
+❌ CLOSED
+```
+
+Already mainstream. Window is gone. Don't bother.
+
+**The daily change** (the % number):
+
+```
++49% today
+```
+
+This topic gained 49% more mentions in the last 48 hours vs the previous week. It's accelerating fast.
+
+---
+
+## Real example — what it found TODAY
+
+When TrendHustler ran this morning, here's what it found:
+
+**💎 STRONG BUY: $GRAPHRAG** — only 0% mainstream coverage. Dev community buzzing. Nobody on YouTube has covered it yet. Window: 60 days.
+
+*If you make a "What is GraphRAG and why it matters" video today, you'll be first. Or close to it.*
+
+**🔴 SELL: $AGENTS** — AI Agents is at 10% mainstream but moving fast. LinkedIn carousel season has begun.
+
+**☠️ RUG: $SAFETY** — AI Safety down 52% in 48 hours. The discourse died. Nobody's clicking this anymore.
+
+*This is the difference between being a thought leader and being background noise.*
+
+---
+
+## What it watches (8 sources, zero dollars)
+
+Here's where TrendHustler gets its intel — all free, no API keys:
+
+| Source | What it's actually watching |
+|--------|----------------------------|
+| **Hacker News** | What software engineers are actually discussing |
+| **GitHub** | Which AI repos are getting stars right now |
+| **arXiv** | Fresh research papers (products follow research by 3-6 months) |
+| **Hugging Face** | Which AI models are trending among practitioners |
+| **Dev.to** | What developers are writing about and reading |
+| **Reddit** | r/LocalLLaMA, r/MachineLearning, r/singularity — the underground |
+| **Product Hunt** | New AI tools launching today |
+| **YouTube** | What creators are already covering (the mainstream signal) |
+| **Google News** | How much media coverage a topic already has |
+
+The first 7 = underground. The last 2 = mainstream. The gap between them = your opportunity.
+
+---
+
+## The Fear & Greed Index
+
+At the top of the dashboard you'll see a number from 0 to 100.
+
+- **Above 65 (Greed)** — AI content world is hyped. Lots of topics are peaking. Good time to post on popular topics, bad time to find hidden gems.
+- **Below 35 (Fear)** — Quiet period. Most topics still underground. Great time to find gems that haven't blown up yet.
+- **Right now: 38 (FEAR)** — Most topics are still underground. Lots of opportunities.
+
+---
+
+## How to use it (for real though)
+
+**For YouTube creators:**
+1. Run it in the morning (`npm run build`)
+2. Filter to "🟢 Cop (Buy)"
+3. Look for topics with less than 20% saturation and a posting window over 14 days
+4. Click the topic → get real links to actual discussions, papers, repos
+5. Make your video from those sources
+6. Post before the wave hits
+
+**For newsletter writers / Twitter / LinkedIn:**
+Same thing. Find what's being talked about in the dev underground and write about it before every major newsletter does.
+
+**For anyone in the AI space:**
+Know what's actually happening in AI before it's on the front page. Be the person who "called it" early.
+
+---
+
+## Quick start
 
 ```bash
-# Step 1 — install yt-dlp (YouTube source)
-# Windows:   winget install yt-dlp
-# Mac/Linux: pip install yt-dlp  OR  brew install yt-dlp
+# You need Node.js 18+ and yt-dlp installed
+# Install yt-dlp: winget install yt-dlp  (Windows)
+#                 pip install yt-dlp     (Mac/Linux)
 
-# Step 2 — fetch live data + build dashboard (~12 seconds)
+# Pull fresh data and build the dashboard
 npm run build
 
-# Step 3 — open in browser
-# Just double-click index.html  OR:
-open index.html
+# Open index.html in your browser
+# (just double-click it — no server, no setup, no accounts)
 ```
 
-That's it. No `npm install`. No `.env` file. No accounts. **Just open and use.**
+Takes about 12 seconds. Pulls live data from all 8 sources, scores every topic, bakes it into a single HTML file you can open anywhere.
 
-To refresh data anytime:
+**Refresh whenever you want fresh data:**
 ```bash
-npm run refresh   # re-cops fresh data from all 8 sources
+npm run refresh
 ```
 
 ---
 
-## 📡 Sources — 8 Plugs, All Free
+## Also: it has an MCP server
 
-| Source | What it reads | Why it matters |
-|--------|--------------|----------------|
-| **Hacker News** | Latest stories (Algolia API, both time windows) | Where builders talk before it's mainstream |
-| **GitHub** | Recently starred repos (AI/LLM/agents queries) | Star velocity = early adoption signal |
-| **arXiv** | cs.AI · cs.CL · cs.LG papers, last 300 | Research → products in 3-6 months |
-| **Hugging Face** | Trending models by score | Model popularity before YouTube covers it |
-| **Dev.to** | AI/ML/LLM tagged articles | Practitioner adoption signal |
-| **Reddit** | r/LocalLLaMA · r/MachineLearning · r/singularity + 4 more (via `.rss` — bypasses the 403 ban) | Underground dev sentiment |
-| **Product Hunt** | Latest AI tool launches (`.feed`) | What's being built right now |
-| **YouTube** | Search results via `yt-dlp` — view counts included | Creator adoption = trend going mainstream |
-| **Google News** | Per-ticker RSS queries | Mainstream saturation check |
-
-Reddit and Product Hunt use their RSS feeds — no scraping, no bans, just free data.
-
----
-
-## 🎮 Easter Eggs
-
-Because why not:
-
-- **Click the logo** → 💸 it rains money
-- **Konami code** (↑↑↓↓←→←→ B A) → 💎 DIAMOND HANDS MODE activated
-- **Hover any card** → cursor-following glow
-- **Sound toggle** (bottom right 🔇/🔊) → ka-ching on BUY, sad trombone on DUMP, siren on RUG
-- **Rozklikni libovolný řádek** → dealer verdict + real source links
-
----
-
-## 🔌 MCP Server — Ask Your AI Assistant
-
-TrendHustler ships with a **fully working MCP server** for Claude Code and Antigravity.
-
-**Setup (one command):**
-```bash
-claude mcp add trendhustler node /absolute/path/to/trendhustler/mcp/server.mjs
-```
-
-**Then just ask Claude:**
-```
-"What AI topics should I post about today?"
-"Should I post about GraphRAG?"
-"What's the AI trend market like right now?"
-```
-
-**3 tools:**
-
-| Tool | What it does |
-|------|-------------|
-| `whats_pumping` | Top BUY/STRONG_BUY gems right now |
-| `should_i_post_about` | Full breakdown for any topic you name |
-| `market_mood` | Fear & Greed + top mover + biggest dump |
-
-Full setup guide with copy-paste configs: [`mcp/index.html`](mcp/index.html)
-
----
-
-## 📁 File Structure
-
-```
-trendhustler/
-│
-├── index.html              ← THE DASHBOARD (self-contained, open in any browser)
-│
-├── src/
-│   ├── pipeline.mjs        ← orchestrates the whole data run
-│   ├── sources.mjs         ← 8 source connectors (HN, GitHub, arXiv, HF, Dev.to, Reddit, PH, YouTube)
-│   ├── extract.mjs         ← ticker extraction + emerging n-gram detector
-│   ├── engine.mjs          ← saturation scoring, velocity calc, BUY/SELL signals
-│   ├── config.mjs          ← 45-topic dictionary + tunable thresholds
-│   ├── util.mjs            ← shared fetch/retry/parse utilities
-│   └── build.mjs           ← bakes data.json into self-contained index.html
-│
-├── mcp/
-│   ├── server.mjs          ← MCP server (stdio, works with Claude Code + Antigravity)
-│   └── index.html          ← setup guide with copy-paste configs
-│
-├── web/
-│   └── template.html       ← source template (index.html is the built output)
-│
-├── data/
-│   └── data.json           ← latest data snapshot (baked into index.html on build)
-│
-└── assets/
-    ├── hustler.png          ← the plug himself
-    ├── gold.jpg             ← real gold texture (yes, real gold)
-    └── fonts/
-        └── pricedown.ttf    ← the actual GTA font. you're welcome.
-```
-
----
-
-## 🏗️ Requirements
-
-- **Node.js 18+** (for running the pipeline)
-- **yt-dlp** (for YouTube source — install once, free forever)
-- A browser (for viewing `index.html` — literally any browser)
-
-No `npm install` needed. Zero external npm dependencies. Pure Node.js stdlib + free APIs.
-
----
-
-## ⚡ npm Scripts
+If you use Claude Code or Antigravity, you can plug TrendHustler directly into your AI assistant:
 
 ```bash
-npm run build           # refresh data + build index.html (do this to get started)
-npm run refresh         # fetch fresh data only (faster, no rebuild)
-npm run refresh:verbose # same + see all tickers scored in terminal
-npm run bake            # build index.html from existing data.json (no fetch)
+claude mcp add trendhustler node /path/to/trendhustler/mcp/server.mjs
 ```
+
+Then ask Claude:
+- *"What AI topics should I post about today?"*
+- *"Should I make a video about voice agents?"*
+- *"What's the AI market mood right now?"*
+
+And get a dealer-grade breakdown. Setup guide: [mcp/index.html](mcp/index.html)
 
 ---
 
-*Built for Jack Roberec's AI Automator Community — May 2026 Competition.*
+## The vibe
+
+This dashboard is built to be used, not just looked at. Click stuff:
+
+- **Click the TRENDHUSTLER logo** — 💸 money rain
+- **Konami code** (↑↑↓↓←→←→ B A) — 💎 Diamond Hands Mode
+- **Sound on** (bottom right) — ka-ching on BUY, siren on RUG
+- **Click any row** — dealer verdict + real source links to go make content
+
+---
+
+## Bottom line
+
+TrendHustler is a **content timing tool for AI creators**.
+
+It doesn't tell you what to think. It tells you **when to post**.
+
+Find the gap between what developers are talking about and what's already in the mainstream. Post in that gap. That's the whole game.
 
 *"The streets never sleep. Neither does the data pipeline."* 🕶️
+
+---
+
+*Built for Jack Roberec's AI Automator Community — May 2026 Competition.*  
+*8 free sources. No API keys. No Apify. ~12 second refresh. All hustle.*
