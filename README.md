@@ -1,5 +1,6 @@
-# 🕶️ TrendHustler
-### *The Back-Alley Exchange for AI Trends*
+<p align="center">
+  <img src="assets/logo.png" alt="TrendHustler — The Back-Alley Exchange for AI Trends" width="860"/>
+</p>
 
 > *"Everybody wants to go viral. Nobody wants to post first."*
 
