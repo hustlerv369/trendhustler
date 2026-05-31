@@ -103,6 +103,14 @@ Here is what TrendHustler found when it ran today:
 
 ## How to use it
 
+### Option A — GitHub Pages (no setup, always fresh)
+
+The dashboard at **[hustlerv369.github.io/trendhustler](https://hustlerv369.github.io/trendhustler)** refreshes automatically every day at 6am UTC via GitHub Actions.
+
+Open it. That's it.
+
+### Option B — Run it locally (get data right now)
+
 ```bash
 # Step 1 — install yt-dlp (for the YouTube source)
 # Windows:   winget install yt-dlp
@@ -116,12 +124,16 @@ npm run build
 # Double-click it. No server. No account. No setup.
 ```
 
-Run it once every morning. In two minutes you know exactly what to post about that day.
-
 To refresh data anytime:
 ```bash
 npm run refresh
 ```
+
+### Auto-refresh (how it works)
+
+A GitHub Action runs every day at 6am UTC. It pulls fresh data from all 8 sources, rebuilds `index.html`, and commits the result. GitHub Pages picks it up automatically.
+
+You can also trigger it manually anytime: **Actions tab → Daily Data Refresh → Run workflow.**
 
 ---
 
@@ -154,17 +166,47 @@ No API keys. No paid subscriptions. No Apify. Every source is either a free offi
 
 ## MCP Server — ask your AI assistant
 
-Works with Claude Code and Antigravity. One setup command:
+Works with Claude Code and Antigravity.
+
+**The MCP server always has fresh data.** If your local data is older than 23 hours, it automatically fetches the latest snapshot from GitHub (updated daily). No manual refresh needed.
+
+### Setup — Claude Code
 
 ```bash
-claude mcp add trendhustler node /path/to/trendhustler/mcp/server.mjs
+# Clone the repo once
+git clone https://github.com/hustlerv369/trendhustler
+cd trendhustler
+
+# Add the MCP server (one-time setup)
+claude mcp add trendhustler node /absolute/path/to/trendhustler/mcp/server.mjs
 ```
 
-Then ask Claude: *"What should I post about today?"* and get a full breakdown.
+### Setup — Antigravity
+
+Add this to your Antigravity MCP config:
+
+```json
+{
+  "mcpServers": {
+    "trendhustler": {
+      "command": "node",
+      "args": ["/absolute/path/to/trendhustler/mcp/server.mjs"]
+    }
+  }
+}
+```
+
+### Then ask your AI
+
+```
+"What AI topics should I post about today?"
+"Should I make a video about GraphRAG?"
+"What is the AI market mood right now?"
+```
 
 Three tools: `whats_pumping` · `should_i_post_about` · `market_mood`
 
-Full setup guide: [mcp/index.html](mcp/index.html)
+Full setup guide with copy-paste configs: [hustlerv369.github.io/trendhustler/mcp/](https://hustlerv369.github.io/trendhustler/mcp/)
 
 ---
 

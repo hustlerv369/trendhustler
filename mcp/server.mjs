@@ -18,9 +18,15 @@ const DATA_PATH = join(ROOT, 'data', 'data.json');
 
 const SERVER_INFO = {
   name: 'trendhustler',
-  version: '1.0.0',
+  version: '1.1.0',
   description: "The back-alley exchange for AI trends. Cop the gems before they go mainstream.",
 };
+
+// Remote data fallback — if local data is missing or older than 23h,
+// fetch the latest snapshot directly from the GitHub repo.
+// This means the MCP works out of the box even without running npm run build.
+const REMOTE_DATA_URL =
+  'https://raw.githubusercontent.com/hustlerv369/trendhustler/master/data/data.json';
 
 const TOOLS = [
   {
@@ -56,18 +62,46 @@ const TOOLS = [
 
 let _cache = null;
 let _cacheTime = 0;
-const CACHE_TTL = 10 * 60 * 1000; // 10 min
+const CACHE_TTL = 10 * 60 * 1000;       // 10 min in-memory cache
+const STALE_THRESHOLD = 23 * 60 * 60 * 1000; // treat local data as stale after 23h
 
 async function getData() {
   const now = Date.now();
   if (_cache && now - _cacheTime < CACHE_TTL) return _cache;
+
+  // 1. Try local data/data.json
   try {
     const raw = await readFile(DATA_PATH, 'utf8');
-    _cache = JSON.parse(raw);
+    const parsed = JSON.parse(raw);
+    const age = now - new Date(parsed.market?.generatedAt || 0).getTime();
+    if (age < STALE_THRESHOLD) {
+      _cache = parsed;
+      _cacheTime = now;
+      return _cache;
+    }
+    // Local data exists but is stale — fall through to remote fetch
+  } catch {
+    // Local file missing — fall through to remote fetch
+  }
+
+  // 2. Fetch latest snapshot from GitHub (auto-refreshed daily by GitHub Actions)
+  try {
+    const res = await fetch(REMOTE_DATA_URL, {
+      headers: { 'User-Agent': 'TrendHustler-MCP/1.1' },
+      signal: AbortSignal.timeout(15000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    _cache = await res.json();
     _cacheTime = now;
     return _cache;
   } catch {
-    return null;
+    // Remote also failed — return stale local data if available, else null
+    try {
+      const raw = await readFile(DATA_PATH, 'utf8');
+      return JSON.parse(raw);
+    } catch {
+      return null;
+    }
   }
 }
 
