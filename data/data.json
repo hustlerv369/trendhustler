@@ -2,7 +2,7 @@
   "meta": {
     "app": "TrendHustler",
     "tagline": "Your plug for AI trends nobody's seen yet.",
-    "generatedAt": "2026-06-30T08:54:08.394Z",
+    "generatedAt": "2026-07-01T09:27:06.908Z",
     "windows": {
       "nowDays": 2,
       "baseDays": 7
@@ -63,33 +63,33 @@
         "label": "Google News"
       }
     ],
-    "runtimeMs": 11573
+    "runtimeMs": 11981
   },
   "market": {
-    "generatedAt": "2026-06-30T08:54:08.394Z",
-    "totalTickers": 49,
+    "generatedAt": "2026-07-01T09:27:06.908Z",
+    "totalTickers": 52,
     "counts": {
-      "STRONG_BUY": 6,
-      "BUY": 37,
-      "HOLD": 2,
-      "SELL": 3,
-      "RUG": 1
+      "STRONG_BUY": 9,
+      "BUY": 38,
+      "HOLD": 3,
+      "SELL": 2,
+      "RUG": 0
     },
-    "fearGreed": 50,
+    "fearGreed": 49,
     "sentiment": "NEUTRAL",
     "hottestGem": {
-      "symbol": "SLM",
-      "label": "Small Language Models"
+      "symbol": "MISTRAL",
+      "label": "Mistral"
     },
     "topMover": {
-      "symbol": "EVALS",
-      "label": "Evals & Benchmarks",
-      "change": 96
+      "symbol": "MULTIMODAL",
+      "label": "Multimodal / VLM",
+      "change": 95
     },
     "biggestDump": {
       "symbol": "VECTORDB",
       "label": "Vector Databases",
-      "change": -32
+      "change": 6
     }
   },
   "tickers": [
@@ -99,58 +99,58 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 96,
+      "dailyChangePct": 94,
       "saturationPct": 0,
-      "devVelocityPct": 96,
-      "hypeVelocityPct": 5,
-      "postingWindowDays": 46,
+      "devVelocityPct": 94,
+      "hypeVelocityPct": -4,
+      "postingWindowDays": 60,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 9,
-        "arxiv": 185,
-        "huggingface": 14,
-        "devto": 15
+        "hackernews": 7,
+        "arxiv": 173,
+        "huggingface": 12,
+        "devto": 12
       },
       "news": {
-        "now": 1,
-        "base": 1
+        "now": 0,
+        "base": 2
       },
       "evidence": [
         {
           "source": "huggingface",
           "title": "deepseek-ai/DeepSeek-V4-Pro",
           "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
-          "points": 5115
+          "points": 5123
         },
         {
           "source": "huggingface",
           "title": "zai-org/GLM-5.2",
           "url": "https://huggingface.co/zai-org/GLM-5.2",
-          "points": 2972
+          "points": 3100
         },
         {
           "source": "huggingface",
           "title": "Qwen/Qwen3.6-35B-A3B",
           "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
-          "points": 2275
+          "points": 2293
         },
         {
           "source": "huggingface",
           "title": "Qwen/Qwen3.6-27B",
           "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
-          "points": 1844
+          "points": 1859
         },
         {
           "source": "huggingface",
           "title": "deepseek-ai/DeepSeek-V4-Flash",
           "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
-          "points": 1647
+          "points": 1660
         },
         {
           "source": "huggingface",
-          "title": "Lightricks/LTX-2.3",
-          "url": "https://huggingface.co/Lightricks/LTX-2.3",
-          "points": 1488
+          "title": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "points": 1525
         }
       ],
       "price": 9999
@@ -161,22 +161,22 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 66,
-      "saturationPct": 9,
-      "devVelocityPct": 64,
-      "hypeVelocityPct": 76,
-      "postingWindowDays": 7,
+      "dailyChangePct": 65,
+      "saturationPct": 11,
+      "devVelocityPct": 62,
+      "hypeVelocityPct": 82,
+      "postingWindowDays": 6,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 42,
-        "github": 1,
-        "arxiv": 25,
-        "huggingface": 5,
+        "hackernews": 47,
+        "arxiv": 32,
+        "huggingface": 6,
         "devto": 24,
-        "youtube": 17
+        "producthunt": 1,
+        "youtube": 18
       },
       "news": {
-        "now": 46,
+        "now": 67,
         "base": 6
       },
       "evidence": [
@@ -184,223 +184,40 @@
           "source": "huggingface",
           "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
           "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-          "points": 990
+          "points": 1094
         },
         {
           "source": "huggingface",
           "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
           "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-          "points": 861
+          "points": 898
         },
         {
           "source": "huggingface",
           "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
           "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-          "points": 569
+          "points": 603
         },
         {
           "source": "hackernews",
           "title": "Ornith-1.0: self-improving open-source models for agentic coding",
           "url": "https://github.com/deepreinforce-ai/Ornith-1",
-          "points": 209
+          "points": 260
         },
         {
           "source": "huggingface",
           "title": "HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
           "url": "https://huggingface.co/HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
-          "points": 114
+          "points": 119
         },
         {
-          "source": "github",
-          "title": "ahmadrj80/claude-fable-5-free-desktop-app",
-          "url": "https://github.com/ahmadrj80/claude-fable-5-free-desktop-app",
-          "points": 82
+          "source": "huggingface",
+          "title": "HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+          "url": "https://huggingface.co/HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+          "points": 51
         }
       ],
-      "price": 6215
-    },
-    {
-      "symbol": "SAFETY",
-      "label": "AI Safety / Alignment",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 93,
-      "saturationPct": 5,
-      "devVelocityPct": 94,
-      "hypeVelocityPct": 52,
-      "postingWindowDays": 10,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 47
-      },
-      "news": {
-        "now": 20,
-        "base": 6
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Claude Fable 5: What Our Red Team Found Before the Plug Got Pulled",
-          "url": "https://www.reco.ai/blog/inside-claude-fable-5-red-team-findings",
-          "points": 4
-        },
-        {
-          "source": "arxiv",
-          "title": "LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressive Post-Training",
-          "url": "http://arxiv.org/abs/2606.30642v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Pessimism's Paradox: Conservative Offline Training Amplifies Reward Hacking During Online Adaptation in Reasoning Models",
-          "url": "http://arxiv.org/abs/2606.30627v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent",
-          "url": "http://arxiv.org/abs/2606.30616v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "C$^{2}$R: Cross-sample Consistency Regularization Mitigates Feature Splitting and Absorption in Sparse Autoencoders",
-          "url": "http://arxiv.org/abs/2606.30609v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "$μ$Flow: Leveraging Average Images for Improving Generalisation of Deepfake Faces Detectors",
-          "url": "http://arxiv.org/abs/2606.30528v1",
-          "points": 0
-        }
-      ],
-      "price": 4877
-    },
-    {
-      "symbol": "MULTIMODAL",
-      "label": "Multimodal / VLM",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 90,
-      "saturationPct": 2,
-      "devVelocityPct": 91,
-      "hypeVelocityPct": 27,
-      "postingWindowDays": 18,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 38,
-        "huggingface": 9,
-        "devto": 1
-      },
-      "news": {
-        "now": 7,
-        "base": 4
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-          "points": 2338
-        },
-        {
-          "source": "huggingface",
-          "title": "baidu/Unlimited-OCR",
-          "url": "https://huggingface.co/baidu/Unlimited-OCR",
-          "points": 1414
-        },
-        {
-          "source": "huggingface",
-          "title": "MiniMaxAI/MiniMax-M3",
-          "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-          "points": 1266
-        },
-        {
-          "source": "huggingface",
-          "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-          "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-          "points": 990
-        },
-        {
-          "source": "huggingface",
-          "title": "HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
-          "url": "https://huggingface.co/HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
-          "points": 114
-        },
-        {
-          "source": "huggingface",
-          "title": "Jackrong/Qwopus3.6-27B-Coder-Compat-MTP-GGUF",
-          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-Compat-MTP-GGUF",
-          "points": 106
-        }
-      ],
-      "price": 4812
-    },
-    {
-      "symbol": "FINETUNE",
-      "label": "Fine-tuning / LoRA",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 94,
-      "saturationPct": 0,
-      "devVelocityPct": 94,
-      "hypeVelocityPct": 1,
-      "postingWindowDays": 60,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 40,
-        "huggingface": 4
-      },
-      "news": {
-        "now": 1,
-        "base": 3
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "Chunjiang-Intelligence/DeepSeek-v4-Fable",
-          "url": "https://huggingface.co/Chunjiang-Intelligence/DeepSeek-v4-Fable",
-          "points": 132
-        },
-        {
-          "source": "huggingface",
-          "title": "fal/LTX-2.3-3DREAL-LoRA",
-          "url": "https://huggingface.co/fal/LTX-2.3-3DREAL-LoRA",
-          "points": 118
-        },
-        {
-          "source": "huggingface",
-          "title": "ilkerzgi/fal-Krea-2-Style-LoRAs",
-          "url": "https://huggingface.co/ilkerzgi/fal-Krea-2-Style-LoRAs",
-          "points": 78
-        },
-        {
-          "source": "huggingface",
-          "title": "Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
-          "url": "https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
-          "points": 57
-        },
-        {
-          "source": "hackernews",
-          "title": "The Scaling of PEFT: Towards Million Personal Models of Trillion Parameters",
-          "url": "https://arxiv.org/abs/2606.02437",
-          "points": 2
-        },
-        {
-          "source": "arxiv",
-          "title": "Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent",
-          "url": "http://arxiv.org/abs/2606.30616v1",
-          "points": 0
-        }
-      ],
-      "price": 4598
+      "price": 7013
     },
     {
       "symbol": "CLAUDE",
@@ -408,63 +225,62 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 56,
-      "saturationPct": 18,
-      "devVelocityPct": 53,
-      "hypeVelocityPct": 59,
-      "postingWindowDays": 7,
+      "dailyChangePct": 46,
+      "saturationPct": 20,
+      "devVelocityPct": 38,
+      "hypeVelocityPct": 81,
+      "postingWindowDays": 5,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 25,
-        "github": 4,
+        "hackernews": 43,
         "arxiv": 5,
-        "devto": 10,
-        "producthunt": 2,
-        "youtube": 2
+        "devto": 17,
+        "producthunt": 4,
+        "youtube": 3
       },
       "news": {
-        "now": 55,
-        "base": 34
+        "now": 84,
+        "base": 10
       },
       "evidence": [
         {
           "source": "hackernews",
-          "title": "GLM 5.2 beats Claude in our benchmarks",
-          "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
-          "points": 1078
+          "title": "Claude Sonnet 5 – benchmark results",
+          "url": "https://artificialanalysis.ai/models/claude-sonnet-5",
+          "points": 39
         },
         {
-          "source": "github",
-          "title": "revfactory/webtoon-harness",
-          "url": "https://github.com/revfactory/webtoon-harness",
-          "points": 175
-        },
-        {
-          "source": "github",
-          "title": "ahmadrj80/claude-fable-5-free-desktop-app",
-          "url": "https://github.com/ahmadrj80/claude-fable-5-free-desktop-app",
-          "points": 82
+          "source": "devto",
+          "title": "Reading Anthropic's \"When AI Builds Itself\" Changed How I Think About AI and Software Engineering",
+          "url": "https://dev.to/hemapriya_kanagala/reading-anthropics-when-ai-builds-itself-changed-how-i-think-about-ai-and-software-engineering-3eh",
+          "points": 35
         },
         {
           "source": "hackernews",
-          "title": "Show HN: NanoEuler – GPT-2 scale model in pure C/CUDA from scratch",
-          "url": "https://github.com/JustVugg/nanoeuler",
-          "points": 53
+          "title": "Show HN: Agentic Orchestrator, a TUI for long-running coding agents",
+          "url": "https://github.com/doordash-oss/agentic-orchestrator",
+          "points": 16
         },
         {
-          "source": "github",
-          "title": "ilindaniel/ponytail-lite",
-          "url": "https://github.com/ilindaniel/ponytail-lite",
-          "points": 51
+          "source": "hackernews",
+          "title": "Trump to lift limits on Anthropic's Fable model",
+          "url": "https://www.politico.com/news/2026/06/30/anthropic-wh-lifting-export-limits-00980865",
+          "points": 11
         },
         {
-          "source": "github",
-          "title": "SMJAI/open-memory-protocol",
-          "url": "https://github.com/SMJAI/open-memory-protocol",
-          "points": 41
+          "source": "hackernews",
+          "title": "Show HN: 143.dev – we open-sourced our internal coding-agent infrastructure",
+          "url": "https://news.ycombinator.com/item?id=48736251",
+          "points": 11
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Run AI chat, image gen, vision, and voice offline on your Mac",
+          "url": "https://github.com/off-grid-ai",
+          "points": 10
         }
       ],
-      "price": 4478
+      "price": 5535
     },
     {
       "symbol": "QWEN",
@@ -472,63 +288,246 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 84,
-      "saturationPct": 1,
-      "devVelocityPct": 88,
-      "hypeVelocityPct": -27,
+      "dailyChangePct": 88,
+      "saturationPct": 0,
+      "devVelocityPct": 91,
+      "hypeVelocityPct": -23,
       "postingWindowDays": 60,
       "confidence": "high",
       "breakdown": {
         "hackernews": 3,
-        "github": 1,
-        "arxiv": 14,
-        "huggingface": 22,
-        "devto": 3,
+        "arxiv": 19,
+        "huggingface": 24,
+        "devto": 2,
         "youtube": 1
       },
       "news": {
         "now": 1,
-        "base": 26
+        "base": 22
       },
       "evidence": [
         {
           "source": "huggingface",
           "title": "nvidia/LocateAnything-3B",
           "url": "https://huggingface.co/nvidia/LocateAnything-3B",
-          "points": 2493
+          "points": 2530
         },
         {
           "source": "huggingface",
           "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
           "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-          "points": 2338
+          "points": 2366
         },
         {
           "source": "huggingface",
           "title": "Qwen/Qwen3.6-35B-A3B",
           "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
-          "points": 2275
+          "points": 2293
         },
         {
           "source": "huggingface",
           "title": "Qwen/Qwen3.6-27B",
           "url": "https://huggingface.co/Qwen/Qwen3.6-27B",
-          "points": 1844
+          "points": 1859
         },
         {
           "source": "huggingface",
           "title": "HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
           "url": "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
-          "points": 1670
+          "points": 1680
         },
         {
           "source": "huggingface",
           "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
           "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-          "points": 990
+          "points": 1094
         }
       ],
-      "price": 4401
+      "price": 4874
+    },
+    {
+      "symbol": "FINETUNE",
+      "label": "Fine-tuning / LoRA",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 92,
+      "saturationPct": 2,
+      "devVelocityPct": 93,
+      "hypeVelocityPct": 22,
+      "postingWindowDays": 21,
+      "confidence": "high",
+      "breakdown": {
+        "github": 1,
+        "arxiv": 39,
+        "huggingface": 4,
+        "devto": 1
+      },
+      "news": {
+        "now": 5,
+        "base": 3
+      },
+      "evidence": [
+        {
+          "source": "github",
+          "title": "omarabdelazez11/Valorant_TriggerBot_Elite",
+          "url": "https://github.com/omarabdelazez11/Valorant_TriggerBot_Elite",
+          "points": 221
+        },
+        {
+          "source": "huggingface",
+          "title": "Chunjiang-Intelligence/DeepSeek-v4-Fable",
+          "url": "https://huggingface.co/Chunjiang-Intelligence/DeepSeek-v4-Fable",
+          "points": 136
+        },
+        {
+          "source": "huggingface",
+          "title": "fal/LTX-2.3-3DREAL-LoRA",
+          "url": "https://huggingface.co/fal/LTX-2.3-3DREAL-LoRA",
+          "points": 129
+        },
+        {
+          "source": "huggingface",
+          "title": "ilkerzgi/fal-Krea-2-Style-LoRAs",
+          "url": "https://huggingface.co/ilkerzgi/fal-Krea-2-Style-LoRAs",
+          "points": 96
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
+          "points": 91
+        },
+        {
+          "source": "arxiv",
+          "title": "FLORA: A deep learning approach to predict forest attributes from heterogeneous LiDAR data",
+          "url": "http://arxiv.org/abs/2606.32023v1",
+          "points": 0
+        }
+      ],
+      "price": 4819
+    },
+    {
+      "symbol": "MULTIMODAL",
+      "label": "Multimodal / VLM",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 95,
+      "saturationPct": 2,
+      "devVelocityPct": 95,
+      "hypeVelocityPct": 31,
+      "postingWindowDays": 16,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 36,
+        "huggingface": 7,
+        "devto": 1
+      },
+      "news": {
+        "now": 8,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+          "points": 2366
+        },
+        {
+          "source": "huggingface",
+          "title": "baidu/Unlimited-OCR",
+          "url": "https://huggingface.co/baidu/Unlimited-OCR",
+          "points": 1525
+        },
+        {
+          "source": "huggingface",
+          "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "points": 1094
+        },
+        {
+          "source": "huggingface",
+          "title": "HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+          "url": "https://huggingface.co/HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+          "points": 119
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
+          "points": 91
+        },
+        {
+          "source": "huggingface",
+          "title": "sahilchachra/Unlimited-OCR-GGUF",
+          "url": "https://huggingface.co/sahilchachra/Unlimited-OCR-GGUF",
+          "points": 64
+        }
+      ],
+      "price": 4816
+    },
+    {
+      "symbol": "SAFETY",
+      "label": "AI Safety / Alignment",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 92,
+      "saturationPct": 4,
+      "devVelocityPct": 92,
+      "hypeVelocityPct": 34,
+      "postingWindowDays": 15,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 2,
+        "arxiv": 38
+      },
+      "news": {
+        "now": 11,
+        "base": 7
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: 143.dev – we open-sourced our internal coding-agent infrastructure",
+          "url": "https://news.ycombinator.com/item?id=48736251",
+          "points": 11
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Whenever Alignment Matters",
+          "url": "https://vece.ai/",
+          "points": 2
+        },
+        {
+          "source": "arxiv",
+          "title": "Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs",
+          "url": "http://arxiv.org/abs/2606.32032v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Surrogate Fidelity: When Can Open LLMs Explain Closed Ones?",
+          "url": "http://arxiv.org/abs/2606.32008v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "TreeAgent: A Generalizable Multi-Agent Framework for Automated Bias Labeling in Forestry via Compiled Expert Rules and Vision-Language Models",
+          "url": "http://arxiv.org/abs/2606.31976v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Signed-Permutation Coordinate Transport for RMSNorm Transformers",
+          "url": "http://arxiv.org/abs/2606.31963v1",
+          "points": 0
+        }
+      ],
+      "price": 4584
     },
     {
       "symbol": "CODEGEN",
@@ -536,62 +535,62 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 48,
-      "saturationPct": 1,
-      "devVelocityPct": 49,
-      "hypeVelocityPct": -4,
-      "postingWindowDays": 60,
+      "dailyChangePct": 54,
+      "saturationPct": 2,
+      "devVelocityPct": 55,
+      "hypeVelocityPct": 13,
+      "postingWindowDays": 28,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 17,
-        "arxiv": 9,
+        "hackernews": 25,
+        "arxiv": 6,
         "huggingface": 1,
-        "devto": 6,
-        "producthunt": 1
+        "devto": 3,
+        "producthunt": 2
       },
       "news": {
-        "now": 1,
-        "base": 6
+        "now": 5,
+        "base": 8
       },
       "evidence": [
         {
           "source": "huggingface",
           "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
           "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-          "points": 861
+          "points": 898
+        },
+        {
+          "source": "hackernews",
+          "title": "Ask HN: Secure wrapper for coding agents?",
+          "url": "https://news.ycombinator.com/item?id=48732627",
+          "points": 19
+        },
+        {
+          "source": "hackernews",
+          "title": "Cursor now has a mobile app for guiding your coding agent on the go",
+          "url": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/",
+          "points": 17
         },
         {
           "source": "hackernews",
           "title": "Show HN: Agentic Orchestrator, a TUI for long-running coding agents",
           "url": "https://github.com/doordash-oss/agentic-orchestrator",
-          "points": 8
+          "points": 16
         },
         {
           "source": "hackernews",
-          "title": "Show HN: VibeRaven – Production workflows for AI coding agents",
-          "url": "https://github.com/ohad6k/VibeRaven",
-          "points": 7
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: I built Exfault, agentic mobile app pentesting tool",
-          "url": "https://www.exfault.com/",
-          "points": 6
+          "title": "Show HN: 143.dev – we open-sourced our internal coding-agent infrastructure",
+          "url": "https://news.ycombinator.com/item?id=48736251",
+          "points": 11
         },
         {
           "source": "devto",
-          "title": "AGENTS.md: The One File That Makes AI Coding Agents Actually Useful",
-          "url": "https://dev.to/wolfejam/agentsmd-the-one-file-that-makes-ai-coding-agents-actually-useful-ckj",
-          "points": 6
-        },
-        {
-          "source": "hackernews",
-          "title": "Fame, an external memory and tool-safety gateway for local coding agents",
-          "url": "https://github.com/superalp1985/fame-knowledge-agent-gateway",
-          "points": 5
+          "title": "Your agents keep making the same mistakes. Nobody has time to fix it.",
+          "url": "https://dev.to/tessl/your-agents-keep-making-the-same-mistakes-nobody-has-time-to-fix-it-5b0p",
+          "points": 10
         }
       ],
-      "price": 3536
+      "price": 3880
     },
     {
       "symbol": "QUANT",
@@ -599,13 +598,15 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 89,
+      "dailyChangePct": 92,
       "saturationPct": 0,
-      "devVelocityPct": 89,
+      "devVelocityPct": 92,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
       "confidence": "high",
       "breakdown": {
+        "hackernews": 1,
+        "arxiv": 4,
         "huggingface": 22,
         "devto": 1
       },
@@ -618,351 +619,103 @@
           "source": "huggingface",
           "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
           "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-          "points": 2510
+          "points": 2541
         },
         {
           "source": "huggingface",
           "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
           "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-          "points": 2338
+          "points": 2366
         },
         {
           "source": "huggingface",
           "title": "SulphurAI/Sulphur-2-base",
           "url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
-          "points": 1817
+          "points": 1826
         },
         {
           "source": "huggingface",
           "title": "HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
           "url": "https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive",
-          "points": 1670
+          "points": 1680
         },
         {
           "source": "huggingface",
           "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
           "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-          "points": 990
+          "points": 1094
         },
         {
           "source": "huggingface",
           "title": "unsloth/Qwen3.6-27B-MTP-GGUF",
           "url": "https://huggingface.co/unsloth/Qwen3.6-27B-MTP-GGUF",
-          "points": 887
+          "points": 908
         }
       ],
-      "price": 3255
-    },
-    {
-      "symbol": "LOCALLLM",
-      "label": "Local / On-device LLMs",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 67,
-      "saturationPct": 2,
-      "devVelocityPct": 68,
-      "hypeVelocityPct": 10,
-      "postingWindowDays": 33,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 8,
-        "github": 3,
-        "arxiv": 2,
-        "huggingface": 7,
-        "devto": 3,
-        "youtube": 1
-      },
-      "news": {
-        "now": 3,
-        "base": 6
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-          "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
-          "points": 2510
-        },
-        {
-          "source": "huggingface",
-          "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-          "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-          "points": 990
-        },
-        {
-          "source": "huggingface",
-          "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-          "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-          "points": 861
-        },
-        {
-          "source": "huggingface",
-          "title": "Jackrong/Qwopus3.6-27B-Coder-Compat-MTP-GGUF",
-          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-Compat-MTP-GGUF",
-          "points": 106
-        },
-        {
-          "source": "github",
-          "title": "Altair4300/glm-5.2-free-desktop-app",
-          "url": "https://github.com/Altair4300/glm-5.2-free-desktop-app",
-          "points": 83
-        },
-        {
-          "source": "huggingface",
-          "title": "Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
-          "url": "https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
-          "points": 57
-        }
-      ],
-      "price": 3127
-    },
-    {
-      "symbol": "DEEPSEEK",
-      "label": "DeepSeek",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 74,
-      "saturationPct": 6,
-      "devVelocityPct": 76,
-      "hypeVelocityPct": 23,
-      "postingWindowDays": 19,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 6,
-        "github": 1,
-        "arxiv": 6,
-        "huggingface": 6,
-        "devto": 2
-      },
-      "news": {
-        "now": 8,
-        "base": 9
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "deepseek-ai/DeepSeek-V4-Pro",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
-          "points": 5115
-        },
-        {
-          "source": "huggingface",
-          "title": "deepseek-ai/DeepSeek-V4-Flash",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
-          "points": 1647
-        },
-        {
-          "source": "huggingface",
-          "title": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark",
-          "points": 234
-        },
-        {
-          "source": "huggingface",
-          "title": "Chunjiang-Intelligence/DeepSeek-v4-Fable",
-          "url": "https://huggingface.co/Chunjiang-Intelligence/DeepSeek-v4-Fable",
-          "points": 132
-        },
-        {
-          "source": "huggingface",
-          "title": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark",
-          "points": 102
-        },
-        {
-          "source": "github",
-          "title": "Altair4300/glm-5.2-free-desktop-app",
-          "url": "https://github.com/Altair4300/glm-5.2-free-desktop-app",
-          "points": 83
-        }
-      ],
-      "price": 3063
-    },
-    {
-      "symbol": "MCP",
-      "label": "Model Context Protocol",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 55,
-      "saturationPct": 2,
-      "devVelocityPct": 58,
-      "hypeVelocityPct": -4,
-      "postingWindowDays": 60,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 16,
-        "github": 1,
-        "arxiv": 1,
-        "devto": 8
-      },
-      "news": {
-        "now": 3,
-        "base": 13
-      },
-      "evidence": [
-        {
-          "source": "devto",
-          "title": "The Model Does Not Need Memory. The Situation Does.",
-          "url": "https://dev.to/marcosomma/the-model-does-not-need-memory-the-situation-does-196g",
-          "points": 43
-        },
-        {
-          "source": "github",
-          "title": "SMJAI/open-memory-protocol",
-          "url": "https://github.com/SMJAI/open-memory-protocol",
-          "points": 41
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Running a vision model on every screenshot on-device",
-          "url": "https://github.com/ayushh0110/ScreenMind/blob/main/README.md",
-          "points": 18
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Marmot, context layer for agents and humans",
-          "url": "https://marmotdata.io/",
-          "points": 16
-        },
-        {
-          "source": "hackernews",
-          "title": "LLDB MCP",
-          "url": "https://lldb.llvm.org/use/mcp.html",
-          "points": 15
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Run AI chat, image gen, vision, and voice offline on your Mac",
-          "url": "https://github.com/off-grid-ai",
-          "points": 10
-        }
-      ],
-      "price": 2967
-    },
-    {
-      "symbol": "DISTILL",
-      "label": "Distillation",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 68,
-      "saturationPct": 6,
-      "devVelocityPct": 90,
-      "hypeVelocityPct": -30,
-      "postingWindowDays": 60,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 2,
-        "arxiv": 16
-      },
-      "news": {
-        "now": 8,
-        "base": 72
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Knowledge Distillation of Black-Box Large Language Models (2024)",
-          "url": "https://arxiv.org/abs/2401.07013",
-          "points": 122
-        },
-        {
-          "source": "hackernews",
-          "title": "Breaking the Tokenizer Barrier: On-Policy Distillation Across Model Families",
-          "url": "https://arxiv.org/abs/2606.09456",
-          "points": 2
-        },
-        {
-          "source": "arxiv",
-          "title": "DOPD: Dual On-policy Distillation",
-          "url": "http://arxiv.org/abs/2606.30626v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Scaling the Horizon, Not the Parameters: Reaching Trillion-Parameter Performance with a 35B Agent",
-          "url": "http://arxiv.org/abs/2606.30616v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Morphing into Hybrid Attention Models",
-          "url": "http://arxiv.org/abs/2606.30562v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Staged Hybridisation for Visual Quantum Reinforcement Learning via Knowledge Distillation",
-          "url": "http://arxiv.org/abs/2606.30520v1",
-          "points": 0
-        }
-      ],
-      "price": 2967
+      "price": 3735
     },
     {
       "symbol": "GEMINI",
       "label": "Gemini",
       "emerging": false,
-      "stage": "PEAKING",
-      "signal": "HOLD",
-      "dailyChangePct": 65,
-      "saturationPct": 52,
-      "devVelocityPct": 51,
-      "hypeVelocityPct": 69,
-      "postingWindowDays": 2,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 67,
+      "saturationPct": 41,
+      "devVelocityPct": 54,
+      "hypeVelocityPct": 77,
+      "postingWindowDays": 3,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 3,
-        "arxiv": 4,
-        "devto": 4,
-        "youtube": 1
+        "hackernews": 4,
+        "arxiv": 8,
+        "devto": 8,
+        "producthunt": 1,
+        "youtube": 2
       },
       "news": {
-        "now": 64,
-        "base": 23
+        "now": 77,
+        "base": 15
       },
       "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Google limits Meta's use of its Gemini AI models",
-          "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
-          "points": 158
-        },
         {
           "source": "devto",
           "title": "Need a break? Play today's game from The Daily Context.",
           "url": "https://dev.to/devteam/need-a-break-play-todays-game-from-the-daily-context-1fli",
-          "points": 68
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: AgentWatch – Prevent runaway AI agents with runtime budget enforcement",
-          "url": "https://agent-watch.dev/",
-          "points": 7
+          "points": 85
         },
         {
           "source": "devto",
-          "title": "AGENTS.md: The One File That Makes AI Coding Agents Actually Useful",
-          "url": "https://dev.to/wolfejam/agentsmd-the-one-file-that-makes-ai-coding-agents-actually-useful-ckj",
+          "title": "Play today’s game from Issue #2 of The Daily Context!",
+          "url": "https://dev.to/devteam/play-todays-game-from-issue-2-of-the-daily-context-epf",
+          "points": 16
+        },
+        {
+          "source": "devto",
+          "title": "Fluid, natural voice translation with Gemini 3.5 Live Translate",
+          "url": "https://dev.to/googleai/fluid-natural-voice-translation-with-gemini-35-live-translate-27n9",
+          "points": 16
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: TraceAIO – open-source LLM visibility tracker",
+          "url": "https://traceaio.org",
           "points": 6
         },
         {
           "source": "hackernews",
-          "title": "Gemini's personalized AI image generation is now free for US users",
-          "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/",
-          "points": 3
+          "title": "Start Building with Nano Banana 2 Lite and Gemini Omni Flash",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/",
+          "points": 6
         },
         {
           "source": "devto",
-          "title": "We ran an AI 'peer organization' (Claude + Codex + Gemini) for 7 weeks. Here is the operational record.",
-          "url": "https://dev.to/nexuslabzen/we-ran-an-ai-peer-organization-claude-codex-gemini-for-7-weeks-here-is-the-operational-5g9p",
-          "points": 1
+          "title": "Build a Minimal WebMCP Agent with Playwright and Gemini",
+          "url": "https://dev.to/gramli/build-a-minimal-webmcp-agent-with-playwright-and-gemini-24fh",
+          "points": 6
         }
       ],
-      "price": 2841
+      "price": 3658
     },
     {
       "symbol": "MULTIAGENT",
@@ -970,22 +723,34 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 65,
-      "saturationPct": 4,
-      "devVelocityPct": 67,
-      "hypeVelocityPct": 12,
-      "postingWindowDays": 30,
+      "dailyChangePct": 45,
+      "saturationPct": 2,
+      "devVelocityPct": 47,
+      "hypeVelocityPct": -2,
+      "postingWindowDays": 60,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 2,
-        "arxiv": 13,
-        "devto": 4
+        "hackernews": 5,
+        "arxiv": 18,
+        "devto": 1
       },
       "news": {
-        "now": 5,
-        "base": 9
+        "now": 3,
+        "base": 12
       },
       "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Tool Use Enables Undetectable Steganography in Multi-Agent LLM Systems",
+          "url": "https://arxiv.org/abs/2606.28425",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "Multi-Agent Simulation Framework for Verifiable Synthetic Corporate Corpora",
+          "url": "https://arxiv.org/abs/2603.14997",
+          "points": 3
+        },
         {
           "source": "hackernews",
           "title": "I have open-sourced gojaja, a CLI for local multi-agent collaboration",
@@ -993,134 +758,58 @@
           "points": 2
         },
         {
-          "source": "devto",
-          "title": "CAPE - Collaborative Agents Prompt Engineering",
-          "url": "https://dev.to/watilde/cape-collaborative-agents-prompt-engineering-8hi",
+          "source": "hackernews",
+          "title": "Show HN: Pacific Slate – a self-hosted, model-agnostic multi-agent AI assistant",
+          "url": "https://pacslate.com",
           "points": 2
         },
         {
           "source": "hackernews",
-          "title": "Show HN: Agent Passport – signed authorization envelopes for AI agents",
-          "url": "https://github.com/priyansh-x/agent-passport",
+          "title": "The Agent swarm that designs itself",
+          "url": "https://peterbhabra.com/the-swarm-that-designs-itself/",
           "points": 1
         },
         {
           "source": "devto",
-          "title": "What Actually Breaks Multi-Agent Systems: A Field Report From Real Production Failures",
-          "url": "https://dev.to/arunkumar_molugu_498be36/what-actually-breaks-multi-agent-systems-a-field-report-from-real-production-failures-pga",
+          "title": "Multi-Agent Systems in Production: When One Agent Isn't Enough and How We Coordinate Them",
+          "url": "https://dev.to/lycore/multi-agent-systems-in-production-when-one-agent-isnt-enough-and-how-we-coordinate-them-12di",
           "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "MESA: Prioritizing Vulnerable Communication Channels for Securing Multi-Agent Systems",
-          "url": "http://arxiv.org/abs/2606.30602v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Attractor States Emerge in Multi-Turn LLM Conversations",
-          "url": "http://arxiv.org/abs/2606.30571v1",
-          "points": 0
         }
       ],
-      "price": 2840
+      "price": 3413
     },
     {
-      "symbol": "ROBOTICS",
-      "label": "Robotics / Embodied AI",
-      "emerging": false,
-      "stage": "PEAKING",
-      "signal": "HOLD",
-      "dailyChangePct": 79,
-      "saturationPct": 49,
-      "devVelocityPct": 79,
-      "hypeVelocityPct": 67,
-      "postingWindowDays": 2,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 7,
-        "devto": 2
-      },
-      "news": {
-        "now": 60,
-        "base": 23
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "South Korea to spend $1T on more memory chip production and humanoid robots",
-          "url": "https://arstechnica.com/ai/2026/06/south-korea-to-spend-1t-on-more-memory-chip-production-and-humanoid-robots/",
-          "points": 222
-        },
-        {
-          "source": "arxiv",
-          "title": "VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes",
-          "url": "http://arxiv.org/abs/2606.30645v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "ReactiveBFM: Reactive Closed-Loop Motion Planning Towards Universal Humanoid Whole-Body Control",
-          "url": "http://arxiv.org/abs/2606.30362v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Domain Adaptation with Adaptive Imagination for Visual Reinforcement Learning under Limited Target Data",
-          "url": "http://arxiv.org/abs/2606.30192v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Automating the Design of Embodied AgentArchitectures",
-          "url": "http://arxiv.org/abs/2606.30111v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "RoAd-RL: A Unified Library and Benchmark for Robust Adversarial Reinforcement Learning",
-          "url": "http://arxiv.org/abs/2606.29867v1",
-          "points": 0
-        }
-      ],
-      "price": 2834
-    },
-    {
-      "symbol": "RAG",
-      "label": "Retrieval-Augmented Gen",
+      "symbol": "MCP",
+      "label": "Model Context Protocol",
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 71,
-      "saturationPct": 1,
-      "devVelocityPct": 72,
-      "hypeVelocityPct": 5,
-      "postingWindowDays": 45,
+      "dailyChangePct": 51,
+      "saturationPct": 9,
+      "devVelocityPct": 50,
+      "hypeVelocityPct": 33,
+      "postingWindowDays": 13,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 2,
-        "github": 1,
-        "arxiv": 11,
-        "devto": 6,
-        "youtube": 2
+        "hackernews": 16,
+        "devto": 11
       },
       "news": {
-        "now": 0,
-        "base": 1
+        "now": 13,
+        "base": 11
       },
       "evidence": [
-        {
-          "source": "github",
-          "title": "Aliu-AiRobot/ESEILANE",
-          "url": "https://github.com/Aliu-AiRobot/ESEILANE",
-          "points": 135
-        },
         {
           "source": "devto",
           "title": "The Model Does Not Need Memory. The Situation Does.",
           "url": "https://dev.to/marcosomma/the-model-does-not-need-memory-the-situation-does-196g",
-          "points": 43
+          "points": 44
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: 143.dev – we open-sourced our internal coding-agent infrastructure",
+          "url": "https://news.ycombinator.com/item?id=48736251",
+          "points": 11
         },
         {
           "source": "hackernews",
@@ -1135,19 +824,141 @@
           "points": 8
         },
         {
+          "source": "hackernews",
+          "title": "Show HN: TraceAIO – open-source LLM visibility tracker",
+          "url": "https://traceaio.org",
+          "points": 6
+        },
+        {
+          "source": "devto",
+          "title": "Build a Minimal WebMCP Agent with Playwright and Gemini",
+          "url": "https://dev.to/gramli/build-a-minimal-webmcp-agent-with-playwright-and-gemini-24fh",
+          "points": 6
+        }
+      ],
+      "price": 3137
+    },
+    {
+      "symbol": "ROBOTICS",
+      "label": "Robotics / Embodied AI",
+      "emerging": false,
+      "stage": "PEAKING",
+      "signal": "HOLD",
+      "dailyChangePct": 85,
+      "saturationPct": 49,
+      "devVelocityPct": 84,
+      "hypeVelocityPct": 72,
+      "postingWindowDays": 2,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 9
+      },
+      "news": {
+        "now": 68,
+        "base": 19
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "China's humanoid robots captivated the world, a rental market shows their limits",
+          "url": "https://www.cnn.com/2026/06/30/tech/china-humanoid-robot-ai-rental-intl-hnk-dst",
+          "points": 3
+        },
+        {
           "source": "arxiv",
-          "title": "Regime-Aware Peer Specialization for Robust RAG under Heterogeneous Knowledge Conflicts",
-          "url": "http://arxiv.org/abs/2606.30518v1",
+          "title": "MECoBench: A Systematic Study of Multimodal Agent Collaboration in Embodied Environments",
+          "url": "http://arxiv.org/abs/2606.31966v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "ManimAgent: Self-Evolving Multimodal Agents for Visual Education",
-          "url": "http://arxiv.org/abs/2606.30296v1",
+          "title": "MVP-Nav: Multi-layer Value Map Planner Navigator",
+          "url": "http://arxiv.org/abs/2606.31919v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Real-Time Source-Free Object Detection",
+          "url": "http://arxiv.org/abs/2606.31834v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "3D HAMSTER: Bridging Planning and Control in Hierarchical Vision Language Action Models through 3D Trajectory Guidance",
+          "url": "http://arxiv.org/abs/2606.31329v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "LLM-Powered Interactive Robotic Action Synthesis from Multimodal Speech, Gestures, and Music",
+          "url": "http://arxiv.org/abs/2606.31158v1",
           "points": 0
         }
       ],
-      "price": 2807
+      "price": 3137
+    },
+    {
+      "symbol": "DEEPSEEK",
+      "label": "DeepSeek",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 68,
+      "saturationPct": 6,
+      "devVelocityPct": 70,
+      "hypeVelocityPct": 16,
+      "postingWindowDays": 24,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 6,
+        "arxiv": 5,
+        "huggingface": 6,
+        "devto": 2
+      },
+      "news": {
+        "now": 7,
+        "base": 11
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "deepseek-ai/DeepSeek-V4-Pro",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+          "points": 5123
+        },
+        {
+          "source": "huggingface",
+          "title": "deepseek-ai/DeepSeek-V4-Flash",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+          "points": 1660
+        },
+        {
+          "source": "huggingface",
+          "title": "deepseek-ai/DeepSeek-V4-Pro-DSpark",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-DSpark",
+          "points": 262
+        },
+        {
+          "source": "huggingface",
+          "title": "Chunjiang-Intelligence/DeepSeek-v4-Fable",
+          "url": "https://huggingface.co/Chunjiang-Intelligence/DeepSeek-v4-Fable",
+          "points": 136
+        },
+        {
+          "source": "huggingface",
+          "title": "deepseek-ai/DeepSeek-V4-Flash-DSpark",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-DSpark",
+          "points": 115
+        },
+        {
+          "source": "huggingface",
+          "title": "sahilchachra/Unlimited-OCR-GGUF",
+          "url": "https://huggingface.co/sahilchachra/Unlimited-OCR-GGUF",
+          "points": 64
+        }
+      ],
+      "price": 2997
     },
     {
       "symbol": "EMBEDDINGS",
@@ -1155,15 +966,15 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 90,
+      "dailyChangePct": 88,
       "saturationPct": 0,
-      "devVelocityPct": 90,
+      "devVelocityPct": 88,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
       "confidence": "high",
       "breakdown": {
         "hackernews": 1,
-        "arxiv": 15
+        "arxiv": 16
       },
       "news": {
         "now": 0,
@@ -1172,42 +983,103 @@
       "evidence": [
         {
           "source": "hackernews",
-          "title": "Ask HN: Local CJK/Latin entity extraction without shipping a model?",
-          "url": "https://news.ycombinator.com/item?id=48712376",
-          "points": 3
+          "title": "Show HN: Abstractions – Weekly newsletters explaining your codebase",
+          "url": "https://useabstractions.com",
+          "points": 2
         },
         {
           "source": "arxiv",
-          "title": "Optimization Dynamics Imprint Semantic Specificity in Contrastive Embedding Norms",
-          "url": "http://arxiv.org/abs/2606.30625v1",
+          "title": "Generative Skill Composition for LLM Agents",
+          "url": "http://arxiv.org/abs/2606.32025v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "TRACE: Temporal Relationship-Aware Conversational Entrainment Detection in Dyadic Speech",
-          "url": "http://arxiv.org/abs/2606.30543v1",
+          "title": "FedLAB: Traceable Semantic Codebooks for Federated Multimodal Graph Foundation Learning",
+          "url": "http://arxiv.org/abs/2606.32016v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "ITSPACE: Monotone Gaussian Optimal Transport Updates",
-          "url": "http://arxiv.org/abs/2606.30523v1",
+          "title": "STEB: Style Text Embedding Benchmark",
+          "url": "http://arxiv.org/abs/2606.31741v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Field Order Should Not Matter: Permutation-Invariant Embedding Model Fine-Tuning for Structured Metadata Retrieval",
-          "url": "http://arxiv.org/abs/2606.30473v1",
+          "title": "WIDER-FAIR: An Annotated Version of the WIDER-FACE Dataset for Fairness Evaluation",
+          "url": "http://arxiv.org/abs/2606.31704v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Scalar Representations of Neural Network Training Dynamics",
-          "url": "http://arxiv.org/abs/2606.30384v1",
+          "title": "Look But Don't Touch with Sparse Autoencoders for Unlearning in Diffusion Models",
+          "url": "http://arxiv.org/abs/2606.31699v1",
           "points": 0
         }
       ],
-      "price": 2729
+      "price": 2934
+    },
+    {
+      "symbol": "IMAGEGEN",
+      "label": "AI Image Generation",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 87,
+      "saturationPct": 38,
+      "devVelocityPct": 84,
+      "hypeVelocityPct": 72,
+      "postingWindowDays": 4,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 2,
+        "arxiv": 4,
+        "huggingface": 4
+      },
+      "news": {
+        "now": 43,
+        "base": 5
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "ideogram-ai/ideogram-4-fp8",
+          "url": "https://huggingface.co/ideogram-ai/ideogram-4-fp8",
+          "points": 649
+        },
+        {
+          "source": "huggingface",
+          "title": "krea/Krea-2-Turbo",
+          "url": "https://huggingface.co/krea/Krea-2-Turbo",
+          "points": 427
+        },
+        {
+          "source": "huggingface",
+          "title": "krea/Krea-2-Raw",
+          "url": "https://huggingface.co/krea/Krea-2-Raw",
+          "points": 259
+        },
+        {
+          "source": "huggingface",
+          "title": "vantagewithai/Krea-2-Turbo-GGUF",
+          "url": "https://huggingface.co/vantagewithai/Krea-2-Turbo-GGUF",
+          "points": 62
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Run AI chat, image gen, vision, and voice offline on your Mac",
+          "url": "https://github.com/off-grid-ai",
+          "points": 10
+        },
+        {
+          "source": "hackernews",
+          "title": "No one thinks Midjourney is alive. That matters for those who think Claude is",
+          "url": "https://plus.flux.community/p/large-language-models-and-the-textual",
+          "points": 5
+        }
+      ],
+      "price": 2820
     },
     {
       "symbol": "GPT",
@@ -1215,51 +1087,44 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 65,
+      "dailyChangePct": 53,
       "saturationPct": 0,
-      "devVelocityPct": 66,
-      "hypeVelocityPct": 2,
-      "postingWindowDays": 59,
+      "devVelocityPct": 53,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 6,
-        "arxiv": 8,
-        "devto": 4,
-        "youtube": 1
+        "hackernews": 4,
+        "arxiv": 11,
+        "devto": 2
       },
       "news": {
         "now": 0,
-        "base": 1
+        "base": 0
       },
       "evidence": [
         {
           "source": "hackernews",
           "title": "Show HN: Agentic Orchestrator, a TUI for long-running coding agents",
           "url": "https://github.com/doordash-oss/agentic-orchestrator",
-          "points": 8
+          "points": 16
         },
         {
           "source": "hackernews",
-          "title": "OpenAI limits latest ChatGPT product to Trump-approved customers",
-          "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/06/26/openai-limits-its-latest-chatgpt-product-to-trump-approved-customers-during-cybersecurity-review/",
+          "title": "Show HN: TraceAIO – open-source LLM visibility tracker",
+          "url": "https://traceaio.org",
+          "points": 6
+        },
+        {
+          "source": "devto",
+          "title": "GPT-5.6 Security: What Developers Need to Know About OpenAI's Latest AI Agents",
+          "url": "https://dev.to/alessandro_pignati/gpt-56-security-what-developers-need-to-know-about-openais-latest-ai-agents-13p",
           "points": 5
         },
         {
           "source": "hackernews",
-          "title": "Snap to AI – One-Keystroke Screenshots to Claude, ChatGPT, etc. (macOS)",
-          "url": "https://snaptoai.app",
-          "points": 3
-        },
-        {
-          "source": "hackernews",
-          "title": "GPT-5.5 Instant (June 2026): Intelligence, Performance and Price Analysis",
-          "url": "https://artificialanalysis.ai/models/gpt-5-5-instant-06-26",
-          "points": 3
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Looped Whisper (FOSS) – Voice transcription menubar app for macOS",
-          "url": "https://github.com/loopedautomation/whisper",
+          "title": "Show HN: SUNWÆE – your life's AI OS",
+          "url": "https://news.ycombinator.com/item?id=48732413",
           "points": 2
         },
         {
@@ -1267,9 +1132,434 @@
           "title": "Show HN: We made an Audio ML sharing platform",
           "url": "https://www.noysr.com/explore",
           "points": 2
+        },
+        {
+          "source": "arxiv",
+          "title": "Generative Skill Composition for LLM Agents",
+          "url": "http://arxiv.org/abs/2606.32025v1",
+          "points": 0
         }
       ],
-      "price": 2621
+      "price": 2775
+    },
+    {
+      "symbol": "AIGENERATED",
+      "label": "Ai-Generated",
+      "emerging": true,
+      "stage": "SATURATED",
+      "signal": "SELL",
+      "dailyChangePct": 88,
+      "saturationPct": 71,
+      "devVelocityPct": 70,
+      "hypeVelocityPct": 84,
+      "postingWindowDays": 0,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 3,
+        "arxiv": 2
+      },
+      "news": {
+        "now": 77,
+        "base": 2
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Gitpulse – AI-generated conventional commits from your terminal",
+          "url": "https://github.com/erico964-blip/gitpulse",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "Supervised vs. Unsupervised AI-generated code",
+          "url": "https://www.tommyjepsen.com/blog/supervised-vs-unsupervised-ai-code",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "Labelling AI-Generated Content in China",
+          "url": "https://ocpl.substack.com/p/labelling-ai-generated-content-in",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "Triospect: A Three-Dimensional Framework for Robust Statistical AI-Generated Text Detection Against Diverse Attacks",
+          "url": "http://arxiv.org/abs/2606.31074v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "How Human Feedback Shapes AI-generated Community Notes",
+          "url": "http://arxiv.org/abs/2606.30905v1",
+          "points": 0
+        }
+      ],
+      "price": 2773
+    },
+    {
+      "symbol": "CLAUDESONNET",
+      "label": "Claude Sonnet",
+      "emerging": true,
+      "stage": "SATURATED",
+      "signal": "SELL",
+      "dailyChangePct": 87,
+      "saturationPct": 68,
+      "devVelocityPct": 71,
+      "hypeVelocityPct": 82,
+      "postingWindowDays": 0,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 4,
+        "devto": 2,
+        "producthunt": 1
+      },
+      "news": {
+        "now": 70,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Claude Sonnet 5 – benchmark results",
+          "url": "https://artificialanalysis.ai/models/claude-sonnet-5",
+          "points": 39
+        },
+        {
+          "source": "hackernews",
+          "title": "Claude Sonnet 5 is here",
+          "url": "https://old.reddit.com/r/ClaudeAI/comments/1ujwggp/introducing_claude_sonnet_5_our_most_agentic/",
+          "points": 4
+        },
+        {
+          "source": "hackernews",
+          "title": "Claude Sonnet 5: strong agentic performance at a higher cost per task",
+          "url": "https://artificialanalysis.ai/articles/claude-sonnet-5-agentic-cost",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "\"Introducing Claude Sonnet 5, our most agentic Sonnet yet.\"",
+          "url": "https://twitter.com/claudeai/status/2072017450611142835",
+          "points": 2
+        },
+        {
+          "source": "devto",
+          "title": "What Claude Sonnet 5 Means for AI Infrastructure in East Africa",
+          "url": "https://dev.to/gabrielmahia/what-claude-sonnet-5-means-for-ai-infrastructure-in-east-africa-41gc",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Claude Sonnet 5 & DiffusionGemma: The Two Models Reshaping AI This Week",
+          "url": "https://dev.to/doremonai/claude-sonnet-5-diffusiongemma-the-two-models-reshaping-ai-this-week-56ac",
+          "points": 0
+        }
+      ],
+      "price": 2704
+    },
+    {
+      "symbol": "LOCALLLM",
+      "label": "Local / On-device LLMs",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 38,
+      "saturationPct": 2,
+      "devVelocityPct": 40,
+      "hypeVelocityPct": -2,
+      "postingWindowDays": 60,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 8,
+        "huggingface": 6,
+        "devto": 1,
+        "youtube": 2
+      },
+      "news": {
+        "now": 1,
+        "base": 8
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+          "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+          "points": 2541
+        },
+        {
+          "source": "huggingface",
+          "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
+          "points": 1094
+        },
+        {
+          "source": "huggingface",
+          "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+          "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
+          "points": 898
+        },
+        {
+          "source": "huggingface",
+          "title": "Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
+          "url": "https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
+          "points": 91
+        },
+        {
+          "source": "huggingface",
+          "title": "sahilchachra/Unlimited-OCR-GGUF",
+          "url": "https://huggingface.co/sahilchachra/Unlimited-OCR-GGUF",
+          "points": 64
+        },
+        {
+          "source": "huggingface",
+          "title": "LiquidAI/LFM2.5-230M-GGUF",
+          "url": "https://huggingface.co/LiquidAI/LFM2.5-230M-GGUF",
+          "points": 50
+        }
+      ],
+      "price": 2574
+    },
+    {
+      "symbol": "PROMPTENG",
+      "label": "Prompt Engineering",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 66,
+      "saturationPct": 2,
+      "devVelocityPct": 68,
+      "hypeVelocityPct": 2,
+      "postingWindowDays": 56,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 11,
+        "devto": 1
+      },
+      "news": {
+        "now": 2,
+        "base": 6
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Ask HN: Is Codex with GPT 5.5 Extra High being dumbed down?",
+          "url": "https://news.ycombinator.com/item?id=48734115",
+          "points": 5
+        },
+        {
+          "source": "devto",
+          "title": "Prompt caching cut my Claude API bill by 85%. Here's the exact setup.",
+          "url": "https://dev.to/penloom_studio_829b7817d3/prompt-caching-cut-my-claude-api-bill-by-85-heres-the-exact-setup-3nd9",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+          "url": "http://arxiv.org/abs/2606.32034v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "PolicyGuard: From Organizational Policies to Neuro-SymbolicCompliance Review Engines",
+          "url": "http://arxiv.org/abs/2606.32004v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "GR2 Technical Report",
+          "url": "http://arxiv.org/abs/2606.31984v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Cross-lingual Relation Extraction with Large Language Models: Zero-Shot, Few-Shot, and Fine-Tuned Evaluation on Romanian",
+          "url": "http://arxiv.org/abs/2606.31718v1",
+          "points": 0
+        }
+      ],
+      "price": 2535
+    },
+    {
+      "symbol": "LARGELANGUAG",
+      "label": "Large Language",
+      "emerging": true,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 86,
+      "saturationPct": 6,
+      "devVelocityPct": 86,
+      "hypeVelocityPct": 22,
+      "postingWindowDays": 20,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 3,
+        "arxiv": 9,
+        "devto": 1,
+        "youtube": 4
+      },
+      "news": {
+        "now": 3,
+        "base": 3
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Modular Cognitive Architecture Emerges in Large Language Models",
+          "url": "https://pengrui-han.github.io/LLM_Modularity_Page/",
+          "points": 3
+        },
+        {
+          "source": "devto",
+          "title": "Notes: Memory, Context, and Large Language Models (LLMs)",
+          "url": "https://dev.to/vladimirpanov/notes-memory-context-and-large-language-models-llms-4m67",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "IEEE Rolls Out Large Language Models Training Course",
+          "url": "https://spectrum.ieee.org/large-language-models-ieee-course",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "Guide to Using Large Language Models and Generative AI in Economic History",
+          "url": "https://www.nber.org/papers/w35374",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "Cross-lingual Relation Extraction with Large Language Models: Zero-Shot, Few-Shot, and Fine-Tuned Evaluation on Romanian",
+          "url": "http://arxiv.org/abs/2606.31718v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "A Lifecycle and Application-Stack Survey of Large Language Model Vulnerabilities: Attacks, Risks, Defenses, and Open Problems",
+          "url": "http://arxiv.org/abs/2606.31639v1",
+          "points": 0
+        }
+      ],
+      "price": 2531
+    },
+    {
+      "symbol": "DISTILL",
+      "label": "Distillation",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 53,
+      "saturationPct": 11,
+      "devVelocityPct": 79,
+      "hypeVelocityPct": -22,
+      "postingWindowDays": 57,
+      "confidence": "high",
+      "breakdown": {
+        "arxiv": 11
+      },
+      "news": {
+        "now": 10,
+        "base": 68
+      },
+      "evidence": [
+        {
+          "source": "arxiv",
+          "title": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+          "url": "http://arxiv.org/abs/2606.32034v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Scalable Behaviour Cloning on Browser Using via Skill Distillation",
+          "url": "http://arxiv.org/abs/2606.32014v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "GR2 Technical Report",
+          "url": "http://arxiv.org/abs/2606.31984v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "SpikeLogBERT: Energy-Efficient Log Parsing Using Spiking Transformer Networks",
+          "url": "http://arxiv.org/abs/2606.31781v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Improving Certified Robustness via Adversarial Distillation",
+          "url": "http://arxiv.org/abs/2606.31653v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "PGUDA: Pressure-Guided Unsupervised Domain Adaptation with Cross-Modal Knowledge Distillation for sEMG-Based Gesture Recognition",
+          "url": "http://arxiv.org/abs/2606.31349v1",
+          "points": 0
+        }
+      ],
+      "price": 2523
+    },
+    {
+      "symbol": "CODINGAGENTS",
+      "label": "Coding Agents",
+      "emerging": true,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 73,
+      "saturationPct": 31,
+      "devVelocityPct": 82,
+      "hypeVelocityPct": 40,
+      "postingWindowDays": 7,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 10,
+        "devto": 1
+      },
+      "news": {
+        "now": 27,
+        "base": 27
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Ask HN: Secure wrapper for coding agents?",
+          "url": "https://news.ycombinator.com/item?id=48732627",
+          "points": 19
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Agentic Orchestrator, a TUI for long-running coding agents",
+          "url": "https://github.com/doordash-oss/agentic-orchestrator",
+          "points": 16
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Ouijit, command terminals running coding agents",
+          "url": "https://github.com/ouijit/ouijit",
+          "points": 4
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Sibyl – self-hosted cross-agent memory for AI coding agents",
+          "url": "https://github.com/hyperb1iss/sibyl",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: World Model MCP v0.10.0 – cross-runtime memory across 7 coding agents",
+          "url": "https://github.com/SaravananJaichandar/world-model-mcp",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "How to (Not) Spend $10k/Wk on Coding Agents",
+          "url": "https://allenpike.com/2026/how-to-not-spend-10k-on-coding-agents/",
+          "points": 2
+        }
+      ],
+      "price": 2473
     },
     {
       "symbol": "CONTEXT",
@@ -1277,18 +1567,17 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 74,
+      "dailyChangePct": 66,
       "saturationPct": 0,
-      "devVelocityPct": 74,
+      "devVelocityPct": 66,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
-      "confidence": "high",
+      "confidence": "medium",
       "breakdown": {
         "hackernews": 1,
-        "github": 1,
-        "arxiv": 8,
-        "huggingface": 4,
-        "devto": 1
+        "arxiv": 5,
+        "huggingface": 5,
+        "devto": 2
       },
       "news": {
         "now": 0,
@@ -1299,40 +1588,102 @@
           "source": "huggingface",
           "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
           "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF",
-          "points": 990
+          "points": 1094
         },
         {
           "source": "huggingface",
           "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
           "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-          "points": 569
+          "points": 603
         },
         {
           "source": "huggingface",
           "title": "Chunjiang-Intelligence/DeepSeek-v4-Fable",
           "url": "https://huggingface.co/Chunjiang-Intelligence/DeepSeek-v4-Fable",
-          "points": 132
-        },
-        {
-          "source": "github",
-          "title": "Altair4300/glm-5.2-free-desktop-app",
-          "url": "https://github.com/Altair4300/glm-5.2-free-desktop-app",
-          "points": 83
+          "points": 136
         },
         {
           "source": "huggingface",
           "title": "Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
           "url": "https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
-          "points": 57
+          "points": 91
+        },
+        {
+          "source": "huggingface",
+          "title": "huihui-ai/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-GGUF",
+          "url": "https://huggingface.co/huihui-ai/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-GGUF",
+          "points": 46
         },
         {
           "source": "hackernews",
-          "title": "Show HN:Swarm intelligence without degradation using two Qwen models",
-          "url": "https://news.ycombinator.com/item?id=48719260",
+          "title": "Ask HN: Is Codex with GPT 5.5 Extra High being dumbed down?",
+          "url": "https://news.ycombinator.com/item?id=48734115",
+          "points": 5
+        }
+      ],
+      "price": 2452
+    },
+    {
+      "symbol": "RAG",
+      "label": "Retrieval-Augmented Gen",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 62,
+      "saturationPct": 2,
+      "devVelocityPct": 62,
+      "hypeVelocityPct": 6,
+      "postingWindowDays": 41,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 3,
+        "arxiv": 4,
+        "devto": 10,
+        "youtube": 1
+      },
+      "news": {
+        "now": 1,
+        "base": 2
+      },
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "The Model Does Not Need Memory. The Situation Does.",
+          "url": "https://dev.to/marcosomma/the-model-does-not-need-memory-the-situation-does-196g",
+          "points": 44
+        },
+        {
+          "source": "devto",
+          "title": "You Don’t Always Need The Frontier",
+          "url": "https://dev.to/dailycontext/you-dont-always-need-the-frontier-1k8o",
+          "points": 27
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Run AI chat, image gen, vision, and voice offline on your Mac",
+          "url": "https://github.com/off-grid-ai",
+          "points": 10
+        },
+        {
+          "source": "hackernews",
+          "title": "Metasearch Tooling for Agents",
+          "url": "https://news.ycombinator.com/item?id=48721577",
+          "points": 8
+        },
+        {
+          "source": "hackernews",
+          "title": "Superintellignce is still decades away",
+          "url": "https://news.ycombinator.com/item?id=48731740",
+          "points": 3
+        },
+        {
+          "source": "devto",
+          "title": "1024-token RAG chunks cut my storage cost in half — and nearly doubled my Claude bill",
+          "url": "https://dev.to/riversea/1024-token-rag-chunks-cut-my-storage-cost-in-half-and-nearly-doubled-my-claude-bill-11e",
           "points": 1
         }
       ],
-      "price": 2614
+      "price": 2392
     },
     {
       "symbol": "MOE",
@@ -1340,18 +1691,16 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 73,
+      "dailyChangePct": 67,
       "saturationPct": 0,
-      "devVelocityPct": 74,
+      "devVelocityPct": 68,
       "hypeVelocityPct": -4,
       "postingWindowDays": 60,
       "confidence": "medium",
       "breakdown": {
-        "hackernews": 1,
-        "github": 1,
+        "hackernews": 2,
         "arxiv": 5,
-        "huggingface": 5,
-        "devto": 2
+        "huggingface": 4
       },
       "news": {
         "now": 0,
@@ -1362,502 +1711,101 @@
           "source": "huggingface",
           "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
           "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
-          "points": 2338
-        },
-        {
-          "source": "huggingface",
-          "title": "MiniMaxAI/MiniMax-M3",
-          "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
-          "points": 1266
+          "points": 2366
         },
         {
           "source": "hackernews",
           "title": "LongCat-2.0, a large-scale MoE model with 1.6T total and 48B Active",
           "url": "https://longcat.chat/blog/longcat-2.0/",
-          "points": 134
+          "points": 273
         },
         {
           "source": "huggingface",
           "title": "Chunjiang-Intelligence/DeepSeek-v4-Fable",
           "url": "https://huggingface.co/Chunjiang-Intelligence/DeepSeek-v4-Fable",
-          "points": 132
-        },
-        {
-          "source": "github",
-          "title": "Altair4300/glm-5.2-free-desktop-app",
-          "url": "https://github.com/Altair4300/glm-5.2-free-desktop-app",
-          "points": 83
+          "points": 136
         },
         {
           "source": "huggingface",
           "title": "Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
           "url": "https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
-          "points": 57
-        }
-      ],
-      "price": 2472
-    },
-    {
-      "symbol": "OPENWEIGHTS",
-      "label": "Open-Weight Models",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 67,
-      "saturationPct": 0,
-      "devVelocityPct": 69,
-      "hypeVelocityPct": -8,
-      "postingWindowDays": 60,
-      "confidence": "medium",
-      "breakdown": {
-        "hackernews": 2,
-        "github": 1,
-        "arxiv": 9,
-        "devto": 2
-      },
-      "news": {
-        "now": 0,
-        "base": 4
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Ornith-1.0: self-improving open-source models for agentic coding",
-          "url": "https://github.com/deepreinforce-ai/Ornith-1",
-          "points": 209
-        },
-        {
-          "source": "github",
-          "title": "Altair4300/glm-5.2-free-desktop-app",
-          "url": "https://github.com/Altair4300/glm-5.2-free-desktop-app",
-          "points": 83
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: We built a learning loop that learns from its own failures",
-          "url": "https://blankline.org/research/intelligence-compounds",
-          "points": 3
-        },
-        {
-          "source": "arxiv",
-          "title": "SWE-INTERACT: Reimagining SWE Benchmarks as User-Driven Long-Horizon Coding Sessions",
-          "url": "http://arxiv.org/abs/2606.30573v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Collective cooperation without individual fidelity in LLM agents",
-          "url": "http://arxiv.org/abs/2606.30454v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Translating Natural Language to Strategic Temporal Specifications via LLMs",
-          "url": "http://arxiv.org/abs/2606.30441v1",
-          "points": 0
-        }
-      ],
-      "price": 2450
-    },
-    {
-      "symbol": "PROMPTENG",
-      "label": "Prompt Engineering",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 73,
-      "saturationPct": 5,
-      "devVelocityPct": 75,
-      "hypeVelocityPct": 13,
-      "postingWindowDays": 28,
-      "confidence": "high",
-      "breakdown": {
-        "arxiv": 10,
-        "devto": 4,
-        "youtube": 1
-      },
-      "news": {
-        "now": 4,
-        "base": 7
-      },
-      "evidence": [
-        {
-          "source": "devto",
-          "title": "CAPE - Collaborative Agents Prompt Engineering",
-          "url": "https://dev.to/watilde/cape-collaborative-agents-prompt-engineering-8hi",
-          "points": 2
-        },
-        {
-          "source": "devto",
-          "title": "\"From Chatbot to Teammate: What Claude Tag Signals for How We Work\"",
-          "url": "https://dev.to/vsbd_vlad/from-chatbot-to-teammate-what-claude-tag-signals-for-how-we-work-32a3",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "Regime-Aware Peer Specialization for Robust RAG under Heterogeneous Knowledge Conflicts",
-          "url": "http://arxiv.org/abs/2606.30518v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Whose Side Is Your Agent On? Multi-Party Principal Loyalty in LLM Agents",
-          "url": "http://arxiv.org/abs/2606.30383v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "DreamForge-World 0.1 Preview: A Low-Compute Real-Time Controllable World Model",
-          "url": "http://arxiv.org/abs/2606.30292v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Inoculation Adapters: Improved Selective Generalization of Capabilities with Fewer Surprising Backdoors",
-          "url": "http://arxiv.org/abs/2606.30252v1",
-          "points": 0
-        }
-      ],
-      "price": 2428
-    },
-    {
-      "symbol": "AIGENERATED",
-      "label": "Ai-Generated",
-      "emerging": true,
-      "stage": "SATURATED",
-      "signal": "SELL",
-      "dailyChangePct": 86,
-      "saturationPct": 77,
-      "devVelocityPct": 60,
-      "hypeVelocityPct": 82,
-      "postingWindowDays": 0,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 3,
-        "devto": 1
-      },
-      "news": {
-        "now": 68,
-        "base": 2
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Tidal Says It Won't Pay Royalties for AI-Generated Music",
-          "url": "https://www.404media.co/tidal-says-it-wont-pay-royalties-for-ai-generated-music/",
-          "points": 5
-        },
-        {
-          "source": "hackernews",
-          "title": "Ask HN: If AI-generated code works 100%, do languages still need to be upgraded?",
-          "url": "https://news.ycombinator.com/item?id=48723923",
-          "points": 4
-        },
-        {
-          "source": "hackernews",
-          "title": "Core – Deterministic governance rules for AI-generated code (pip installable)",
-          "url": "https://github.com/DariuszNewecki/CORE",
-          "points": 3
-        },
-        {
-          "source": "devto",
-          "title": "How Mneme governs AI-generated code before the model writes a line",
-          "url": "https://dev.to/mnemehq/how-mneme-governs-ai-generated-code-before-the-model-writes-a-line-2noa",
-          "points": 2
-        }
-      ],
-      "price": 2401
-    },
-    {
-      "symbol": "CODINGAGENTS",
-      "label": "Coding Agents",
-      "emerging": true,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 73,
-      "saturationPct": 32,
-      "devVelocityPct": 81,
-      "hypeVelocityPct": 41,
-      "postingWindowDays": 7,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 8,
-        "arxiv": 1,
-        "devto": 2
-      },
-      "news": {
-        "now": 28,
-        "base": 27
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Show HN: Agentic Orchestrator, a TUI for long-running coding agents",
-          "url": "https://github.com/doordash-oss/agentic-orchestrator",
-          "points": 8
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: VibeRaven – Production workflows for AI coding agents",
-          "url": "https://github.com/ohad6k/VibeRaven",
-          "points": 7
-        },
-        {
-          "source": "devto",
-          "title": "AGENTS.md: The One File That Makes AI Coding Agents Actually Useful",
-          "url": "https://dev.to/wolfejam/agentsmd-the-one-file-that-makes-ai-coding-agents-actually-useful-ckj",
-          "points": 6
-        },
-        {
-          "source": "hackernews",
-          "title": "Fame, an external memory and tool-safety gateway for local coding agents",
-          "url": "https://github.com/superalp1985/fame-knowledge-agent-gateway",
-          "points": 5
-        },
-        {
-          "source": "hackernews",
-          "title": "Tau – Learn how coding agents are built",
-          "url": "https://twotimespi.dev",
-          "points": 4
-        },
-        {
-          "source": "hackernews",
-          "title": "I built an anime-style UI for watching AI coding agents review each other's code",
-          "url": "https://old.reddit.com/r/codex/comments/1uit86f/i_built_an_animestyle_ui_for_watching_ai_coding/",
-          "points": 3
-        }
-      ],
-      "price": 2378
-    },
-    {
-      "symbol": "MEMORY",
-      "label": "Agent Memory",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 78,
-      "saturationPct": 5,
-      "devVelocityPct": 78,
-      "hypeVelocityPct": 19,
-      "postingWindowDays": 22,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 4,
-        "github": 1,
-        "arxiv": 6
-      },
-      "news": {
-        "now": 4,
-        "base": 2
-      },
-      "evidence": [
-        {
-          "source": "github",
-          "title": "SMJAI/open-memory-protocol",
-          "url": "https://github.com/SMJAI/open-memory-protocol",
-          "points": 41
-        },
-        {
-          "source": "hackernews",
-          "title": "Agent memory is leaving the cute \"remember this\" demo phase",
-          "url": "https://self.md/signals/2026-06-17-expertise-context-memory",
-          "points": 6
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: We built a learning loop that learns from its own failures",
-          "url": "https://blankline.org/research/intelligence-compounds",
-          "points": 3
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Brain.md – A persistent memory layer for your coding agents",
-          "url": "https://github.com/mindmuxai/brain.md",
-          "points": 3
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN:Swarm intelligence without degradation using two Qwen models",
-          "url": "https://news.ycombinator.com/item?id=48719260",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "Forensic Trajectory Signatures for Agent Memory Poisoning Detection",
-          "url": "http://arxiv.org/abs/2606.30566v1",
-          "points": 0
-        }
-      ],
-      "price": 2267
-    },
-    {
-      "symbol": "IMAGEGEN",
-      "label": "AI Image Generation",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 71,
-      "saturationPct": 21,
-      "devVelocityPct": 72,
-      "hypeVelocityPct": 37,
-      "postingWindowDays": 10,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 3,
-        "huggingface": 5
-      },
-      "news": {
-        "now": 14,
-        "base": 10
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "ideogram-ai/ideogram-4-fp8",
-          "url": "https://huggingface.co/ideogram-ai/ideogram-4-fp8",
-          "points": 646
+          "points": 91
         },
         {
           "source": "huggingface",
-          "title": "krea/Krea-2-Turbo",
-          "url": "https://huggingface.co/krea/Krea-2-Turbo",
-          "points": 402
-        },
-        {
-          "source": "huggingface",
-          "title": "krea/Krea-2-Raw",
-          "url": "https://huggingface.co/krea/Krea-2-Raw",
-          "points": 245
-        },
-        {
-          "source": "huggingface",
-          "title": "AlperKTS/Krea2_FP8",
-          "url": "https://huggingface.co/AlperKTS/Krea2_FP8",
-          "points": 75
-        },
-        {
-          "source": "huggingface",
-          "title": "vantagewithai/Krea-2-Turbo-GGUF",
-          "url": "https://huggingface.co/vantagewithai/Krea-2-Turbo-GGUF",
-          "points": 54
+          "title": "HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+          "url": "https://huggingface.co/HauhauCS/Gemma4-26B-A4B-QAT-Uncensored-HauhauCS-Balanced-MTP",
+          "points": 51
         },
         {
           "source": "hackernews",
-          "title": "Show HN: Run AI chat, image gen, vision, and voice offline on your Mac",
-          "url": "https://github.com/off-grid-ai",
+          "title": "Show HN: Running Gemma-4 26B at 124 tokens/SEC on a CPU, no GPU",
+          "url": "https://apeg.dev/writing/running-gemma4-26b-on-a-cpu/",
           "points": 10
         }
       ],
-      "price": 2093
+      "price": 2328
     },
     {
-      "symbol": "LARGELANGUAG",
-      "label": "Large Language",
-      "emerging": true,
+      "symbol": "RL",
+      "label": "RL / RLHF",
+      "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 80,
-      "saturationPct": 15,
-      "devVelocityPct": 80,
-      "hypeVelocityPct": 35,
-      "postingWindowDays": 12,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 2,
-        "arxiv": 6,
-        "youtube": 5
-      },
-      "news": {
-        "now": 7,
-        "base": 4
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Knowledge Distillation of Black-Box Large Language Models (2024)",
-          "url": "https://arxiv.org/abs/2401.07013",
-          "points": 122
-        },
-        {
-          "source": "hackernews",
-          "title": "Guide to Using Large Language Models and Generative AI in Economic History",
-          "url": "https://www.nber.org/papers/w35374",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "Using Large Language Models as Low-Cost Statistical Estimators for Human-Response Data",
-          "url": "http://arxiv.org/abs/2606.30372v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "SrDetection: A Self-Referential Framework for Data Leakage Detection in Code Large Language Models",
-          "url": "http://arxiv.org/abs/2606.29815v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Towards Generalizable and Evidential Nuclear Magnetic Resonance-Based Molecular Structure Elucidation via Large Language Model Agent",
-          "url": "http://arxiv.org/abs/2606.29776v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Toward Secure and Reliable PDDL Formalization of Large Language Models with Planner-in-the-Loop Feedback",
-          "url": "http://arxiv.org/abs/2606.29700v1",
-          "points": 0
-        }
-      ],
-      "price": 2048
-    },
-    {
-      "symbol": "GLM52",
-      "label": "Glm 5.2",
-      "emerging": true,
-      "stage": "SATURATED",
-      "signal": "SELL",
-      "dailyChangePct": 58,
-      "saturationPct": 74,
-      "devVelocityPct": 54,
-      "hypeVelocityPct": 48,
-      "postingWindowDays": 0,
-      "confidence": "high",
+      "dailyChangePct": 84,
+      "saturationPct": 1,
+      "devVelocityPct": 84,
+      "hypeVelocityPct": 5,
+      "postingWindowDays": 45,
+      "confidence": "medium",
       "breakdown": {
         "hackernews": 1,
-        "devto": 3
+        "arxiv": 8,
+        "huggingface": 1
       },
       "news": {
-        "now": 45,
-        "base": 40
+        "now": 1,
+        "base": 1
       },
       "evidence": [
         {
+          "source": "huggingface",
+          "title": "Chunjiang-Intelligence/DeepSeek-v4-Fable",
+          "url": "https://huggingface.co/Chunjiang-Intelligence/DeepSeek-v4-Fable",
+          "points": 136
+        },
+        {
           "source": "hackernews",
-          "title": "GLM 5.2 beats Claude in our benchmarks",
-          "url": "https://semgrep.dev/blog/2026/we-have-mythos-at-home-glm-52-beats-claude-in-our-cyber-benchmarks/",
-          "points": 1078
+          "title": "Discretizing Reward Models",
+          "url": "https://arxiv.org/abs/2606.21795",
+          "points": 2
         },
         {
-          "source": "devto",
-          "title": "GLM 5.2 Has a 1M Token Context Window. Here's What That Does to Your API Bill.",
-          "url": "https://dev.to/tokoscope/glm-52-has-a-1m-token-context-window-heres-what-that-does-to-your-api-bill-2fjp",
+          "source": "arxiv",
+          "title": "Freeform Preference Learning for Robotic Manipulation",
+          "url": "http://arxiv.org/abs/2606.32027v1",
           "points": 0
         },
         {
-          "source": "devto",
-          "title": "GLM 5.2 isn't free: not even my US$4,000 Spark can run it",
-          "url": "https://dev.to/cristiantalasanchez/glm-52-isnt-free-not-even-my-us4000-spark-can-run-it-3464",
+          "source": "arxiv",
+          "title": "TRIAGE: Role-Typed Credit Assignment for Agentic Reinforcement Learning",
+          "url": "http://arxiv.org/abs/2606.32017v1",
           "points": 0
         },
         {
-          "source": "devto",
-          "title": "GLM 5.2 no es gratis: ni mi Spark de US$4.000 lo corre",
-          "url": "https://dev.to/ctala/glm-52-no-es-gratis-ni-mi-spark-de-us4000-lo-corre-5a97",
+          "source": "arxiv",
+          "title": "Z-1: Efficient Reinforcement Learning for Vision-Language-Action Models",
+          "url": "http://arxiv.org/abs/2606.31846v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Breaking Failure Cascades: Step-Aware Reinforcement Learning for Medical Multimodal Reasoning",
+          "url": "http://arxiv.org/abs/2606.31825v1",
           "points": 0
         }
       ],
-      "price": 1994
+      "price": 2258
     },
     {
       "symbol": "TOOLCALL",
@@ -1865,16 +1813,17 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 80,
+      "dailyChangePct": 73,
       "saturationPct": 2,
-      "devVelocityPct": 81,
+      "devVelocityPct": 73,
       "hypeVelocityPct": 5,
       "postingWindowDays": 45,
       "confidence": "medium",
       "breakdown": {
-        "hackernews": 1,
-        "arxiv": 3,
-        "huggingface": 4
+        "hackernews": 3,
+        "arxiv": 2,
+        "huggingface": 4,
+        "devto": 1
       },
       "news": {
         "now": 1,
@@ -1885,217 +1834,198 @@
           "source": "huggingface",
           "title": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
           "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF",
-          "points": 861
+          "points": 898
         },
         {
           "source": "huggingface",
           "title": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
           "url": "https://huggingface.co/empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
-          "points": 569
-        },
-        {
-          "source": "huggingface",
-          "title": "Jackrong/Qwopus3.6-27B-Coder-Compat-MTP-GGUF",
-          "url": "https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-Compat-MTP-GGUF",
-          "points": 106
+          "points": 603
         },
         {
           "source": "huggingface",
           "title": "Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
           "url": "https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF",
-          "points": 57
+          "points": 91
+        },
+        {
+          "source": "huggingface",
+          "title": "huihui-ai/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-GGUF",
+          "url": "https://huggingface.co/huihui-ai/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated-GGUF",
+          "points": 46
         },
         {
           "source": "hackernews",
-          "title": "Show HN: role-model, a router for hybrid local/cloud AI",
-          "url": "https://github.com/try-works/role-model",
-          "points": 2
-        },
-        {
-          "source": "arxiv",
-          "title": "GROW$^2$: Grounding Which and Where for Robot Tool Use",
-          "url": "http://arxiv.org/abs/2606.30632v1",
-          "points": 0
-        }
-      ],
-      "price": 1936
-    },
-    {
-      "symbol": "REALTIME",
-      "label": "Real-Time",
-      "emerging": true,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 66,
-      "saturationPct": 29,
-      "devVelocityPct": 75,
-      "hypeVelocityPct": 28,
-      "postingWindowDays": 10,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 2,
-        "arxiv": 3,
-        "devto": 2
-      },
-      "news": {
-        "now": 16,
-        "base": 21
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Show HN: LiSkat: Free real-time Skat with Elo and bots",
-          "url": "https://liskat.com",
+          "title": "Tool Use Enables Undetectable Steganography in Multi-Agent LLM Systems",
+          "url": "https://arxiv.org/abs/2606.28425",
           "points": 3
         },
         {
           "source": "hackernews",
-          "title": "Compile differentiable audio models to real-time DSP",
-          "url": "https://github.com/cucuwritescode/adac",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "Rehearsed Multi-Agent Live Product Demonstrations with Real-Time Voice Question Answering",
-          "url": "http://arxiv.org/abs/2606.30294v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "DreamForge-World 0.1 Preview: A Low-Compute Real-Time Controllable World Model",
-          "url": "http://arxiv.org/abs/2606.30292v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "SAT-RTS: A systematic framework for tactical knowledge extraction and visualization-based analysis in real-time strategy games",
-          "url": "http://arxiv.org/abs/2606.30090v1",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "Building a real-time voice-agent runtime in Rust: no GIL, one binary, 2,000 calls a box",
-          "url": "https://dev.to/iam_suriyan_b9078a5b3a553/building-a-real-time-voice-agent-runtime-in-rust-no-gil-one-binary-2000-calls-a-box-12ko",
-          "points": 0
+          "title": "Show HN: Erlangchain – A tiny Erlang client for LLMs",
+          "url": "https://github.com/abhavk/erlangchain",
+          "points": 2
         }
       ],
-      "price": 1908
+      "price": 2141
     },
     {
-      "symbol": "RL",
-      "label": "RL / RLHF",
+      "symbol": "OPENWEIGHTS",
+      "label": "Open-Weight Models",
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 74,
-      "saturationPct": 2,
-      "devVelocityPct": 74,
-      "hypeVelocityPct": 7,
-      "postingWindowDays": 39,
+      "dailyChangePct": 61,
+      "saturationPct": 5,
+      "devVelocityPct": 61,
+      "hypeVelocityPct": 14,
+      "postingWindowDays": 26,
       "confidence": "medium",
       "breakdown": {
+        "hackernews": 2,
         "arxiv": 6,
-        "huggingface": 1,
-        "devto": 1
+        "devto": 2
       },
       "news": {
-        "now": 1,
-        "base": 0
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "Chunjiang-Intelligence/DeepSeek-v4-Fable",
-          "url": "https://huggingface.co/Chunjiang-Intelligence/DeepSeek-v4-Fable",
-          "points": 132
-        },
-        {
-          "source": "arxiv",
-          "title": "Pessimism's Paradox: Conservative Offline Training Amplifies Reward Hacking During Online Adaptation in Reasoning Models",
-          "url": "http://arxiv.org/abs/2606.30627v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "DRIFT: Difficulty Routing Self-DIstillation with Rhythm-Gated Exploration and Success BuFfer Training",
-          "url": "http://arxiv.org/abs/2606.30345v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Your Data Manifold is Secretly a Reward Model: Shell-LCC for Text-to-Video Generation",
-          "url": "http://arxiv.org/abs/2606.30248v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Open Problems in Constitutional Preference Reconstruction",
-          "url": "http://arxiv.org/abs/2606.30116v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "PS-PPO: Prefix-Sampling PPO for Critic-Free RLHF",
-          "url": "http://arxiv.org/abs/2606.29758v1",
-          "points": 0
-        }
-      ],
-      "price": 1899
-    },
-    {
-      "symbol": "GROK",
-      "label": "Grok / xAI",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 65,
-      "saturationPct": 42,
-      "devVelocityPct": 58,
-      "hypeVelocityPct": 51,
-      "postingWindowDays": 4,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 3,
-        "devto": 1
-      },
-      "news": {
-        "now": 22,
-        "base": 9
+        "now": 3,
+        "base": 2
       },
       "evidence": [
         {
           "source": "hackernews",
-          "title": "Grok 4.5, based on our 1.5T V9 foundation model, with Cursor data added in su",
-          "url": "https://twitter.com/elonmusk/status/2071184354756477041",
-          "points": 10
+          "title": "Ornith-1.0: self-improving open-source models for agentic coding",
+          "url": "https://github.com/deepreinforce-ai/Ornith-1",
+          "points": 260
         },
         {
-          "source": "devto",
-          "title": "AGENTS.md: The One File That Makes AI Coding Agents Actually Useful",
-          "url": "https://dev.to/wolfejam/agentsmd-the-one-file-that-makes-ai-coding-agents-actually-useful-ckj",
-          "points": 6
+          "source": "hackernews",
+          "title": "RunInfra: Optimize any open model down to the kernel, deploy in 5 min",
+          "url": "https://runinfra.ai",
+          "points": 2
         },
         {
           "source": "arxiv",
-          "title": "Informational Frustration in Neural Manifolds: Shannon Bottlenecks and the Limits of Learnability",
-          "url": "http://arxiv.org/abs/2606.30512v1",
+          "title": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+          "url": "http://arxiv.org/abs/2606.32034v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "A Stochastic--Geometric Theory of Scaling Laws in Grokking",
-          "url": "http://arxiv.org/abs/2606.30388v1",
+          "title": "Surrogate Fidelity: When Can Open LLMs Explain Closed Ones?",
+          "url": "http://arxiv.org/abs/2606.32008v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Diversity is the Strength of the AI Crowd",
-          "url": "http://arxiv.org/abs/2606.29661v1",
+          "title": "Large Databases Need Small, Open-Weight Language Models",
+          "url": "http://arxiv.org/abs/2606.31808v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "When the Database Fails: Prompting LLM Dialogue Agents for Safe Recovery in Task-Oriented Dialogue",
+          "url": "http://arxiv.org/abs/2606.31307v1",
           "points": 0
         }
       ],
-      "price": 1858
+      "price": 2138
+    },
+    {
+      "symbol": "GLM52",
+      "label": "Glm-5.2",
+      "emerging": true,
+      "stage": "PEAKING",
+      "signal": "HOLD",
+      "dailyChangePct": 50,
+      "saturationPct": 64,
+      "devVelocityPct": 59,
+      "hypeVelocityPct": 34,
+      "postingWindowDays": 1,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "huggingface": 1,
+        "devto": 2
+      },
+      "news": {
+        "now": 35,
+        "base": 48
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "zai-org/GLM-5.2",
+          "url": "https://huggingface.co/zai-org/GLM-5.2",
+          "points": 3100
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Cline subscription plan to access GLM-5.2 at 2-5x discount",
+          "url": "https://cline.bot/cline-pass",
+          "points": 3
+        },
+        {
+          "source": "devto",
+          "title": "Durable Objects + GLM-5.2 IDOR beats Claude",
+          "url": "https://dev.to/devsignal/durable-objects-glm-52-idor-beats-claude-46lc",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "NVIDIA Nemotron 3 Ultra & GLM-5.2: The Open Model Flood Is Here (June 2026)",
+          "url": "https://dev.to/doremonai/nvidia-nemotron-3-ultra-glm-52-the-open-model-flood-is-here-june-2026-2kme",
+          "points": 0
+        }
+      ],
+      "price": 1971
+    },
+    {
+      "symbol": "AIASSISTED",
+      "label": "Ai-Assisted",
+      "emerging": true,
+      "stage": "PEAKING",
+      "signal": "HOLD",
+      "dailyChangePct": 68,
+      "saturationPct": 50,
+      "devVelocityPct": 67,
+      "hypeVelocityPct": 49,
+      "postingWindowDays": 3,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 3
+      },
+      "news": {
+        "now": 27,
+        "base": 17
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "San Francisco supervisors balk at 362-page, AI-assisted city code rewrite",
+          "url": "https://missionlocal.org/2026/06/s-f-supervisors-balk-at-362-page-city-code-rewrite/",
+          "points": 8
+        },
+        {
+          "source": "arxiv",
+          "title": "From Idea to Prototype in an Afternoon: Scaffolded, AI-Assisted Rapid VA Prototyping",
+          "url": "http://arxiv.org/abs/2606.31311v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "The Calibration Turn in AI-Assisted Research: A Conceptual and Methodological Framework for Evidence-Licensed Claims",
+          "url": "http://arxiv.org/abs/2606.31273v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "AI-Assisted Discovery of Convex Relaxations via Dual Agents",
+          "url": "http://arxiv.org/abs/2606.31182v1",
+          "points": 0
+        }
+      ],
+      "price": 1967
     },
     {
       "symbol": "WORLDMODEL",
@@ -2104,58 +2034,424 @@
       "stage": "RISING",
       "signal": "BUY",
       "dailyChangePct": 48,
-      "saturationPct": 18,
-      "devVelocityPct": 52,
-      "hypeVelocityPct": 15,
-      "postingWindowDays": 20,
+      "saturationPct": 9,
+      "devVelocityPct": 54,
+      "hypeVelocityPct": 2,
+      "postingWindowDays": 49,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 6
+      },
+      "news": {
+        "now": 5,
+        "base": 16
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: World Model MCP v0.10.0 – cross-runtime memory across 7 coding agents",
+          "url": "https://github.com/SaravananJaichandar/world-model-mcp",
+          "points": 2
+        },
+        {
+          "source": "arxiv",
+          "title": "AdaJEPA: An Adaptive Latent World Model",
+          "url": "http://arxiv.org/abs/2606.32026v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "WorldRoamBench: An Open-World Benchmark for Long-Horizon Stability of Interactive World Models",
+          "url": "http://arxiv.org/abs/2606.31672v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Ask the World Before Acting: Budgeted Environment Probing for World-Model Calibration",
+          "url": "http://arxiv.org/abs/2606.31422v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "World-Model Collapse as a Phase Transition",
+          "url": "http://arxiv.org/abs/2606.31399v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Delta-JEPA: Learning Action-Sensitive World Models via Latent Difference Decoding",
+          "url": "http://arxiv.org/abs/2606.31232v1",
+          "points": 0
+        }
+      ],
+      "price": 1961
+    },
+    {
+      "symbol": "GROK",
+      "label": "Grok / xAI",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 48,
+      "saturationPct": 24,
+      "devVelocityPct": 47,
+      "hypeVelocityPct": 27,
+      "postingWindowDays": 12,
       "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 4
+      },
+      "news": {
+        "now": 11,
+        "base": 12
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Grok translated my coworker's tweet as sexualized",
+          "url": "https://news.ycombinator.com/item?id=48739661",
+          "points": 4
+        },
+        {
+          "source": "arxiv",
+          "title": "Radial Suppression Accelerates Algorithmic Generalization: A Geometric Analysis of Delayed Generalization",
+          "url": "http://arxiv.org/abs/2606.32000v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "FedXDS: Leveraging Model Attribution Methods to counteract Data Heterogeneity in Federated Learning",
+          "url": "http://arxiv.org/abs/2606.31742v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Scientific Explanations in Health Sciences: Causality, Trust, and Epistemic Adequacy",
+          "url": "http://arxiv.org/abs/2606.31616v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Structure-Regularized Interpretable TCR-Epitope Prediction",
+          "url": "http://arxiv.org/abs/2606.30902v1",
+          "points": 0
+        }
+      ],
+      "price": 1802
+    },
+    {
+      "symbol": "COMPUTERUSE",
+      "label": "Computer Use / Browser Agents",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 53,
+      "saturationPct": 9,
+      "devVelocityPct": 65,
+      "hypeVelocityPct": -7,
+      "postingWindowDays": 59,
+      "confidence": "medium",
+      "breakdown": {
+        "arxiv": 4,
+        "devto": 2,
+        "producthunt": 1
+      },
+      "news": {
+        "now": 4,
+        "base": 20
+      },
+      "evidence": [
+        {
+          "source": "arxiv",
+          "title": "Scalable Behaviour Cloning on Browser Using via Skill Distillation",
+          "url": "http://arxiv.org/abs/2606.32014v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "DigitalCoach: Communication and Grounding Gaps in Human and Agentic Computer Use Coaching",
+          "url": "http://arxiv.org/abs/2606.31980v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Learning from Failure: Inference-Time Self-Improvement for Computer-Use Agents",
+          "url": "http://arxiv.org/abs/2606.31270v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "PPT-Eval: A Benchmark for Computer-Use Agents on PowerPoint Tasks",
+          "url": "http://arxiv.org/abs/2606.31154v1",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Gemini 3.5 Flash Can Now Control Your Computer: DeepMind's Boldest Move Yet",
+          "url": "https://dev.to/doremonai/gemini-35-flash-can-now-control-your-computer-deepminds-boldest-move-yet-4b43",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "NVIDIA Nemotron 3 Ultra & GLM-5.2: The Open Model Flood Is Here (June 2026)",
+          "url": "https://dev.to/doremonai/nvidia-nemotron-3-ultra-glm-52-the-open-model-flood-is-here-june-2026-2kme",
+          "points": 0
+        }
+      ],
+      "price": 1762
+    },
+    {
+      "symbol": "ZEROSHOT",
+      "label": "Zero-Shot",
+      "emerging": true,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 75,
+      "saturationPct": 2,
+      "devVelocityPct": 76,
+      "hypeVelocityPct": 5,
+      "postingWindowDays": 44,
+      "confidence": "medium",
       "breakdown": {
         "hackernews": 1,
         "arxiv": 5
       },
       "news": {
-        "now": 9,
-        "base": 17
+        "now": 1,
+        "base": 1
       },
       "evidence": [
         {
           "source": "hackernews",
-          "title": "Lucidml – Playable World Models that run on consumer GPUs",
-          "url": "https://www.reddit.com/r/lucidmlx/s/8d7ZjIvmV3",
-          "points": 3
+          "title": "TabFM: A zero-shot foundation model for tabular data",
+          "url": "https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/",
+          "points": 77
         },
         {
           "source": "arxiv",
-          "title": "Self-Evolving World Models for LLM Agent Planning",
-          "url": "http://arxiv.org/abs/2606.30639v1",
+          "title": "Cross-lingual Relation Extraction with Large Language Models: Zero-Shot, Few-Shot, and Fine-Tuned Evaluation on Romanian",
+          "url": "http://arxiv.org/abs/2606.31718v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "DreamForge-World 0.1 Preview: A Low-Compute Real-Time Controllable World Model",
-          "url": "http://arxiv.org/abs/2606.30292v1",
+          "title": "ZEBRA: Zero-Shot Entropy-Regularized Prompt Learning for Base-to-Novel Generalization in Audio-Language Models",
+          "url": "http://arxiv.org/abs/2606.31587v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Pondering the Way: Spatial-perceiving World Action Model for Embodied Navigation",
-          "url": "http://arxiv.org/abs/2606.29908v1",
+          "title": "CLOUDADV: Decision-Aligned Instance Sizing with Zero-Shot Foundation Models under Drift",
+          "url": "http://arxiv.org/abs/2606.31470v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "The CRISTAL Method: Neurosymbolic analysis from AI-synthesized world models",
-          "url": "http://arxiv.org/abs/2606.29799v1",
+          "title": "Zero-Shot Quantization for Object Detectors using Off-the-Shelf Generative Models",
+          "url": "http://arxiv.org/abs/2606.31456v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "HERO: Improving the Reliability and Sensitivity of Generative Model Evaluation Using Historical Data",
-          "url": "http://arxiv.org/abs/2606.29784v1",
+          "title": "Thinking Before Retrieving: Robust Zero-Shot Composed Image Retrieval via Strategic Planning and Self-Criticism",
+          "url": "http://arxiv.org/abs/2606.31222v1",
           "points": 0
         }
       ],
-      "price": 1825
+      "price": 1746
+    },
+    {
+      "symbol": "MEMORY",
+      "label": "Agent Memory",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 61,
+      "saturationPct": 34,
+      "devVelocityPct": 53,
+      "hypeVelocityPct": 43,
+      "postingWindowDays": 6,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 2,
+        "arxiv": 1,
+        "devto": 2
+      },
+      "news": {
+        "now": 13,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: Kage, verification and freshness for Google's OKF agent memory",
+          "url": "https://kage-core.com/",
+          "points": 3
+        },
+        {
+          "source": "devto",
+          "title": "Notes: Memory, Context, and Large Language Models (LLMs)",
+          "url": "https://dev.to/vladimirpanov/notes-memory-context-and-large-language-models-llms-4m67",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Sibyl – self-hosted cross-agent memory for AI coding agents",
+          "url": "https://github.com/hyperb1iss/sibyl",
+          "points": 2
+        },
+        {
+          "source": "arxiv",
+          "title": "OpenLife: Toward Open-World Artificial Life with Autonomous LLM Agents",
+          "url": "http://arxiv.org/abs/2606.31046v1",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Shrink the Stochastic Surface: A Design Standard for Probabilistic Systems",
+          "url": "https://dev.to/harrisonsec/shrink-the-stochastic-surface-a-design-standard-for-probabilistic-systems-58n2",
+          "points": 0
+        }
+      ],
+      "price": 1649
+    },
+    {
+      "symbol": "REASONING",
+      "label": "Reasoning Models",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 69,
+      "saturationPct": 3,
+      "devVelocityPct": 73,
+      "hypeVelocityPct": -3,
+      "postingWindowDays": 60,
+      "confidence": "medium",
+      "breakdown": {
+        "arxiv": 5
+      },
+      "news": {
+        "now": 1,
+        "base": 5
+      },
+      "evidence": [
+        {
+          "source": "arxiv",
+          "title": "Nonlinearity-Aware LoRA: Structured Gate Adaptation under Low-Rank Constraints",
+          "url": "http://arxiv.org/abs/2606.31717v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Think in English, Answer in Korean: Efficient Adaptation of Multilingual Tool-Using Agents",
+          "url": "http://arxiv.org/abs/2606.31648v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Learning from Failure: Inference-Time Self-Improvement for Computer-Use Agents",
+          "url": "http://arxiv.org/abs/2606.31270v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Knowledge Distillation from Large Reasoning Models to Compact Student Models: A Case Study on the John O Bryan Mathematics Competition",
+          "url": "http://arxiv.org/abs/2606.31048v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Certified Speculative Execution for Untrusted AI Agents",
+          "url": "http://arxiv.org/abs/2606.31023v1",
+          "points": 0
+        }
+      ],
+      "price": 1629
+    },
+    {
+      "symbol": "SORA",
+      "label": "AI Video Generation",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 37,
+      "saturationPct": 25,
+      "devVelocityPct": 36,
+      "hypeVelocityPct": 16,
+      "postingWindowDays": 17,
+      "confidence": "medium",
+      "breakdown": {
+        "huggingface": 2,
+        "producthunt": 1
+      },
+      "news": {
+        "now": 6,
+        "base": 9
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "SulphurAI/Sulphur-2-base",
+          "url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+          "points": 1826
+        },
+        {
+          "source": "huggingface",
+          "title": "Lightricks/LTX-2.3",
+          "url": "https://huggingface.co/Lightricks/LTX-2.3",
+          "points": 1495
+        },
+        {
+          "source": "producthunt",
+          "title": "Gemini Omni Flash",
+          "url": "https://www.producthunt.com/products/gemini-omni-flash",
+          "points": 0
+        }
+      ],
+      "price": 1322
+    },
+    {
+      "symbol": "SYNTHDATA",
+      "label": "Synthetic Data",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 60,
+      "saturationPct": 4,
+      "devVelocityPct": 62,
+      "hypeVelocityPct": 3,
+      "postingWindowDays": 49,
+      "confidence": "low",
+      "breakdown": {
+        "arxiv": 3
+      },
+      "news": {
+        "now": 1,
+        "base": 2
+      },
+      "evidence": [
+        {
+          "source": "arxiv",
+          "title": "Preserve the Hard, Regenerate the Rest: Uncertainty-Guided Synthetic Training Data Augmentation with Diffusion Models",
+          "url": "http://arxiv.org/abs/2606.31603v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Learning from Failure: Inference-Time Self-Improvement for Computer-Use Agents",
+          "url": "http://arxiv.org/abs/2606.31270v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "TDGT: A Tabular Data Generation Toolkit supporting adaptive GPU-accelerated Bayesian mixture models, diffusion-based models, and latent-space generative modeling",
+          "url": "http://arxiv.org/abs/2606.31268v1",
+          "points": 0
+        }
+      ],
+      "price": 1276
     },
     {
       "symbol": "MAMBA",
@@ -2163,14 +2459,14 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 73,
+      "dailyChangePct": 62,
       "saturationPct": 0,
-      "devVelocityPct": 73,
+      "devVelocityPct": 62,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
-      "confidence": "medium",
+      "confidence": "low",
       "breakdown": {
-        "arxiv": 4,
+        "arxiv": 2,
         "huggingface": 1
       },
       "news": {
@@ -2180,321 +2476,39 @@
       "evidence": [
         {
           "source": "huggingface",
-          "title": "nvidia/Nemotron-TwoTower-30B-A3B-Base-BF16",
-          "url": "https://huggingface.co/nvidia/Nemotron-TwoTower-30B-A3B-Base-BF16",
-          "points": 43
+          "title": "nvidia/Nemotron-Labs-TwoTower-30B-A3B-Base-BF16",
+          "url": "https://huggingface.co/nvidia/Nemotron-Labs-TwoTower-30B-A3B-Base-BF16",
+          "points": 50
         },
         {
           "source": "arxiv",
-          "title": "MuonSSM: Orthogonalizing State Space Models for Sequence Modeling",
-          "url": "http://arxiv.org/abs/2606.30461v1",
+          "title": "A Bayesian Filtering Approach for Learning Lagrangian Dynamics from Noisy Measurements",
+          "url": "http://arxiv.org/abs/2606.31137v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "A multi-architecture study of specificity refinement and false-positive mechanism analysis in prostate MRI",
-          "url": "http://arxiv.org/abs/2606.29977v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Timesteps of Mamba Align with Human Reading Times",
-          "url": "http://arxiv.org/abs/2606.29904v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "SUMO: Segment and Track Any Motion with Nonlinear State Space Models",
-          "url": "http://arxiv.org/abs/2606.29861v1",
+          "title": "Dynamic Gaussian Processes and the Vanilla-SPDE Exchange",
+          "url": "http://arxiv.org/abs/2606.31063v1",
           "points": 0
         }
       ],
-      "price": 1542
-    },
-    {
-      "symbol": "REASONING",
-      "label": "Reasoning Models",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 66,
-      "saturationPct": 6,
-      "devVelocityPct": 68,
-      "hypeVelocityPct": 5,
-      "postingWindowDays": 40,
-      "confidence": "medium",
-      "breakdown": {
-        "arxiv": 4
-      },
-      "news": {
-        "now": 2,
-        "base": 4
-      },
-      "evidence": [
-        {
-          "source": "arxiv",
-          "title": "Pessimism's Paradox: Conservative Offline Training Amplifies Reward Hacking During Online Adaptation in Reasoning Models",
-          "url": "http://arxiv.org/abs/2606.30627v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Stabilizing Extrapolation in Looped Transformers via Learned Stochastic Stopping",
-          "url": "http://arxiv.org/abs/2606.29983v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Experience Graphs: The Data Foundation for Self-Improving Agents",
-          "url": "http://arxiv.org/abs/2606.29823v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Toward Secure and Reliable PDDL Formalization of Large Language Models with Planner-in-the-Loop Feedback",
-          "url": "http://arxiv.org/abs/2606.29700v1",
-          "points": 0
-        }
-      ],
-      "price": 1427
-    },
-    {
-      "symbol": "GRAPHRAG",
-      "label": "GraphRAG",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 60,
-      "saturationPct": 0,
-      "devVelocityPct": 60,
-      "hypeVelocityPct": 0,
-      "postingWindowDays": 60,
-      "confidence": "low",
-      "breakdown": {
-        "github": 1,
-        "arxiv": 3
-      },
-      "news": {
-        "now": 0,
-        "base": 0
-      },
-      "evidence": [
-        {
-          "source": "github",
-          "title": "Aliu-AiRobot/ESEILANE",
-          "url": "https://github.com/Aliu-AiRobot/ESEILANE",
-          "points": 135
-        },
-        {
-          "source": "arxiv",
-          "title": "Grounding LLM Reasoning under Incomplete Graph Evidence",
-          "url": "http://arxiv.org/abs/2606.30247v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Query-Aware Spreading Activation for Multi-Hop Retrieval over Knowledge Graphs",
-          "url": "http://arxiv.org/abs/2606.30133v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Efficient Retrieval-Augmented Generation via Token Co-occurrence Graphs",
-          "url": "http://arxiv.org/abs/2606.30093v1",
-          "points": 0
-        }
-      ],
-      "price": 1420
-    },
-    {
-      "symbol": "SORA",
-      "label": "AI Video Generation",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 59,
-      "saturationPct": 22,
-      "devVelocityPct": 62,
-      "hypeVelocityPct": 17,
-      "postingWindowDays": 17,
-      "confidence": "medium",
-      "breakdown": {
-        "arxiv": 1,
-        "huggingface": 2
-      },
-      "news": {
-        "now": 6,
-        "base": 8
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "SulphurAI/Sulphur-2-base",
-          "url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
-          "points": 1817
-        },
-        {
-          "source": "huggingface",
-          "title": "Lightricks/LTX-2.3",
-          "url": "https://huggingface.co/Lightricks/LTX-2.3",
-          "points": 1488
-        },
-        {
-          "source": "arxiv",
-          "title": "Your Data Manifold is Secretly a Reward Model: Shell-LCC for Text-to-Video Generation",
-          "url": "http://arxiv.org/abs/2606.30248v1",
-          "points": 0
-        }
-      ],
-      "price": 1351
-    },
-    {
-      "symbol": "AGI",
-      "label": "AGI / Superintelligence",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 44,
-      "saturationPct": 18,
-      "devVelocityPct": 50,
-      "hypeVelocityPct": 6,
-      "postingWindowDays": 32,
-      "confidence": "medium",
-      "breakdown": {
-        "arxiv": 2,
-        "devto": 1
-      },
-      "news": {
-        "now": 4,
-        "base": 10
-      },
-      "evidence": [
-        {
-          "source": "devto",
-          "title": "Build Your First AI App: A Code-First Guide for Beginners",
-          "url": "https://dev.to/obed_avorlenu/build-your-first-ai-app-a-code-first-guide-for-beginners-1g4j",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "Situation Perception: A Necessary Primitive to Artificial Superintelligence",
-          "url": "http://arxiv.org/abs/2606.30481v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Building Multi-Task Agentic LLMs via Two-Phase Distillation",
-          "url": "http://arxiv.org/abs/2606.30044v1",
-          "points": 0
-        }
-      ],
-      "price": 1200
-    },
-    {
-      "symbol": "VOICE",
-      "label": "Voice AI",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 42,
-      "saturationPct": 15,
-      "devVelocityPct": 56,
-      "hypeVelocityPct": -6,
-      "postingWindowDays": 53,
-      "confidence": "medium",
-      "breakdown": {
-        "arxiv": 1,
-        "devto": 3
-      },
-      "news": {
-        "now": 3,
-        "base": 15
-      },
-      "evidence": [
-        {
-          "source": "devto",
-          "title": "How I caught the voice-agent failures my eval dashboard kept missing",
-          "url": "https://dev.to/kartik-nvjk/how-i-caught-the-voice-agent-failures-my-eval-dashboard-kept-missing-jf0",
-          "points": 1
-        },
-        {
-          "source": "devto",
-          "title": "Reactive is Dead: Build Low-Latency Voice Agents with OpenAI Realtime and JDK WebSockets",
-          "url": "https://dev.to/machinecodingmaster/reactive-is-dead-build-low-latency-voice-agents-with-openai-realtime-and-jdk-websockets-ddo",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "MCP Server Architecture Patterns for LLM-Integrated Applications",
-          "url": "http://arxiv.org/abs/2606.30317v1",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "Building a real-time voice-agent runtime in Rust: no GIL, one binary, 2,000 calls a box",
-          "url": "https://dev.to/iam_suriyan_b9078a5b3a553/building-a-real-time-voice-agent-runtime-in-rust-no-gil-one-binary-2000-calls-a-box-12ko",
-          "points": 0
-        }
-      ],
-      "price": 1157
-    },
-    {
-      "symbol": "KVCACHE",
-      "label": "KV-Cache Optimization",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 47,
-      "saturationPct": 5,
-      "devVelocityPct": 50,
-      "hypeVelocityPct": 1,
-      "postingWindowDays": 57,
-      "confidence": "low",
-      "breakdown": {
-        "arxiv": 2,
-        "devto": 1
-      },
-      "news": {
-        "now": 1,
-        "base": 3
-      },
-      "evidence": [
-        {
-          "source": "arxiv",
-          "title": "TraceLab: Characterizing Coding Agent Workloads for LLM Serving",
-          "url": "http://arxiv.org/abs/2606.30560v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Predict, Reuse, and Repair: Accelerating Dynamic Sparse Attention for Long-Context LLM Decoding",
-          "url": "http://arxiv.org/abs/2606.30389v1",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "\"LLM Inference Optimization: The Line Item That Decides If Your AI Ships\"",
-          "url": "https://dev.to/vsbd_vlad/llm-inference-optimization-the-line-item-that-decides-if-your-ai-ships-57b5",
-          "points": 0
-        }
-      ],
-      "price": 1115
+      "price": 1248
     },
     {
       "symbol": "SLM",
       "label": "Small Language Models",
       "emerging": false,
-      "stage": "EMBRYO",
-      "signal": "STRONG_BUY",
-      "dailyChangePct": 55,
-      "saturationPct": 6,
-      "devVelocityPct": 55,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 53,
+      "saturationPct": 5,
+      "devVelocityPct": 53,
       "hypeVelocityPct": 5,
       "postingWindowDays": 42,
-      "confidence": "low",
+      "confidence": "medium",
       "breakdown": {
-        "hackernews": 1,
-        "arxiv": 1,
+        "hackernews": 3,
         "devto": 1
       },
       "news": {
@@ -2504,112 +2518,46 @@
       "evidence": [
         {
           "source": "hackernews",
-          "title": "Ask HN: Best local LLM under 2B paramater and consuming RAM less than 3gb",
-          "url": "https://news.ycombinator.com/item?id=48708262",
+          "title": "Show HN: Morph Reflexes – Multi-head classifiers for agent traces",
+          "url": "https://news.ycombinator.com/item?id=48739038",
+          "points": 7
+        },
+        {
+          "source": "hackernews",
+          "title": "The future must belong to Small Language Models",
+          "url": "https://unvoid.substack.com/p/the-guilt-machine",
+          "points": 7
+        },
+        {
+          "source": "hackernews",
+          "title": "Don't Build a Router. Train the Small Model to Know When to Defer",
+          "url": "https://www.distillabs.ai/blog/dont-build-a-router-train-the-small-model-to-know-when-to-defer/",
           "points": 2
         },
         {
-          "source": "arxiv",
-          "title": "Little Brains, Big Feats: Exploring Compact Language Models",
-          "url": "http://arxiv.org/abs/2606.30062v1",
-          "points": 0
-        },
-        {
           "source": "devto",
-          "title": "A Better LLM Judge? The Rubric Made My Small Model Worse",
-          "url": "https://dev.to/sumanpro/a-better-llm-judge-the-rubric-made-my-small-model-worse-311f",
+          "title": "[AI] Practical QLoRA Fine-tuning: Axolotl & Unsloth | SLM Playbook",
+          "url": "https://dev.to/vesviet/ai-practical-qlora-fine-tuning-axolotl-unsloth-slm-playbook-37d1",
           "points": 0
         }
       ],
-      "price": 1065
+      "price": 1229
     },
     {
-      "symbol": "COMPUTERUSE",
-      "label": "Computer Use / Browser Agents",
+      "symbol": "KVCACHE",
+      "label": "KV-Cache Optimization",
       "emerging": false,
-      "stage": "EMBRYO",
-      "signal": "STRONG_BUY",
-      "dailyChangePct": 7,
-      "saturationPct": 21,
-      "devVelocityPct": 18,
-      "hypeVelocityPct": -12,
-      "postingWindowDays": 47,
-      "confidence": "medium",
-      "breakdown": {
-        "arxiv": 1,
-        "producthunt": 1
-      },
-      "news": {
-        "now": 3,
-        "base": 20
-      },
-      "evidence": [
-        {
-          "source": "arxiv",
-          "title": "Rehearsed Multi-Agent Live Product Demonstrations with Real-Time Voice Question Answering",
-          "url": "http://arxiv.org/abs/2606.30294v1",
-          "points": 0
-        },
-        {
-          "source": "producthunt",
-          "title": "Pluno",
-          "url": "https://www.producthunt.com/products/pluno",
-          "points": 0
-        }
-      ],
-      "price": 969
-    },
-    {
-      "symbol": "SPECDECODE",
-      "label": "Speculative Decoding",
-      "emerging": false,
-      "stage": "EMBRYO",
-      "signal": "STRONG_BUY",
-      "dailyChangePct": 26,
-      "saturationPct": 16,
-      "devVelocityPct": 23,
-      "hypeVelocityPct": 9,
-      "postingWindowDays": 27,
-      "confidence": "low",
-      "breakdown": {
-        "arxiv": 1,
-        "devto": 1
-      },
-      "news": {
-        "now": 2,
-        "base": 2
-      },
-      "evidence": [
-        {
-          "source": "arxiv",
-          "title": "When Is a Draft Accepted? A Theory of Acceptance in Speculative Decoding",
-          "url": "http://arxiv.org/abs/2606.30265v1",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "\"LLM Inference Optimization: The Line Item That Decides If Your AI Ships\"",
-          "url": "https://dev.to/vsbd_vlad/llm-inference-optimization-the-line-item-that-decides-if-your-ai-ships-57b5",
-          "points": 0
-        }
-      ],
-      "price": 914
-    },
-    {
-      "symbol": "SYNTHDATA",
-      "label": "Synthetic Data",
-      "emerging": false,
-      "stage": "EMBRYO",
-      "signal": "STRONG_BUY",
-      "dailyChangePct": 38,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 45,
       "saturationPct": 0,
-      "devVelocityPct": 44,
+      "devVelocityPct": 50,
       "hypeVelocityPct": -8,
       "postingWindowDays": 60,
       "confidence": "low",
       "breakdown": {
-        "arxiv": 1,
-        "devto": 1
+        "hackernews": 2,
+        "arxiv": 1
       },
       "news": {
         "now": 0,
@@ -2617,19 +2565,61 @@
       },
       "evidence": [
         {
-          "source": "arxiv",
-          "title": "First-Order Temporal Logic Tensor Networks",
-          "url": "http://arxiv.org/abs/2606.29972v1",
-          "points": 0
+          "source": "hackernews",
+          "title": "Show HN: Makes local LLMs faster and more reliable by optimizing for your device",
+          "url": "https://www.autotunellm.com/",
+          "points": 5
         },
         {
-          "source": "devto",
-          "title": "We added synthetic data to our eval set. The pass rate rose, and so did our production incidents.",
-          "url": "https://dev.to/maya_andersson_dev/we-added-synthetic-data-to-our-eval-set-the-pass-rate-rose-and-so-did-our-production-incidents-1350",
+          "source": "hackernews",
+          "title": "EdgeSync-LLM – KV cache fragment engine for on-device LLM inference (Go/Android)",
+          "url": "https://github.com/bossandboss/EdgeSync-LLM",
+          "points": 2
+        },
+        {
+          "source": "arxiv",
+          "title": "SeKV: Resolution-Adaptive KV Cache with Hierarchical Semantic Memory for Long-Context LLM Inference",
+          "url": "http://arxiv.org/abs/2606.31145v1",
           "points": 0
         }
       ],
-      "price": 839
+      "price": 1149
+    },
+    {
+      "symbol": "AGI",
+      "label": "AGI / Superintelligence",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 38,
+      "saturationPct": 24,
+      "devVelocityPct": 40,
+      "hypeVelocityPct": 9,
+      "postingWindowDays": 24,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 1
+      },
+      "news": {
+        "now": 4,
+        "base": 8
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Superintellignce is still decades away",
+          "url": "https://news.ycombinator.com/item?id=48731740",
+          "points": 3
+        },
+        {
+          "source": "arxiv",
+          "title": "Creating Intelligence: A Computational Foundation for AGI",
+          "url": "http://arxiv.org/abs/2606.31819v1",
+          "points": 0
+        }
+      ],
+      "price": 1099
     },
     {
       "symbol": "MISTRAL",
@@ -2637,9 +2627,116 @@
       "emerging": false,
       "stage": "EMBRYO",
       "signal": "STRONG_BUY",
-      "dailyChangePct": 25,
+      "dailyChangePct": 52,
       "saturationPct": 0,
-      "devVelocityPct": 25,
+      "devVelocityPct": 52,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "arxiv": 2
+      },
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [
+        {
+          "source": "arxiv",
+          "title": "When the Database Fails: Prompting LLM Dialogue Agents for Safe Recovery in Task-Oriented Dialogue",
+          "url": "http://arxiv.org/abs/2606.31307v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "RoPoLL: Robust Panel of LLM Judges",
+          "url": "http://arxiv.org/abs/2606.30931v1",
+          "points": 0
+        }
+      ],
+      "price": 1021
+    },
+    {
+      "symbol": "N8N",
+      "label": "AI Workflow Automation",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 27,
+      "saturationPct": 0,
+      "devVelocityPct": 29,
+      "hypeVelocityPct": -2,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Guardians of the Agents Formal verification of AI workflows. (Dec 2025)",
+          "url": "https://cacm.acm.org/practice/guardians-of-the-agents/",
+          "points": 2
+        },
+        {
+          "source": "arxiv",
+          "title": "TDGT: A Tabular Data Generation Toolkit supporting adaptive GPU-accelerated Bayesian mixture models, diffusion-based models, and latent-space generative modeling",
+          "url": "http://arxiv.org/abs/2606.31268v1",
+          "points": 0
+        }
+      ],
+      "price": 961
+    },
+    {
+      "symbol": "DIFFUSIONLLM",
+      "label": "Diffusion LLMs",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 49,
+      "saturationPct": 0,
+      "devVelocityPct": 49,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Next-Edit in Kilo, Powered by Inception Diffusion LLMs",
+          "url": "https://blog.kilo.ai/p/announcing-next-edit-in-kilo-powered-by-inception",
+          "points": 2
+        },
+        {
+          "source": "arxiv",
+          "title": "TAG-DLM: Diffusion Language Models for Text-Attributed Graph Learning",
+          "url": "http://arxiv.org/abs/2606.31166v1",
+          "points": 0
+        }
+      ],
+      "price": 961
+    },
+    {
+      "symbol": "SPECDECODE",
+      "label": "Speculative Decoding",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 13,
+      "saturationPct": 0,
+      "devVelocityPct": 13,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
       "confidence": "low",
@@ -2653,27 +2750,27 @@
       "evidence": [
         {
           "source": "arxiv",
-          "title": "Research Entity Extraction and Topic Detection from UKRI Grant Proposals",
-          "url": "http://arxiv.org/abs/2606.30304v1",
+          "title": "BlockPilot: Instance-Adaptive Policy Learning for Diffusion-based Speculative Decoding",
+          "url": "http://arxiv.org/abs/2606.31315v1",
           "points": 0
         }
       ],
-      "price": 696
+      "price": 725
     },
     {
-      "symbol": "DIFFUSIONLLM",
-      "label": "Diffusion LLMs",
+      "symbol": "VOICE",
+      "label": "Voice AI",
       "emerging": false,
       "stage": "EMBRYO",
       "signal": "STRONG_BUY",
-      "dailyChangePct": 29,
+      "dailyChangePct": 35,
       "saturationPct": 0,
-      "devVelocityPct": 29,
+      "devVelocityPct": 35,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
       "confidence": "low",
       "breakdown": {
-        "hackernews": 1
+        "arxiv": 1
       },
       "news": {
         "now": 0,
@@ -2681,55 +2778,113 @@
       },
       "evidence": [
         {
-          "source": "hackernews",
-          "title": "Next-Edit in Kilo, Powered by Inception Diffusion LLMs",
-          "url": "https://blog.kilo.ai/p/announcing-next-edit-in-kilo-powered-by-inception",
-          "points": 2
+          "source": "arxiv",
+          "title": "Reference-Based Prosody and Rhythm Evaluation for Spoken Dialogue Systems",
+          "url": "http://arxiv.org/abs/2606.31055v1",
+          "points": 0
         }
       ],
-      "price": 612
+      "price": 725
+    },
+    {
+      "symbol": "LLAMA",
+      "label": "Llama",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 35,
+      "saturationPct": 0,
+      "devVelocityPct": 35,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "arxiv": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [
+        {
+          "source": "arxiv",
+          "title": "Beyond Clean Text: Evaluating Encoder and Decoder Robustness for Bangla Event Detection in Noisy Text",
+          "url": "http://arxiv.org/abs/2606.30914v1",
+          "points": 0
+        }
+      ],
+      "price": 725
     },
     {
       "symbol": "VECTORDB",
       "label": "Vector Databases",
       "emerging": false,
-      "stage": "DEAD",
-      "signal": "RUG",
-      "dailyChangePct": -32,
-      "saturationPct": 100,
-      "devVelocityPct": -35,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 6,
+      "saturationPct": 7,
+      "devVelocityPct": 4,
       "hypeVelocityPct": 4,
-      "postingWindowDays": 0,
+      "postingWindowDays": 45,
       "confidence": "low",
       "breakdown": {
+        "devto": 2,
         "youtube": 1
       },
       "news": {
         "now": 0,
         "base": 0
       },
-      "evidence": [],
-      "price": 192
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "How I Built a Production-Ready RAG Chatbot with LangChain & Qdrant",
+          "url": "https://dev.to/darshit_01/how-i-built-a-production-ready-rag-chatbot-with-langchain-qdrant-e4o",
+          "points": 1
+        },
+        {
+          "source": "devto",
+          "title": "We built Nebula: GraphRAG that runs in your browser tab, not someone else's cloud",
+          "url": "https://dev.to/thien_nguyen/we-built-nebula-graphrag-that-runs-in-your-browser-tab-not-someone-elses-cloud-31gd",
+          "points": 0
+        }
+      ],
+      "price": 723
     },
     {
-      "symbol": "N8N",
-      "label": "AI Workflow Automation",
+      "symbol": "GRAPHRAG",
+      "label": "GraphRAG",
       "emerging": false,
-      "stage": "COOLING",
-      "signal": "SELL",
-      "dailyChangePct": -11,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 6,
       "saturationPct": 0,
-      "devVelocityPct": -11,
+      "devVelocityPct": 6,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
       "confidence": "low",
-      "breakdown": {},
+      "breakdown": {
+        "devto": 2
+      },
       "news": {
         "now": 0,
         "base": 0
       },
-      "evidence": [],
-      "price": 12
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "We built Nebula: GraphRAG that runs in your browser tab, not someone else's cloud",
+          "url": "https://dev.to/thien_nguyen/we-built-nebula-graphrag-that-runs-in-your-browser-tab-not-someone-elses-cloud-31gd",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Open Source Project of the Day (#111): HyperGraphRAG — N-ary Relations via Hyperedges, the Third-Generation RAG Paradigm",
+          "url": "https://dev.to/wonderlab/open-source-project-of-the-day-111-hypergraphrag-n-ary-relations-via-hyperedges-the-3ndk",
+          "points": 0
+        }
+      ],
+      "price": 698
     }
   ]
 }
