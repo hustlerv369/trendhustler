@@ -2,7 +2,7 @@
   "meta": {
     "app": "TrendHustler",
     "tagline": "Your plug for AI trends nobody's seen yet.",
-    "generatedAt": "2026-11-04T13:25:32.809Z",
+    "generatedAt": "2026-11-05T13:39:24.529Z",
     "windows": {
       "nowDays": 2,
       "baseDays": 7
@@ -63,23 +63,23 @@
         "label": "Google News"
       }
     ],
-    "runtimeMs": 12799
+    "runtimeMs": 11459
   },
   "market": {
-    "generatedAt": "2026-11-04T13:25:32.809Z",
-    "totalTickers": 55,
+    "generatedAt": "2026-11-05T13:39:24.529Z",
+    "totalTickers": 53,
     "counts": {
-      "STRONG_BUY": 7,
-      "BUY": 43,
+      "STRONG_BUY": 5,
+      "BUY": 40,
       "HOLD": 5,
-      "SELL": 0,
+      "SELL": 3,
       "RUG": 0
     },
-    "fearGreed": 49,
+    "fearGreed": 50,
     "sentiment": "NEUTRAL",
     "hottestGem": {
-      "symbol": "SPECDECODE",
-      "label": "Speculative Decoding"
+      "symbol": "VECTORDB",
+      "label": "Vector Databases"
     },
     "topMover": {
       "symbol": "EVALS",
@@ -87,9 +87,9 @@
       "change": 95
     },
     "biggestDump": {
-      "symbol": "MEMORY",
-      "label": "Agent Memory",
-      "change": 15
+      "symbol": "AGI",
+      "label": "AGI / Superintelligence",
+      "change": -30
     }
   },
   "tickers": [
@@ -102,57 +102,56 @@
       "dailyChangePct": 95,
       "saturationPct": 0,
       "devVelocityPct": 95,
-      "hypeVelocityPct": 2,
-      "postingWindowDays": 59,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 15,
-        "arxiv": 162,
-        "huggingface": 15,
-        "devto": 7,
-        "reddit": 2,
-        "youtube": 1
+        "hackernews": 13,
+        "github": 1,
+        "arxiv": 184,
+        "huggingface": 13,
+        "devto": 17
       },
       "news": {
         "now": 0,
-        "base": 1
+        "base": 0
       },
       "evidence": [
         {
           "source": "huggingface",
           "title": "Qwen/Qwen3.8-27B",
           "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-          "points": 19118
+          "points": 19183
         },
         {
           "source": "huggingface",
           "title": "Qwen/Qwen3.8-Flash-Next",
           "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-          "points": 6770
+          "points": 6796
         },
         {
           "source": "huggingface",
           "title": "facebook/sam3",
           "url": "https://huggingface.co/facebook/sam3",
-          "points": 5830
+          "points": 5913
         },
         {
           "source": "huggingface",
           "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
           "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-          "points": 5226
+          "points": 5317
+        },
+        {
+          "source": "huggingface",
+          "title": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+          "points": 3041
         },
         {
           "source": "huggingface",
           "title": "mistralai/Mistral-Large-4-1T-A52B",
           "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
-          "points": 1573
-        },
-        {
-          "source": "huggingface",
-          "title": "LiquidAI/LFM3-1.7B",
-          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
-          "points": 1455
+          "points": 1603
         }
       ],
       "price": 9999
@@ -163,63 +162,63 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 62,
-      "saturationPct": 18,
-      "devVelocityPct": 56,
-      "hypeVelocityPct": 87,
+      "dailyChangePct": 70,
+      "saturationPct": 16,
+      "devVelocityPct": 65,
+      "hypeVelocityPct": 88,
       "postingWindowDays": 5,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 34,
-        "github": 3,
-        "arxiv": 22,
-        "devto": 14,
+        "hackernews": 50,
+        "github": 1,
+        "arxiv": 23,
+        "devto": 23,
         "reddit": 2,
-        "youtube": 19
+        "youtube": 16
       },
       "news": {
-        "now": 88,
-        "base": 3
+        "now": 97,
+        "base": 2
       },
       "evidence": [
         {
           "source": "github",
           "title": "andrew-babo/muse4ai",
           "url": "https://github.com/andrew-babo/muse4ai",
-          "points": 385
-        },
-        {
-          "source": "github",
-          "title": "Balanov/verdict",
-          "url": "https://github.com/Balanov/verdict",
-          "points": 232
+          "points": 719
         },
         {
           "source": "hackernews",
-          "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
-          "url": "https://momentic.ai/",
-          "points": 161
+          "title": "Ask HN: What's your current AI agentic setup?",
+          "url": "https://news.ycombinator.com/item?id=50366117",
+          "points": 406
         },
         {
           "source": "hackernews",
-          "title": "Gitbook Breached",
-          "url": "https://news.ycombinator.com/item?id=50354336",
-          "points": 161
-        },
-        {
-          "source": "github",
-          "title": "capri-com/Capri-AI",
-          "url": "https://github.com/capri-com/Capri-AI",
-          "points": 119
+          "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+          "url": "https://www.ricursive.com/ripple",
+          "points": 311
         },
         {
           "source": "devto",
           "title": "We're Building AI to Replace Ourselves. What's the Plan?",
           "url": "https://dev.to/sylwia-lask/were-building-ai-to-replace-ourselves-whats-the-plan-4oll",
-          "points": 62
+          "points": 133
+        },
+        {
+          "source": "hackernews",
+          "title": "YC's Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
+          "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
+          "points": 93
+        },
+        {
+          "source": "hackernews",
+          "title": "You'll need nerves of steel to work with AI agents",
+          "url": "https://orchidfiles.com/youll-need-nerves-of-steel-to-work-with-ai-agents/",
+          "points": 51
         }
       ],
-      "price": 6167
+      "price": 6441
     },
     {
       "symbol": "QWEN",
@@ -227,63 +226,62 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 87,
-      "saturationPct": 6,
-      "devVelocityPct": 90,
-      "hypeVelocityPct": 33,
-      "postingWindowDays": 14,
+      "dailyChangePct": 88,
+      "saturationPct": 4,
+      "devVelocityPct": 91,
+      "hypeVelocityPct": 28,
+      "postingWindowDays": 17,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 3,
-        "github": 1,
-        "arxiv": 19,
-        "huggingface": 15,
-        "devto": 7,
-        "reddit": 11
+        "hackernews": 2,
+        "arxiv": 33,
+        "huggingface": 17,
+        "devto": 3,
+        "reddit": 16
       },
       "news": {
-        "now": 22,
-        "base": 27
+        "now": 21,
+        "base": 31
       },
       "evidence": [
         {
           "source": "huggingface",
           "title": "Qwen/Qwen3.8-27B",
           "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-          "points": 19118
+          "points": 19183
         },
         {
           "source": "huggingface",
           "title": "Qwen/Qwen3.8-Flash-Next",
           "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
-          "points": 6770
+          "points": 6796
         },
         {
           "source": "huggingface",
           "title": "abenzerps/Qwen-Image-2.1-Turbo-Quantized",
           "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Turbo-Quantized",
-          "points": 5640
+          "points": 5656
         },
         {
           "source": "huggingface",
           "title": "unsloth/Qwen3.8-27B-GGUF",
           "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-          "points": 5524
+          "points": 5553
         },
         {
           "source": "huggingface",
           "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
           "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-          "points": 2541
+          "points": 2549
         },
         {
           "source": "huggingface",
           "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
           "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-          "points": 2419
+          "points": 2513
         }
       ],
-      "price": 5244
+      "price": 5671
     },
     {
       "symbol": "CLAUDE",
@@ -293,62 +291,61 @@
       "signal": "BUY",
       "dailyChangePct": 53,
       "saturationPct": 19,
-      "devVelocityPct": 47,
-      "hypeVelocityPct": 71,
-      "postingWindowDays": 6,
+      "devVelocityPct": 50,
+      "hypeVelocityPct": 62,
+      "postingWindowDays": 7,
       "confidence": "high",
       "breakdown": {
         "hackernews": 29,
-        "github": 1,
-        "arxiv": 9,
-        "devto": 15,
-        "reddit": 3,
-        "producthunt": 1,
-        "youtube": 3
+        "arxiv": 6,
+        "devto": 16,
+        "reddit": 2,
+        "producthunt": 2,
+        "youtube": 2
       },
       "news": {
-        "now": 71,
-        "base": 23
+        "now": 63,
+        "base": 34
       },
       "evidence": [
         {
           "source": "hackernews",
-          "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
-          "url": "https://news.ycombinator.com/item?id=50352757",
-          "points": 496
-        },
-        {
-          "source": "hackernews",
-          "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
-          "url": "https://momentic.ai/",
-          "points": 161
-        },
-        {
-          "source": "github",
-          "title": "capri-com/Capri-AI",
-          "url": "https://github.com/capri-com/Capri-AI",
-          "points": 119
+          "title": "Ask HN: What's your current AI agentic setup?",
+          "url": "https://news.ycombinator.com/item?id=50366117",
+          "points": 406
         },
         {
           "source": "hackernews",
           "title": "Show HN: Kairos – Open-source risk and fraud decisioning platform",
           "url": "https://github.com/finic-ai/kairos",
-          "points": 98
+          "points": 104
+        },
+        {
+          "source": "hackernews",
+          "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+          "url": "https://news.ycombinator.com/item?id=50368804",
+          "points": 93
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
+          "url": "https://github.com/gauge-sh/gauge-cli",
+          "points": 35
         },
         {
           "source": "hackernews",
           "title": "Revolut swaps Claude for GLM open-weight model, cutting AI coding bill by 90%",
           "url": "https://dealroom.co/news/169124-revolut-swaps-claude-code-for-a-chinese-open-weight-model-cutting-its-ai/",
-          "points": 11
+          "points": 12
         },
         {
           "source": "hackernews",
-          "title": "Anthropic confirms blocking reverse engineering requests",
-          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-confirms-new-claude-code-limits-to-prevent-game-cloning-users-report-opus-5-5-is-also-actively-blocking-reverse-engineering-tasks",
-          "points": 9
+          "title": "Anthropic: Progress on provable inference for large language models",
+          "url": "https://www.anthropic.com/research/provable-inference",
+          "points": 11
         }
       ],
-      "price": 5217
+      "price": 4686
     },
     {
       "symbol": "FINETUNE",
@@ -356,47 +353,47 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 93,
-      "saturationPct": 1,
+      "dailyChangePct": 92,
+      "saturationPct": 0,
       "devVelocityPct": 93,
-      "hypeVelocityPct": 14,
-      "postingWindowDays": 27,
+      "hypeVelocityPct": -4,
+      "postingWindowDays": 60,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 1,
-        "arxiv": 35,
+        "hackernews": 2,
+        "arxiv": 33,
         "huggingface": 4,
         "devto": 1,
         "reddit": 1
       },
       "news": {
-        "now": 3,
-        "base": 2
+        "now": 1,
+        "base": 6
       },
       "evidence": [
         {
           "source": "huggingface",
           "title": "Pika-Labs/Pika-H3-Flex",
           "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex",
-          "points": 413
+          "points": 450
         },
         {
           "source": "huggingface",
           "title": "Efficient-Large-Model/Open-H3-Regenerate-2K",
           "url": "https://huggingface.co/Efficient-Large-Model/Open-H3-Regenerate-2K",
-          "points": 208
-        },
-        {
-          "source": "huggingface",
-          "title": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
-          "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
-          "points": 133
+          "points": 221
         },
         {
           "source": "huggingface",
           "title": "PrunaAI/P-H3-Image-Comfy",
           "url": "https://huggingface.co/PrunaAI/P-H3-Image-Comfy",
-          "points": 117
+          "points": 175
+        },
+        {
+          "source": "huggingface",
+          "title": "Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
+          "url": "https://huggingface.co/Pika-Labs/Pika-H3-Flex-Turbo-LoRA",
+          "points": 150
         },
         {
           "source": "hackernews",
@@ -405,13 +402,13 @@
           "points": 41
         },
         {
-          "source": "arxiv",
-          "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
-          "url": "http://arxiv.org/abs/2611.05358v1",
-          "points": 0
+          "source": "hackernews",
+          "title": "WebsiteBench: Can AI Agents Rebuild Websites Through Browser Exploration?",
+          "url": "https://github.com/TIGER-AI-Lab/WebsiteBench",
+          "points": 3
         }
       ],
-      "price": 4636
+      "price": 4308
     },
     {
       "symbol": "MULTIMODAL",
@@ -419,60 +416,61 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 90,
-      "saturationPct": 2,
-      "devVelocityPct": 92,
-      "hypeVelocityPct": 9,
-      "postingWindowDays": 36,
+      "dailyChangePct": 91,
+      "saturationPct": 1,
+      "devVelocityPct": 91,
+      "hypeVelocityPct": 21,
+      "postingWindowDays": 21,
       "confidence": "high",
       "breakdown": {
         "hackernews": 1,
-        "arxiv": 29,
-        "huggingface": 10
+        "arxiv": 26,
+        "huggingface": 9,
+        "devto": 2
       },
       "news": {
-        "now": 6,
-        "base": 14
+        "now": 4,
+        "base": 1
       },
       "evidence": [
         {
           "source": "huggingface",
           "title": "MiniMaxAI/MiniMax-H3",
           "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-          "points": 6574
+          "points": 6601
         },
         {
           "source": "huggingface",
           "title": "google/embeddinggemma-2",
           "url": "https://huggingface.co/google/embeddinggemma-2",
-          "points": 3124
+          "points": 3142
         },
         {
           "source": "huggingface",
           "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
           "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-          "points": 2541
+          "points": 2549
         },
         {
           "source": "huggingface",
           "title": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
           "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
-          "points": 2264
+          "points": 2288
         },
         {
           "source": "huggingface",
           "title": "baidu/Unlimited-OCR-2",
           "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
-          "points": 601
+          "points": 616
         },
         {
           "source": "huggingface",
-          "title": "openbmb/MiniCPM-OCR-1.0",
-          "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0",
-          "points": 441
+          "title": "xiaomi-research/Xiaomi-OCR-0",
+          "url": "https://huggingface.co/xiaomi-research/Xiaomi-OCR-0",
+          "points": 289
         }
       ],
-      "price": 4586
+      "price": 4158
     },
     {
       "symbol": "QUANT",
@@ -487,10 +485,11 @@
       "postingWindowDays": 60,
       "confidence": "high",
       "breakdown": {
-        "arxiv": 10,
-        "huggingface": 19,
+        "hackernews": 1,
+        "arxiv": 5,
+        "huggingface": 20,
         "devto": 2,
-        "reddit": 1
+        "reddit": 6
       },
       "news": {
         "now": 0,
@@ -501,40 +500,40 @@
           "source": "huggingface",
           "title": "abenzerps/Qwen-Image-2.1-Turbo-Quantized",
           "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Turbo-Quantized",
-          "points": 5640
+          "points": 5656
         },
         {
           "source": "huggingface",
           "title": "unsloth/Qwen3.8-27B-GGUF",
           "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
-          "points": 5524
+          "points": 5553
         },
         {
           "source": "huggingface",
           "title": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
           "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
-          "points": 2541
+          "points": 2549
         },
         {
           "source": "huggingface",
           "title": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
           "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
-          "points": 2419
+          "points": 2513
         },
         {
           "source": "huggingface",
           "title": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
           "url": "https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
-          "points": 2264
+          "points": 2288
         },
         {
           "source": "huggingface",
           "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
           "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
-          "points": 1751
+          "points": 1767
         }
       ],
-      "price": 3994
+      "price": 3841
     },
     {
       "symbol": "SAFETY",
@@ -542,123 +541,60 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 87,
-      "saturationPct": 18,
+      "dailyChangePct": 85,
+      "saturationPct": 13,
       "devVelocityPct": 86,
-      "hypeVelocityPct": 66,
-      "postingWindowDays": 7,
+      "hypeVelocityPct": 58,
+      "postingWindowDays": 8,
       "confidence": "high",
       "breakdown": {
         "hackernews": 1,
-        "arxiv": 21,
-        "devto": 1
+        "arxiv": 24,
+        "devto": 3
       },
       "news": {
-        "now": 35,
-        "base": 7
+        "now": 29,
+        "base": 10
       },
       "evidence": [
         {
           "source": "hackernews",
-          "title": "CrowdStrike Introduces the AI Kill Switch for AI Safety",
-          "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-introduces-ai-kill-switch-for-ai-safety/",
-          "points": 1
+          "title": "Show HN: My compact, bio inspired distributed edge detection algorithm",
+          "url": "https://github.com/RenderBear/haci",
+          "points": 2
         },
         {
           "source": "arxiv",
-          "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
-          "url": "http://arxiv.org/abs/2611.05358v1",
+          "title": "Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs",
+          "url": "http://arxiv.org/abs/2611.06848v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "CATF: A Manager-Worker Framework for Context-Aware Time-Series Forecasting",
-          "url": "http://arxiv.org/abs/2611.05325v1",
+          "title": "Alignment Myopia in Generative AI",
+          "url": "http://arxiv.org/abs/2611.06830v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Knowingly Wrong: Training LLMs Against Their Own Beliefs can Induce Misalignment",
-          "url": "http://arxiv.org/abs/2611.05287v1",
+          "title": "SAUCE: Summary Analysis Using Conversation Entailment",
+          "url": "http://arxiv.org/abs/2611.06812v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Learning Behaviorally Relevant Dynamics in Multimodal Neural Recordings",
-          "url": "http://arxiv.org/abs/2611.05167v1",
+          "title": "FedFiOT: Fisher-Weighted Optimal Transport for Model Merging in One-Shot and Few-Round Federated Learning",
+          "url": "http://arxiv.org/abs/2611.06783v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "The Platonic Brain: Representational Convergence in EEG Foundation Models",
-          "url": "http://arxiv.org/abs/2611.05097v1",
+          "title": "Dexterous Robotic Hands in the Foundation-Model Era: A Full-Stack Survey of Hardware, Data, Cross-Embodiment Transfer, Learning, and Evaluation",
+          "url": "http://arxiv.org/abs/2611.06724v1",
           "points": 0
         }
       ],
-      "price": 3748
-    },
-    {
-      "symbol": "CODEGEN",
-      "label": "AI Coding / SWE Agents",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 56,
-      "saturationPct": 1,
-      "devVelocityPct": 56,
-      "hypeVelocityPct": 4,
-      "postingWindowDays": 48,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 16,
-        "arxiv": 8,
-        "devto": 10,
-        "producthunt": 2,
-        "youtube": 1
-      },
-      "news": {
-        "now": 1,
-        "base": 3
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
-          "url": "https://momentic.ai/",
-          "points": 161
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: CleanSlop – Find what breaks in AI-generated TypeScript/Node web apps",
-          "url": "https://cleanslop.com",
-          "points": 3
-        },
-        {
-          "source": "hackernews",
-          "title": "Does a code knowledge graph help coding agents? 360 trials found no clear gain",
-          "url": "https://www.srijans.space/graphify-benchmark",
-          "points": 3
-        },
-        {
-          "source": "hackernews",
-          "title": "Engraphis – Local-first, bi-temporal memory for AI coding agents",
-          "url": "https://github.com/Coding-Dev-Tools/engraphis",
-          "points": 2
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Readfirst – a repo map your coding agents read before they edit a file",
-          "url": "https://github.com/jeonghun917/readfirst",
-          "points": 2
-        },
-        {
-          "source": "hackernews",
-          "title": "Lotse: AI Coding Agent – iOS",
-          "url": "https://apps.apple.com/us/app/lotse-ai-coding-agent/id6760467136",
-          "points": 2
-        }
-      ],
-      "price": 3687
+      "price": 3744
     },
     {
       "symbol": "OPENWEIGHTS",
@@ -666,34 +602,40 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 76,
-      "saturationPct": 5,
-      "devVelocityPct": 83,
-      "hypeVelocityPct": 2,
-      "postingWindowDays": 53,
+      "dailyChangePct": 77,
+      "saturationPct": 4,
+      "devVelocityPct": 81,
+      "hypeVelocityPct": 8,
+      "postingWindowDays": 35,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 8,
-        "arxiv": 13,
-        "devto": 3,
+        "hackernews": 7,
+        "arxiv": 16,
+        "devto": 4,
         "reddit": 5
       },
       "news": {
-        "now": 10,
-        "base": 33
+        "now": 9,
+        "base": 23
       },
       "evidence": [
         {
           "source": "hackernews",
-          "title": "Open models can do 90 percent of agentic work at a twentieth of the cost",
-          "url": "https://www.theregister.com/ai-and-ml/2026/11/03/open-models-can-do-90-percent-of-agentic-work-at-a-twentieth-of-the-cost-of-a-frontier-llm-gartner/5307132",
-          "points": 27
+          "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
+          "url": "https://www.ricursive.com/ripple",
+          "points": 311
         },
         {
           "source": "hackernews",
           "title": "Revolut swaps Claude for GLM open-weight model, cutting AI coding bill by 90%",
           "url": "https://dealroom.co/news/169124-revolut-swaps-claude-code-for-a-chinese-open-weight-model-cutting-its-ai/",
-          "points": 11
+          "points": 12
+        },
+        {
+          "source": "hackernews",
+          "title": "Verne V0.5: U.S. Open-Weight SOTA Robotics Foundation Model",
+          "url": "https://vernerobotics.com/research/verne-v0-5",
+          "points": 6
         },
         {
           "source": "hackernews",
@@ -703,336 +645,79 @@
         },
         {
           "source": "hackernews",
-          "title": "Revolut Cuts A.I. Coding Costs 90% with a Chinese Open-Weight Model",
-          "url": "https://www.trendingtopics.eu/revolut-glm-open-weight-coding-costs/",
+          "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
+          "url": "https://www.linum.ai/field-notes/pjit-21k",
           "points": 2
         },
         {
           "source": "hackernews",
-          "title": "How Open Models Win Against OpenAI and Anthropic [video]",
-          "url": "https://www.youtube.com/watch?v=zsO5RktNB7k",
-          "points": 2
-        },
-        {
-          "source": "hackernews",
-          "title": "BudHist Benchmark: Testing the Knowledge of Buddhist History in Open-Weight LLMs",
-          "url": "https://mbingenheimer.net/budhistbenchmark/",
+          "title": "Open-weight AI models can exploit the patch gap",
+          "url": "https://epoch.ai/publications/open-weight-models-patch-gap",
           "points": 1
         }
       ],
-      "price": 3683
+      "price": 3652
     },
     {
-      "symbol": "LOCALLLM",
-      "label": "Local / On-device LLMs",
+      "symbol": "CODEGEN",
+      "label": "AI Coding / SWE Agents",
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 76,
+      "dailyChangePct": 62,
       "saturationPct": 1,
-      "devVelocityPct": 77,
-      "hypeVelocityPct": 3,
-      "postingWindowDays": 50,
+      "devVelocityPct": 62,
+      "hypeVelocityPct": 5,
+      "postingWindowDays": 44,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 7,
-        "github": 1,
-        "arxiv": 4,
-        "huggingface": 4,
-        "devto": 6,
-        "reddit": 4
+        "hackernews": 12,
+        "arxiv": 14,
+        "devto": 11
       },
       "news": {
         "now": 2,
-        "base": 5
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
-          "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
-          "points": 1751
-        },
-        {
-          "source": "huggingface",
-          "title": "mistralai/Mistral-Large-4-1T-A52B",
-          "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
-          "points": 1573
-        },
-        {
-          "source": "huggingface",
-          "title": "orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
-          "url": "https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
-          "points": 471
-        },
-        {
-          "source": "huggingface",
-          "title": "LiquidAI/LFM3-1.7B-GGUF",
-          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF",
-          "points": 226
-        },
-        {
-          "source": "github",
-          "title": "skingko/PastAi",
-          "url": "https://github.com/skingko/PastAi",
-          "points": 52
-        },
-        {
-          "source": "hackernews",
-          "title": "Desktop app from the llama.cpp team (Mac OS and Windows)",
-          "url": "https://llama.app/models",
-          "points": 3
-        }
-      ],
-      "price": 3305
-    },
-    {
-      "symbol": "MCP",
-      "label": "Model Context Protocol",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 55,
-      "saturationPct": 3,
-      "devVelocityPct": 57,
-      "hypeVelocityPct": 8,
-      "postingWindowDays": 36,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 15,
-        "github": 2,
-        "arxiv": 2,
-        "devto": 5,
-        "producthunt": 1,
-        "youtube": 1
-      },
-      "news": {
-        "now": 4,
-        "base": 10
-      },
-      "evidence": [
-        {
-          "source": "github",
-          "title": "KKKKhazix/agent-autoloop",
-          "url": "https://github.com/KKKKhazix/agent-autoloop",
-          "points": 2025
-        },
-        {
-          "source": "github",
-          "title": "Balanov/shim",
-          "url": "https://github.com/Balanov/shim",
-          "points": 449
-        },
-        {
-          "source": "hackernews",
-          "title": "Gitbook Breached",
-          "url": "https://news.ycombinator.com/item?id=50354336",
-          "points": 161
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Kairos – Open-source risk and fraud decisioning platform",
-          "url": "https://github.com/finic-ai/kairos",
-          "points": 98
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Uncracked City, detective game where you question LLM suspects that lie",
-          "url": "https://uncracked.city",
-          "points": 85
-        },
-        {
-          "source": "devto",
-          "title": "Your Agent Has a Side Door: Testing MCP Policy Beyond the Tool List",
-          "url": "https://dev.to/bengreenberg/your-agent-has-a-side-door-testing-mcp-policy-beyond-the-tool-list-1699",
-          "points": 11
-        }
-      ],
-      "price": 3180
-    },
-    {
-      "symbol": "ROBOTICS",
-      "label": "Robotics / Embodied AI",
-      "emerging": false,
-      "stage": "PEAKING",
-      "signal": "HOLD",
-      "dailyChangePct": 80,
-      "saturationPct": 56,
-      "devVelocityPct": 69,
-      "hypeVelocityPct": 76,
-      "postingWindowDays": 1,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 7
-      },
-      "news": {
-        "now": 70,
-        "base": 13
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "I made it easy to see how well robotics models acutally work",
-          "url": "https://playground.blupe.io",
-          "points": 3
-        },
-        {
-          "source": "arxiv",
-          "title": "GUILD: Guided Iterative Data Collection for Imitation Learning",
-          "url": "http://arxiv.org/abs/2611.05368v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On",
-          "url": "http://arxiv.org/abs/2611.05163v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "LLMs as MDP Designers: A Dependency-Aware Agentic Framework for Automated Robot Policy Generation",
-          "url": "http://arxiv.org/abs/2611.04974v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "HTCE: Homeomorphism-inspired Topological Cross-Scene Experience Canonicalization and Reuse for Object Navigation",
-          "url": "http://arxiv.org/abs/2611.04836v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "DenseTwins: Dense Modality Decoupling for Multimodal Self-Supervision",
-          "url": "http://arxiv.org/abs/2611.04710v1",
-          "points": 0
-        }
-      ],
-      "price": 3012
-    },
-    {
-      "symbol": "DEEPSEEK",
-      "label": "DeepSeek",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 38,
-      "saturationPct": 21,
-      "devVelocityPct": 37,
-      "hypeVelocityPct": 32,
-      "postingWindowDays": 11,
-      "confidence": "high",
-      "breakdown": {
-        "arxiv": 1,
-        "huggingface": 8,
-        "devto": 3,
-        "reddit": 4
-      },
-      "news": {
-        "now": 26,
-        "base": 35
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
-          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-          "points": 5226
-        },
-        {
-          "source": "huggingface",
-          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-          "points": 597
-        },
-        {
-          "source": "huggingface",
-          "title": "orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
-          "url": "https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
-          "points": 471
-        },
-        {
-          "source": "huggingface",
-          "title": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
-          "url": "https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
-          "points": 336
-        },
-        {
-          "source": "huggingface",
-          "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
-          "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
-          "points": 277
-        },
-        {
-          "source": "huggingface",
-          "title": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
-          "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
-          "points": 241
-        }
-      ],
-      "price": 3004
-    },
-    {
-      "symbol": "MOE",
-      "label": "Mixture of Experts",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 75,
-      "saturationPct": 0,
-      "devVelocityPct": 77,
-      "hypeVelocityPct": -8,
-      "postingWindowDays": 60,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 8,
-        "huggingface": 6,
-        "devto": 2
-      },
-      "news": {
-        "now": 0,
         "base": 4
       },
       "evidence": [
         {
-          "source": "huggingface",
-          "title": "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
-          "url": "https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
-          "points": 675
+          "source": "hackernews",
+          "title": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
+          "url": "https://github.com/gauge-sh/gauge-cli",
+          "points": 35
         },
         {
-          "source": "huggingface",
-          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
-          "points": 597
+          "source": "devto",
+          "title": "Don't Write Markdown Files for Your Coding Agent. Write Scripts.",
+          "url": "https://dev.to/dannwaneri/dont-write-markdown-files-for-your-coding-agent-write-scripts-j00",
+          "points": 12
         },
         {
-          "source": "huggingface",
-          "title": "orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
-          "url": "https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
-          "points": 471
+          "source": "hackernews",
+          "title": "We Tested Coding Agent Harnesses. Thinking Harder Beat All of Them",
+          "url": "https://surgehq.ai/blog/benchmarking-coding-agent-harnesses",
+          "points": 6
         },
         {
-          "source": "huggingface",
-          "title": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
-          "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
-          "points": 241
+          "source": "devto",
+          "title": "Crows, Moths, and Makefiles: How 300 Megabytes of Crow DNA Explains Why a 20-Kilobyte Scar File Outsmarts a Terabyte LLM",
+          "url": "https://dev.to/gde/crows-moths-and-makefiles-how-300-megabytes-of-crow-dna-explains-why-a-20-kilobyte-scar-file-36a",
+          "points": 6
         },
         {
-          "source": "huggingface",
-          "title": "Diffuspace/Clover-35B-A3B-Preview",
-          "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
-          "points": 239
+          "source": "devto",
+          "title": "My AI Agent Said 'Done.' It Wasn't. A Field Guide to Trusting Nothing an Agent Tells You",
+          "url": "https://dev.to/taqui_786/my-ai-agent-said-done-it-wasnt-a-field-guide-to-trusting-nothing-an-agent-tells-you-2jj7",
+          "points": 6
         },
         {
-          "source": "huggingface",
-          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
-          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
-          "points": 145
+          "source": "hackernews",
+          "title": "Show HN: Chronosphere, a tool for understanding large PRs",
+          "url": "https://getchronosphere.com/",
+          "points": 5
         }
       ],
-      "price": 2856
+      "price": 3644
     },
     {
       "symbol": "GEMINI",
@@ -1040,61 +725,297 @@
       "emerging": false,
       "stage": "PEAKING",
       "signal": "HOLD",
-      "dailyChangePct": 56,
-      "saturationPct": 68,
-      "devVelocityPct": 18,
-      "hypeVelocityPct": 78,
+      "dailyChangePct": 72,
+      "saturationPct": 58,
+      "devVelocityPct": 48,
+      "hypeVelocityPct": 86,
       "postingWindowDays": 1,
       "confidence": "high",
       "breakdown": {
         "hackernews": 4,
-        "arxiv": 1,
-        "devto": 2,
+        "arxiv": 5,
+        "devto": 3,
         "youtube": 1
       },
       "news": {
-        "now": 76,
-        "base": 13
+        "now": 94,
+        "base": 4
       },
       "evidence": [
         {
           "source": "hackernews",
           "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
           "url": "https://news.ycombinator.com/item?id=50363461",
-          "points": 165
+          "points": 681
         },
         {
           "source": "devto",
-          "title": "The A2A CLI and Rust: The Same Code, Three Ways to Serve It",
-          "url": "https://dev.to/gde/the-a2a-cli-and-rust-the-same-code-three-ways-to-serve-it-4el0",
-          "points": 6
+          "title": "What I Learned Managing a Full Project with Antigravity",
+          "url": "https://dev.to/gde/what-i-learned-managing-a-full-project-with-antigravity-1ppc",
+          "points": 9
         },
         {
           "source": "hackernews",
-          "title": "Show HN: Diogenes – Account-less MCP Gateway to 45 Gemini models and guardrails",
-          "url": "https://diogenesgateway.com/",
-          "points": 3
+          "title": "Show HN: AI Gude – my feeds as a daily podcast, revived with AI",
+          "url": "https://github.com/alex0ptr/aigude",
+          "points": 7
         },
         {
           "source": "hackernews",
-          "title": "Show HN: Droneship – sandbox for your coding agents",
-          "url": "https://droneship.run/",
+          "title": "Computer use is GA in Gemini API",
+          "url": "https://aistudio.google.com/docs/computer-use",
           "points": 1
         },
         {
           "source": "hackernews",
-          "title": "Google's Gemini 4 Carbon edges Claude Opus 5.5, claims fewest hallucinations",
-          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-reveals-new-gemini-4-carbon-ai-model-narrowly-beating-claude-opus-5-5-frontier-ai-model-is-also-the-least-likely-to-hallucinate-benchmarks-claim",
+          "title": "Show HN: teletap – Your remote coding agents ask you when stuck",
+          "url": "https://news.ycombinator.com/item?id=50377644",
           "points": 1
         },
         {
           "source": "arxiv",
-          "title": "ALBI: LLM-Guided Inductive Logic Programming via Iterative Generate-Test-Constrain Refineme",
-          "url": "http://arxiv.org/abs/2611.05039v1",
+          "title": "Reasoning over Non-Parametric Memory in Multilingual LLMs: A Cognitive-Based Analysis of Relational Knowledge",
+          "url": "http://arxiv.org/abs/2611.06715v1",
           "points": 0
         }
       ],
-      "price": 2847
+      "price": 3238
+    },
+    {
+      "symbol": "AIGENERATED",
+      "label": "Ai-Generated",
+      "emerging": true,
+      "stage": "SATURATED",
+      "signal": "SELL",
+      "dailyChangePct": 89,
+      "saturationPct": 76,
+      "devVelocityPct": 68,
+      "hypeVelocityPct": 85,
+      "postingWindowDays": 0,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 4,
+        "devto": 2
+      },
+      "news": {
+        "now": 93,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "CodeRabbit – Automated review, triage, and security for AI-generated PRs",
+          "url": "https://www.coderabbit.ai",
+          "points": 5
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: CleanSlop – Find what breaks in AI-generated TypeScript/Node web apps",
+          "url": "https://cleanslop.com",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: I built a hosting for small AI-generated software",
+          "url": "https://host0.ai",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "Systemd WatchdogSec: The Kill Switch for Hung AI-Generated Code",
+          "url": "https://cheikhhseck.medium.com/systemd-watchdogsec-the-kill-switch-for-hung-ai-generated-code-ce221e603e69",
+          "points": 1
+        },
+        {
+          "source": "devto",
+          "title": "Split AI-generated Storybook stories into one interaction each",
+          "url": "https://dev.to/sherotree/split-ai-generated-storybook-stories-into-one-interaction-each-1kii",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Catching wrong-voice lines in AI-generated video with 60 lines of Python",
+          "url": "https://dev.to/neeraj_sharma_757fbb49aa7/catching-wrong-voice-lines-in-ai-generated-video-with-60-lines-of-python-32f9",
+          "points": 0
+        }
+      ],
+      "price": 2803
+    },
+    {
+      "symbol": "MOE",
+      "label": "Mixture of Experts",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 86,
+      "saturationPct": 0,
+      "devVelocityPct": 86,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "high",
+      "breakdown": {
+        "arxiv": 8,
+        "huggingface": 5,
+        "reddit": 3
+      },
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
+          "url": "https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
+          "points": 697
+        },
+        {
+          "source": "huggingface",
+          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "points": 610
+        },
+        {
+          "source": "huggingface",
+          "title": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+          "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+          "points": 252
+        },
+        {
+          "source": "huggingface",
+          "title": "Diffuspace/Clover-35B-A3B-Preview",
+          "url": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
+          "points": 243
+        },
+        {
+          "source": "huggingface",
+          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
+          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-Coder-GGUF",
+          "points": 169
+        },
+        {
+          "source": "arxiv",
+          "title": "Systolic Linear Attention: Co-Designing Tile-Grouped Gated Delta Attention for TPUs",
+          "url": "http://arxiv.org/abs/2611.06828v1",
+          "points": 0
+        }
+      ],
+      "price": 2690
+    },
+    {
+      "symbol": "ROBOTICS",
+      "label": "Robotics / Embodied AI",
+      "emerging": false,
+      "stage": "SATURATED",
+      "signal": "SELL",
+      "dailyChangePct": 76,
+      "saturationPct": 72,
+      "devVelocityPct": 48,
+      "hypeVelocityPct": 80,
+      "postingWindowDays": 0,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 3,
+        "devto": 1
+      },
+      "news": {
+        "now": 78,
+        "base": 10
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Verne V0.5: U.S. Open-Weight SOTA Robotics Foundation Model",
+          "url": "https://vernerobotics.com/research/verne-v0-5",
+          "points": 6
+        },
+        {
+          "source": "arxiv",
+          "title": "Perceptive Humanoid Motion from Simulation",
+          "url": "http://arxiv.org/abs/2611.06908v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Interactive World Simulation with Cosmos for Physical AI",
+          "url": "http://arxiv.org/abs/2611.06627v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Robots in the City: Persona-Based Perceptions of Urban Robots",
+          "url": "http://arxiv.org/abs/2611.05954v1",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "Beyond the Model: 9 Practical Engineering Hurdles in Real-Robot Imitation Learning (SO-101 + ACT)",
+          "url": "https://dev.to/yohei1126/beyond-the-model-9-practical-engineering-hurdles-in-real-robot-imitation-learning-so-101-act-bdb",
+          "points": 0
+        }
+      ],
+      "price": 2646
+    },
+    {
+      "symbol": "REASONING",
+      "label": "Reasoning Models",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 86,
+      "saturationPct": 2,
+      "devVelocityPct": 86,
+      "hypeVelocityPct": 11,
+      "postingWindowDays": 32,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 2,
+        "arxiv": 13
+      },
+      "news": {
+        "now": 2,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Reasoning Models Can Control Their CoT When They Tell Themselves To",
+          "url": "https://arxiv.org/abs/2610.23257https://github.com/udolev/Self-Instructed-CoT-Controllability",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "The Limits of Test-Time Compute for Self-Evaluation",
+          "url": "https://anirudhb11.github.io/blog/scorpio/",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+          "url": "http://arxiv.org/abs/2611.06868v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Rules, Traces and Routing Statistics: Training and Calibration Data for Open Models on ARC-AGI-2",
+          "url": "http://arxiv.org/abs/2611.06827v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "TailSteer: Trajectory-Tail Steering for Drift-Resistant Multi-turn Image Editing",
+          "url": "http://arxiv.org/abs/2611.06741v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "ConceptARC at Scale: Studying Conceptual Understanding in Reasoning Models",
+          "url": "http://arxiv.org/abs/2611.06732v1",
+          "points": 0
+        }
+      ],
+      "price": 2627
     },
     {
       "symbol": "GPT",
@@ -1102,17 +1023,17 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 56,
+      "dailyChangePct": 62,
       "saturationPct": 0,
-      "devVelocityPct": 56,
+      "devVelocityPct": 62,
       "hypeVelocityPct": 4,
       "postingWindowDays": 50,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 9,
-        "arxiv": 4,
-        "devto": 5,
-        "producthunt": 2,
+        "hackernews": 7,
+        "arxiv": 8,
+        "devto": 1,
+        "producthunt": 1,
         "youtube": 1
       },
       "news": {
@@ -1122,223 +1043,105 @@
       "evidence": [
         {
           "source": "hackernews",
-          "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
-          "url": "https://news.ycombinator.com/item?id=50352757",
-          "points": 496
+          "title": "Ask HN: What's your current AI agentic setup?",
+          "url": "https://news.ycombinator.com/item?id=50366117",
+          "points": 406
         },
         {
           "source": "hackernews",
           "title": "Show HN: Uncracked City, detective game where you question LLM suspects that lie",
           "url": "https://uncracked.city",
-          "points": 85
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Remene – Understand your MRI and prepare questions for your doctor",
-          "url": "https://remene.si",
-          "points": 11
+          "points": 127
         },
         {
           "source": "hackernews",
           "title": "Ask HN: How to Keep the Edge as an Engineer?",
           "url": "https://news.ycombinator.com/item?id=50362698",
-          "points": 6
+          "points": 10
         },
         {
           "source": "hackernews",
-          "title": "Show HN: Backup your ChatGPT and Claude conversation free",
-          "url": "https://www.samewindow.com/",
-          "points": 2
+          "title": "Ask HN: Which agent harness do you use for working with multiple Models?",
+          "url": "https://news.ycombinator.com/item?id=50369140",
+          "points": 5
         },
         {
           "source": "hackernews",
           "title": "Show HN: Rivermark, a superfast AI graphic design canvas",
           "url": "https://rivermark.ai/",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "Ask HN: Any way to have inbuild second screen for AI to control",
+          "url": "https://news.ycombinator.com/item?id=50376975",
           "points": 1
         }
       ],
-      "price": 2734
+      "price": 2595
     },
     {
-      "symbol": "MULTIAGENT",
-      "label": "Multi-Agent Systems",
+      "symbol": "DEEPSEEK",
+      "label": "DeepSeek",
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 46,
-      "saturationPct": 5,
-      "devVelocityPct": 46,
-      "hypeVelocityPct": 15,
-      "postingWindowDays": 25,
+      "dailyChangePct": 37,
+      "saturationPct": 13,
+      "devVelocityPct": 43,
+      "hypeVelocityPct": 2,
+      "postingWindowDays": 45,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 4,
-        "arxiv": 9
+        "hackernews": 1,
+        "arxiv": 2,
+        "huggingface": 7,
+        "devto": 2,
+        "reddit": 1
       },
       "news": {
-        "now": 5,
-        "base": 7
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Verify, Then Vote: Overturning Wrong Majorities in Multi-Agent LLMs",
-          "url": "https://github.com/grainulation/papers",
-          "points": 4
-        },
-        {
-          "source": "hackernews",
-          "title": "Finite Agent Machines: guarantees for dynamic agent swarms [pdf]",
-          "url": "https://github.com/DeleganceAI/alinery/blob/main/whitepaper/finite-agent-machines.pdf",
-          "points": 2
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Planted 3 backdoors in my code; the agent swarm found 27, half noise",
-          "url": "https://github.com/VictorAboba/DreamTeam/blob/master/docs/en/audits/2026-11-self-audit.md",
-          "points": 1
-        },
-        {
-          "source": "hackernews",
-          "title": "How to Audit a Multi-Agent CrewAI Crew: Find the Handoff That Broke the Output",
-          "url": "https://medium.com/@MirArshadTalpur/how-to-audit-a-multi-agent-crewai-crew-find-the-handoff-that-broke-the-output-143f13784cdb",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "JHiMA-WebRL: A Joint Hierarchical Multi-Agent Reinforcement Learning Framework for Long-Horizon Web Tasks",
-          "url": "http://arxiv.org/abs/2611.05263v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response",
-          "url": "http://arxiv.org/abs/2611.04977v1",
-          "points": 0
-        }
-      ],
-      "price": 2577
-    },
-    {
-      "symbol": "CODINGAGENTS",
-      "label": "Coding Agents",
-      "emerging": true,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 70,
-      "saturationPct": 23,
-      "devVelocityPct": 82,
-      "hypeVelocityPct": 25,
-      "postingWindowDays": 13,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 10,
-        "devto": 2
-      },
-      "news": {
-        "now": 19,
-        "base": 31
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Does a code knowledge graph help coding agents? 360 trials found no clear gain",
-          "url": "https://www.srijans.space/graphify-benchmark",
-          "points": 3
-        },
-        {
-          "source": "hackernews",
-          "title": "Engraphis – Local-first, bi-temporal memory for AI coding agents",
-          "url": "https://github.com/Coding-Dev-Tools/engraphis",
-          "points": 2
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Readfirst – a repo map your coding agents read before they edit a file",
-          "url": "https://github.com/jeonghun917/readfirst",
-          "points": 2
-        },
-        {
-          "source": "hackernews",
-          "title": "Decision Models as Policy Gates for Coding Agents",
-          "url": "https://arxiv.org/abs/2611.02155",
-          "points": 2
-        },
-        {
-          "source": "hackernews",
-          "title": "AI coding agents are installing abandoned MCP servers with known security issues",
-          "url": "https://www.glow.io/blogs/mcphantom-ai-coding-agents-are-installing-vulnerable-deprecated-mcp-servers-from-training-data",
-          "points": 1
-        },
-        {
-          "source": "hackernews",
-          "title": "Agent Meter – Native macOS menu bar monitor for CLI coding agents",
-          "url": "https://github.com/amazingyyc/AgentMeter",
-          "points": 1
-        }
-      ],
-      "price": 2419
-    },
-    {
-      "symbol": "SORA",
-      "label": "AI Video Generation",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 71,
-      "saturationPct": 20,
-      "devVelocityPct": 76,
-      "hypeVelocityPct": 31,
-      "postingWindowDays": 12,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 3,
-        "arxiv": 4,
-        "huggingface": 2
-      },
-      "news": {
-        "now": 15,
-        "base": 17
+        "now": 12,
+        "base": 39
       },
       "evidence": [
         {
           "source": "huggingface",
-          "title": "Lightricks/LTX-2.5",
-          "url": "https://huggingface.co/Lightricks/LTX-2.5",
-          "points": 10561
+          "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "points": 5317
         },
         {
           "source": "huggingface",
-          "title": "MiniMaxAI/MiniMax-H3",
-          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
-          "points": 6574
+          "title": "ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+          "points": 610
         },
         {
-          "source": "hackernews",
-          "title": "P-H3-Image: Turning a SOTA Video Model into an Efficient Open Image Model",
-          "url": "https://www.pruna.ai/blog/oss-p-h3-image-launch",
-          "points": 1
+          "source": "huggingface",
+          "title": "unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+          "url": "https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF",
+          "points": 347
         },
         {
-          "source": "hackernews",
-          "title": "Kandinsky S2V 1.0 – an open family of speech-to-video models",
-          "url": "https://kandinskyavatar.github.io",
-          "points": 1
+          "source": "huggingface",
+          "title": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+          "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+          "points": 310
         },
         {
-          "source": "hackernews",
-          "title": "First Publicly Available Neuron-Derived AI Video Model",
-          "url": "https://www.tbc.co/press-releases/neuron-derived-ai-video-model",
-          "points": 1
+          "source": "huggingface",
+          "title": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+          "url": "https://huggingface.co/OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+          "points": 252
         },
         {
-          "source": "arxiv",
-          "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
-          "url": "http://arxiv.org/abs/2611.05377v1",
-          "points": 0
+          "source": "huggingface",
+          "title": "nvidia/DeepSeek-V4.1-Flash-1017-NVFP4",
+          "url": "https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4",
+          "points": 180
         }
       ],
-      "price": 2325
+      "price": 2480
     },
     {
       "symbol": "EMBEDDINGS",
@@ -1346,21 +1149,22 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 77,
+      "dailyChangePct": 82,
       "saturationPct": 1,
-      "devVelocityPct": 80,
-      "hypeVelocityPct": -3,
-      "postingWindowDays": 60,
-      "confidence": "medium",
+      "devVelocityPct": 82,
+      "hypeVelocityPct": 2,
+      "postingWindowDays": 59,
+      "confidence": "high",
       "breakdown": {
         "hackernews": 1,
-        "arxiv": 8,
-        "producthunt": 1,
-        "youtube": 2
+        "arxiv": 11,
+        "devto": 1,
+        "reddit": 1,
+        "youtube": 1
       },
       "news": {
         "now": 0,
-        "base": 5
+        "base": 1
       },
       "evidence": [
         {
@@ -1371,266 +1175,99 @@
         },
         {
           "source": "arxiv",
-          "title": "Fusing Earth observation embeddings and spaceborne terrain with meteorological forcing for flood peak depth prediction from high-water marks",
-          "url": "http://arxiv.org/abs/2611.05220v1",
+          "title": "Balancing hierarchical representation and quantization: A performance trade-off in text embeddings",
+          "url": "http://arxiv.org/abs/2611.06859v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Basin2Vec: Learning Basin-Centric Embeddings for Scalable Hydrological Modeling",
-          "url": "http://arxiv.org/abs/2611.05164v1",
+          "title": "Task-Efficient Agent Evaluation Using Cached Traces",
+          "url": "http://arxiv.org/abs/2611.06803v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "The Platonic Brain: Representational Convergence in EEG Foundation Models",
-          "url": "http://arxiv.org/abs/2611.05097v1",
+          "title": "Message-passing graph persistence",
+          "url": "http://arxiv.org/abs/2611.06801v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Hybrid acoustic and pretrained embedding feature fusion for unmanned aerial vehicle detection using stacking ensemble learning under a leakage-aware evaluation protocol",
-          "url": "http://arxiv.org/abs/2611.04714v1",
+          "title": "TestBED: An Open-Source Toolkit for Bayesian Experimental Design",
+          "url": "http://arxiv.org/abs/2611.06633v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "A Universal Raw-IQ Radar Encoder for Cross-Sensor Human Sensing",
-          "url": "http://arxiv.org/abs/2611.04534v1",
+          "title": "Signed but Steerable: Measuring and Closing the Text-Vector Integrity Gap in Offline Retrieval-Augmented Generation",
+          "url": "http://arxiv.org/abs/2611.06498v1",
           "points": 0
         }
       ],
-      "price": 2218
+      "price": 2475
     },
     {
-      "symbol": "MISTRAL",
-      "label": "Mistral",
+      "symbol": "MCP",
+      "label": "Model Context Protocol",
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 52,
-      "saturationPct": 10,
-      "devVelocityPct": 78,
-      "hypeVelocityPct": -22,
-      "postingWindowDays": 58,
+      "dailyChangePct": 42,
+      "saturationPct": 6,
+      "devVelocityPct": 40,
+      "hypeVelocityPct": 27,
+      "postingWindowDays": 17,
       "confidence": "high",
       "breakdown": {
-        "arxiv": 5,
-        "huggingface": 1,
-        "devto": 5
+        "hackernews": 9,
+        "arxiv": 2,
+        "devto": 6,
+        "producthunt": 1,
+        "youtube": 1
       },
       "news": {
-        "now": 7,
-        "base": 52
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "mistralai/Mistral-Large-4-1T-A52B",
-          "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
-          "points": 1573
-        },
-        {
-          "source": "devto",
-          "title": "Why KV-Cache Memory Tricks — Not New Math — Drove This Week's Biggest Inference Wins",
-          "url": "https://dev.to/felipe0liveira/why-kv-cache-memory-tricks-not-new-math-drove-this-weeks-biggest-inference-wins-29cb",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
-          "url": "http://arxiv.org/abs/2611.05373v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "OperAItor: An Agentic Framework for Fault-Tolerant Operation of Chemical Processes",
-          "url": "http://arxiv.org/abs/2611.05179v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Evaluating LLMs as Judges of Counterspeech Quality Against Online Hate Speech",
-          "url": "http://arxiv.org/abs/2611.04627v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Beyond Fine-Tuning: Evaluating Prompt Engineering and Prompt Tuning for Roman Urdu Hate Speech Detection",
-          "url": "http://arxiv.org/abs/2611.04342v1",
-          "points": 0
-        }
-      ],
-      "price": 2199
-    },
-    {
-      "symbol": "GPT6ASTRA",
-      "label": "Gpt-6 Astra",
-      "emerging": true,
-      "stage": "PEAKING",
-      "signal": "HOLD",
-      "dailyChangePct": 72,
-      "saturationPct": 47,
-      "devVelocityPct": 72,
-      "hypeVelocityPct": 51,
-      "postingWindowDays": 4,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 1,
-        "devto": 5,
-        "reddit": 2
-      },
-      "news": {
-        "now": 30,
-        "base": 18
+        "now": 5,
+        "base": 1
       },
       "evidence": [
         {
           "source": "hackernews",
-          "title": "MIT researchers edit Qwen weights with GPT-6 Astra to boost math",
-          "url": "https://venturebeat.com/technology/like-gene-editing-for-neural-networks-mit-researchers-used-gpt-6-astra-to-edit-qwens-open-weights-directly-boosting-math-performance",
-          "points": 2
+          "title": "Show HN: Uncracked City, detective game where you question LLM suspects that lie",
+          "url": "https://uncracked.city",
+          "points": 127
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Kairos – Open-source risk and fraud decisioning platform",
+          "url": "https://github.com/finic-ai/kairos",
+          "points": 104
+        },
+        {
+          "source": "hackernews",
+          "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+          "url": "https://news.ycombinator.com/item?id=50368804",
+          "points": 93
         },
         {
           "source": "devto",
-          "title": "Weight-Space Programming: how GPT-6 Astra edited Qwen's weights and took MATH-500 from 7.9% to 48.1%",
-          "url": "https://dev.to/ahmad_dogar_7d098f5e48f72/weight-space-programming-how-gpt-6-astra-edited-qwens-weights-and-took-math-500-from-79-to-481-4gee",
-          "points": 0
+          "title": "WebMCP Attack Lab: Can an E-Shop Hijack Your AI Agent?",
+          "url": "https://dev.to/gramli/webmcp-attack-lab-can-an-e-shop-hijack-your-ai-agent-4oe5",
+          "points": 30
+        },
+        {
+          "source": "hackernews",
+          "title": "MCP vs. API vs. CLI: How should AI agents connect to your app?",
+          "url": "https://wasp.sh/blog/2026/11/03/mcp-vs-api-vs-cli-connect-ai-agents-to-your-app",
+          "points": 5
         },
         {
           "source": "devto",
-          "title": "How a GPT-5.4 harness scored above GPT-6 Astra and Claude Code on ExtractBench",
-          "url": "https://dev.to/nikit117/how-a-gpt-54-harness-scored-above-gpt-6-astra-and-claude-code-on-extractbench-27o5",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "GPT-6 AstraがQwen3.5-0.8Bを重みの0.016%編集で修正した方法",
-          "url": "https://dev.to/aakira/gpt-6-astragaqwen35-08bwozhong-mino0016bian-ji-dexiu-zheng-sitafang-fa-50de",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "GPT-6 Astra แก้ไข Qwen3.5-0.8B ได้อย่างไร ด้วยการแก้ไขน้ำหนักโมเดลเพียง 0.016%",
-          "url": "https://dev.to/thanawat_wonchai/gpt-6-astra-aekaikh-qwen35-08b-aidyaangair-dwykaaraekaikhnamhnakomedlephiiyng-0016-1kl3",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "GPT-6 Astra แก้ค่าน้ำหนัก AI แค่ 0.016% คะแนนคณิตกระโดด 6 เท่าได้อย่างไร?",
-          "url": "https://dev.to/sarantoon/gpt-6-astra-aekkhaanamhnak-ai-aekh-0016-khaaennkhnitkraodd-6-ethaaaidyaangair-4dpm",
-          "points": 0
+          "title": "We Gave a Local LLM Live Web Access. Here’s How",
+          "url": "https://dev.to/zenrows/we-gave-a-local-llm-live-web-access-heres-how-1a88",
+          "points": 5
         }
       ],
-      "price": 2156
-    },
-    {
-      "symbol": "RAG",
-      "label": "Retrieval-Augmented Gen",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 59,
-      "saturationPct": 2,
-      "devVelocityPct": 59,
-      "hypeVelocityPct": 3,
-      "postingWindowDays": 52,
-      "confidence": "medium",
-      "breakdown": {
-        "arxiv": 5,
-        "devto": 7,
-        "youtube": 2
-      },
-      "news": {
-        "now": 0,
-        "base": 2
-      },
-      "evidence": [
-        {
-          "source": "devto",
-          "title": "winnow:e4b Was Built for Judgment. It Earned the 8GB VRAM Problem",
-          "url": "https://dev.to/kike/winnowe4b-was-built-for-judgment-it-earned-the-8gb-vram-problem-3fdi",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "HERIT: Enabling Global Access to Hanja-to-English Historical Translation by Mitigating Temporal Bias",
-          "url": "http://arxiv.org/abs/2611.04949v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "QueryFlow: Multi-Hop Graph Retrieval with Adaptive Query Evolution",
-          "url": "http://arxiv.org/abs/2611.04625v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "When Debate Amplifies Risk: Social-Bias Vulnerabilities in Multi-Agent Safety Deliberation",
-          "url": "http://arxiv.org/abs/2611.04289v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Reliability Stress Testing of RAG Retrieval under Query-Relevant Corpus Poisoning",
-          "url": "http://arxiv.org/abs/2611.04264v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Constructing a Regional Slang Lexicon for Electricity Demands via Soft-Label Bidirectional Anchoring and Active Learning",
-          "url": "http://arxiv.org/abs/2611.04231v1",
-          "points": 0
-        }
-      ],
-      "price": 2089
-    },
-    {
-      "symbol": "GROK",
-      "label": "Grok / xAI",
-      "emerging": false,
-      "stage": "PEAKING",
-      "signal": "HOLD",
-      "dailyChangePct": 44,
-      "saturationPct": 62,
-      "devVelocityPct": 27,
-      "hypeVelocityPct": 47,
-      "postingWindowDays": 1,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 4
-      },
-      "news": {
-        "now": 37,
-        "base": 32
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "xAI installs eight converted jet engines to power Mississippi data center",
-          "url": "https://www.tomshardware.com/tech-industry/data-centers/elon-musks-xai-installs-eight-converted-jet-engines-to-power-mississippi-data-center-permits-allow-25-percent-higher-limit-for-pollutants-concerns-raised-over-carbon-monoxide",
-          "points": 32
-        },
-        {
-          "source": "hackernews",
-          "title": "Elon Musk throttles Grok Bot limits due to 'unsustainably high' costs",
-          "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
-          "points": 6
-        },
-        {
-          "source": "hackernews",
-          "title": "Musk says Grok Bot cost unsustainably high",
-          "url": "https://thenextweb.com/news/grok-bot-costs-unsustainably-high-musk-usage-limits",
-          "points": 3
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Unblock Dot/Grok Bot/Instinct with Amazon, etc.",
-          "url": "https://browse.sophtron.com/",
-          "points": 3
-        }
-      ],
-      "price": 2068
+      "price": 2461
     },
     {
       "symbol": "IMAGEGEN",
@@ -1638,115 +1275,307 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 66,
-      "saturationPct": 16,
-      "devVelocityPct": 64,
-      "hypeVelocityPct": 35,
-      "postingWindowDays": 11,
+      "dailyChangePct": 79,
+      "saturationPct": 15,
+      "devVelocityPct": 76,
+      "hypeVelocityPct": 51,
+      "postingWindowDays": 9,
       "confidence": "high",
       "breakdown": {
-        "arxiv": 3,
-        "huggingface": 3,
-        "devto": 1
+        "hackernews": 1,
+        "arxiv": 7,
+        "huggingface": 3
       },
       "news": {
-        "now": 9,
-        "base": 3
+        "now": 14,
+        "base": 0
       },
       "evidence": [
         {
           "source": "huggingface",
           "title": "abenzerps/Qwen-Image-2.1-Turbo-Quantized",
           "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Turbo-Quantized",
-          "points": 5640
+          "points": 5656
         },
         {
           "source": "huggingface",
           "title": "PrunaAI/P-H3-Image-Comfy",
           "url": "https://huggingface.co/PrunaAI/P-H3-Image-Comfy",
-          "points": 117
+          "points": 175
         },
         {
           "source": "huggingface",
           "title": "PrunaAI/P-H3-Image",
           "url": "https://huggingface.co/PrunaAI/P-H3-Image",
-          "points": 85
+          "points": 118
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
+          "url": "https://www.linum.ai/field-notes/pjit-21k",
+          "points": 2
         },
         {
           "source": "arxiv",
-          "title": "Density-Aware Reward Scaling: A Reinforcement Learning Framework for Reward-Proportional Sampling",
-          "url": "http://arxiv.org/abs/2611.04792v1",
+          "title": "LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis",
+          "url": "http://arxiv.org/abs/2611.06856v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "CLARA: A Cognitively-Driven Clarification Framework for Grounding Ambiguous Requests",
-          "url": "http://arxiv.org/abs/2611.04708v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "FlowTranslator: Training-Free In-Image Machine Translation with Flow-Based Editing",
-          "url": "http://arxiv.org/abs/2611.04303v1",
+          "title": "Same Layout, Different Count: What Number Words Do Past Ten in Text-to-Image Models",
+          "url": "http://arxiv.org/abs/2611.06840v1",
           "points": 0
         }
       ],
-      "price": 2005
+      "price": 2434
     },
     {
-      "symbol": "WEIGHTSPACEP",
-      "label": "Weight-Space Programming",
+      "symbol": "PROMPTENG",
+      "label": "Prompt Engineering",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 80,
+      "saturationPct": 4,
+      "devVelocityPct": 81,
+      "hypeVelocityPct": 15,
+      "postingWindowDays": 26,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 10,
+        "devto": 3,
+        "youtube": 1
+      },
+      "news": {
+        "now": 3,
+        "base": 3
+      },
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "What I Learned Managing a Full Project with Antigravity",
+          "url": "https://dev.to/gde/what-i-learned-managing-a-full-project-with-antigravity-1ppc",
+          "points": 9
+        },
+        {
+          "source": "hackernews",
+          "title": "Ask HN: What are the fundamentals of agentic coding?",
+          "url": "https://news.ycombinator.com/item?id=50376478",
+          "points": 6
+        },
+        {
+          "source": "arxiv",
+          "title": "Persona Perspectives: Adopting Viewpoints Reorganizes Representations in LLMs",
+          "url": "http://arxiv.org/abs/2611.06848v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "When Do Summaries Become Instructions? Unsupported Policy in LLM Agents' Self-Written Handoff Summaries",
+          "url": "http://arxiv.org/abs/2611.06545v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Interpretable Text Embeddings Based on Hierarchical Questions",
+          "url": "http://arxiv.org/abs/2611.06402v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Training-Free Character-Length Control in Summarization with Diffusion Language Models",
+          "url": "http://arxiv.org/abs/2611.06371v1",
+          "points": 0
+        }
+      ],
+      "price": 2427
+    },
+    {
+      "symbol": "CODINGAGENTS",
+      "label": "Coding Agents",
       "emerging": true,
       "stage": "PEAKING",
       "signal": "HOLD",
-      "dailyChangePct": 80,
-      "saturationPct": 47,
-      "devVelocityPct": 68,
-      "hypeVelocityPct": 66,
+      "dailyChangePct": 82,
+      "saturationPct": 45,
+      "devVelocityPct": 78,
+      "hypeVelocityPct": 67,
       "postingWindowDays": 3,
       "confidence": "high",
       "breakdown": {
-        "arxiv": 1,
-        "devto": 1,
-        "reddit": 3
+        "hackernews": 4,
+        "arxiv": 3,
+        "devto": 1
       },
       "news": {
-        "now": 26,
+        "now": 39,
+        "base": 8
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: Safe and lightweight VMs for Coding agents",
+          "url": "https://github.com/skerrysoft/safeagent",
+          "points": 2
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Cosyra – Steer coding agents on your machines from your phone",
+          "url": "https://cosyra.com/",
+          "points": 1
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: teletap – Your remote coding agents ask you when stuck",
+          "url": "https://news.ycombinator.com/item?id=50377644",
+          "points": 1
+        },
+        {
+          "source": "hackernews",
+          "title": "Letagents – let your coding agents talk across machines",
+          "url": "https://letagents.talk/",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "CompressionBench: How can your coding agents compress LLMs?",
+          "url": "http://arxiv.org/abs/2611.06858v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
+          "url": "http://arxiv.org/abs/2611.06841v1",
+          "points": 0
+        }
+      ],
+      "price": 2359
+    },
+    {
+      "symbol": "RL",
+      "label": "RL / RLHF",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 87,
+      "saturationPct": 1,
+      "devVelocityPct": 86,
+      "hypeVelocityPct": 7,
+      "postingWindowDays": 39,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 10,
+        "huggingface": 1
+      },
+      "news": {
+        "now": 1,
         "base": 0
       },
       "evidence": [
         {
+          "source": "huggingface",
+          "title": "webAI-Official/TwIL-8B",
+          "url": "https://huggingface.co/webAI-Official/TwIL-8B",
+          "points": 96
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Interactive notes on RLHF, attention, LoRA and LLM evals",
+          "url": "https://concepts.laxmena.com/",
+          "points": 41
+        },
+        {
           "source": "arxiv",
-          "title": "Weight-space programming for auditing clinical decision networks",
-          "url": "http://arxiv.org/abs/2611.05341v1",
+          "title": "Alignment Myopia in Generative AI",
+          "url": "http://arxiv.org/abs/2611.06830v1",
           "points": 0
         },
         {
-          "source": "devto",
-          "title": "Weight-Space Programming: how GPT-6 Astra edited Qwen's weights and took MATH-500 from 7.9% to 48.1%",
-          "url": "https://dev.to/ahmad_dogar_7d098f5e48f72/weight-space-programming-how-gpt-6-astra-edited-qwens-weights-and-took-math-500-from-79-to-481-4gee",
+          "source": "arxiv",
+          "title": "Turns Matter: Advancing Streaming Video RL via Turn-Level Credit",
+          "url": "http://arxiv.org/abs/2611.06728v1",
           "points": 0
         },
         {
-          "source": "reddit",
-          "title": "I tried MIT's \"weight-space programming\" on my own use case: Claude rewrote 8 neurons of Gemma 4 12B to change how it translates one Italian tense",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn1gs9/i_tried_mits_weightspace_programming_on_my_own/",
+          "source": "arxiv",
+          "title": "RAGAM-AI: A Hybrid Reinforcement Learning based Agentic approach powered by Generative AI for Edge Resource Management",
+          "url": "http://arxiv.org/abs/2611.06554v1",
           "points": 0
         },
         {
-          "source": "reddit",
-          "title": "DeepSeek V4.1 Flash 1017 can also do Weight-Space Programming",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn2i0n/deepseek_v41_flash_1017_can_also_do_weightspace/",
-          "points": 0
-        },
-        {
-          "source": "reddit",
-          "title": "[Paper] Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmo5xu/paper_sparks_of_weightspace_programming_llms_can/",
+          "source": "arxiv",
+          "title": "Using Experience Twice: Dynamic Process Rubrics for Privileged Token-Level Credit Assignment",
+          "url": "http://arxiv.org/abs/2611.06543v1",
           "points": 0
         }
       ],
-      "price": 1991
+      "price": 2356
+    },
+    {
+      "symbol": "LOCALLLM",
+      "label": "Local / On-device LLMs",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 49,
+      "saturationPct": 3,
+      "devVelocityPct": 49,
+      "hypeVelocityPct": 10,
+      "postingWindowDays": 33,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 4,
+        "huggingface": 3,
+        "devto": 10,
+        "reddit": 1,
+        "youtube": 1
+      },
+      "news": {
+        "now": 2,
+        "base": 3
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+          "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF",
+          "points": 1767
+        },
+        {
+          "source": "huggingface",
+          "title": "mistralai/Mistral-Large-4-1T-A52B",
+          "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+          "points": 1603
+        },
+        {
+          "source": "huggingface",
+          "title": "LiquidAI/LFM3-1.7B-GGUF",
+          "url": "https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF",
+          "points": 236
+        },
+        {
+          "source": "devto",
+          "title": "We Gave a Local LLM Live Web Access. Here’s How",
+          "url": "https://dev.to/zenrows/we-gave-a-local-llm-live-web-access-heres-how-1a88",
+          "points": 5
+        },
+        {
+          "source": "hackernews",
+          "title": "Desktop app from the llama.cpp team (Mac OS and Windows)",
+          "url": "https://llama.app/models",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Swarm World – local LLM creatures living in a little tile world",
+          "url": "https://swarm-world.4rc4de.com/public/app/",
+          "points": 2
+        }
+      ],
+      "price": 2354
     },
     {
       "symbol": "CONTEXT",
@@ -1754,17 +1583,17 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 66,
-      "saturationPct": 2,
-      "devVelocityPct": 65,
+      "dailyChangePct": 82,
+      "saturationPct": 1,
+      "devVelocityPct": 82,
       "hypeVelocityPct": 7,
       "postingWindowDays": 39,
       "confidence": "medium",
       "breakdown": {
-        "hackernews": 1,
-        "arxiv": 5,
+        "hackernews": 2,
+        "arxiv": 7,
         "huggingface": 1,
-        "devto": 1
+        "reddit": 1
       },
       "news": {
         "now": 1,
@@ -1775,216 +1604,102 @@
           "source": "huggingface",
           "title": "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
           "url": "https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
-          "points": 675
+          "points": 697
         },
         {
           "source": "hackernews",
-          "title": "Show HN: AI Model Token Cost and Context Window Estimator",
-          "url": "https://ai-token-estimator.pages.dev/",
+          "title": "Five rules for evaluating agent skills before they bloat your context window",
+          "url": "https://cloud.google.com/blog/topics/developers-practitioners/evaluate-agent-skills-before-they-bloat-your-context-window",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "Nvidia Study: AI Agents Rarely Need Long Context Windows",
+          "url": "https://i10x.ai/news/nvidia-long-context-compaction-agents-study",
           "points": 1
         },
         {
           "source": "arxiv",
-          "title": "You don't need long context",
-          "url": "http://arxiv.org/abs/2611.05306v1",
+          "title": "LongBanana: An Expert-Verified Benchmark for Long-Context Multi-Reference Image Synthesis",
+          "url": "http://arxiv.org/abs/2611.06856v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers",
-          "url": "http://arxiv.org/abs/2611.05304v1",
+          "title": "Visual Token Routing: Learning to keep tokens that matter",
+          "url": "http://arxiv.org/abs/2611.06854v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "GeoFaham: Domain-Specialized Multi-Agent Geospatial Analytics for Disaster Response",
-          "url": "http://arxiv.org/abs/2611.04977v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Anchor: Augmented Cross-Layer Recurrent State for Long-Context Retrieval in Test-Time Training",
-          "url": "http://arxiv.org/abs/2611.04327v1",
+          "title": "LooM: Loop-Invariant Memory for Causal Encoder-Decoder Language Models",
+          "url": "http://arxiv.org/abs/2611.06835v1",
           "points": 0
         }
       ],
-      "price": 1961
+      "price": 2216
     },
     {
-      "symbol": "GPT6",
-      "label": "Gpt-6",
-      "emerging": true,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 60,
-      "saturationPct": 33,
-      "devVelocityPct": 72,
-      "hypeVelocityPct": 23,
-      "postingWindowDays": 10,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 1,
-        "devto": 5,
-        "reddit": 2
-      },
-      "news": {
-        "now": 17,
-        "base": 28
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "MIT researchers edit Qwen weights with GPT-6 Astra to boost math",
-          "url": "https://venturebeat.com/technology/like-gene-editing-for-neural-networks-mit-researchers-used-gpt-6-astra-to-edit-qwens-open-weights-directly-boosting-math-performance",
-          "points": 2
-        },
-        {
-          "source": "devto",
-          "title": "Weight-Space Programming: how GPT-6 Astra edited Qwen's weights and took MATH-500 from 7.9% to 48.1%",
-          "url": "https://dev.to/ahmad_dogar_7d098f5e48f72/weight-space-programming-how-gpt-6-astra-edited-qwens-weights-and-took-math-500-from-79-to-481-4gee",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "How a GPT-5.4 harness scored above GPT-6 Astra and Claude Code on ExtractBench",
-          "url": "https://dev.to/nikit117/how-a-gpt-54-harness-scored-above-gpt-6-astra-and-claude-code-on-extractbench-27o5",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "GPT-6 AstraがQwen3.5-0.8Bを重みの0.016%編集で修正した方法",
-          "url": "https://dev.to/aakira/gpt-6-astragaqwen35-08bwozhong-mino0016bian-ji-dexiu-zheng-sitafang-fa-50de",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "GPT-6 Astra แก้ไข Qwen3.5-0.8B ได้อย่างไร ด้วยการแก้ไขน้ำหนักโมเดลเพียง 0.016%",
-          "url": "https://dev.to/thanawat_wonchai/gpt-6-astra-aekaikh-qwen35-08b-aidyaangair-dwykaaraekaikhnamhnakomedlephiiyng-0016-1kl3",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "GPT-6 Astra แก้ค่าน้ำหนัก AI แค่ 0.016% คะแนนคณิตกระโดด 6 เท่าได้อย่างไร?",
-          "url": "https://dev.to/sarantoon/gpt-6-astra-aekkhaanamhnak-ai-aekh-0016-khaaennkhnitkraodd-6-ethaaaidyaangair-4dpm",
-          "points": 0
-        }
-      ],
-      "price": 1928
-    },
-    {
-      "symbol": "PROMPTENG",
-      "label": "Prompt Engineering",
+      "symbol": "RAG",
+      "label": "Retrieval-Augmented Gen",
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 64,
-      "saturationPct": 8,
-      "devVelocityPct": 64,
-      "hypeVelocityPct": 17,
-      "postingWindowDays": 22,
-      "confidence": "medium",
-      "breakdown": {
-        "arxiv": 5,
-        "devto": 3
-      },
-      "news": {
-        "now": 4,
-        "base": 3
-      },
-      "evidence": [
-        {
-          "source": "arxiv",
-          "title": "Evaluating LLMs as Judges of Counterspeech Quality Against Online Hate Speech",
-          "url": "http://arxiv.org/abs/2611.04627v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Beyond Fine-Tuning: Evaluating Prompt Engineering and Prompt Tuning for Roman Urdu Hate Speech Detection",
-          "url": "http://arxiv.org/abs/2611.04342v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "ATC: Agent Trajectory Control for Role-Contract Enforcement in Black-Box Multi-Agent Systems",
-          "url": "http://arxiv.org/abs/2611.04321v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Drift No More: Spectral Locking for Long-Horizon Open-Weight Multi-Agent AI",
-          "url": "http://arxiv.org/abs/2611.04315v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Neologism Inoculation Prompting",
-          "url": "http://arxiv.org/abs/2611.04260v1",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "Train the Model Inside Your Own Agent Harness: What OpenHands and Snowflake Just Made Possible",
-          "url": "https://dev.to/lm_phlinh_b142146bb585/train-the-model-inside-your-own-agent-harness-what-openhands-and-snowflake-just-made-possible-flm",
-          "points": 0
-        }
-      ],
-      "price": 1903
-    },
-    {
-      "symbol": "WEIGHTSPACE",
-      "label": "Weight-Space",
-      "emerging": true,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 78,
-      "saturationPct": 42,
-      "devVelocityPct": 68,
-      "hypeVelocityPct": 60,
-      "postingWindowDays": 4,
+      "dailyChangePct": 67,
+      "saturationPct": 1,
+      "devVelocityPct": 66,
+      "hypeVelocityPct": 4,
+      "postingWindowDays": 49,
       "confidence": "high",
       "breakdown": {
-        "arxiv": 1,
-        "devto": 1,
-        "reddit": 3
+        "arxiv": 5,
+        "devto": 9,
+        "reddit": 1,
+        "youtube": 1
       },
       "news": {
-        "now": 21,
-        "base": 1
+        "now": 0,
+        "base": 0
       },
       "evidence": [
         {
-          "source": "arxiv",
-          "title": "Weight-space programming for auditing clinical decision networks",
-          "url": "http://arxiv.org/abs/2611.05341v1",
-          "points": 0
+          "source": "devto",
+          "title": "The Chunking Dilemma: Why RAG Fails Before Retrieval Even Starts",
+          "url": "https://dev.to/nigamanchal/the-chunking-dilemma-why-rag-fails-before-retrieval-even-starts-51n0",
+          "points": 1
         },
         {
           "source": "devto",
-          "title": "Weight-Space Programming: how GPT-6 Astra edited Qwen's weights and took MATH-500 from 7.9% to 48.1%",
-          "url": "https://dev.to/ahmad_dogar_7d098f5e48f72/weight-space-programming-how-gpt-6-astra-edited-qwens-weights-and-took-math-500-from-79-to-481-4gee",
+          "title": "Does Graph RAG Actually Help? I Measured It on Postgres and TypeScript",
+          "url": "https://dev.to/kristinz/does-graph-rag-actually-help-i-measured-it-on-postgres-and-typescript-2np1",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "Reasoning over Non-Parametric Memory in Multilingual LLMs: A Cognitive-Based Analysis of Relational Knowledge",
+          "url": "http://arxiv.org/abs/2611.06715v1",
           "points": 0
         },
         {
-          "source": "reddit",
-          "title": "I tried MIT's \"weight-space programming\" on my own use case: Claude rewrote 8 neurons of Gemma 4 12B to change how it translates one Italian tense",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn1gs9/i_tried_mits_weightspace_programming_on_my_own/",
+          "source": "arxiv",
+          "title": "Signed but Steerable: Measuring and Closing the Text-Vector Integrity Gap in Offline Retrieval-Augmented Generation",
+          "url": "http://arxiv.org/abs/2611.06498v1",
           "points": 0
         },
         {
-          "source": "reddit",
-          "title": "DeepSeek V4.1 Flash 1017 can also do Weight-Space Programming",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn2i0n/deepseek_v41_flash_1017_can_also_do_weightspace/",
+          "source": "arxiv",
+          "title": "ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs",
+          "url": "http://arxiv.org/abs/2611.06481v1",
           "points": 0
         },
         {
-          "source": "reddit",
-          "title": "[Paper] Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmo5xu/paper_sparks_of_weightspace_programming_llms_can/",
+          "source": "arxiv",
+          "title": "AssameseLM-E2B: An Open-Weight Assamese Language Model for Efficient Consumer-Grade Deployment",
+          "url": "http://arxiv.org/abs/2611.06170v1",
           "points": 0
         }
       ],
-      "price": 1899
+      "price": 2168
     },
     {
       "symbol": "DISTILL",
@@ -1992,59 +1707,396 @@
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 76,
-      "saturationPct": 6,
-      "devVelocityPct": 78,
-      "hypeVelocityPct": 11,
-      "postingWindowDays": 30,
+      "dailyChangePct": 80,
+      "saturationPct": 1,
+      "devVelocityPct": 84,
+      "hypeVelocityPct": -4,
+      "postingWindowDays": 60,
       "confidence": "medium",
       "breakdown": {
-        "arxiv": 6,
+        "arxiv": 9,
         "devto": 1
       },
       "news": {
-        "now": 3,
-        "base": 4
+        "now": 1,
+        "base": 6
       },
       "evidence": [
         {
           "source": "arxiv",
-          "title": "MDSKILL: Learning to Internalize Skill Memory through Multi-View Distillation for Efficient Dynamic Agent Self-Evolution",
-          "url": "http://arxiv.org/abs/2611.05313v1",
+          "title": "Fingerprinting the Dispatchers behind Distributed Model Extraction",
+          "url": "http://arxiv.org/abs/2611.06661v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning",
-          "url": "http://arxiv.org/abs/2611.05266v1",
+          "title": "Using Experience Twice: Dynamic Process Rubrics for Privileged Token-Level Credit Assignment",
+          "url": "http://arxiv.org/abs/2611.06543v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "OperAItor: An Agentic Framework for Fault-Tolerant Operation of Chemical Processes",
-          "url": "http://arxiv.org/abs/2611.05179v1",
+          "title": "EvoOPD: Evolving Privileged Information Strategies for Black-Box On-Policy Distillation",
+          "url": "http://arxiv.org/abs/2611.06542v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Shuffled OPSD: When Semantic Consistency Hurts On-Policy Self-Distillation?",
-          "url": "http://arxiv.org/abs/2611.04958v1",
+          "title": "IDSISA: Influence-Distilled Sharded Training for Efficient Machine Unlearning",
+          "url": "http://arxiv.org/abs/2611.06519v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "CogniLife: Continuous Cognitive Distillation for Deployed Multi-Expert Agent Marketplaces",
-          "url": "http://arxiv.org/abs/2611.04483v1",
+          "title": "Ruby-OPD: Enhancing Pronunciation Controllability and Accuracy for Flow-Matching Text-to-Speech via On-Policy Distillation",
+          "url": "http://arxiv.org/abs/2611.06403v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Bidirectional Centered Score Matching for Discrete Diffusion Distillation",
-          "url": "http://arxiv.org/abs/2611.04279v1",
+          "title": "Consistency Learning and Distillation for One-Step MIMO-OFDM Channel Estimation",
+          "url": "http://arxiv.org/abs/2611.06271v1",
           "points": 0
         }
       ],
-      "price": 1895
+      "price": 2117
+    },
+    {
+      "symbol": "LARGELANGUAG",
+      "label": "Large Language",
+      "emerging": true,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 83,
+      "saturationPct": 13,
+      "devVelocityPct": 82,
+      "hypeVelocityPct": 39,
+      "postingWindowDays": 11,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 3,
+        "arxiv": 6,
+        "youtube": 4
+      },
+      "news": {
+        "now": 7,
+        "base": 1
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Progress on provable inference for large language models",
+          "url": "https://www.anthropic.com/research/provable-inference",
+          "points": 232
+        },
+        {
+          "source": "hackernews",
+          "title": "Anthropic: Progress on provable inference for large language models",
+          "url": "https://www.anthropic.com/research/provable-inference",
+          "points": 11
+        },
+        {
+          "source": "hackernews",
+          "title": "Foundations of Large Language Models",
+          "url": "https://arxiv.org/abs/2501.09223",
+          "points": 2
+        },
+        {
+          "source": "arxiv",
+          "title": "Replicability, Reproducibility, and Robustness in Political and Social Science Research with Large Language Models",
+          "url": "http://arxiv.org/abs/2611.06639v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Addition by Subtraction: Toward Mitigating Fragile Safety Alignment in Large Language Models",
+          "url": "http://arxiv.org/abs/2611.06553v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Editing Large Language Models with Geometry-Aware Regularization",
+          "url": "http://arxiv.org/abs/2611.06185v1",
+          "points": 0
+        }
+      ],
+      "price": 2112
+    },
+    {
+      "symbol": "SORA",
+      "label": "AI Video Generation",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 62,
+      "saturationPct": 19,
+      "devVelocityPct": 67,
+      "hypeVelocityPct": 25,
+      "postingWindowDays": 14,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 4,
+        "huggingface": 2,
+        "devto": 2
+      },
+      "news": {
+        "now": 13,
+        "base": 18
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "Lightricks/LTX-2.5",
+          "url": "https://huggingface.co/Lightricks/LTX-2.5",
+          "points": 10666
+        },
+        {
+          "source": "huggingface",
+          "title": "MiniMaxAI/MiniMax-H3",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+          "points": 6601
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: A decent text-to-image model trained for ~$20K (Apache 2.0 Weights)",
+          "url": "https://www.linum.ai/field-notes/pjit-21k",
+          "points": 2
+        },
+        {
+          "source": "arxiv",
+          "title": "EvoWorld: Towards Out-of-Sight World Evolution in Generative Video Models",
+          "url": "http://arxiv.org/abs/2611.06748v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "EmoReward: Self-Evolving Reward Calibration for Emotional Video Generation RL",
+          "url": "http://arxiv.org/abs/2611.06518v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "NextGAN: Towards Simple and Scalable GAN Training for Image and Video Generation",
+          "url": "http://arxiv.org/abs/2611.06270v1",
+          "points": 0
+        }
+      ],
+      "price": 2105
+    },
+    {
+      "symbol": "MULTIAGENT",
+      "label": "Multi-Agent Systems",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 32,
+      "saturationPct": 20,
+      "devVelocityPct": 24,
+      "hypeVelocityPct": 41,
+      "postingWindowDays": 9,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 2,
+        "arxiv": 5
+      },
+      "news": {
+        "now": 12,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Show HN: CXAgent – a multi-agent coding workbench for the terminal, in .NET",
+          "url": "https://nickprotop.github.io/cxagent/",
+          "points": 1
+        },
+        {
+          "source": "hackernews",
+          "title": "How we made evals 100× cheaper with multi-agent architecture",
+          "url": "https://cleric.ai/blog/how-we-made-evals-100x-cheaper-with-multi-agent-architecture",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "MA-Mesh: Resilient Multi-Agent Collaboration via Role-based Self-Healing",
+          "url": "http://arxiv.org/abs/2611.06389v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "A Controlled Experimental Evaluation of Configuration and Cache Architecture in LLM Serving Engines",
+          "url": "http://arxiv.org/abs/2611.05991v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Graph-Mediated Large Language Model Systems in the Agentic Era: Reasoning, Knowledge, Retrieval, Execution, and Coordination",
+          "url": "http://arxiv.org/abs/2611.05953v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Autonomous agents for electricity-system planning",
+          "url": "http://arxiv.org/abs/2611.05911v1",
+          "points": 0
+        }
+      ],
+      "price": 1958
+    },
+    {
+      "symbol": "HY4",
+      "label": "Hy4",
+      "emerging": true,
+      "stage": "PEAKING",
+      "signal": "HOLD",
+      "dailyChangePct": 79,
+      "saturationPct": 63,
+      "devVelocityPct": 62,
+      "hypeVelocityPct": 70,
+      "postingWindowDays": 1,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 1,
+        "reddit": 2,
+        "producthunt": 1
+      },
+      "news": {
+        "now": 37,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Tencent Hy4 Intelligence, Performance and Price Analysis",
+          "url": "https://artificialanalysis.ai/models/tencent-hy4",
+          "points": 4
+        },
+        {
+          "source": "reddit",
+          "title": "Introducing Hy4 (open weights soon)",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnhzbz/introducing_hy4_open_weights_soon/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Tencent says Hy4 ranks among the best open models. Its weights aren't out yet",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnnr3k/tencent_says_hy4_ranks_among_the_best_open_models/",
+          "points": 0
+        },
+        {
+          "source": "producthunt",
+          "title": "Tencent Hy4",
+          "url": "https://www.producthunt.com/products/hunyuan-a13b",
+          "points": 0
+        }
+      ],
+      "price": 1948
+    },
+    {
+      "symbol": "GROK",
+      "label": "Grok / xAI",
+      "emerging": false,
+      "stage": "PEAKING",
+      "signal": "HOLD",
+      "dailyChangePct": 32,
+      "saturationPct": 65,
+      "devVelocityPct": 23,
+      "hypeVelocityPct": 30,
+      "postingWindowDays": 1,
+      "confidence": "high",
+      "breakdown": {
+        "hackernews": 2,
+        "arxiv": 1
+      },
+      "news": {
+        "now": 34,
+        "base": 53
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Ask HN: What's your current AI agentic setup?",
+          "url": "https://news.ycombinator.com/item?id=50366117",
+          "points": 406
+        },
+        {
+          "source": "hackernews",
+          "title": "xAI installs eight converted jet engines to power Mississippi data center",
+          "url": "https://www.tomshardware.com/tech-industry/data-centers/elon-musks-xai-installs-eight-converted-jet-engines-to-power-mississippi-data-center-permits-allow-25-percent-higher-limit-for-pollutants-concerns-raised-over-carbon-monoxide",
+          "points": 33
+        },
+        {
+          "source": "arxiv",
+          "title": "How Well Can Large Language Models Impersonate Individual Authors? A Comparative Evaluation",
+          "url": "http://arxiv.org/abs/2611.05771v1",
+          "points": 0
+        }
+      ],
+      "price": 1841
+    },
+    {
+      "symbol": "COMPUTERUSE",
+      "label": "Computer Use / Browser Agents",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 70,
+      "saturationPct": 12,
+      "devVelocityPct": 69,
+      "hypeVelocityPct": 27,
+      "postingWindowDays": 15,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 4,
+        "arxiv": 1,
+        "huggingface": 1,
+        "devto": 1,
+        "reddit": 1
+      },
+      "news": {
+        "now": 6,
+        "base": 2
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "microsoft/Mage-VL-Cowork",
+          "url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+          "points": 184
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: AutoCua, one prompt drives computer, browser, phones, code at same time",
+          "url": "https://github.com/ComputerUseAgent/AutoCua",
+          "points": 4
+        },
+        {
+          "source": "hackernews",
+          "title": "Show HN: Nico – a two-agent type personal agent on your Mac",
+          "url": "https://nico.app/",
+          "points": 3
+        },
+        {
+          "source": "hackernews",
+          "title": "Computer use is GA in Gemini API",
+          "url": "https://aistudio.google.com/docs/computer-use",
+          "points": 1
+        },
+        {
+          "source": "hackernews",
+          "title": "Ask HN: Any way to have inbuild second screen for AI to control",
+          "url": "https://news.ycombinator.com/item?id=50376975",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "Visual Token Routing: Learning to keep tokens that matter",
+          "url": "http://arxiv.org/abs/2611.06854v1",
+          "points": 0
+        }
+      ],
+      "price": 1837
     },
     {
       "symbol": "SELFHOSTED",
@@ -2052,38 +2104,26 @@
       "emerging": true,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 74,
-      "saturationPct": 17,
-      "devVelocityPct": 75,
-      "hypeVelocityPct": 29,
-      "postingWindowDays": 13,
+      "dailyChangePct": 71,
+      "saturationPct": 30,
+      "devVelocityPct": 68,
+      "hypeVelocityPct": 40,
+      "postingWindowDays": 8,
       "confidence": "high",
       "breakdown": {
-        "hackernews": 6,
+        "hackernews": 4,
         "reddit": 1
       },
       "news": {
-        "now": 8,
+        "now": 12,
         "base": 5
       },
       "evidence": [
         {
           "source": "hackernews",
-          "title": "Revolut moves to self-hosted GLM",
-          "url": "https://twitter.com/guilleflorvs/status/2117379073785696395",
-          "points": 191
-        },
-        {
-          "source": "hackernews",
-          "title": "Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
-          "url": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
-          "points": 4
-        },
-        {
-          "source": "hackernews",
-          "title": "NeoRouter – Self-hosted routing for free, paid and local LLMs",
-          "url": "https://github.com/NeoLabs-Systems/NeoRouter",
-          "points": 3
+          "title": "OpenRing – Open-source, self-hosted voice AI agent platform (Vapi alternative)",
+          "url": "https://github.com/elifalanrocha/openring",
+          "points": 2
         },
         {
           "source": "hackernews",
@@ -2093,8 +2133,8 @@
         },
         {
           "source": "hackernews",
-          "title": "Show HN: Hardcount – Self-hosted usage billing for AI products",
-          "url": "https://github.com/gethardcount/hardcount",
+          "title": "Rack Community: a self-hosted AI lab whose job runner won't overload the box",
+          "url": "https://github.com/ohhbeehave35-commits/rack-community",
           "points": 1
         },
         {
@@ -2102,129 +2142,231 @@
           "title": "Show HN: OpenPetCam – a self-hosted pet camera that goes looking for your dog",
           "url": "https://github.com/crimeacs/OpenPetCam",
           "points": 1
+        },
+        {
+          "source": "reddit",
+          "title": "British fintech Revolut slashes AI coding costs 10x by cutting out Claude and going self-hosted",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn568h/british_fintech_revolut_slashes_ai_coding_costs/",
+          "points": 0
         }
       ],
-      "price": 1852
+      "price": 1618
     },
     {
-      "symbol": "LONGHORIZON",
-      "label": "Long-Horizon",
+      "symbol": "HUGGINGFACE",
+      "label": "Hugging Face",
       "emerging": true,
+      "stage": "PEAKING",
+      "signal": "HOLD",
+      "dailyChangePct": 67,
+      "saturationPct": 45,
+      "devVelocityPct": 62,
+      "hypeVelocityPct": 46,
+      "postingWindowDays": 4,
+      "confidence": "high",
+      "breakdown": {
+        "devto": 1,
+        "reddit": 3
+      },
+      "news": {
+        "now": 18,
+        "base": 9
+      },
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "SWE-bench Verified on Hugging Face: 9 Self-Reported Rows Top the Official Table's Best, and 6 Repos Fill 16 of 78 Rows",
+          "url": "https://dev.to/ward_ed_6b5e6aa8ded94a987/swe-bench-verified-on-hugging-face-9-self-reported-rows-top-the-official-tables-best-and-6-repos-3173",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "ricursiveAI/Ripple-65B-Preview · Hugging Face",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnx3cs/ricursiveairipple65bpreview_hugging_face/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "baidu/ERNIE-5.5-Flash-Base · Hugging Face",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xobtwx/baiduernie55flashbase_hugging_face/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Axion1-0/Axion-1.0-35B · Hugging Face",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnjiu4/axion10axion1035b_hugging_face/",
+          "points": 0
+        }
+      ],
+      "price": 1604
+    },
+    {
+      "symbol": "KVCACHE",
+      "label": "KV-Cache Optimization",
+      "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 74,
+      "dailyChangePct": 48,
       "saturationPct": 0,
-      "devVelocityPct": 78,
-      "hypeVelocityPct": -10,
+      "devVelocityPct": 50,
+      "hypeVelocityPct": -4,
       "postingWindowDays": 60,
       "confidence": "medium",
       "breakdown": {
         "hackernews": 2,
-        "arxiv": 5
+        "arxiv": 3,
+        "devto": 2
       },
       "news": {
         "now": 0,
-        "base": 5
+        "base": 2
       },
       "evidence": [
         {
           "source": "hackernews",
-          "title": "How I AI - mental models for working with AI and long-horizon",
-          "url": "https://blog.radix63.dk/posts/how-i-ai/",
-          "points": 1
+          "title": "KVGuard: Catching the KV cache bug behind Cloudflare's GLM leak",
+          "url": "https://compsec.snu.ac.kr/blog/kvguard",
+          "points": 6
         },
         {
           "source": "hackernews",
-          "title": "Show HN: An experiment in automated long-horizon builds with AMQP 0.9.1",
-          "url": "https://github.com/siennathesane/switchboard",
+          "title": "KVGuard: A KV Cache Safety Checker for LLM Serving Systems",
+          "url": "https://arxiv.org/abs/2611.06138",
+          "points": 3
+        },
+        {
+          "source": "devto",
+          "title": "How a KV cache bug exposed other customers' prompts",
+          "url": "https://dev.to/abdul_rehman_90cb34d3a146/how-a-kv-cache-bug-exposed-other-customers-prompts-i8p",
           "points": 1
         },
         {
           "source": "arxiv",
-          "title": "JHiMA-WebRL: A Joint Hierarchical Multi-Agent Reinforcement Learning Framework for Long-Horizon Web Tasks",
-          "url": "http://arxiv.org/abs/2611.05263v1",
+          "title": "CRESiST: Self-Enhancing Explorative Policy Learning for Simultaneous Speech Translation",
+          "url": "http://arxiv.org/abs/2611.06501v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "GM League Arena: An Interactive Long-Horizon Task Benchmark Based on Professional Sports League Management",
-          "url": "http://arxiv.org/abs/2611.05147v1",
+          "title": "Where Should a KV-Cache Repair Budget Go? Distractor Structure and Contextual Compatibility in Non-Prefix Reuse",
+          "url": "http://arxiv.org/abs/2611.06397v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Meta$^2$: Precomputing Reusable Knowledge for Online Harness Evolution in Long-Horizon Agents",
-          "url": "http://arxiv.org/abs/2611.05139v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents",
-          "url": "http://arxiv.org/abs/2611.05036v1",
+          "title": "EchoKV: Self-Corrective KV Cache Eviction via Iterative Query Feedback",
+          "url": "http://arxiv.org/abs/2611.05903v1",
           "points": 0
         }
       ],
-      "price": 1848
+      "price": 1600
     },
     {
-      "symbol": "REASONING",
-      "label": "Reasoning Models",
+      "symbol": "MEMORY",
+      "label": "Agent Memory",
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 71,
-      "saturationPct": 0,
-      "devVelocityPct": 73,
-      "hypeVelocityPct": -6,
-      "postingWindowDays": 60,
+      "dailyChangePct": 46,
+      "saturationPct": 10,
+      "devVelocityPct": 45,
+      "hypeVelocityPct": 15,
+      "postingWindowDays": 23,
       "confidence": "medium",
       "breakdown": {
-        "arxiv": 6,
-        "devto": 1
+        "hackernews": 1,
+        "arxiv": 4
       },
       "news": {
-        "now": 0,
-        "base": 3
+        "now": 4,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "Two Days Left to Submit to the Agent Memory Challenge Cycle 2",
+          "url": "https://twitter.com/AgentMemoryL/status/2115766704504471848",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "SUMONE: A Simple and Efficient Summarizer for Plug-and-Play Agent Memory",
+          "url": "http://arxiv.org/abs/2611.06445v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Twists and Turns: A Graph-Based Benchmark and Framework for Long-Term Memory in Exploration Tasks",
+          "url": "http://arxiv.org/abs/2611.06414v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "FlyHash for LLM Agent Memory: An Empirical Validation and a New Application",
+          "url": "http://arxiv.org/abs/2611.05791v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Toward a Compositional Knowledge Architecture for a Shared Organizational Cortex",
+          "url": "http://arxiv.org/abs/2611.05753v1",
+          "points": 0
+        }
+      ],
+      "price": 1580
+    },
+    {
+      "symbol": "SYNTHDATA",
+      "label": "Synthetic Data",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 73,
+      "saturationPct": 5,
+      "devVelocityPct": 73,
+      "hypeVelocityPct": 11,
+      "postingWindowDays": 30,
+      "confidence": "medium",
+      "breakdown": {
+        "arxiv": 5
+      },
+      "news": {
+        "now": 2,
+        "base": 1
       },
       "evidence": [
         {
           "source": "arxiv",
-          "title": "Multi-Objective Generative Optimization via Expected Hypervolume Fine-Tuning",
-          "url": "http://arxiv.org/abs/2611.05207v1",
+          "title": "Partially Interpretable Decision Trees",
+          "url": "http://arxiv.org/abs/2611.06428v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Fault-tolerant shallow recurrent decoders for sparse sensing with missing sensor measurements",
-          "url": "http://arxiv.org/abs/2611.04893v1",
+          "title": "CoRTeC: A Differentially Private Release for Synthetic Tabular Data, Decodable by Any Generator",
+          "url": "http://arxiv.org/abs/2611.06342v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Think Less, Locally: Local Preference Learning for Reasoning Compression",
-          "url": "http://arxiv.org/abs/2611.04814v1",
+          "title": "Network Intrusion Forensic Detection System with Explainable Artificial Intelligence and Digital Chain of Custody",
+          "url": "http://arxiv.org/abs/2611.06173v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Best-of-Depth: Learning Exploratory Dynamics in Looped Transformers",
-          "url": "http://arxiv.org/abs/2611.04663v1",
+          "title": "Learning From Static Context in Federated Time Series Forecasting",
+          "url": "http://arxiv.org/abs/2611.06064v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Sparse Internal Control of Language Models",
-          "url": "http://arxiv.org/abs/2611.04349v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "When Debate Amplifies Risk: Social-Bias Vulnerabilities in Multi-Agent Safety Deliberation",
-          "url": "http://arxiv.org/abs/2611.04289v1",
+          "title": "Pairing Expert Critique with LLM-Driven Refinement: An Iterative Approach for Curating Quality AI Evaluation Datasets",
+          "url": "http://arxiv.org/abs/2611.05749v1",
           "points": 0
         }
       ],
-      "price": 1837
+      "price": 1573
     },
     {
       "symbol": "WORLDMODEL",
@@ -2233,191 +2375,219 @@
       "stage": "RISING",
       "signal": "BUY",
       "dailyChangePct": 51,
-      "saturationPct": 26,
-      "devVelocityPct": 61,
+      "saturationPct": 22,
+      "devVelocityPct": 57,
       "hypeVelocityPct": 14,
-      "postingWindowDays": 18,
-      "confidence": "high",
+      "postingWindowDays": 19,
+      "confidence": "medium",
       "breakdown": {
-        "hackernews": 1,
         "arxiv": 4
       },
       "news": {
-        "now": 12,
-        "base": 26
+        "now": 8,
+        "base": 15
       },
       "evidence": [
         {
-          "source": "hackernews",
-          "title": "Show HN: A 14M-param world model of 2D Minecraft you can play on your phone",
-          "url": "https://maharishiva.github.io/tinywmcraft/",
-          "points": 3
-        },
-        {
           "source": "arxiv",
-          "title": "Trajectory Evaluation via Rollout-Free World Model for End-to-end Autonomous Driving",
-          "url": "http://arxiv.org/abs/2611.05072v1",
+          "title": "Detecting Silent Action-Interface Mismatch with Calibrated Relational World Models",
+          "url": "http://arxiv.org/abs/2611.06653v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "A research world model of power engineering learns its dynamics and reveals what-ifs",
-          "url": "http://arxiv.org/abs/2611.04566v1",
+          "title": "TouchéWorld tech report : Towards Online Unified Camera--Hand Exploration in Generative Worlds",
+          "url": "http://arxiv.org/abs/2611.06061v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation",
-          "url": "http://arxiv.org/abs/2611.04492v1",
+          "title": "Does Your Trial Simulator Know What the Drug Does? An Intervention-Blind Test of Interventional Validity on 7,207 Registered Trials",
+          "url": "http://arxiv.org/abs/2611.05907v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Embodied AI for Scientific Discovery: From Physical Action to Scientific Evidence",
-          "url": "http://arxiv.org/abs/2611.04371v1",
+          "title": "CellCanon: An Agentic Cellular World Model for Prediction, Explanation, and Observation-Driven Updating",
+          "url": "http://arxiv.org/abs/2611.05890v1",
           "points": 0
         }
       ],
-      "price": 1833
+      "price": 1547
     },
     {
-      "symbol": "LARGELANGUAG",
-      "label": "Large Language",
-      "emerging": true,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 77,
-      "saturationPct": 15,
-      "devVelocityPct": 74,
-      "hypeVelocityPct": 34,
-      "postingWindowDays": 12,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 3,
-        "arxiv": 3,
-        "youtube": 4
-      },
-      "news": {
-        "now": 5,
-        "base": 0
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Progress on provable inference for large language models",
-          "url": "https://www.anthropic.com/research/provable-inference",
-          "points": 10
-        },
-        {
-          "source": "hackernews",
-          "title": "Anthropic: Progress on provable inference for large language models",
-          "url": "https://www.anthropic.com/research/provable-inference",
-          "points": 7
-        },
-        {
-          "source": "hackernews",
-          "title": "Progress on provable inference for large language models",
-          "url": "https://www.anthropic.com/research/provable-inference",
-          "points": 7
-        },
-        {
-          "source": "arxiv",
-          "title": "Feeling of Knowing in Large Language Models",
-          "url": "http://arxiv.org/abs/2611.04834v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Large Language Model-Assisted Adaptive Heuristic Search for Agile Earth Observation Satellite Scheduling",
-          "url": "http://arxiv.org/abs/2611.04458v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Large Language Models for Forecasting of Electricity Price Spikes",
-          "url": "http://arxiv.org/abs/2611.04354v1",
-          "points": 0
-        }
-      ],
-      "price": 1811
-    },
-    {
-      "symbol": "KVCACHE",
-      "label": "KV-Cache Optimization",
+      "symbol": "VOICE",
+      "label": "Voice AI",
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 56,
-      "saturationPct": 0,
-      "devVelocityPct": 62,
-      "hypeVelocityPct": -16,
-      "postingWindowDays": 60,
-      "confidence": "medium",
-      "breakdown": {
-        "hackernews": 1,
-        "github": 1,
-        "arxiv": 3,
-        "devto": 2
-      },
-      "news": {
-        "now": 0,
-        "base": 9
-      },
-      "evidence": [
-        {
-          "source": "github",
-          "title": "shanselman/gputaskman",
-          "url": "https://github.com/shanselman/gputaskman",
-          "points": 88
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Garrul – Comments system for your site on a single Cloudflare Worker",
-          "url": "https://github.com/KingPin/Garrul",
-          "points": 1
-        },
-        {
-          "source": "devto",
-          "title": "Why KV-Cache Memory Tricks — Not New Math — Drove This Week's Biggest Inference Wins",
-          "url": "https://dev.to/felipe0liveira/why-kv-cache-memory-tricks-not-new-math-drove-this-weeks-biggest-inference-wins-29cb",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "LoopVQ: Sub 1-bit KV Cache Quantization for Looped Transformers",
-          "url": "http://arxiv.org/abs/2611.05304v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Asymptotic Optimality of $cμ$-Rule for LLM Inference Scheduling under Memory Constraint",
-          "url": "http://arxiv.org/abs/2611.04807v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Formalizing PTX in Lean to Prove GPU Kernel Correctness",
-          "url": "http://arxiv.org/abs/2611.04447v1",
-          "points": 0
-        }
-      ],
-      "price": 1759
-    },
-    {
-      "symbol": "RL",
-      "label": "RL / RLHF",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 74,
-      "saturationPct": 0,
-      "devVelocityPct": 74,
+      "dailyChangePct": 59,
+      "saturationPct": 6,
+      "devVelocityPct": 64,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
       "confidence": "medium",
       "breakdown": {
         "hackernews": 1,
-        "arxiv": 4,
+        "arxiv": 2,
+        "huggingface": 1,
+        "devto": 1
+      },
+      "news": {
+        "now": 2,
+        "base": 7
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "LiquidAI/LFM3-Omni-2B",
+          "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+          "points": 367
+        },
+        {
+          "source": "hackernews",
+          "title": "OpenRing – Open-source, self-hosted voice AI agent platform (Vapi alternative)",
+          "url": "https://github.com/elifalanrocha/openring",
+          "points": 2
+        },
+        {
+          "source": "arxiv",
+          "title": "Confucius4-R2T2: A Stable-Prefix Streaming ASR Model for Real Real-Time Transcription",
+          "url": "http://arxiv.org/abs/2611.06043v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Holistic Parallel Supervision for Expressive Speech to Speech Translation",
+          "url": "http://arxiv.org/abs/2611.06010v1",
+          "points": 0
+        },
+        {
+          "source": "devto",
+          "title": "The Gate Is a Vocabulary: A Three-Metric Evaluation of a Voice Agent's Confirmation Step",
+          "url": "https://dev.to/tushar292001k/the-gate-is-a-vocabulary-a-three-metric-evaluation-of-a-voice-agents-confirmation-step-377j",
+          "points": 0
+        }
+      ],
+      "price": 1454
+    },
+    {
+      "symbol": "27B",
+      "label": "27b",
+      "emerging": true,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 67,
+      "saturationPct": 3,
+      "devVelocityPct": 69,
+      "hypeVelocityPct": 3,
+      "postingWindowDays": 50,
+      "confidence": "medium",
+      "breakdown": {
+        "hackernews": 2,
+        "reddit": 3
+      },
+      "news": {
+        "now": 1,
+        "base": 2
+      },
+      "evidence": [
+        {
+          "source": "hackernews",
+          "title": "JustFit: Run Qwen 27B Fast with its full 256K context on a 24 GB Mac",
+          "url": "https://github.com/YuhuaBillChen/justfit-llm",
+          "points": 5
+        },
+        {
+          "source": "hackernews",
+          "title": "We review every PR with a 27B model on self-hosted infra",
+          "url": "https://varoa.net/2026/11/03/we-review-every-pr-with-a-27b-model-on-self-hosted-infra.html",
+          "points": 2
+        },
+        {
+          "source": "reddit",
+          "title": "Anything beat Qwen 3.8 27B yet?",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xoe1wc/anything_beat_qwen_38_27b_yet/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Qwen3.8 27B Q4 on my low-end Laptop, and it became my main Model usage for coding",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnzo38/qwen38_27b_q4_on_my_lowend_laptop_and_it_became/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "27B vs Flash next",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xo3gwa/27b_vs_flash_next/",
+          "points": 0
+        }
+      ],
+      "price": 1407
+    },
+    {
+      "symbol": "QWEN38FLASHN",
+      "label": "Qwen3.8-Flash-Next",
+      "emerging": true,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 61,
+      "saturationPct": 0,
+      "devVelocityPct": 66,
+      "hypeVelocityPct": -8,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "huggingface": 1,
+        "reddit": 3
+      },
+      "news": {
+        "now": 0,
+        "base": 4
+      },
+      "evidence": [
+        {
+          "source": "huggingface",
+          "title": "Qwen/Qwen3.8-Flash-Next",
+          "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "points": 6796
+        },
+        {
+          "source": "reddit",
+          "title": "Unsloth Qwen3.8-Flash-Next GGUFs V3.1 Update (November 4th 2026)",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnuva2/unsloth_qwen38flashnext_ggufs_v31_update_november/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "New Qwen3.8-Flash-Next Unsloth Dynamic V3.1 GGUFs",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnvbxn/new_qwen38flashnext_unsloth_dynamic_v31_ggufs/",
+          "points": 0
+        },
+        {
+          "source": "reddit",
+          "title": "Rust inference engine for Qwen models on a 12 GB GPU, and it runs Qwen3.8-Flash-Next faster than the original Strata",
+          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnu9iv/rust_inference_engine_for_qwen_models_on_a_12_gb/",
+          "points": 0
+        }
+      ],
+      "price": 1290
+    },
+    {
+      "symbol": "SLM",
+      "label": "Small Language Models",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 57,
+      "saturationPct": 0,
+      "devVelocityPct": 57,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "hackernews": 1,
+        "arxiv": 2,
         "devto": 1
       },
       "news": {
@@ -2427,362 +2597,40 @@
       "evidence": [
         {
           "source": "hackernews",
-          "title": "Show HN: Interactive notes on RLHF, attention, LoRA and LLM evals",
-          "url": "https://concepts.laxmena.com/",
-          "points": 41
-        },
-        {
-          "source": "arxiv",
-          "title": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
-          "url": "http://arxiv.org/abs/2611.05372v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Suppressing Misaligned Behaviors in Language Models, Durably",
-          "url": "http://arxiv.org/abs/2611.05358v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Found by Search, Broken by a Shortcut: Transfer and Tampering of Searched Intrinsic Rewards",
-          "url": "http://arxiv.org/abs/2611.04838v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Density-Aware Reward Scaling: A Reinforcement Learning Framework for Reward-Proportional Sampling",
-          "url": "http://arxiv.org/abs/2611.04792v1",
-          "points": 0
+          "title": "Palette: Teaching a small model to build decks in your design language",
+          "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+          "points": 1
         },
         {
           "source": "devto",
-          "title": "PPO vs DPO vs GRPO: which RL method should you use?",
-          "url": "https://dev.to/viswaretas_kotra/ppo-vs-dpo-vs-grpo-which-rl-method-should-you-use-46cm",
-          "points": 0
-        }
-      ],
-      "price": 1654
-    },
-    {
-      "symbol": "SYNTHDATA",
-      "label": "Synthetic Data",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 69,
-      "saturationPct": 5,
-      "devVelocityPct": 72,
-      "hypeVelocityPct": 5,
-      "postingWindowDays": 41,
-      "confidence": "medium",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 4
-      },
-      "news": {
-        "now": 2,
-        "base": 4
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Show HN: SIE Serverless – managed inference powered by self-hostable stack",
-          "url": "https://superlinked.com/",
-          "points": 9
-        },
-        {
-          "source": "arxiv",
-          "title": "RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On",
-          "url": "http://arxiv.org/abs/2611.05163v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Beyond Foundation Models: PFN Priors Improve Tabular Hyperparameter Optimization",
-          "url": "http://arxiv.org/abs/2611.05141v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Molecular Prior Networks",
-          "url": "http://arxiv.org/abs/2611.05103v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "The Min-Max theory of language behavior",
-          "url": "http://arxiv.org/abs/2611.04406v1",
-          "points": 0
-        }
-      ],
-      "price": 1625
-    },
-    {
-      "symbol": "REALTIME",
-      "label": "Real-Time",
-      "emerging": true,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 69,
-      "saturationPct": 44,
-      "devVelocityPct": 59,
-      "hypeVelocityPct": 48,
-      "postingWindowDays": 4,
-      "confidence": "high",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 1,
-        "devto": 2
-      },
-      "news": {
-        "now": 15,
-        "base": 3
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "EdgeDAE: Acceleration of Diffusion Action Experts for Real-Time Physical AI",
-          "url": "https://arxiv.org/abs/2610.00311",
+          "title": "An LLM edited a small model's weights directly and its math score rose 6x",
+          "url": "https://dev.to/dan_lumatic/an-llm-edited-a-small-models-weights-directly-and-its-math-score-rose-6x-2d0l",
           "points": 1
         },
         {
           "source": "arxiv",
-          "title": "Integrating Machine Learning and Uncertainty Quantification for Real-Time Decision-Making in Digital Twins: A System-Centric Review and Perspective",
-          "url": "http://arxiv.org/abs/2611.04269v1",
+          "title": "Template Gap Reconstruction for Shell Output Simulation with Small Language Models",
+          "url": "http://arxiv.org/abs/2611.06731v1",
           "points": 0
         },
         {
-          "source": "devto",
-          "title": "Comparing Batch and Real-Time LLM Inference Economics",
-          "url": "https://dev.to/ericthompson21/comparing-batch-and-real-time-llm-inference-economics-3fmi",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "How We Built a Real-Time Edge-AI Theft Detection System on a Raspberry Pi 4 + Telegram Alerts",
-          "url": "https://dev.to/devdestiny/how-we-built-a-real-time-edge-ai-theft-detection-system-on-a-raspberry-pi-4-telegram-alerts-20p1",
+          "source": "arxiv",
+          "title": "LibriSpeech-Real-QA: A Benchmark for Streaming Question Answering",
+          "url": "http://arxiv.org/abs/2611.06496v1",
           "points": 0
         }
       ],
-      "price": 1580
+      "price": 1233
     },
     {
-      "symbol": "27B",
-      "label": "27b",
-      "emerging": true,
+      "symbol": "SPECDECODE",
+      "label": "Speculative Decoding",
+      "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
       "dailyChangePct": 62,
       "saturationPct": 0,
-      "devVelocityPct": 69,
-      "hypeVelocityPct": -13,
-      "postingWindowDays": 60,
-      "confidence": "medium",
-      "breakdown": {
-        "hackernews": 2,
-        "devto": 2,
-        "reddit": 2
-      },
-      "news": {
-        "now": 0,
-        "base": 7
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-          "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-          "points": 663
-        },
-        {
-          "source": "hackernews",
-          "title": "We review every PR with a 27B model on self-hosted infra",
-          "url": "https://varoa.net/2026/11/03/we-review-every-pr-with-a-27b-model-on-self-hosted-infra.html",
-          "points": 2
-        },
-        {
-          "source": "devto",
-          "title": "GPU Kernels, Part 2: Teaching a 27B Model to Write Triton Kernels with SFT and a GPU Gym",
-          "url": "https://dev.to/g_factor/gpu-kernels-part-2-teaching-a-27b-model-to-write-triton-kernels-with-sft-and-a-gpu-gym-4h79",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "How much VRAM do you actually need for local LLMs in 2026? (Qwen3.8 27B, 24GB vs 32GB cards)",
-          "url": "https://dev.to/sheephess9527/how-much-vram-do-you-actually-need-for-local-llms-in-2026-qwen38-27b-24gb-vs-32gb-cards-1nld",
-          "points": 0
-        },
-        {
-          "source": "reddit",
-          "title": "Like GPT-6 Astra, Qwen 3.8 27B can interpret model weights",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmz9ca/like_gpt6_astra_qwen_38_27b_can_interpret_model/",
-          "points": 0
-        },
-        {
-          "source": "reddit",
-          "title": "Is Qwen 3.8 27B still the king",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xms6eq/is_qwen_38_27b_still_the_king/",
-          "points": 0
-        }
-      ],
-      "price": 1475
-    },
-    {
-      "symbol": "MAMBA",
-      "label": "State Space / Mamba",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 59,
-      "saturationPct": 0,
-      "devVelocityPct": 59,
-      "hypeVelocityPct": 0,
-      "postingWindowDays": 60,
-      "confidence": "low",
-      "breakdown": {
-        "arxiv": 3,
-        "huggingface": 1
-      },
-      "news": {
-        "now": 0,
-        "base": 0
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "nvidia/NVIDIA-NemotronLabs-RE-USE",
-          "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE",
-          "points": 173
-        },
-        {
-          "source": "arxiv",
-          "title": "You don't need long context",
-          "url": "http://arxiv.org/abs/2611.05306v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Amortized Nonlinear Variable Selection with Prior-Data Fitted Networks",
-          "url": "http://arxiv.org/abs/2611.04848v1",
-          "points": 0
-        },
-        {
-          "source": "arxiv",
-          "title": "Near-Zero Token Embeddings Silently Stall Training in Gated Sequence Models",
-          "url": "http://arxiv.org/abs/2611.04449v1",
-          "points": 0
-        }
-      ],
-      "price": 1448
-    },
-    {
-      "symbol": "COMPUTERUSE",
-      "label": "Computer Use / Browser Agents",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 49,
-      "saturationPct": 7,
-      "devVelocityPct": 50,
-      "hypeVelocityPct": 5,
-      "postingWindowDays": 40,
-      "confidence": "medium",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 1,
-        "huggingface": 1,
-        "reddit": 1
-      },
-      "news": {
-        "now": 2,
-        "base": 4
-      },
-      "evidence": [
-        {
-          "source": "huggingface",
-          "title": "microsoft/Mage-VL-Cowork",
-          "url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
-          "points": 165
-        },
-        {
-          "source": "hackernews",
-          "title": "Terminal-Mac: A separate macOS desktop for computer-use agents in your terminal",
-          "url": "https://github.com/govijr/terminal-mac",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "Voluntary Servitude: Weaponized Safety Warning Mechanisms for Controlling AI Agents",
-          "url": "http://arxiv.org/abs/2611.04393v1",
-          "points": 0
-        },
-        {
-          "source": "reddit",
-          "title": "Tencent says Hy4 ranks among the best open models. Its weights aren't out yet",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnnr3k/tencent_says_hy4_ranks_among_the_best_open_models/",
-          "points": 0
-        }
-      ],
-      "price": 1428
-    },
-    {
-      "symbol": "QWEN38",
-      "label": "Qwen 3.8",
-      "emerging": true,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 58,
-      "saturationPct": 0,
-      "devVelocityPct": 64,
-      "hypeVelocityPct": -10,
-      "postingWindowDays": 60,
-      "confidence": "low",
-      "breakdown": {
-        "hackernews": 1,
-        "reddit": 3
-      },
-      "news": {
-        "now": 0,
-        "base": 5
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
-          "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
-          "points": 663
-        },
-        {
-          "source": "reddit",
-          "title": "Like GPT-6 Astra, Qwen 3.8 27B can interpret model weights",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xmz9ca/like_gpt6_astra_qwen_38_27b_can_interpret_model/",
-          "points": 0
-        },
-        {
-          "source": "reddit",
-          "title": "Basalt 0.2.0: Qwen 3.8 Flash Next NVFP4, 300 t/s prose, 600 t/s struct, 10K t/s prefill on a 5090 + 5060 Ti and 128GB RAM",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn4qn1/basalt_020_qwen_38_flash_next_nvfp4_300_ts_prose/",
-          "points": 0
-        },
-        {
-          "source": "reddit",
-          "title": "Is Qwen 3.8 27B still the king",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xms6eq/is_qwen_38_27b_still_the_king/",
-          "points": 0
-        }
-      ],
-      "price": 1318
-    },
-    {
-      "symbol": "TOOLCALL",
-      "label": "Tool / Function Calling",
-      "emerging": false,
-      "stage": "RISING",
-      "signal": "BUY",
-      "dailyChangePct": 55,
-      "saturationPct": 0,
-      "devVelocityPct": 55,
+      "devVelocityPct": 62,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
       "confidence": "low",
@@ -2796,40 +2644,40 @@
       "evidence": [
         {
           "source": "arxiv",
-          "title": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents",
-          "url": "http://arxiv.org/abs/2611.05036v1",
+          "title": "D3D: Decoupled Diffusion Drafting for Asynchronous Speculative Decoding",
+          "url": "http://arxiv.org/abs/2611.06425v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Sketchpad: certified exact arithmetic with a small vision-language model",
-          "url": "http://arxiv.org/abs/2611.04434v1",
+          "title": "Split-KV: Efficient Context Parallelism for Training Diffusion Drafters",
+          "url": "http://arxiv.org/abs/2611.05926v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Drift No More: Spectral Locking for Long-Horizon Open-Weight Multi-Agent AI",
-          "url": "http://arxiv.org/abs/2611.04315v1",
+          "title": "RECAP: Context-Aware Prediction Recycling with Request-Local and Persistent Memories for Multimodal Speculative Decoding",
+          "url": "http://arxiv.org/abs/2611.05894v1",
           "points": 0
         }
       ],
-      "price": 1255
+      "price": 1189
     },
     {
-      "symbol": "SLM",
-      "label": "Small Language Models",
+      "symbol": "MAMBA",
+      "label": "State Space / Mamba",
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
-      "dailyChangePct": 43,
+      "dailyChangePct": 62,
       "saturationPct": 0,
-      "devVelocityPct": 43,
+      "devVelocityPct": 62,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
       "confidence": "low",
       "breakdown": {
-        "hackernews": 1,
-        "reddit": 2
+        "arxiv": 2,
+        "huggingface": 1
       },
       "news": {
         "now": 0,
@@ -2837,29 +2685,71 @@
       },
       "evidence": [
         {
-          "source": "hackernews",
-          "title": "Show HN: SIE Serverless – managed inference powered by self-hostable stack",
-          "url": "https://superlinked.com/",
-          "points": 9
+          "source": "huggingface",
+          "title": "nvidia/NVIDIA-NemotronLabs-RE-USE",
+          "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE",
+          "points": 184
         },
         {
-          "source": "reddit",
-          "title": "I tried MIT's \"weight-space programming\" on my own use case: Claude rewrote 8 neurons of Gemma 4 12B to change how it translates one Italian tense",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xn1gs9/i_tried_mits_weightspace_programming_on_my_own/",
+          "source": "arxiv",
+          "title": "Shallow Encoding Emits Deep Memories",
+          "url": "http://arxiv.org/abs/2611.06084v1",
           "points": 0
         },
         {
-          "source": "reddit",
-          "title": "AI Agent Task performance of small LLM models (4B and below) in self-assessment set",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xng029/ai_agent_task_performance_of_small_llm_models_4b/",
+          "source": "arxiv",
+          "title": "Selective, Risk-Controlled Emotion Forecasting in Conversation: From a Persistence Barrier to Departure Detection with Conformal Guarantees",
+          "url": "http://arxiv.org/abs/2611.05896v1",
           "points": 0
         }
       ],
-      "price": 1138
+      "price": 1189
     },
     {
-      "symbol": "LLAMA",
-      "label": "Llama",
+      "symbol": "N8N",
+      "label": "AI Workflow Automation",
+      "emerging": false,
+      "stage": "RISING",
+      "signal": "BUY",
+      "dailyChangePct": 56,
+      "saturationPct": 5,
+      "devVelocityPct": 57,
+      "hypeVelocityPct": 3,
+      "postingWindowDays": 49,
+      "confidence": "low",
+      "breakdown": {
+        "arxiv": 2,
+        "devto": 1
+      },
+      "news": {
+        "now": 1,
+        "base": 2
+      },
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "Self-hosting n8n for production AI automations without babysitting a server",
+          "url": "https://dev.to/amitshuklabag/self-hosting-n8n-for-production-ai-automations-without-babysitting-a-server-2lkc",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "RAGAM-AI: A Hybrid Reinforcement Learning based Agentic approach powered by Generative AI for Edge Resource Management",
+          "url": "http://arxiv.org/abs/2611.06554v1",
+          "points": 0
+        },
+        {
+          "source": "arxiv",
+          "title": "Pairing Expert Critique with LLM-Driven Refinement: An Iterative Approach for Curating Quality AI Evaluation Datasets",
+          "url": "http://arxiv.org/abs/2611.05749v1",
+          "points": 0
+        }
+      ],
+      "price": 1108
+    },
+    {
+      "symbol": "TOOLCALL",
+      "label": "Tool / Function Calling",
       "emerging": false,
       "stage": "RISING",
       "signal": "BUY",
@@ -2880,161 +2770,40 @@
       "evidence": [
         {
           "source": "arxiv",
-          "title": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
-          "url": "http://arxiv.org/abs/2611.05373v1",
+          "title": "When Do Summaries Become Instructions? Unsupported Policy in LLM Agents' Self-Written Handoff Summaries",
+          "url": "http://arxiv.org/abs/2611.06545v1",
           "points": 0
         },
         {
           "source": "arxiv",
-          "title": "Evaluating LLMs as Judges of Counterspeech Quality Against Online Hate Speech",
-          "url": "http://arxiv.org/abs/2611.04627v1",
+          "title": "MA-Mesh: Resilient Multi-Agent Collaboration via Role-based Self-Healing",
+          "url": "http://arxiv.org/abs/2611.06389v1",
           "points": 0
         },
         {
           "source": "devto",
-          "title": "I track how much each provider charges for the same open LLM: Llama 3.3 70B ranges from $0.155 to $0.78 per 1M tokens",
-          "url": "https://dev.to/imad_errachidi_0c00845672/i-track-how-much-each-provider-charges-for-the-same-open-llm-llama-33-70b-ranges-from-0155-to-9me",
+          "title": "An Engineer's Guide to WebMCP in Chrome 156: How In-Browser Tool Calling Actually Works",
+          "url": "https://dev.to/damisile_ayoola/an-engineers-guide-to-webmcp-in-chrome-156-how-in-browser-tool-calling-actually-works-63j",
           "points": 0
         }
       ],
-      "price": 1138
+      "price": 1078
     },
     {
-      "symbol": "SPECDECODE",
-      "label": "Speculative Decoding",
+      "symbol": "MISTRAL",
+      "label": "Mistral",
       "emerging": false,
       "stage": "EMBRYO",
       "signal": "STRONG_BUY",
-      "dailyChangePct": 56,
+      "dailyChangePct": 36,
       "saturationPct": 0,
-      "devVelocityPct": 56,
+      "devVelocityPct": 36,
       "hypeVelocityPct": 0,
       "postingWindowDays": 60,
       "confidence": "low",
       "breakdown": {
         "arxiv": 1,
-        "devto": 1,
-        "reddit": 1
-      },
-      "news": {
-        "now": 0,
-        "base": 0
-      },
-      "evidence": [
-        {
-          "source": "devto",
-          "title": "Why KV-Cache Memory Tricks — Not New Math — Drove This Week's Biggest Inference Wins",
-          "url": "https://dev.to/felipe0liveira/why-kv-cache-memory-tricks-not-new-math-drove-this-weeks-biggest-inference-wins-29cb",
-          "points": 1
-        },
-        {
-          "source": "arxiv",
-          "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
-          "url": "http://arxiv.org/abs/2611.05345v1",
-          "points": 0
-        },
-        {
-          "source": "reddit",
-          "title": "[Paper] SpecPilot: Autonomous Algorithm Discovery and Systems Optimization for Speculative Decoding 🚀🚀🚀",
-          "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xnjrgj/paper_specpilot_autonomous_algorithm_discovery/",
-          "points": 0
-        }
-      ],
-      "price": 1103
-    },
-    {
-      "symbol": "MEMORY",
-      "label": "Agent Memory",
-      "emerging": false,
-      "stage": "EMBRYO",
-      "signal": "STRONG_BUY",
-      "dailyChangePct": 15,
-      "saturationPct": 0,
-      "devVelocityPct": 15,
-      "hypeVelocityPct": 0,
-      "postingWindowDays": 60,
-      "confidence": "low",
-      "breakdown": {
-        "hackernews": 2,
-        "devto": 1
-      },
-      "news": {
-        "now": 0,
-        "base": 0
-      },
-      "evidence": [
-        {
-          "source": "devto",
-          "title": "Rack Before You Remember",
-          "url": "https://dev.to/kenwalger/rack-before-you-remember-2jl3",
-          "points": 9
-        },
-        {
-          "source": "hackernews",
-          "title": "Show HN: Project Wisteria-A BYOK chatbot that saves thoughts and memory locally",
-          "url": "https://negativeabsence.com/wisteria/",
-          "points": 1
-        },
-        {
-          "source": "hackernews",
-          "title": "fine tuned decision model for agent memory",
-          "url": "https://hindsight.vectorize.io/blog/2026/11/03/hindsight-models",
-          "points": 1
-        }
-      ],
-      "price": 1027
-    },
-    {
-      "symbol": "AGI",
-      "label": "AGI / Superintelligence",
-      "emerging": false,
-      "stage": "EMBRYO",
-      "signal": "STRONG_BUY",
-      "dailyChangePct": 29,
-      "saturationPct": 0,
-      "devVelocityPct": 29,
-      "hypeVelocityPct": 0,
-      "postingWindowDays": 60,
-      "confidence": "low",
-      "breakdown": {
-        "hackernews": 1,
-        "arxiv": 1
-      },
-      "news": {
-        "now": 0,
-        "base": 0
-      },
-      "evidence": [
-        {
-          "source": "hackernews",
-          "title": "Show HN: Remene – Understand your MRI and prepare questions for your doctor",
-          "url": "https://remene.si",
-          "points": 11
-        },
-        {
-          "source": "arxiv",
-          "title": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
-          "url": "http://arxiv.org/abs/2611.05376v1",
-          "points": 0
-        }
-      ],
-      "price": 967
-    },
-    {
-      "symbol": "VOICE",
-      "label": "Voice AI",
-      "emerging": false,
-      "stage": "EMBRYO",
-      "signal": "STRONG_BUY",
-      "dailyChangePct": 35,
-      "saturationPct": 0,
-      "devVelocityPct": 35,
-      "hypeVelocityPct": 0,
-      "postingWindowDays": 60,
-      "confidence": "low",
-      "breakdown": {
-        "huggingface": 1,
-        "devto": 1
+        "huggingface": 1
       },
       "news": {
         "now": 0,
@@ -3043,82 +2812,18 @@
       "evidence": [
         {
           "source": "huggingface",
-          "title": "LiquidAI/LFM3-Omni-2B",
-          "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
-          "points": 347
+          "title": "mistralai/Mistral-Large-4-1T-A52B",
+          "url": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+          "points": 1603
         },
-        {
-          "source": "devto",
-          "title": "Your LiveKit agent works great on WebRTC. The phone network will humble it",
-          "url": "https://dev.to/bilal_ahmed_3840/your-livekit-agent-works-great-on-webrtc-the-phone-network-will-humble-it-kd0",
-          "points": 0
-        }
-      ],
-      "price": 880
-    },
-    {
-      "symbol": "DIFFUSIONLLM",
-      "label": "Diffusion LLMs",
-      "emerging": false,
-      "stage": "EMBRYO",
-      "signal": "STRONG_BUY",
-      "dailyChangePct": 17,
-      "saturationPct": 0,
-      "devVelocityPct": 17,
-      "hypeVelocityPct": 0,
-      "postingWindowDays": 60,
-      "confidence": "low",
-      "breakdown": {
-        "arxiv": 1
-      },
-      "news": {
-        "now": 0,
-        "base": 0
-      },
-      "evidence": [
         {
           "source": "arxiv",
-          "title": "VIGOR: Visual Gain Ordering for Hallucination Mitigation in Multimodal Discrete Diffusion Language Models",
-          "url": "http://arxiv.org/abs/2611.05066v1",
+          "title": "EchoKV: Self-Corrective KV Cache Eviction via Iterative Query Feedback",
+          "url": "http://arxiv.org/abs/2611.05903v1",
           "points": 0
         }
       ],
-      "price": 730
-    },
-    {
-      "symbol": "N8N",
-      "label": "AI Workflow Automation",
-      "emerging": false,
-      "stage": "EMBRYO",
-      "signal": "STRONG_BUY",
-      "dailyChangePct": 15,
-      "saturationPct": 0,
-      "devVelocityPct": 15,
-      "hypeVelocityPct": 0,
-      "postingWindowDays": 60,
-      "confidence": "low",
-      "breakdown": {
-        "devto": 2
-      },
-      "news": {
-        "now": 0,
-        "base": 0
-      },
-      "evidence": [
-        {
-          "source": "devto",
-          "title": "This Free n8n Workflow Turns Google Trends Into Content Ideas",
-          "url": "https://dev.to/fun_fun_19313eced54af3c68/this-free-n8n-workflow-turns-google-trends-into-content-ideas-k17",
-          "points": 0
-        },
-        {
-          "source": "devto",
-          "title": "AI Automation Templates vs n8n/Zapier Workflows: What Actually Executes the Logic",
-          "url": "https://dev.to/ramdai_bista/ai-automation-templates-vs-n8nzapier-workflows-what-actually-executes-the-logic-3bcn",
-          "points": 0
-        }
-      ],
-      "price": 702
+      "price": 973
     },
     {
       "symbol": "VECTORDB",
@@ -3126,15 +2831,16 @@
       "emerging": false,
       "stage": "EMBRYO",
       "signal": "STRONG_BUY",
-      "dailyChangePct": 31,
-      "saturationPct": 8,
-      "devVelocityPct": 29,
-      "hypeVelocityPct": 4,
-      "postingWindowDays": 44,
+      "dailyChangePct": 51,
+      "saturationPct": 7,
+      "devVelocityPct": 49,
+      "hypeVelocityPct": 7,
+      "postingWindowDays": 36,
       "confidence": "low",
       "breakdown": {
         "hackernews": 1,
-        "youtube": 1
+        "arxiv": 1,
+        "youtube": 2
       },
       "news": {
         "now": 0,
@@ -3146,9 +2852,129 @@
           "title": "Show HN: I built Knemora – An Open-source AI Second brain",
           "url": "https://github.com/federicolaterra/knemora",
           "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "Signed but Steerable: Measuring and Closing the Text-Vector Integrity Gap in Offline Retrieval-Augmented Generation",
+          "url": "http://arxiv.org/abs/2611.06498v1",
+          "points": 0
         }
       ],
-      "price": 669
+      "price": 950
+    },
+    {
+      "symbol": "GRAPHRAG",
+      "label": "GraphRAG",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 44,
+      "saturationPct": 0,
+      "devVelocityPct": 44,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "arxiv": 1,
+        "devto": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [
+        {
+          "source": "devto",
+          "title": "Does Graph RAG Actually Help? I Measured It on Postgres and TypeScript",
+          "url": "https://dev.to/kristinz/does-graph-rag-actually-help-i-measured-it-on-postgres-and-typescript-2np1",
+          "points": 1
+        },
+        {
+          "source": "arxiv",
+          "title": "ArcRAG: Agentic Compositional Retrieval over Knowledge Graphs",
+          "url": "http://arxiv.org/abs/2611.06481v1",
+          "points": 0
+        }
+      ],
+      "price": 833
+    },
+    {
+      "symbol": "DIFFUSIONLLM",
+      "label": "Diffusion LLMs",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 25,
+      "saturationPct": 0,
+      "devVelocityPct": 25,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "arxiv": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [
+        {
+          "source": "arxiv",
+          "title": "Training-Free Character-Length Control in Summarization with Diffusion Language Models",
+          "url": "http://arxiv.org/abs/2611.06371v1",
+          "points": 0
+        }
+      ],
+      "price": 691
+    },
+    {
+      "symbol": "LLAMA",
+      "label": "Llama",
+      "emerging": false,
+      "stage": "EMBRYO",
+      "signal": "STRONG_BUY",
+      "dailyChangePct": 35,
+      "saturationPct": 0,
+      "devVelocityPct": 35,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {
+        "arxiv": 1
+      },
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [
+        {
+          "source": "arxiv",
+          "title": "Reward Budgeting Reduces Premature Convergence in Reinforcement Learning for LLM Reasoning",
+          "url": "http://arxiv.org/abs/2611.05942v1",
+          "points": 0
+        }
+      ],
+      "price": 691
+    },
+    {
+      "symbol": "AGI",
+      "label": "AGI / Superintelligence",
+      "emerging": false,
+      "stage": "COOLING",
+      "signal": "SELL",
+      "dailyChangePct": -30,
+      "saturationPct": 0,
+      "devVelocityPct": -30,
+      "hypeVelocityPct": 0,
+      "postingWindowDays": 60,
+      "confidence": "low",
+      "breakdown": {},
+      "news": {
+        "now": 0,
+        "base": 0
+      },
+      "evidence": [],
+      "price": 12
     }
   ]
 }
